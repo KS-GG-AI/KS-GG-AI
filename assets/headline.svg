@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="76" viewBox="0 0 960 76" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">KS-GG-AI profile headline</title>
+  <desc id="desc">Designing useful things with care. Making complex systems feel simple.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="960" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#161126"/>
+      <stop offset=".55" stop-color="#121824"/>
+      <stop offset="1" stop-color="#101B20"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset=".5" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A7F3D0"/>
+    </linearGradient>
+  </defs>
+  <rect x=".5" y=".5" width="959" height="75" rx="18" fill="url(#surface)" stroke="#312E4D"/>
+  <circle cx="40" cy="38" r="12" fill="#A78BFA" fill-opacity=".16"/>
+  <path d="M35 38h10M40 33v10" stroke="#C4B5FD" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="70" y="32" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing=".3">DESIGNING USEFUL THINGS WITH CARE</text>
+  <text x="70" y="53" fill="#AFA9C9" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing=".2">Making complex systems feel simple  ·  Always learning, always building</text>
+  <path d="M725 38h180" stroke="url(#line)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="920" cy="38" r="5" fill="#F9A8D4"/>
+  <circle cx="920" cy="38" r="10" stroke="#F9A8D4" stroke-opacity=".28"/>
+</svg>

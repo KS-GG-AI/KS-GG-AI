@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>KS-GG-AI monogram avatar</title>
+  <rect width="512" height="512" rx="128" fill="#111318"/>
+  <rect x="72" y="72" width="368" height="368" rx="96" fill="#F1EFE9"/>
+  <path d="M180 142h48v85l103-85h66L272 246l130 124h-69l-105-101v101h-48V142Z" fill="#16181D"/>
+  <circle cx="389" cy="123" r="18" fill="#7C5CFC"/>
+</svg>

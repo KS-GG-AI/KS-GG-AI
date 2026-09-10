@@ -1,0 +1,67 @@
+<div align="center">
+
+<p>
+  <a href="./README.md">🇺🇸 English</a> ·
+  <a href="./README.ko.md">🇰🇷 한국어</a> ·
+  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./README.es.md">🇪🇸 Español</a> ·
+  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./README.ar.md">🇸🇦 العربية</a> ·
+  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./README.fr.md">🇫🇷 Français</a> ·
+  <a href="./README.id.md"><strong>🇮🇩 Bahasa Indonesia</strong></a>
+</p>
+
+<table>
+  <tr>
+    <td width="76%" valign="middle"><a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Perkenalan KS-GG-AI" width="100%" /></a></td>
+    <td width="24%" align="center" valign="middle"><a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Tanda animasi KS-GG-AI" width="154" /></a></td>
+  </tr>
+</table>
+
+<br />
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Efek mengetik animasi" width="100%" /></a>
+
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Lihat sumber profil &nbsp;</kbd></a>
+  &nbsp;
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; Jelajahi aset visual &nbsp;</kbd></a>
+</p>
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="Kartu terminal KS-GG-AI" width="100%" /></a>
+
+</div>
+
+## Halo, saya KS-GG-AI 👋
+
+Saya suka mengubah ide yang masih kasar menjadi perangkat lunak yang berguna dan penuh perhatian. Saya menghargai fondasi yang rapi, pengalaman yang jelas, dan detail kecil yang membuat sebuah alat nyaman digunakan.
+
+- ✦ **Pola pikir** — Penasaran secara alami, praktis saat diperlukan
+- ◌ **Minat** — Pengembangan perangkat lunak, otomatisasi, sistem, dan alat yang ramah manusia
+- ↗ **Pendekatan** — Mulai dari kecil, belajar cepat, dan terus meningkatkan
+
+## Perangkat utama
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Perangkat utama" width="100%" /></a>
+
+<div align="center">
+
+<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Prinsip membangun" width="100%" /></a>
+
+<br /><br />
+
+<sub><i>Buat berguna. Buat jelas. Terus tingkatkan.</i></sub>
+
+</div>
+
+## Keahlian dan teknologi
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Peta visual keahlian teknis" width="100%" /></a>
+
+<br />
+
+<div align="center">
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Ringkasan profil GitHub" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="48%" /></a>
+</div>

@@ -28,15 +28,23 @@
 
 </div>
 
-## 你好，我是 KS-GG-AI 👋
+## 我在做什么
 
-我喜欢把模糊的想法变成有用、细致的软件。我重视可靠的基础、清晰的体验，以及让工具更易用的安静细节。
+我构建那些从外部看应当简单、但背后需要大量协作的产品部分：清晰的界面、可连接的工具和可重复的工作流。大部分工作位于产品思考、自动化和系统设计的交汇处。
 
-- ✦ **思维方式** — 保持好奇，在需要时务实
-- ◌ **关注领域** — 软件创作、自动化、系统和以人为本的工具
-- ↗ **工作方式** — 从小处开始，快速学习，持续改进
+- **产品界面** — 让下一步一目了然的界面和流程
+- **连接的工作** — 通过 API、集成和自动化减少重复交接
+- **为变化而构建** — 易于测试、调整和维护的小型基础
+
+## 个人资料语言
+
+此个人资料提供 10 种语言版本。以韩语和英语为基础，同时提供其他本地化版本，便于不同地区的访客理解相同的工作内容。
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="提供英语、韩语、中文、西班牙语、印地语、阿拉伯语、葡萄牙语、俄语、法语和印尼语版本的个人资料" width="100%" /></a>
 
 ## 核心工具
+
+把想法变成可用成果时使用的一组实用工具：编写、连接、交付并持续运行。
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="核心工具" width="100%" /></a>
 
@@ -46,18 +54,14 @@
 
 <br />
 
-<sub><i>务实、有条理，并持续变得更好。</i></sub>
+<sub><i>让有用的路径自然地延续下去。</i></sub>
 
 </div>
 
 ## 技能与技术
 
+这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
+
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="技术栈视觉地图" width="100%" /></a>
 
-<br />
-
-<div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="GitHub 个人资料快照" width="100%" /></a>
-  <br /><br />
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="技术重点" width="100%" /></a>
-</div>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="技术重点" width="100%" /></a>

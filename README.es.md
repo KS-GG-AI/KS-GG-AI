@@ -28,15 +28,23 @@
 
 </div>
 
-## Hola, soy KS-GG-AI 👋
+## En qué trabajo
 
-Me gusta convertir ideas poco definidas en software útil y cuidado. Valoro unas bases limpias, experiencias claras y esos pequeños detalles que hacen agradable una herramienta.
+Construyo las partes de un producto que deberían sentirse simples incluso cuando el trabajo detrás no lo es: interfaces claras, herramientas conectadas y flujos repetibles. Gran parte del trabajo vive donde se cruzan el producto, la automatización y los sistemas.
 
-- ✦ **Mentalidad** — Curiosidad por defecto; pragmatismo cuando importa
-- ◌ **Intereses** — Creación de software, automatización, sistemas y herramientas centradas en las personas
-- ↗ **Enfoque** — Empezar poco a poco, aprender rápido y mejorar continuamente
+- **Superficies de producto** — Interfaces y flujos que hacen evidente el siguiente paso
+- **Trabajo conectado** — API, integraciones y automatización que reducen traspasos rutinarios
+- **Hecho para evolucionar** — Bases pequeñas y fáciles de probar, cambiar y mantener
+
+## Idiomas del perfil
+
+Este perfil está disponible en diez idiomas. Coreano e inglés son los puntos de partida; las demás versiones localizadas facilitan compartir el mismo trabajo entre regiones.
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Perfil disponible en inglés, coreano, chino, español, hindi, árabe, portugués, ruso, francés e indonesio" width="100%" /></a>
 
 ## Caja de herramientas
+
+Un conjunto práctico de herramientas para escribir, conectar, entregar y mantener el software en movimiento.
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Herramientas principales" width="100%" /></a>
 
@@ -46,18 +54,14 @@ Me gusta convertir ideas poco definidas en software útil y cuidado. Valoro unas
 
 <br />
 
-<sub><i>Hazlo útil. Hazlo claro. Sigue mejorándolo.</i></sub>
+<sub><i>Haz que el camino útil sea fácil de seguir.</i></sub>
 
 </div>
 
 ## Habilidades y tecnologías
 
+Es un mapa de trabajo, no una lista de control. Las tecnologías se agrupan según el problema que ayudan a resolver.
+
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
 
-<br />
-
-<div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Resumen del perfil de GitHub" width="100%" /></a>
-  <br /><br />
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Enfoque tecnológico" width="100%" /></a>
-</div>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Enfoque tecnológico" width="100%" /></a>

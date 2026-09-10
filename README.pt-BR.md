@@ -28,15 +28,23 @@
 
 </div>
 
-## Olá, eu sou KS-GG-AI 👋
+## No que trabalho
 
-Gosto de transformar ideias ainda pouco definidas em software útil e cuidadoso. Valorizo bases limpas, experiências claras e os detalhes discretos que tornam uma ferramenta agradável de usar.
+Construo as partes de um produto que devem parecer simples mesmo quando o trabalho por trás delas não é: interfaces claras, ferramentas conectadas e fluxos repetíveis. Grande parte do meu trabalho fica entre produto, automação e sistemas.
 
-- ✦ **Mentalidade** — Curioso por padrão, prático quando importa
-- ◌ **Interesses** — Criação de software, automação, sistemas e ferramentas centradas nas pessoas
-- ↗ **Abordagem** — Começar pequeno, aprender rápido e melhorar continuamente
+- **Superfícies de produto** — Interfaces e fluxos que deixam claro o próximo passo
+- **Trabalho conectado** — APIs, integrações e automação que reduzem repasses rotineiros
+- **Feito para evoluir** — Bases pequenas e fáceis de testar, mudar e manter
+
+## Idiomas do perfil
+
+Este perfil está disponível em dez idiomas. Coreano e inglês são os pontos de partida; as demais versões localizadas facilitam compartilhar o mesmo contexto entre regiões.
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Perfil disponível em inglês, coreano, chinês, espanhol, hindi, árabe, português, russo, francês e indonésio" width="100%" /></a>
 
 ## Caixa de ferramentas
+
+Um conjunto prático de ferramentas para escrever, conectar, entregar e manter o software em movimento.
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Ferramentas principais" width="100%" /></a>
 
@@ -46,18 +54,14 @@ Gosto de transformar ideias ainda pouco definidas em software útil e cuidadoso.
 
 <br />
 
-<sub><i>Torne útil. Torne claro. Continue melhorando.</i></sub>
+<sub><i>Faça com que o caminho útil seja fácil de seguir.</i></sub>
 
 </div>
 
 ## Habilidades e tecnologias
 
+Este é um mapa de trabalho, não uma lista de verificação. As tecnologias são agrupadas pelo tipo de problema que ajudam a resolver.
+
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
 
-<br />
-
-<div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Resumo do perfil no GitHub" width="100%" /></a>
-  <br /><br />
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Foco tecnológico" width="100%" /></a>
-</div>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Foco tecnológico" width="100%" /></a>

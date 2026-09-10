@@ -28,15 +28,23 @@
 
 </div>
 
-## Halo, saya KS-GG-AI 👋
+## Yang saya kerjakan
 
-Saya suka mengubah ide yang masih kasar menjadi perangkat lunak yang berguna dan penuh perhatian. Saya menghargai fondasi yang rapi, pengalaman yang jelas, dan detail kecil yang membuat sebuah alat nyaman digunakan.
+Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun pekerjaan di baliknya tidak: antarmuka yang jelas, alat yang terhubung, dan alur kerja yang dapat diulang. Sebagian besar pekerjaan berada di pertemuan antara pemikiran produk, otomatisasi, dan sistem.
 
-- ✦ **Pola pikir** — Penasaran secara alami, praktis saat diperlukan
-- ◌ **Minat** — Pengembangan perangkat lunak, otomatisasi, sistem, dan alat yang ramah manusia
-- ↗ **Pendekatan** — Mulai dari kecil, belajar cepat, dan terus meningkatkan
+- **Permukaan produk** — Antarmuka dan alur yang membuat langkah berikutnya terlihat jelas
+- **Kerja yang terhubung** — API, integrasi, dan otomatisasi yang mengurangi serah-terima rutin
+- **Dibuat untuk berkembang** — Fondasi kecil yang mudah diuji, diubah, dan dipelihara
+
+## Bahasa profil
+
+Profil ini tersedia dalam sepuluh bahasa. Bahasa Korea dan Inggris menjadi titik awal; versi lokal lainnya memudahkan berbagi konteks yang sama lintas wilayah.
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Profil tersedia dalam bahasa Inggris, Korea, Mandarin, Spanyol, Hindi, Arab, Portugis, Rusia, Prancis, dan Indonesia" width="100%" /></a>
 
 ## Perangkat utama
+
+Sekumpulan alat praktis untuk menulis, menghubungkan, mengirimkan, dan menjaga perangkat lunak tetap bergerak.
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Perangkat utama" width="100%" /></a>
 
@@ -46,18 +54,14 @@ Saya suka mengubah ide yang masih kasar menjadi perangkat lunak yang berguna dan
 
 <br />
 
-<sub><i>Buat berguna. Buat jelas. Terus tingkatkan.</i></sub>
+<sub><i>Jadikan jalur yang berguna mudah diikuti.</i></sub>
 
 </div>
 
 ## Keahlian dan teknologi
 
+Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan masalah yang dibantu untuk diselesaikan.
+
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Peta visual keahlian teknis" width="100%" /></a>
 
-<br />
-
-<div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Ringkasan profil GitHub" width="100%" /></a>
-  <br /><br />
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="100%" /></a>
-</div>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="100%" /></a>

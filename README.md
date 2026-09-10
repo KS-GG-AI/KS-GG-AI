@@ -30,15 +30,23 @@
 
 </div>
 
-## Hello, I'm KS-GG-AI 👋
+## What I work on
 
-I enjoy turning rough ideas into useful, thoughtful software. I care about clean foundations, clear experiences, and the quiet details that make a tool feel good to use.
+I build the parts of a product that should feel simple even when the work behind them is not: clear interfaces, connected tools, and repeatable workflows. Most of that sits where product thinking, automation, and systems meet.
 
-- ✦ **Mindset** — Curious by default, practical when it matters
-- ◌ **Interests** — Software craft, automation, systems, and human-friendly tools
-- ↗ **Approach** — Start small, learn quickly, improve continuously
+- **Product surfaces** — Interfaces and flows that make the next action obvious
+- **Connected work** — APIs, integrations, and automation that reduce routine hand-offs
+- **Built to evolve** — Small foundations that stay easy to test, change, and maintain
+
+## Profile languages
+
+This profile is available in ten languages. Korean and English are the starting points; the other localized views make the same work easier to share across regions.
+
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Profile available in English, Korean, Chinese, Spanish, Hindi, Arabic, Portuguese, Russian, French, and Indonesian" width="100%" /></a>
 
 ## Toolbox
+
+A practical set of tools for writing, connecting, shipping, and keeping software moving.
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Core toolbox: TypeScript, Python, Node.js, Docker, and GitHub" width="100%" /></a>
 
@@ -48,18 +56,14 @@ I enjoy turning rough ideas into useful, thoughtful software. I care about clean
 
 <br />
 
-<sub><i>Make it useful. Make it clear. Keep making it better.</i></sub>
+<sub><i>Make the useful path easy to follow.</i></sub>
 
 </div>
 
 ## Skills & Technologies
 
+This is a working map, not a checklist. Technologies are grouped by the kind of problem they help solve.
+
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Visual map of languages, AI and backend, web and product, plus cloud and DevOps skills" width="100%" /></a>
 
-<br />
-
-<div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="KS-GG-AI GitHub profile snapshot" width="100%" /></a>
-  <br /><br />
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI technology focus" width="100%" /></a>
-</div>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI technology focus" width="100%" /></a>

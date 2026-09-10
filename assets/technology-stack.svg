@@ -14,15 +14,15 @@
   </defs>
   <rect x=".5" y=".5" width="959" height="531" rx="24" fill="url(#bg)" stroke="#2B3141"/>
   <path d="M28 78H932" stroke="url(#accent)" stroke-opacity=".45"/>
-  <text x="32" y="43" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">Skills &amp; Technologies</text>
-  <text x="32" y="65" fill="#918BAA" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing=".4">A WIDE TOOLKIT, ORGANIZED AROUND THE WORK</text>
+  <text x="32" y="43" fill="#F5F3FF" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="700">TECHNICAL MAP</text>
+  <text x="32" y="65" fill="#918BAA" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing=".5">LANGUAGES, SERVICES, INTERFACES &amp; DELIVERY — GROUPED BY THE WORK</text>
 
   <g font-family="Arial, Helvetica, sans-serif">
     <rect x="28" y="98" width="440" height="186" rx="18" fill="#151222" stroke="#393052"/>
     <circle cx="57" cy="127" r="13" fill="#A78BFA" fill-opacity=".18"/>
     <path d="M52 127h10M57 122v10" stroke="#C4B5FD" stroke-width="1.5" stroke-linecap="round"/>
-    <text x="80" y="123" fill="#F5F3FF" font-size="16" font-weight="700">Languages</text>
-    <text x="80" y="143" fill="#928BAA" font-size="11">THE BUILDING BLOCKS</text>
+    <text x="80" y="123" fill="#F5F3FF" font-size="16" font-weight="700">Languages &amp; markup</text>
+    <text x="80" y="143" fill="#928BAA" font-size="11">LANGUAGE FOUNDATIONS</text>
     <g font-size="12" font-weight="700">
       <rect x="48" y="165" width="80" height="28" rx="8" fill="#202249"/><text x="88" y="183" fill="#BFCBFF" text-anchor="middle">TypeScript</text>
       <rect x="136" y="165" width="83" height="28" rx="8" fill="#28202F"/><text x="177.5" y="183" fill="#F9C9FF" text-anchor="middle">JavaScript</text>
@@ -43,8 +43,8 @@
     <rect x="492" y="98" width="440" height="186" rx="18" fill="#101B22" stroke="#25414B"/>
     <circle cx="521" cy="127" r="13" fill="#67E8F9" fill-opacity=".15"/>
     <path d="M516 127h10M521 122v10" stroke="#A5F3FC" stroke-width="1.5" stroke-linecap="round"/>
-    <text x="544" y="123" fill="#F5F3FF" font-size="16" font-weight="700">AI, data &amp; backend</text>
-    <text x="544" y="143" fill="#83A2AC" font-size="11">INTELLIGENT SERVICES &amp; RELIABLE DATA</text>
+    <text x="544" y="123" fill="#F5F3FF" font-size="16" font-weight="700">Services, data &amp; automation</text>
+    <text x="544" y="143" fill="#83A2AC" font-size="11">APIS, DATA &amp; CONNECTED WORKFLOWS</text>
     <g font-size="12" font-weight="700">
       <rect x="512" y="165" width="59" height="28" rx="8" fill="#193124"/><text x="541.5" y="183" fill="#B9F6CB" text-anchor="middle">Node.js</text>
       <rect x="579" y="165" width="61" height="28" rx="8" fill="#192B36"/><text x="609.5" y="183" fill="#B7EAFF" text-anchor="middle">Express</text>
@@ -64,8 +64,8 @@
     <rect x="28" y="304" width="440" height="186" rx="18" fill="#151320" stroke="#403454"/>
     <circle cx="57" cy="333" r="13" fill="#F9A8D4" fill-opacity=".15"/>
     <path d="M52 333h10M57 328v10" stroke="#FBCFE8" stroke-width="1.5" stroke-linecap="round"/>
-    <text x="80" y="329" fill="#F5F3FF" font-size="16" font-weight="700">Web &amp; product</text>
-    <text x="80" y="349" fill="#A694AF" font-size="11">EXPERIENCES PEOPLE ENJOY USING</text>
+    <text x="80" y="329" fill="#F5F3FF" font-size="16" font-weight="700">Interfaces &amp; product</text>
+    <text x="80" y="349" fill="#A694AF" font-size="11">PRODUCT SURFACES &amp; FAST FEEDBACK</text>
     <g font-size="12" font-weight="700">
       <rect x="48" y="371" width="53" height="28" rx="8" fill="#1B2E38"/><text x="74.5" y="389" fill="#AEEBFF" text-anchor="middle">React</text>
       <rect x="109" y="371" width="60" height="28" rx="8" fill="#27272E"/><text x="139" y="389" fill="#F4F4F5" text-anchor="middle">Next.js</text>
@@ -74,14 +74,14 @@
       <rect x="323" y="371" width="48" height="28" rx="8" fill="#30223A"/><text x="347" y="389" fill="#F8CFFF" text-anchor="middle">Figma</text>
       <rect x="379" y="371" width="50" height="28" rx="8" fill="#2D2136"/><text x="404" y="389" fill="#E5D1FF" text-anchor="middle">Vercel</text>
       <path d="M48 432h330" stroke="#F9A8D4" stroke-opacity=".35" stroke-width="1.5" stroke-linecap="round"/>
-      <text x="48" y="459" fill="#B8A6C0" font-size="12" font-weight="400">Clear interfaces, thoughtful details, and fast feedback.</text>
+      <text x="48" y="459" fill="#B8A6C0" font-size="12" font-weight="400">Usable surfaces, fast feedback, and fewer hand-offs.</text>
     </g>
 
     <rect x="492" y="304" width="440" height="186" rx="18" fill="#101A1B" stroke="#284644"/>
     <circle cx="521" cy="333" r="13" fill="#A7F3D0" fill-opacity=".14"/>
     <path d="M516 333h10M521 328v10" stroke="#BBF7D0" stroke-width="1.5" stroke-linecap="round"/>
-    <text x="544" y="329" fill="#F5F3FF" font-size="16" font-weight="700">Cloud, DevOps &amp; workflow</text>
-    <text x="544" y="349" fill="#89AAA4" font-size="11">THE PATH FROM IDEA TO PRODUCTION</text>
+    <text x="544" y="329" fill="#F5F3FF" font-size="16" font-weight="700">Delivery &amp; operations</text>
+    <text x="544" y="349" fill="#89AAA4" font-size="11">THE PATH FROM BUILD TO RELEASE</text>
     <g font-size="12" font-weight="700">
       <rect x="512" y="371" width="57" height="28" rx="8" fill="#14313B"/><text x="540.5" y="389" fill="#B6EDFF" text-anchor="middle">Docker</text>
       <rect x="577" y="371" width="75" height="28" rx="8" fill="#1B2B3B"/><text x="614.5" y="389" fill="#BDD8FF" text-anchor="middle">Kubernetes</text>

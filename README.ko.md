@@ -13,34 +13,20 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<table>
-  <tr>
-    <td width="76%" valign="middle">
-      <a href="https://github.com/KS-GG-AI">
-        <img src="./assets/hero.svg" alt="KS-GG-AI 프로필 소개" width="100%" />
-      </a>
-    </td>
-    <td width="24%" align="center" valign="middle">
-      <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets">
-        <img src="./assets/avatar.gif" alt="움직이는 KS-GG-AI 마크" width="154" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br />
+<p>
+  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI 프로필 소개" width="78%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="움직이는 KS-GG-AI 마크" width="20%" /></a>
+</p>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI">
-  <img src="./assets/typing.gif" alt="타이핑 효과: Designing useful things with care" width="100%" />
+  <img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것과 명확한 시스템을 세심하게 만듭니다" width="100%" />
 </a>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 프로필 소스 보기 &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; 저장소 둘러보기 &nbsp;</kbd></a>
   &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; 시각 에셋 둘러보기 &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 프로필 소스 보기 &nbsp;</kbd></a>
 </p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="KS-GG-AI 터미널 카드" width="100%" /></a>
 
 </div>
 
@@ -52,7 +38,7 @@
 - ◌ **관심사** — 소프트웨어 제작, 자동화, 시스템, 사람 친화적인 도구
 - ↗ **방식** — 작게 시작하고, 빠르게 배우고, 꾸준히 개선하기
 
-## Toolbox
+## 핵심 도구
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="TypeScript, Python, Node.js, Docker, GitHub 핵심 도구" width="100%" /></a>
 
@@ -60,19 +46,20 @@
 
 <a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="제작 원칙" width="100%" /></a>
 
-<br /><br />
+<br />
 
 <sub><i>쓸모 있게. 명확하게. 그리고 더 나아지게.</i></sub>
 
 </div>
 
-## Skills & Technologies
+## 기술과 도구
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="언어, AI와 백엔드, 웹과 프로덕트, 클라우드와 DevOps를 보여주는 기술 카드" width="100%" /></a>
 
 <br />
 
 <div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="KS-GG-AI GitHub 프로필 스냅샷" width="48%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI 기술 분야" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="KS-GG-AI GitHub 프로필 스냅샷" width="100%" /></a>
+  <br /><br />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI 기술 분야" width="100%" /></a>
 </div>

@@ -13,24 +13,18 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<table>
-  <tr>
-    <td width="76%" valign="middle"><a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI 个人简介" width="100%" /></a></td>
-    <td width="24%" align="center" valign="middle"><a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="动态 KS-GG-AI 标志" width="154" /></a></td>
-  </tr>
-</table>
-
-<br />
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="动态打字效果" width="100%" /></a>
-
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 查看个人资料源码 &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; 浏览视觉素材 &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI 个人简介" width="78%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="动态 KS-GG-AI 标志" width="20%" /></a>
 </p>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="KS-GG-AI 终端卡片" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="动态打字效果：打造实用的事物、清晰的系统，并注重细节" width="100%" /></a>
+
+<p>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; 浏览仓库 &nbsp;</kbd></a>
+  &nbsp;
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 查看个人资料源码 &nbsp;</kbd></a>
+</p>
 
 </div>
 
@@ -50,7 +44,7 @@
 
 <a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="构建原则" width="100%" /></a>
 
-<br /><br />
+<br />
 
 <sub><i>务实、有条理，并持续变得更好。</i></sub>
 
@@ -63,6 +57,7 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="GitHub 个人资料快照" width="48%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="技术重点" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="GitHub 个人资料快照" width="100%" /></a>
+  <br /><br />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="技术重点" width="100%" /></a>
 </div>

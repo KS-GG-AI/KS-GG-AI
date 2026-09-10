@@ -13,34 +13,20 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<table>
-  <tr>
-    <td width="76%" valign="middle">
-      <a href="https://github.com/KS-GG-AI">
-        <img src="./assets/hero.svg" alt="KS-GG-AI profile introduction" width="100%" />
-      </a>
-    </td>
-    <td width="24%" align="center" valign="middle">
-      <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets">
-        <img src="./assets/avatar.gif" alt="Animated KS-GG-AI mark" width="154" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br />
+<p>
+  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI profile introduction" width="78%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Animated KS-GG-AI mark" width="20%" /></a>
+</p>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI">
-  <img src="./assets/typing.gif" alt="Animated typing: Designing useful things with care" width="100%" />
+  <img src="./assets/typing.gif" alt="Animated typing: crafting useful things and clear systems with care" width="100%" />
 </a>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; View profile source &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Explore repositories &nbsp;</kbd></a>
   &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; Browse visual assets &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; View profile source &nbsp;</kbd></a>
 </p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="KS-GG-AI terminal card" width="100%" /></a>
 
 </div>
 
@@ -60,7 +46,7 @@ I enjoy turning rough ideas into useful, thoughtful software. I care about clean
 
 <a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Build principles" width="100%" /></a>
 
-<br /><br />
+<br />
 
 <sub><i>Make it useful. Make it clear. Keep making it better.</i></sub>
 
@@ -73,6 +59,7 @@ I enjoy turning rough ideas into useful, thoughtful software. I care about clean
 <br />
 
 <div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="KS-GG-AI GitHub profile snapshot" width="48%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI technology focus" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="KS-GG-AI GitHub profile snapshot" width="100%" /></a>
+  <br /><br />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI technology focus" width="100%" /></a>
 </div>

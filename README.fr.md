@@ -13,24 +13,18 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<table>
-  <tr>
-    <td width="76%" valign="middle"><a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Présentation de KS-GG-AI" width="100%" /></a></td>
-    <td width="24%" align="center" valign="middle"><a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Marque animée KS-GG-AI" width="154" /></a></td>
-  </tr>
-</table>
-
-<br />
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Effet de frappe animé" width="100%" /></a>
-
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Voir le code du profil &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; Parcourir les ressources visuelles &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Présentation de KS-GG-AI" width="78%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Marque animée KS-GG-AI" width="20%" /></a>
 </p>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="Carte terminal de KS-GG-AI" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Effet de frappe animé : créer des choses utiles et des systèmes clairs avec soin" width="100%" /></a>
+
+<p>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Voir les dépôts &nbsp;</kbd></a>
+  &nbsp;
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Voir le code du profil &nbsp;</kbd></a>
+</p>
 
 </div>
 
@@ -50,7 +44,7 @@ J’aime transformer des idées encore floues en logiciels utiles et soignés. J
 
 <a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Principes de création" width="100%" /></a>
 
-<br /><br />
+<br />
 
 <sub><i>Rendez-le utile. Rendez-le clair. Continuez à l’améliorer.</i></sub>
 
@@ -63,6 +57,7 @@ J’aime transformer des idées encore floues en logiciels utiles et soignés. J
 <br />
 
 <div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Résumé du profil GitHub" width="48%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Focus technologique" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Résumé du profil GitHub" width="100%" /></a>
+  <br /><br />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Focus technologique" width="100%" /></a>
 </div>

@@ -3,8 +3,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const width = 960;
-const height = 76;
-const scale = 3;
+const height = 160;
+const scale = 4;
 const palette = [
   [13, 16, 28], [22, 18, 37], [48, 42, 70], [63, 56, 91],
   [167, 139, 250], [103, 232, 249], [167, 243, 208], [249, 168, 212],
@@ -42,6 +42,7 @@ const font = {
   ",": ["00000", "00000", "00000", "00000", "00000", "00110", "00100"],
   ".": ["00000", "00000", "00000", "00000", "00000", "00110", "00110"],
   "-": ["00000", "00000", "00000", "11111", "00000", "00000", "00000"],
+  ">": ["10000", "01000", "00100", "00010", "00100", "01000", "10000"],
   " ": ["00000", "00000", "00000", "00000", "00000", "00000", "00000"],
 };
 
@@ -85,24 +86,36 @@ function drawText(frame, text, x, y, color, glyphScale = scale) {
   return cursor;
 }
 
-function createFrame(text, index) {
+function createFrame(suffix, index) {
   const frame = new Uint8Array(width * height).fill(0);
-  fillRoundedRect(frame, 0, 0, width, height, 18, 3);
-  fillRoundedRect(frame, 1, 1, width - 2, height - 2, 17, 1);
-  fillRoundedRect(frame, 2, 2, width - 4, height - 4, 16, 1);
+  fillRoundedRect(frame, 0, 0, width, height, 22, 3);
+  fillRoundedRect(frame, 1, 1, width - 2, height - 2, 21, 1);
+  fillRoundedRect(frame, 2, 2, width - 4, height - 4, 20, 1);
 
-  fillRect(frame, 28, 17, 3, 42, 4);
-  fillRect(frame, 33, 36, 12, 3, 4);
-  const endX = drawText(frame, text, 62, 27, 8);
-  if (Math.floor(index / 6) % 2 === 0) fillRect(frame, endX + 3, 27, 3, 21, 5);
+  fillRoundedRect(frame, 30, 24, 9, 9, 4, 7);
+  fillRoundedRect(frame, 45, 24, 9, 9, 4, 6);
+  fillRoundedRect(frame, 60, 24, 9, 9, 4, 5);
+  drawText(frame, "KS-GG-AI PROFILE", 90, 23, 9, 2);
+  fillRect(frame, 30, 54, 900, 1, 14);
 
-  fillRect(frame, 62, 59, 170, 1, 14);
-  fillRect(frame, 232, 59, 94, 1, 5);
-  fillRect(frame, 326, 59, 47, 1, 6);
-  const pulse = 898 + (index % 16);
-  fillRect(frame, 871, 37, 24, 1, 14);
-  fillRect(frame, pulse, 34, 5, 7, 7);
-  fillRect(frame, 908, 36, 3, 3, 5);
+  fillRoundedRect(frame, 30, 68, 900, 58, 12, 0);
+  fillRoundedRect(frame, 31, 69, 898, 56, 11, 1);
+  fillRect(frame, 52, 83, 3, 28, 6);
+  const promptEnd = drawText(frame, "> ", 74, 80, 6, 5);
+  const prefixEnd = drawText(frame, prefix, promptEnd, 80, 8, 5);
+  const endX = drawText(frame, suffix, prefixEnd, 80, 6, 5);
+  if (Math.floor(index / 4) % 2 === 0) fillRect(frame, endX + 6, 80, 4, 35, 5);
+
+  fillRoundedRect(frame, 756, 20, 144, 28, 14, 2);
+  fillRoundedRect(frame, 757, 21, 142, 26, 13, 1);
+  fillRect(frame, 774, 31, 7, 7, 7);
+  drawText(frame, "ACTIVE", 798, 27, 8, 2);
+
+  drawText(frame, "THOUGHTFUL SOFTWARE", 72, 137, 9, 2);
+  fillRect(frame, 708, 143, 74, 1, 14);
+  fillRect(frame, 782, 143, 46, 1, 5);
+  fillRect(frame, 828, 143, 32, 1, 6);
+  fillRect(frame, 894, 141, 8, 5, 7);
 
   return frame;
 }
@@ -146,8 +159,9 @@ function lzwEncode(pixels, minCodeSize) {
     pushCode(bytes, state, prefix);
     if (nextCode < 4096) {
       dictionary.set(key, nextCode);
+      const addedCode = nextCode;
       nextCode += 1;
-      if (nextCode === (1 << codeSize) && codeSize < 12) {
+      if (addedCode === (1 << codeSize) && codeSize < 12) {
         codeSize += 1;
         state.size = codeSize;
       }
@@ -199,26 +213,32 @@ function encodeGif(frames) {
   return Buffer.from(bytes);
 }
 
+const prefix = "CRAFTING ";
 const phrases = [
-  "DESIGNING USEFUL THINGS WITH CARE.",
-  "MAKING COMPLEX SYSTEMS FEEL SIMPLE.",
-  "ALWAYS LEARNING, ALWAYS BUILDING.",
+  "USEFUL THINGS.",
+  "CLEAR SYSTEMS.",
+  "WITH CARE.",
 ];
 const frames = [];
 let frameIndex = 0;
-for (const phrase of phrases) {
-  for (let length = 0; length <= phrase.length; length += 1) {
-    frames.push({ pixels: createFrame(phrase.slice(0, length), frameIndex), delay: 6 });
-    frameIndex += 1;
-  }
-  frames.push({ pixels: createFrame(phrase, frameIndex), delay: 95 });
+const addFrame = (suffix, delay) => {
+  frames.push({ pixels: createFrame(suffix, frameIndex), delay });
   frameIndex += 1;
+};
+
+for (let phraseIndex = 0; phraseIndex < phrases.length; phraseIndex += 1) {
+  const phrase = phrases[phraseIndex];
+  const nextPhrase = phrases[(phraseIndex + 1) % phrases.length];
+
+  for (let hold = 0; hold < 18; hold += 1) {
+    addFrame(phrase, 5);
+  }
   for (let length = phrase.length - 1; length >= 0; length -= 1) {
-    frames.push({ pixels: createFrame(phrase.slice(0, length), frameIndex), delay: 3 });
-    frameIndex += 1;
+    addFrame(phrase.slice(0, length), 3);
   }
-  frames.push({ pixels: createFrame("", frameIndex), delay: 18 });
-  frameIndex += 1;
+  for (let length = 1; length <= nextPhrase.length; length += 1) {
+    addFrame(nextPhrase.slice(0, length), 5);
+  }
 }
 
 const directory = path.dirname(fileURLToPath(import.meta.url));

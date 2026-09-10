@@ -13,24 +13,18 @@
   <a href="./README.id.md"><strong>🇮🇩 Bahasa Indonesia</strong></a>
 </p>
 
-<table>
-  <tr>
-    <td width="76%" valign="middle"><a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Perkenalan KS-GG-AI" width="100%" /></a></td>
-    <td width="24%" align="center" valign="middle"><a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Tanda animasi KS-GG-AI" width="154" /></a></td>
-  </tr>
-</table>
-
-<br />
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Efek mengetik animasi" width="100%" /></a>
-
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Lihat sumber profil &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><kbd>&nbsp; Jelajahi aset visual &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Perkenalan KS-GG-AI" width="78%" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Tanda animasi KS-GG-AI" width="20%" /></a>
 </p>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/terminal.svg" alt="Kartu terminal KS-GG-AI" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Efek mengetik animasi: membangun hal berguna dan sistem yang jelas dengan penuh perhatian" width="100%" /></a>
+
+<p>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Lihat repositori &nbsp;</kbd></a>
+  &nbsp;
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Lihat sumber profil &nbsp;</kbd></a>
+</p>
 
 </div>
 
@@ -50,7 +44,7 @@ Saya suka mengubah ide yang masih kasar menjadi perangkat lunak yang berguna dan
 
 <a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Prinsip membangun" width="100%" /></a>
 
-<br /><br />
+<br />
 
 <sub><i>Buat berguna. Buat jelas. Terus tingkatkan.</i></sub>
 
@@ -63,6 +57,7 @@ Saya suka mengubah ide yang masih kasar menjadi perangkat lunak yang berguna dan
 <br />
 
 <div align="center">
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Ringkasan profil GitHub" width="48%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="48%" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./assets/profile-snapshot.svg" alt="Ringkasan profil GitHub" width="100%" /></a>
+  <br /><br />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="100%" /></a>
 </div>

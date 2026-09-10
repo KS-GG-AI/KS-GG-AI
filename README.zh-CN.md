@@ -40,13 +40,13 @@
 
 此个人资料提供 10 种语言版本。以韩语和英语为基础，同时提供其他本地化版本，便于不同地区的访客理解相同的工作内容。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="提供英语、韩语、中文、西班牙语、印地语、阿拉伯语、葡萄牙语、俄语、法语和印尼语版本的个人资料" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="提供英语、韩语、中文、西班牙语、印地语、阿拉伯语、葡萄牙语、俄语、法语和印尼语版本的个人资料" width="100%" /></a>
 
 ## 核心工具
 
 把想法变成可用成果时使用的一组实用工具：编写、连接、交付并持续运行。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="核心工具" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="核心工具" width="100%" /></a>
 
 <div align="center">
 
@@ -64,4 +64,4 @@
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="技术栈视觉地图" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="技术重点" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="技术重点" width="100%" /></a>

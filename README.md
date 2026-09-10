@@ -42,13 +42,13 @@ I build the parts of a product that should feel simple even when the work behind
 
 This profile is available in ten languages. Korean and English are the starting points; the other localized views make the same work easier to share across regions.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Profile available in English, Korean, Chinese, Spanish, Hindi, Arabic, Portuguese, Russian, French, and Indonesian" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Profile available in English, Korean, Chinese, Spanish, Hindi, Arabic, Portuguese, Russian, French, and Indonesian" width="100%" /></a>
 
 ## Toolbox
 
 A practical set of tools for writing, connecting, shipping, and keeping software moving.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Core toolbox: TypeScript, Python, Node.js, Docker, and GitHub" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Core toolbox: TypeScript, Python, Node.js, Docker, and GitHub" width="100%" /></a>
 
 <div align="center">
 
@@ -66,4 +66,4 @@ This is a working map, not a checklist. Technologies are grouped by the kind of 
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Visual map of languages, AI and backend, web and product, plus cloud and DevOps skills" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI technology focus" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="KS-GG-AI technology focus" width="100%" /></a>

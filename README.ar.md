@@ -42,13 +42,13 @@
 
 يتوفر هذا الملف الشخصي بعشر لغات. الكورية والإنجليزية هما نقطتا البداية، وتسهّل النسخ المترجمة الأخرى مشاركة السياق نفسه بين المناطق.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="ملف شخصي متاح بالإنجليزية والكورية والصينية والإسبانية والهندية والعربية والبرتغالية والروسية والفرنسية والإندونيسية" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="ملف شخصي متاح بالإنجليزية والكورية والصينية والإسبانية والهندية والعربية والبرتغالية والروسية والفرنسية والإندونيسية" width="100%" /></a>
 
 ## صندوق الأدوات
 
 مجموعة عملية من الأدوات للكتابة والربط والتسليم والحفاظ على حركة البرمجيات.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="صندوق الأدوات الأساسي" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="صندوق الأدوات الأساسي" width="100%" /></a>
 
 <div align="center">
 
@@ -66,6 +66,6 @@
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="خريطة مرئية للمهارات التقنية" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="التركيز التقني" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="التركيز التقني" width="100%" /></a>
 
 </div>

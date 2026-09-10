@@ -40,13 +40,13 @@
 
 यह प्रोफ़ाइल दस भाषाओं में उपलब्ध है। कोरियाई और अंग्रेज़ी इसके शुरुआती संस्करण हैं; अन्य स्थानीयकृत दृश्य अलग-अलग क्षेत्रों में यही संदर्भ साझा करना आसान बनाते हैं।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="अंग्रेज़ी, कोरियाई, चीनी, स्पेनिश, हिंदी, अरबी, पुर्तगाली, रूसी, फ़्रेंच और इंडोनेशियाई में उपलब्ध प्रोफ़ाइल" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="अंग्रेज़ी, कोरियाई, चीनी, स्पेनिश, हिंदी, अरबी, पुर्तगाली, रूसी, फ़्रेंच और इंडोनेशियाई में उपलब्ध प्रोफ़ाइल" width="100%" /></a>
 
 ## टूलबॉक्स
 
 लिखने, जोड़ने, डिलीवर करने और सॉफ़्टवेयर को चलते रहने देने के लिए व्यावहारिक टूलों का सेट।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="मुख्य उपकरण" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="मुख्य उपकरण" width="100%" /></a>
 
 <div align="center">
 
@@ -64,4 +64,4 @@
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="तकनीकी कौशलों का दृश्य मानचित्र" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="तकनीकी फोकस" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="तकनीकी फोकस" width="100%" /></a>

@@ -40,13 +40,13 @@ Construyo las partes de un producto que deberían sentirse simples incluso cuand
 
 Este perfil está disponible en diez idiomas. Coreano e inglés son los puntos de partida; las demás versiones localizadas facilitan compartir el mismo trabajo entre regiones.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Perfil disponible en inglés, coreano, chino, español, hindi, árabe, portugués, ruso, francés e indonesio" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Perfil disponible en inglés, coreano, chino, español, hindi, árabe, portugués, ruso, francés e indonesio" width="100%" /></a>
 
 ## Caja de herramientas
 
 Un conjunto práctico de herramientas para escribir, conectar, entregar y mantener el software en movimiento.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Herramientas principales" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Herramientas principales" width="100%" /></a>
 
 <div align="center">
 
@@ -64,4 +64,4 @@ Es un mapa de trabajo, no una lista de control. Las tecnologías se agrupan seg�
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Enfoque tecnológico" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Enfoque tecnológico" width="100%" /></a>

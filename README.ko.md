@@ -42,13 +42,13 @@
 
 이 프로필은 10개 언어로 제공합니다. 한국어와 영어를 중심으로, 같은 작업 맥락을 다양한 지역의 방문자가 편하게 읽을 수 있도록 구성했습니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="영어, 한국어, 중국어, 스페인어, 힌디어, 아랍어, 포르투갈어, 러시아어, 프랑스어, 인도네시아어로 제공되는 프로필" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="영어, 한국어, 중국어, 스페인어, 힌디어, 아랍어, 포르투갈어, 러시아어, 프랑스어, 인도네시아어로 제공되는 프로필" width="100%" /></a>
 
 ## 핵심 도구
 
 아이디어를 실제로 쓸 수 있는 결과물로 옮길 때 쓰는 도구들입니다. 만들고, 연결하고, 배포하고, 운영하는 흐름을 함께 봅니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="TypeScript, Python, Node.js, Docker, GitHub 핵심 도구" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="TypeScript, Python, Node.js, Docker, GitHub 핵심 도구" width="100%" /></a>
 
 <div align="center">
 
@@ -66,4 +66,4 @@
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="언어, AI와 백엔드, 웹과 프로덕트, 클라우드와 DevOps를 보여주는 기술 카드" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="KS-GG-AI 기술 분야" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="KS-GG-AI 기술 분야" width="100%" /></a>

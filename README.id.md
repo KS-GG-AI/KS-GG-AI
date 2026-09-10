@@ -40,13 +40,13 @@ Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun peke
 
 Profil ini tersedia dalam sepuluh bahasa. Bahasa Korea dan Inggris menjadi titik awal; versi lokal lainnya memudahkan berbagi konteks yang sama lintas wilayah.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Profil tersedia dalam bahasa Inggris, Korea, Mandarin, Spanyol, Hindi, Arab, Portugis, Rusia, Prancis, dan Indonesia" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Profil tersedia dalam bahasa Inggris, Korea, Mandarin, Spanyol, Hindi, Arab, Portugis, Rusia, Prancis, dan Indonesia" width="100%" /></a>
 
 ## Perangkat utama
 
 Sekumpulan alat praktis untuk menulis, menghubungkan, mengirimkan, dan menjaga perangkat lunak tetap bergerak.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Perangkat utama" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Perangkat utama" width="100%" /></a>
 
 <div align="center">
 
@@ -64,4 +64,4 @@ Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Peta visual keahlian teknis" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Fokus teknologi" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Fokus teknologi" width="100%" /></a>

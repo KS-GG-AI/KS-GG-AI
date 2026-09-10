@@ -40,13 +40,13 @@
 
 Этот профиль доступен на десяти языках. Корейский и английский — отправные точки; остальные локализованные версии упрощают обмен тем же контекстом между регионами.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.svg" alt="Профиль доступен на английском, корейском, китайском, испанском, хинди, арабском, португальском, русском, французском и индонезийском языках" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Профиль доступен на английском, корейском, китайском, испанском, хинди, арабском, португальском, русском, французском и индонезийском языках" width="100%" /></a>
 
 ## Инструментарий
 
 Практичный набор инструментов для написания, соединения, поставки и поддержки движения программного обеспечения.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.svg" alt="Основной инструментарий: TypeScript, Python, Node.js, Docker и GitHub" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Основной инструментарий: TypeScript, Python, Node.js, Docker и GitHub" width="100%" /></a>
 
 <div align="center">
 
@@ -64,4 +64,4 @@
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Визуальная карта языков, AI и бэкенда, веба и продукта, облака и DevOps" width="100%" /></a>
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.svg" alt="Технологический фокус KS-GG-AI" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Технологический фокус KS-GG-AI" width="100%" /></a>

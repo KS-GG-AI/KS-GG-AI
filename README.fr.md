@@ -8,6 +8,7 @@
   <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
   <a href="./README.ar.md">🇸🇦 العربية</a> ·
   <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./README.ru.md">🇷🇺 Русский</a> ·
   <a href="./README.fr.md"><strong>🇫🇷 Français</strong></a> ·
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>

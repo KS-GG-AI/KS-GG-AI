@@ -50,7 +50,7 @@
 
 <br />
 
-<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="100%" />
+<img src="./assets/project-map.svg?v=40072f63a900" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
 
 <sub>لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً. <a href="https://github.com/KS-GG-AI?tab=repositories">تصفح المستودعات العامة</a>.</sub>
 

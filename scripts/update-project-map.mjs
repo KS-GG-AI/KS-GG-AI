@@ -16,7 +16,8 @@ const readmeNames = [
   "README.id.md",
 ];
 const maxVisibleProjects = 3;
-const renderVersion = 2;
+const renderVersion = 3;
+const svgWidth = 480;
 
 function cleanText(value, fallback, limit) {
   const text = String(value ?? fallback).replace(/\s+/g, " ").trim();
@@ -78,21 +79,21 @@ function revisionFor(state) {
   return createHash("sha256").update(JSON.stringify(state)).digest("hex").slice(0, 12);
 }
 
-function laneHeader(x, label, accent) {
+function laneHeader(y, label, description, accent) {
   return [
-    '<rect x="' + x + '" y="198" width="420" height="46" rx="14" fill="#111827" stroke="' + accent + '" stroke-opacity=".52"/>',
-    '<circle cx="' + (x + 24) + '" cy="221" r="6" fill="' + accent + '"/>',
-    '<text x="' + (x + 40) + '" y="217" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing=".65">' + escapeXml(label) + '</text>',
-    '<text x="' + (x + 40) + '" y="233" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".75">WORKSPACE LANE</text>',
+    '<rect x="24" y="' + y + '" width="432" height="40" rx="13" fill="#111827" stroke="' + accent + '" stroke-opacity=".52"/>',
+    '<circle cx="48" cy="' + (y + 20) + '" r="5" fill="' + accent + '"/>',
+    '<text x="64" y="' + (y + 18) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing=".6">' + escapeXml(label) + '</text>',
+    '<text x="64" y="' + (y + 32) + '" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".7">' + escapeXml(description) + '</text>',
   ].join("");
 }
 
-function projectCard(x, y, title, subtitle, accent) {
+function projectCard(y, title, subtitle, accent) {
   return [
-    '<rect x="' + x + '" y="' + y + '" width="420" height="52" rx="13" fill="#10121F" stroke="#293244"/>',
-    '<rect x="' + x + '" y="' + y + '" width="4" height="52" rx="2" fill="' + accent + '"/>',
-    '<text x="' + (x + 22) + '" y="' + (y + 23) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">' + escapeXml(title) + '</text>',
-    '<text x="' + (x + 22) + '" y="' + (y + 39) + '" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".65">' + escapeXml(subtitle) + '</text>',
+    '<rect x="42" y="' + y + '" width="396" height="52" rx="13" fill="#10121F" stroke="#293244"/>',
+    '<rect x="42" y="' + y + '" width="4" height="52" rx="2" fill="' + accent + '"/>',
+    '<text x="66" y="' + (y + 23) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">' + escapeXml(title) + '</text>',
+    '<text x="66" y="' + (y + 40) + '" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".5">' + escapeXml(subtitle) + '</text>',
   ].join("");
 }
 
@@ -124,41 +125,46 @@ function visiblePrivateCards(privateState) {
 export function renderProjectMap(snapshot) {
   const publicCards = visiblePublicCards(snapshot.publicProjects);
   const privateCards = visiblePrivateCards(snapshot.private);
-  const rowCount = Math.max(publicCards.length, privateCards.length);
-  const cardBottom = 264 + (rowCount - 1) * 62 + 52;
-  const footerLineY = cardBottom + 30;
+  const cardHeight = 52;
+  const cardStep = 60;
+  const publicCardsTop = 188;
+  const publicCardBottom = publicCardsTop + (publicCards.length - 1) * cardStep + cardHeight;
+  const privateHeaderY = publicCardBottom + 18;
+  const privateCardsTop = privateHeaderY + 50;
+  const privateCardBottom = privateCardsTop + (privateCards.length - 1) * cardStep + cardHeight;
+  const footerLineY = privateCardBottom + 22;
   const footerTextY = footerLineY + 20;
-  const svgHeight = Math.max(380, footerTextY + 14);
+  const svgHeight = Math.max(420, footerTextY + 14);
   const lowerGlowY = Math.max(282, svgHeight - 72);
-  const publicCardMarkup = publicCards.map((project, index) => projectCard(28, 264 + index * 62, project.name, project.language, "#67E8F9")).join("");
-  const privateCardMarkup = privateCards.map((project, index) => projectCard(512, 264 + index * 62, project.title, project.subtitle, "#F9A8D4")).join("");
+  const publicCardMarkup = publicCards.map((project, index) => projectCard(publicCardsTop + index * cardStep, project.name, project.language, "#67E8F9")).join("");
+  const privateCardMarkup = privateCards.map((project, index) => projectCard(privateCardsTop + index * cardStep, project.title, project.subtitle, "#F9A8D4")).join("");
   const privateLaneLabel = snapshot.private.status === "connected"
     ? "PRIVATE · MASKED · " + countLabel(snapshot.private.count)
     : "PRIVATE · MASKED";
   const updatedDate = String(snapshot.generatedAt ?? "").slice(0, 10);
 
   return [
-    '<svg xmlns="http://www.w3.org/2000/svg" width="960" height="' + svgHeight + '" viewBox="0 0 960 ' + svgHeight + '" fill="none" role="img" aria-labelledby="title desc">',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + svgWidth + '" height="' + svgHeight + '" viewBox="0 0 ' + svgWidth + ' ' + svgHeight + '" fill="none" role="img" aria-labelledby="title desc">',
     '<title id="title">' + escapeXml(snapshot.username) + ' project map</title>',
     '<desc id="desc">A project topology that separates public projects from intentionally masked private work.</desc>',
-    '<defs><linearGradient id="background" x1="22" y1="10" x2="938" y2="' + (svgHeight - 10) + '" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0E1D1D"/></linearGradient><filter id="glow" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="24"/></filter></defs>',
-    '<rect width="960" height="' + svgHeight + '" rx="24" fill="url(#background)"/>',
-    '<circle cx="872" cy="68" r="84" fill="#7C3AED" fill-opacity=".16" filter="url(#glow)"/><circle cx="110" cy="' + lowerGlowY + '" r="94" fill="#06B6D4" fill-opacity=".1" filter="url(#glow)"/>',
-    '<text x="30" y="39" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PROJECT MAP</text>',
-    '<text x="30" y="57" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1">PUBLIC SURFACES · MASKED PRIVATE WORK</text>',
-    '<rect x="790" y="22" width="140" height="30" rx="15" fill="#0B1020" fill-opacity=".72" stroke="#67E8F9" stroke-opacity=".34"/><circle cx="810" cy="37" r="5" fill="#A7F3D0"/><text x="824" y="41" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">AUTO SYNC</text>',
-    '<rect x="300" y="82" width="360" height="72" rx="18" fill="#111827" stroke="#A78BFA" stroke-opacity=".62"/><rect x="301" y="83" width="358" height="70" rx="17" fill="#131225"/>',
-    '<circle cx="334" cy="118" r="12" fill="#A78BFA" fill-opacity=".2" stroke="#C4B5FD" stroke-opacity=".65"/><path d="M328 118H340M334 112V124" stroke="#DDD6FE" stroke-width="2" stroke-linecap="round"/>',
-    '<text x="362" y="113" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">' + escapeXml(snapshot.username) + ' · WORKSPACE</text>',
-    '<text x="362" y="132" fill="#AFA6C8" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".8">PROJECT TOPOLOGY · PROFILE VIEW</text>',
-    '<path d="M480 154V177M238 177H722M238 177V198M722 177V198" stroke="#4C4668" stroke-width="1.5" stroke-linecap="round"/>',
-    laneHeader(28, "PUBLIC · " + countLabel(snapshot.publicProjects.length), "#67E8F9"),
-    laneHeader(512, privateLaneLabel, "#F9A8D4"),
+    '<defs><linearGradient id="background" x1="22" y1="10" x2="' + (svgWidth - 14) + '" y2="' + (svgHeight - 10) + '" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0E1D1D"/></linearGradient><filter id="glow" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="24"/></filter></defs>',
+    '<rect width="' + svgWidth + '" height="' + svgHeight + '" rx="24" fill="url(#background)"/>',
+    '<circle cx="426" cy="62" r="62" fill="#7C3AED" fill-opacity=".16" filter="url(#glow)"/><circle cx="58" cy="' + lowerGlowY + '" r="74" fill="#06B6D4" fill-opacity=".1" filter="url(#glow)"/>',
+    '<text x="24" y="30" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">PROJECT MAP</text>',
+    '<text x="24" y="46" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".9">PUBLIC SURFACES · MASKED PRIVATE WORK</text>',
+    '<rect x="349" y="17" width="107" height="24" rx="12" fill="#0B1020" fill-opacity=".72" stroke="#67E8F9" stroke-opacity=".34"/><circle cx="367" cy="29" r="4" fill="#A7F3D0"/><text x="378" y="32" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">AUTO SYNC</text>',
+    '<rect x="24" y="66" width="432" height="54" rx="16" fill="#111827" stroke="#A78BFA" stroke-opacity=".62"/><rect x="25" y="67" width="430" height="52" rx="15" fill="#131225"/>',
+    '<circle cx="52" cy="93" r="11" fill="#A78BFA" fill-opacity=".2" stroke="#C4B5FD" stroke-opacity=".65"/><path d="M46 93H58M52 87V99" stroke="#DDD6FE" stroke-width="2" stroke-linecap="round"/>',
+    '<text x="76" y="90" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">' + escapeXml(snapshot.username) + ' · WORKSPACE</text>',
+    '<text x="76" y="107" fill="#AFA6C8" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".75">PROJECT TOPOLOGY · PROFILE VIEW</text>',
+    '<path d="M240 120V138" stroke="#4C4668" stroke-width="1.5" stroke-linecap="round"/>',
+    laneHeader(138, "PUBLIC · " + countLabel(snapshot.publicProjects.length), "VISIBLE PROJECTS", "#67E8F9"),
+    laneHeader(privateHeaderY, privateLaneLabel, "PROTECTED LANE", "#F9A8D4"),
     publicCardMarkup,
     privateCardMarkup,
-    '<path d="M28 ' + footerLineY + 'H932" stroke="#32364D" stroke-width="1"/>',
-    '<text x="30" y="' + footerTextY + '" fill="#8C96AA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".55">PUBLIC METADATA ONLY · PRIVATE ENTRIES INTENTIONALLY REDACTED</text>',
-    '<text x="849" y="' + footerTextY + '" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="end">STATE UPDATED ' + escapeXml(updatedDate) + '</text>',
+    '<path d="M24 ' + footerLineY + 'H456" stroke="#32364D" stroke-width="1"/>',
+    '<text x="24" y="' + footerTextY + '" fill="#8C96AA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".35">PUBLIC METADATA ONLY · PRIVATE ENTRIES REDACTED</text>',
+    '<text x="456" y="' + footerTextY + '" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="8" text-anchor="end">STATE UPDATED ' + escapeXml(updatedDate) + '</text>',
     '</svg>',
   ].join("\n");
 }

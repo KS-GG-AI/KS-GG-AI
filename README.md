@@ -64,6 +64,6 @@ A practical set of tools for writing, connecting, shipping, and keeping software
 
 This is a working map, not a checklist. Technologies are grouped by the kind of problem they help solve.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Visual map of languages, AI and backend, web and product, plus cloud and DevOps skills" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Visual map of languages, AI and backend, web and product, plus cloud and DevOps skills" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="KS-GG-AI technology focus" width="100%" /></a>

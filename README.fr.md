@@ -62,6 +62,6 @@ Un ensemble pratique d’outils pour écrire, connecter, livrer et faire avancer
 
 C’est une carte de travail, pas une checklist. Les technologies sont regroupées selon les problèmes qu’elles aident à résoudre.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Carte visuelle des compétences techniques" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Carte visuelle des compétences techniques" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Focus technologique" width="100%" /></a>

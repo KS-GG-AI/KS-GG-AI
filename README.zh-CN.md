@@ -62,6 +62,6 @@
 
 这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="技术栈视觉地图" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="技术栈视觉地图" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="技术重点" width="100%" /></a>

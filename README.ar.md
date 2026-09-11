@@ -64,7 +64,7 @@
 
 هذه خريطة للعمل وليست قائمة تحقق. جُمعت التقنيات حسب نوع المشكلة التي تساعد في حلها.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="خريطة مرئية للمهارات التقنية" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="خريطة مرئية للمهارات التقنية" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="التركيز التقني" width="100%" /></a>
 

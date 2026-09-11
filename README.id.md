@@ -62,6 +62,6 @@ Sekumpulan alat praktis untuk menulis, menghubungkan, mengirimkan, dan menjaga p
 
 Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan masalah yang dibantu untuk diselesaikan.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Peta visual keahlian teknis" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Peta visual keahlian teknis" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Fokus teknologi" width="100%" /></a>

@@ -62,6 +62,6 @@
 
 यह काम का नक्शा है, चेकलिस्ट नहीं। तकनीकों को उन समस्याओं के अनुसार समूहित किया गया है जिन्हें वे हल करने में मदद करती हैं।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="तकनीकी कौशलों का दृश्य मानचित्र" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="तकनीकी कौशलों का दृश्य मानचित्र" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="तकनीकी फोकस" width="100%" /></a>

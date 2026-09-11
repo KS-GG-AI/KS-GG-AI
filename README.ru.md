@@ -62,6 +62,6 @@
 
 Это рабочая карта, а не контрольный список. Технологии сгруппированы по задачам, которые они помогают решать.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Визуальная карта языков, AI и бэкенда, веба и продукта, облака и DevOps" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Визуальная карта языков, AI и бэкенда, веба и продукта, облака и DevOps" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Технологический фокус KS-GG-AI" width="100%" /></a>

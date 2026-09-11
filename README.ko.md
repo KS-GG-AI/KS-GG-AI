@@ -64,6 +64,6 @@
 
 기술을 체크리스트처럼 나열하기보다, 어떤 일을 해결하는 데 쓰이는지 기준으로 묶었습니다. 필요한 조합을 선택해 사용합니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="언어, AI와 백엔드, 웹과 프로덕트, 클라우드와 DevOps를 보여주는 기술 카드" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="언어, AI와 백엔드, 웹과 프로덕트, 클라우드와 DevOps를 보여주는 기술 카드" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="KS-GG-AI 기술 분야" width="100%" /></a>

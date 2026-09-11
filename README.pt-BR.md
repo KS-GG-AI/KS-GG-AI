@@ -62,6 +62,6 @@ Um conjunto prático de ferramentas para escrever, conectar, entregar e manter o
 
 Este é um mapa de trabalho, não uma lista de verificação. As tecnologias são agrupadas pelo tipo de problema que ajudam a resolver.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.svg" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
+<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
 
 <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Foco tecnológico" width="100%" /></a>

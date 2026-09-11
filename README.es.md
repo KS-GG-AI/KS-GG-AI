@@ -39,6 +39,21 @@ Construyo las partes de un producto que deberían sentirse simples incluso cuand
 - **Trabajo conectado** — API, integraciones y automatización que reducen traspasos rutinarios
 - **Hecho para evolucionar** — Bases pequeñas y fáciles de probar, cambiar y mantener
 
+## Mapa de proyectos
+
+Una vista compacta de los proyectos públicos y del trabajo privado protegido. Se actualiza automáticamente de forma programada.
+
+<details>
+<summary><strong>Explorar el mapa de proyectos</strong></summary>
+
+<br />
+
+<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="Mapa de proyectos que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="100%" />
+
+<sub>Los nombres y metadatos privados nunca se muestran. <a href="https://github.com/KS-GG-AI?tab=repositories">Ver repositorios públicos</a>.</sub>
+
+</details>
+
 ## Cómo trabajo
 
 Mantengo las decisiones claras y el siguiente paso visible: empiezo en pequeño, aprendo rápido y mejoro con intención.

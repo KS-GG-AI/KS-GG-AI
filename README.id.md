@@ -39,6 +39,21 @@ Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun peke
 - **Kerja yang terhubung** — API, integrasi, dan otomatisasi yang mengurangi serah-terima rutin
 - **Dibuat untuk berkembang** — Fondasi kecil yang mudah diuji, diubah, dan dipelihara
 
+## Peta proyek
+
+Tampilan ringkas proyek publik dan pekerjaan privat yang terlindungi. Peta diperbarui otomatis secara berkala.
+
+<details>
+<summary><strong>Jelajahi peta proyek</strong></summary>
+
+<br />
+
+<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="100%" />
+
+<sub>Nama dan metadata privat tidak pernah ditampilkan. <a href="https://github.com/KS-GG-AI?tab=repositories">Lihat repositori publik</a>.</sub>
+
+</details>
+
 ## Cara saya bekerja
 
 Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai dari kecil, belajar cepat, lalu memperbaiki dengan sengaja.

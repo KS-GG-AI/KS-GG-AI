@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">KS-GG-AI project map</title>
+<desc id="desc">A project topology that separates public projects from intentionally masked private work.</desc>
+<defs><linearGradient id="background" x1="22" y1="10" x2="938" y2="370" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0E1D1D"/></linearGradient><filter id="glow" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="24"/></filter></defs>
+<rect width="960" height="380" rx="24" fill="url(#background)"/>
+<circle cx="872" cy="68" r="84" fill="#7C3AED" fill-opacity=".16" filter="url(#glow)"/><circle cx="110" cy="308" r="94" fill="#06B6D4" fill-opacity=".1" filter="url(#glow)"/>
+<text x="30" y="39" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PROJECT MAP</text>
+<text x="30" y="57" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing="1">PUBLIC SURFACES · MASKED PRIVATE WORK</text>
+<rect x="790" y="22" width="140" height="30" rx="15" fill="#0B1020" fill-opacity=".72" stroke="#67E8F9" stroke-opacity=".34"/><circle cx="810" cy="37" r="5" fill="#A7F3D0"/><text x="824" y="41" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">AUTO SYNC</text>
+<rect x="300" y="82" width="360" height="72" rx="18" fill="#111827" stroke="#A78BFA" stroke-opacity=".62"/><rect x="301" y="83" width="358" height="70" rx="17" fill="#131225"/>
+<circle cx="334" cy="118" r="12" fill="#A78BFA" fill-opacity=".2" stroke="#C4B5FD" stroke-opacity=".65"/><path d="M328 118H340M334 112V124" stroke="#DDD6FE" stroke-width="2" stroke-linecap="round"/>
+<text x="362" y="113" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">KS-GG-AI · WORKSPACE</text>
+<text x="362" y="132" fill="#AFA6C8" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".8">PROJECT TOPOLOGY · PROFILE VIEW</text>
+<path d="M480 154V177M238 177H722M238 177V198M722 177V198" stroke="#4C4668" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="28" y="198" width="420" height="46" rx="14" fill="#111827" stroke="#67E8F9" stroke-opacity=".52"/><circle cx="52" cy="221" r="6" fill="#67E8F9"/><text x="68" y="217" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing=".65">PUBLIC · 01</text><text x="68" y="233" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".75">WORKSPACE LANE</text>
+<rect x="512" y="198" width="420" height="46" rx="14" fill="#111827" stroke="#F9A8D4" stroke-opacity=".52"/><circle cx="536" cy="221" r="6" fill="#F9A8D4"/><text x="552" y="217" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing=".65">PRIVATE · MASKED</text><text x="552" y="233" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".75">WORKSPACE LANE</text>
+<rect x="28" y="264" width="420" height="52" rx="13" fill="#10121F" stroke="#293244"/><rect x="28" y="264" width="4" height="52" rx="2" fill="#67E8F9"/><text x="50" y="287" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">KS-GG-AI</text><text x="50" y="303" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".65">JavaScript</text>
+<rect x="512" y="264" width="420" height="52" rx="13" fill="#10121F" stroke="#293244"/><rect x="512" y="264" width="4" height="52" rx="2" fill="#F9A8D4"/><text x="534" y="287" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">PRIVATE WORK</text><text x="534" y="303" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".65">MASKED BY DEFAULT</text>
+<path d="M28 346H932" stroke="#32364D" stroke-width="1"/>
+<text x="30" y="366" fill="#8C96AA" font-family="Arial, Helvetica, sans-serif" font-size="9" letter-spacing=".55">PUBLIC METADATA ONLY · PRIVATE ENTRIES INTENTIONALLY REDACTED</text>
+<text x="849" y="366" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="9" text-anchor="end">STATE UPDATED 2026-09-11</text>
+</svg>

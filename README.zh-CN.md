@@ -39,6 +39,21 @@
 - **连接的流程** — 通过 API、集成和自动化减少重复交接
 - **可持续演进** — 易于测试、调整和维护的小型基础
 
+## 项目地图
+
+这是一个区分公开项目与受保护私有工作的简洁地图。会按固定计划自动更新。
+
+<details>
+<summary><strong>查看项目地图</strong></summary>
+
+<br />
+
+<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="100%" />
+
+<sub>私有名称和元数据不会显示。<a href="https://github.com/KS-GG-AI?tab=repositories">浏览公开仓库</a>。</sub>
+
+</details>
+
 ## 我的工作方式
 
 让决策更清楚、让下一步更可见：从小处开始，快速学习，有意识地持续改进。

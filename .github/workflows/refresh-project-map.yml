@@ -1,0 +1,45 @@
+name: Refresh project map
+
+on:
+  schedule:
+    - cron: "17 3 * * 2,5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-project-map
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate project map
+        env:
+          PROFILE_REPOSITORY_READ_TOKEN: ${{ secrets.PROFILE_REPOSITORY_READ_TOKEN }}
+        run: node scripts/update-project-map.mjs
+
+      - name: Test project map generator
+        run: node scripts/test-project-map.mjs
+
+      - name: Commit generated project map
+        run: |
+          if git diff --quiet -- assets/project-map.svg data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
+            echo "Project map is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/project-map.svg data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
+          git commit -m "chore: refresh project map"
+          git push

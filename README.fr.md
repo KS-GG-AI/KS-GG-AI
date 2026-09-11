@@ -39,6 +39,21 @@ Je construis les parties d’un produit qui doivent paraître simples, même lor
 - **Travail connecté** — API, intégrations et automatisation qui réduisent les transmissions répétitives
 - **Conçu pour évoluer** — De petites fondations faciles à tester, modifier et maintenir
 
+## Carte des projets
+
+Une vue compacte des projets publics et du travail privé protégé. Elle se met à jour automatiquement selon une planification régulière.
+
+<details>
+<summary><strong>Explorer la carte des projets</strong></summary>
+
+<br />
+
+<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="100%" />
+
+<sub>Les noms et métadonnées privés ne sont jamais affichés. <a href="https://github.com/KS-GG-AI?tab=repositories">Voir les dépôts publics</a>.</sub>
+
+</details>
+
 ## Ma façon de travailler
 
 Je garde les décisions lisibles et la prochaine étape visible : je commence petit, j’apprends vite et j’améliore avec intention.

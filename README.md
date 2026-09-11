@@ -39,6 +39,21 @@ I build the parts of a product that should feel simple even when the work behind
 - **Connected work** — APIs, integrations, and automation that reduce routine hand-offs
 - **Built to evolve** — Small foundations that stay easy to test, change, and maintain
 
+## Project map
+
+A compact view of public projects and protected private work. It refreshes automatically on a regular schedule.
+
+<details>
+<summary><strong>Explore the project map</strong></summary>
+
+<br />
+
+<img src="./assets/project-map.svg?v=c04ac7a43a2b" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="100%" />
+
+<sub>Private names and metadata are never shown. <a href="https://github.com/KS-GG-AI?tab=repositories">Browse public repositories</a>.</sub>
+
+</details>
+
 ## How I work
 
 I keep decisions legible and the next step visible: start small, learn quickly, and improve with intent.

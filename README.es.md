@@ -43,21 +43,42 @@ Construyo las partes de un producto que deberían sentirse simples incluso cuand
 
 Mantengo las decisiones claras y el siguiente paso visible: empiezo en pequeño, aprendo rápido y mejoro con intención.
 
+<details>
+<summary><strong>Ver los tres principios de trabajo</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="Tres principios: claridad primero, mantener la curiosidad y seguir mejorando." width="100%" />
+
+</details>
 
 ## Herramientas principales
 
 Un conjunto centrado en escribir código, dar forma a interfaces, conectar sistemas y entregar cambios.
 
+<details>
+<summary><strong>Explorar las herramientas principales</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
+
+</details>
 
 ## Habilidades y tecnologías
 
 Es un mapa de trabajo, no una lista de control. Las tecnologías se agrupan según el problema que ayudan a resolver.
 
+<details>
+<summary><strong>Explorar el mapa técnico visual</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
 
 <sub>¿Quieres ver la versión con movimiento? <a href="./assets/technology-stack.gif">Abrir el mapa GIF</a>.</sub>
+
+</details>
 
 <details>
 <summary><strong>Ver el stack en texto</strong></summary>

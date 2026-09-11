@@ -43,21 +43,42 @@ Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun peke
 
 Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai dari kecil, belajar cepat, lalu memperbaiki dengan sengaja.
 
+<details>
+<summary><strong>Lihat tiga prinsip kerja</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
+
+</details>
 
 ## Perangkat utama
 
 Seperangkat alat yang fokus untuk menulis kode, membentuk antarmuka, menghubungkan sistem, dan mengirimkan perubahan.
 
+<details>
+<summary><strong>Jelajahi perangkat utama</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+
+</details>
 
 ## Keahlian dan teknologi
 
 Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan masalah yang dibantu untuk diselesaikan.
 
+<details>
+<summary><strong>Jelajahi peta teknis visual</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
 
 <sub>Ingin versi bergerak? <a href="./assets/technology-stack.gif">Buka peta GIF</a>.</sub>
+
+</details>
 
 <details>
 <summary><strong>Lihat stack dalam teks</strong></summary>

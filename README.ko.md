@@ -43,21 +43,42 @@
 
 결정은 읽기 쉽게, 다음 단계는 눈에 보이게 둡니다. 작게 시작하고, 빠르게 배우고, 의도를 갖고 개선합니다.
 
+<details>
+<summary><strong>세 가지 일하는 원칙 보기</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
+
+</details>
 
 ## 핵심 도구
 
 작성, 인터페이스 구성, 시스템 연결, 변경 배포에 쓰는 도구를 흐름 중심으로 정리했습니다.
 
+<details>
+<summary><strong>핵심 도구 구성 보기</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
+
+</details>
 
 ## 기술과 도구
 
 이것은 체크리스트가 아닌 작업 지도입니다. 기술은 어떤 문제를 해결하는지에 따라 묶었습니다.
 
+<details>
+<summary><strong>시각 기술 지도 보기</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 
 <sub>움직이는 버전이 필요하다면 <a href="./assets/technology-stack.gif">GIF 지도 보기</a>.</sub>
+
+</details>
 
 <details>
 <summary><strong>텍스트로 기술 스택 보기</strong></summary>

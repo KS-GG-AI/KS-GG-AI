@@ -43,21 +43,42 @@ Je construis les parties d’un produit qui doivent paraître simples, même lor
 
 Je garde les décisions lisibles et la prochaine étape visible : je commence petit, j’apprends vite et j’améliore avec intention.
 
+<details>
+<summary><strong>Voir les trois principes de travail</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="Trois principes : la clarté d’abord, rester curieux et continuer à s’améliorer." width="100%" />
+
+</details>
 
 ## Outils essentiels
 
 Un ensemble ciblé pour écrire du code, façonner des interfaces, connecter des systèmes et livrer des changements.
 
+<details>
+<summary><strong>Explorer les outils essentiels</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
+
+</details>
 
 ## Compétences et technologies
 
 C’est une carte de travail, pas une checklist. Les technologies sont regroupées selon les problèmes qu’elles aident à résoudre.
 
+<details>
+<summary><strong>Explorer la carte technique visuelle</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
 
 <sub>Vous voulez la version animée ? <a href="./assets/technology-stack.gif">Ouvrir la carte GIF</a>.</sub>
+
+</details>
 
 <details>
 <summary><strong>Voir la stack en texte</strong></summary>

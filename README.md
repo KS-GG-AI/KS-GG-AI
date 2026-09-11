@@ -43,21 +43,42 @@ I build the parts of a product that should feel simple even when the work behind
 
 I keep decisions legible and the next step visible: start small, learn quickly, and improve with intent.
 
+<details>
+<summary><strong>See the three working principles</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="Three principles: Clarity first, stay curious, and keep improving." width="100%" />
+
+</details>
 
 ## Core toolkit
 
 A focused working set for writing code, shaping interfaces, connecting systems, and shipping changes.
 
+<details>
+<summary><strong>Explore the core toolkit</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
+
+</details>
 
 ## Skills & technologies
 
 This is a working map, not a checklist. Technologies are grouped by the kind of problem they help solve.
 
+<details>
+<summary><strong>Explore the visual technical map</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
 
 <sub>Want the motion version? <a href="./assets/technology-stack.gif">Open the animated map</a>.</sub>
+
+</details>
 
 <details>
 <summary><strong>Browse the stack in text</strong></summary>

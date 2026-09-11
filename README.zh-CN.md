@@ -43,21 +43,42 @@
 
 让决策更清楚、让下一步更可见：从小处开始，快速学习，有意识地持续改进。
 
+<details>
+<summary><strong>查看三个工作原则</strong></summary>
+
+<br />
+
 <img src="./assets/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
+
+</details>
 
 ## 核心工具
 
 围绕编写代码、构建界面、连接系统和交付变更组织的一组核心工具。
 
+<details>
+<summary><strong>查看核心工具</strong></summary>
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
+
+</details>
 
 ## 技能与技术
 
 这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
 
+<details>
+<summary><strong>查看可视化技术地图</strong></summary>
+
+<br />
+
 <img src="./assets/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
 <sub>如果想看动态版本，<a href="./assets/technology-stack.gif">打开 GIF 地图</a>。</sub>
+
+</details>
 
 <details>
 <summary><strong>以文本查看技术栈</strong></summary>

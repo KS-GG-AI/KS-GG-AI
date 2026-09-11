@@ -10,11 +10,9 @@
   <sub>명확한 인터페이스 · 연결된 워크플로 · 믿을 수 있는 시스템</sub>
 </p>
 
-<img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
-
 <p>
   <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md"><strong>🇰🇷 한국어</strong></a> ·
+  <strong>🇰🇷 한국어</strong> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
   <a href="./README.es.md">🇪🇸 Español</a> ·
   <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
@@ -25,11 +23,17 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 프로필 저장소 열기 &nbsp;</kbd></a>
-</p>
-
 </div>
+
+## 공개 작업
+
+**프로필 시스템** — 저장소 안의 시각 자산, 읽기 쉬운 Markdown 대체 정보, 정기 갱신되는 공개 프로젝트 지도로 구성한 다국어 GitHub 프로필입니다.
+
+[프로필 저장소 열기](https://github.com/KS-GG-AI/KS-GG-AI) · [공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories)
+
+<p align="center">
+  <img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+</p>
 
 ## 만드는 것
 
@@ -43,12 +47,15 @@
 
 공개 프로젝트와 보호된 비공개 작업을 나눈 간결한 지도입니다. 정기 실행으로 자동 갱신됩니다.
 
+- **공개 작업** — [현재 공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories)
+- **비공개 작업** — 이름과 메타데이터를 의도적으로 숨기며, 이곳에 표시하지 않습니다.
+
 <details>
 <summary><strong>프로젝트 지도 보기</strong></summary>
 
 <br />
 
-<img src="./assets/project-map.svg?v=40072f63a900" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
+<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
 
 <sub>비공개 이름과 메타데이터는 표시하지 않습니다. <a href="https://github.com/KS-GG-AI?tab=repositories">공개 저장소 보기</a></sub>
 
@@ -60,6 +67,12 @@
 
 <details>
 <summary><strong>세 가지 일하는 원칙 보기</strong></summary>
+
+<br />
+
+- **명확성을 먼저** — 다음 행동이 자연스럽게 보이도록 만듭니다.
+- **호기심 유지** — 더 나은 방법을 찾을 여지를 남깁니다.
+- **계속 개선** — 작은 반복을 차분히 쌓습니다.
 
 <br />
 
@@ -76,6 +89,13 @@
 
 <br />
 
+- **작성** — TypeScript, JavaScript, Python
+- **구성** — Node.js, React, Next.js
+- **연결** — REST API, SQL, MCP
+- **배포** — Git, Docker, GitHub Actions
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
 
 </details>
@@ -84,19 +104,16 @@
 
 이것은 체크리스트가 아닌 작업 지도입니다. 기술은 어떤 문제를 해결하는지에 따라 묶었습니다.
 
+핵심 작업 세트는 TypeScript, JavaScript, Python, Node.js, React, Next.js, REST API, SQL, Docker, GitHub Actions입니다. 전체 맥락이 필요할 때 아래 지도를 열 수 있습니다.
+
 <details>
-<summary><strong>시각 기술 지도 보기</strong></summary>
+<summary><strong>전체 기술 지도 보기</strong></summary>
 
 <br />
 
 <img src="./assets/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 
 <sub>움직이는 버전이 필요하다면 <a href="./assets/technology-stack.gif">GIF 지도 보기</a>.</sub>
-
-</details>
-
-<details>
-<summary><strong>텍스트로 기술 스택 보기</strong></summary>
 
 <br />
 

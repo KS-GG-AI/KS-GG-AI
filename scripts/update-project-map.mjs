@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-const readmeNames = [
+export const readmeNames = [
   "README.md",
   "README.ko.md",
   "README.zh-CN.md",
@@ -16,8 +16,11 @@ const readmeNames = [
   "README.id.md",
 ];
 const maxVisibleProjects = 3;
-const renderVersion = 3;
+const renderVersion = 4;
 const svgWidth = 480;
+const requestTimeoutMs = 12_000;
+const maxRequestAttempts = 3;
+const maxRetryDelayMs = 5_000;
 
 function cleanText(value, fallback, limit) {
   const text = String(value ?? fallback).replace(/\s+/g, " ").trim();
@@ -170,11 +173,17 @@ export function renderProjectMap(snapshot) {
 }
 
 async function readJsonIfPresent(file) {
+  let text;
   try {
-    return JSON.parse(await readFile(file, "utf8"));
+    text = await readFile(file, "utf8");
   } catch (error) {
     if (error && typeof error === "object" && error.code === "ENOENT") return null;
     throw error;
+  }
+  try {
+    return JSON.parse(text);
+  } catch {
+    return null;
   }
 }
 
@@ -188,23 +197,131 @@ async function writeIfChanged(file, value) {
   if (existing !== value) await writeFile(file, value, "utf8");
 }
 
-async function fetchRepositoryPages(url, token) {
+function responseHeader(response, name) {
+  return response.headers?.get?.(name) ?? null;
+}
+
+function retryDelay(response, attempt) {
+  const retryAfter = response ? responseHeader(response, "retry-after") : null;
+  const seconds = retryAfter === null ? Number.NaN : Number(retryAfter);
+  if (Number.isFinite(seconds) && seconds >= 0) return Math.min(Math.round(seconds * 1_000), maxRetryDelayMs);
+  if (retryAfter) {
+    const date = Date.parse(retryAfter);
+    if (Number.isFinite(date)) return Math.min(Math.max(0, date - Date.now()), maxRetryDelayMs);
+  }
+
+  const rateLimitReset = response ? responseHeader(response, "x-ratelimit-reset") : null;
+  const resetAt = rateLimitReset === null ? Number.NaN : Number(rateLimitReset);
+  if (Number.isFinite(resetAt) && resetAt > 0) {
+    return Math.min(Math.max(0, resetAt * 1_000 - Date.now()), maxRetryDelayMs);
+  }
+
+  return Math.min(500 * (2 ** attempt), maxRetryDelayMs);
+}
+
+function isRetryableResponse(response) {
+  const status = response.status;
+  return status === 408
+    || status === 429
+    || status === 502
+    || status === 503
+    || status === 504
+    || (status === 403 && responseHeader(response, "x-ratelimit-remaining") === "0");
+}
+
+function wait(milliseconds) {
+  return new Promise((resolve) => setTimeout(resolve, milliseconds));
+}
+
+async function fetchWithRetry(url, headers, options) {
+  const fetchImplementation = options.fetchImplementation ?? fetch;
+  const waitFor = options.waitFor ?? wait;
+  const timeoutMs = options.requestTimeoutMs ?? requestTimeoutMs;
+  const attempts = Math.max(1, options.maxRequestAttempts ?? maxRequestAttempts);
+  let lastError = null;
+
+  for (let attempt = 0; attempt < attempts; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+    let response;
+    try {
+      response = await fetchImplementation(url, { headers, signal: controller.signal });
+    } catch {
+      lastError = new Error(controller.signal.aborted ? "GitHub API request timed out." : "GitHub API request failed.");
+    } finally {
+      clearTimeout(timeout);
+    }
+
+    if (response?.ok) return response;
+    if (response) lastError = new Error("GitHub API request failed (HTTP " + response.status + ").");
+    if (attempt === attempts - 1 || (response && !isRetryableResponse(response))) throw lastError;
+    await waitFor(retryDelay(response, attempt));
+  }
+
+  throw lastError ?? new Error("GitHub API request failed.");
+}
+
+export async function fetchRepositoryPages(url, token, options = {}) {
   const repositories = [];
   for (let page = 1; ; page += 1) {
     const separator = url.includes("?") ? "&" : "?";
-    const response = await fetch(url + separator + "per_page=100&page=" + page, {
-      headers: {
-        Accept: "application/vnd.github+json",
-        "User-Agent": "KS-GG-AI-project-map",
-        ...(token ? { Authorization: "Bearer " + token } : {}),
-      },
-    });
-    if (!response.ok) throw new Error("GitHub API request failed (HTTP " + response.status + ").");
+    const response = await fetchWithRetry(url + separator + "per_page=100&page=" + page, {
+      Accept: "application/vnd.github+json",
+      "User-Agent": "KS-GG-AI-project-map",
+      ...(token ? { Authorization: "Bearer " + token } : {}),
+    }, options);
     const batch = await response.json();
     if (!Array.isArray(batch)) throw new Error("GitHub API returned an unexpected repository payload.");
     repositories.push(...batch);
     if (batch.length < 100) return repositories;
   }
+}
+
+export function selectProjectRepositories(repositories, username, privateSyncEnabled) {
+  const accountName = username.toLocaleLowerCase("en-US");
+  const ownedRepositories = repositories.filter((repository) => {
+    const owner = String(repository?.owner?.login ?? "").toLocaleLowerCase("en-US");
+    return owner === accountName;
+  });
+  return {
+    publicProjects: ownedRepositories
+      .filter((repository) => !repository.private && !repository.fork && !repository.archived)
+      .map((repository) => ({ name: repository.name, language: repository.language })),
+    privateRepositoryCount: privateSyncEnabled
+      ? ownedRepositories.filter((repository) => repository.private).length
+      : 0,
+  };
+}
+
+function semanticSnapshot(snapshot) {
+  return {
+    schemaVersion: snapshot.schemaVersion,
+    renderVersion: snapshot.renderVersion,
+    username: snapshot.username,
+    publicProjects: snapshot.publicProjects,
+    private: snapshot.private,
+  };
+}
+
+export function isValidProjectSnapshot(snapshot) {
+  if (!snapshot || typeof snapshot !== "object") return false;
+  if (snapshot.schemaVersion !== 1 || snapshot.renderVersion !== renderVersion) return false;
+  if (typeof snapshot.username !== "string" || snapshot.username.length === 0) return false;
+  if (!Array.isArray(snapshot.publicProjects) || !snapshot.publicProjects.every((project) => (
+    project
+    && typeof project.name === "string"
+    && typeof project.language === "string"
+  ))) return false;
+  if (!snapshot.private || typeof snapshot.private !== "object" || !Array.isArray(snapshot.private.labels)) return false;
+  if (snapshot.private.status === "protected" && (snapshot.private.count !== null || snapshot.private.labels.length !== 0)) return false;
+  if (snapshot.private.status === "connected" && (
+    !Number.isInteger(snapshot.private.count)
+    || snapshot.private.count < 0
+    || snapshot.private.labels.length !== Math.min(snapshot.private.count, maxVisibleProjects)
+    || !snapshot.private.labels.every((label) => typeof label === "string")
+  )) return false;
+  if (snapshot.private.status !== "protected" && snapshot.private.status !== "connected") return false;
+  return /^[a-f0-9]{12}$/.test(snapshot.revision ?? "") && !Number.isNaN(Date.parse(snapshot.generatedAt ?? ""));
 }
 
 function updateReadmeRevision(text, revision) {
@@ -218,17 +335,7 @@ export async function updateProjectMap({ root, username, privateToken }) {
   const repositories = privateToken
     ? await fetchRepositoryPages("https://api.github.com/user/repos?affiliation=owner&visibility=all&sort=updated", privateToken)
     : await fetchRepositoryPages("https://api.github.com/users/" + encodeURIComponent(username) + "/repos?type=owner&sort=updated", "");
-  const accountName = username.toLocaleLowerCase("en-US");
-  const ownedRepositories = repositories.filter((repository) => {
-    const owner = String(repository?.owner?.login ?? "").toLocaleLowerCase("en-US");
-    return owner === accountName;
-  });
-  const publicProjects = ownedRepositories
-    .filter((repository) => !repository.private)
-    .map((repository) => ({ name: repository.name, language: repository.language }));
-  const privateRepositoryCount = privateToken
-    ? ownedRepositories.filter((repository) => repository.private).length
-    : 0;
+  const { publicProjects, privateRepositoryCount } = selectProjectRepositories(repositories, username, Boolean(privateToken));
   const semanticState = createProjectState({
     username,
     publicProjects,
@@ -237,28 +344,22 @@ export async function updateProjectMap({ root, username, privateToken }) {
   });
   const dataPath = path.join(root, "data", "project-map.json");
   const existing = await readJsonIfPresent(dataPath);
-  const existingSemantic = existing
-    ? {
-      schemaVersion: existing.schemaVersion,
-      renderVersion: existing.renderVersion,
-      username: existing.username,
-      publicProjects: existing.publicProjects,
-      private: existing.private,
-    }
-    : null;
+  const existingSemantic = isValidProjectSnapshot(existing) ? semanticSnapshot(existing) : null;
   const changed = JSON.stringify(existingSemantic) !== JSON.stringify(semanticState);
   const snapshot = changed
     ? { ...semanticState, revision: revisionFor(semanticState), generatedAt: new Date().toISOString() }
     : existing;
+  const readmeUpdates = await Promise.all(readmeNames.map(async (name) => {
+    const file = path.join(root, name);
+    return { file, text: updateReadmeRevision(await readFile(file, "utf8"), snapshot.revision) };
+  }));
   const assetsDirectory = path.join(root, "assets");
   await mkdir(path.dirname(dataPath), { recursive: true });
   await mkdir(assetsDirectory, { recursive: true });
   await writeIfChanged(dataPath, JSON.stringify(snapshot, null, 2) + "\n");
   await writeIfChanged(path.join(assetsDirectory, "project-map.svg"), renderProjectMap(snapshot));
-  for (const name of readmeNames) {
-    const file = path.join(root, name);
-    const updated = updateReadmeRevision(await readFile(file, "utf8"), snapshot.revision);
-    await writeIfChanged(file, updated);
+  for (const update of readmeUpdates) {
+    await writeIfChanged(update.file, update.text);
   }
   return {
     changed,
@@ -276,7 +377,11 @@ async function main() {
     username: process.env.PROFILE_USERNAME ?? "KS-GG-AI",
     privateToken: process.env.PROFILE_REPOSITORY_READ_TOKEN?.trim() ?? "",
   });
-  console.log(JSON.stringify(result));
+  console.log(JSON.stringify({
+    changed: result.changed,
+    publicProjectCount: result.publicProjectCount,
+    revision: result.revision,
+  }));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) await main();

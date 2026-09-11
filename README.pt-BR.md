@@ -10,8 +10,6 @@
   <sub>Interfaces claras · fluxos conectados · sistemas confiáveis.</sub>
 </p>
 
-<img src="./assets/typing.gif" alt="Digitação animada: criando coisas úteis, sistemas claros e trabalho cuidadoso." width="100%" />
-
 <p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
@@ -19,17 +17,23 @@
   <a href="./README.es.md">🇪🇸 Español</a> ·
   <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
   <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md"><strong>🇧🇷 Português</strong></a> ·
+  <strong>🇧🇷 Português</strong> ·
   <a href="./README.ru.md">🇷🇺 Русский</a> ·
   <a href="./README.fr.md">🇫🇷 Français</a> ·
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Abrir repositório do perfil &nbsp;</kbd></a>
-</p>
-
 </div>
+
+## Trabalho público
+
+**Sistema de perfil** — Um perfil do GitHub multilíngue com visuais hospedados no repositório, alternativas legíveis em Markdown e um mapa agendado de projetos públicos.
+
+[Abrir o repositório do perfil](https://github.com/KS-GG-AI/KS-GG-AI) · [Ver repositórios públicos](https://github.com/KS-GG-AI?tab=repositories)
+
+<p align="center">
+  <img src="./assets/typing.gif" alt="Digitação animada: criando coisas úteis, sistemas claros e trabalho cuidadoso." width="100%" />
+</p>
 
 ## O que construo
 
@@ -43,12 +47,15 @@ Construo as partes de um produto que devem parecer simples mesmo quando o trabal
 
 Uma visão compacta dos projetos públicos e do trabalho privado protegido. É atualizado automaticamente em uma programação regular.
 
+- **Trabalho público** — [Ver a lista atual de repositórios públicos](https://github.com/KS-GG-AI?tab=repositories).
+- **Trabalho privado** — É mascarado intencionalmente; nomes e metadados nunca aparecem aqui.
+
 <details>
 <summary><strong>Explorar o mapa de projetos</strong></summary>
 
 <br />
 
-<img src="./assets/project-map.svg?v=40072f63a900" alt="Mapa de projetos que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
+<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="Mapa de projetos que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
 
 <sub>Nomes e metadados privados nunca são exibidos. <a href="https://github.com/KS-GG-AI?tab=repositories">Ver repositórios públicos</a>.</sub>
 
@@ -60,6 +67,12 @@ Mantenho as decisões legíveis e o próximo passo visível: começo pequeno, ap
 
 <details>
 <summary><strong>Ver os três princípios de trabalho</strong></summary>
+
+<br />
+
+- **Clareza primeiro** — Tornar o próximo passo evidente.
+- **Manter a curiosidade** — Deixar espaço para descobrir caminhos melhores.
+- **Continuar melhorando** — Deixar pequenas iterações se acumularem.
 
 <br />
 
@@ -76,6 +89,13 @@ Um conjunto focado para escrever código, criar interfaces, conectar sistemas e 
 
 <br />
 
+- **Escrever** — TypeScript, JavaScript, Python
+- **Construir** — Node.js, React, Next.js
+- **Conectar** — REST API, SQL, MCP
+- **Entregar** — Git, Docker, GitHub Actions
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Ferramentas principais organizadas em torno de escrever, construir, conectar e entregar software." width="100%" />
 
 </details>
@@ -84,19 +104,16 @@ Um conjunto focado para escrever código, criar interfaces, conectar sistemas e 
 
 Este é um mapa de trabalho, não uma lista de verificação. As tecnologias são agrupadas pelo tipo de problema que ajudam a resolver.
 
+O conjunto principal é TypeScript, JavaScript, Python, Node.js, React, Next.js, REST API, SQL, Docker e GitHub Actions. O mapa completo continua disponível abaixo quando for útil ter mais contexto.
+
 <details>
-<summary><strong>Explorar o mapa técnico visual</strong></summary>
+<summary><strong>Explorar o mapa técnico completo</strong></summary>
 
 <br />
 
 <img src="./assets/technology-stack.svg" alt="Mapa técnico de linguagens, serviços e dados, interfaces e produto, além de entrega e operações." width="100%" />
 
 <sub>Quer ver a versão animada? <a href="./assets/technology-stack.gif">Abrir o mapa GIF</a>.</sub>
-
-</details>
-
-<details>
-<summary><strong>Ver a stack em texto</strong></summary>
 
 <br />
 

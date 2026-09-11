@@ -10,10 +10,8 @@
   <sub>Clear interfaces · connected workflows · reliable systems.</sub>
 </p>
 
-<img src="./assets/typing.gif" alt="Animated typing: crafting useful things, clear systems, and careful work." width="100%" />
-
 <p>
-  <a href="./README.md"><strong>🇺🇸 English</strong></a> ·
+  <strong>🇺🇸 English</strong> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
   <a href="./README.es.md">🇪🇸 Español</a> ·
@@ -25,11 +23,17 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Open profile repository &nbsp;</kbd></a>
-</p>
-
 </div>
+
+## Working in public
+
+**Profile system** — A multilingual GitHub profile with repository-hosted visuals, readable Markdown fallbacks, and a scheduled public-project map.
+
+[Open the profile repository](https://github.com/KS-GG-AI/KS-GG-AI) · [Browse public repositories](https://github.com/KS-GG-AI?tab=repositories)
+
+<p align="center">
+  <img src="./assets/typing.gif" alt="Animated typing: crafting useful things, clear systems, and careful work." width="100%" />
+</p>
 
 ## What I build
 
@@ -43,12 +47,15 @@ I build the parts of a product that should feel simple even when the work behind
 
 A compact view of public projects and protected private work. It refreshes automatically on a regular schedule.
 
+- **Public work** — [Browse the current public repository list](https://github.com/KS-GG-AI?tab=repositories).
+- **Private work** — Intentionally masked; names and metadata never appear here.
+
 <details>
 <summary><strong>Explore the project map</strong></summary>
 
 <br />
 
-<img src="./assets/project-map.svg?v=40072f63a900" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
+<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
 
 <sub>Private names and metadata are never shown. <a href="https://github.com/KS-GG-AI?tab=repositories">Browse public repositories</a>.</sub>
 
@@ -60,6 +67,12 @@ I keep decisions legible and the next step visible: start small, learn quickly, 
 
 <details>
 <summary><strong>See the three working principles</strong></summary>
+
+<br />
+
+- **Clarity first** — Make the next step obvious.
+- **Stay curious** — Leave room to discover better ways.
+- **Keep improving** — Let small iterations add up.
 
 <br />
 
@@ -76,6 +89,13 @@ A focused working set for writing code, shaping interfaces, connecting systems, 
 
 <br />
 
+- **Write** — TypeScript, JavaScript, Python
+- **Build** — Node.js, React, Next.js
+- **Connect** — REST APIs, SQL, MCP
+- **Ship** — Git, Docker, GitHub Actions
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
 
 </details>
@@ -84,19 +104,16 @@ A focused working set for writing code, shaping interfaces, connecting systems, 
 
 This is a working map, not a checklist. Technologies are grouped by the kind of problem they help solve.
 
+The core working set is TypeScript, JavaScript, Python, Node.js, React, Next.js, REST APIs, SQL, Docker, and GitHub Actions. The full map stays available when the extra context is useful.
+
 <details>
-<summary><strong>Explore the visual technical map</strong></summary>
+<summary><strong>Explore the complete technical map</strong></summary>
 
 <br />
 
 <img src="./assets/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
 
 <sub>Want the motion version? <a href="./assets/technology-stack.gif">Open the animated map</a>.</sub>
-
-</details>
-
-<details>
-<summary><strong>Browse the stack in text</strong></summary>
 
 <br />
 

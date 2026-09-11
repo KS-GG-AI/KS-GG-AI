@@ -10,12 +10,10 @@
   <sub>清晰的界面 · 连贯的工作流 · 可靠的系统</sub>
 </p>
 
-<img src="./assets/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
-
 <p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md"><strong>🇨🇳 中文</strong></a> ·
+  <strong>🇨🇳 中文</strong> ·
   <a href="./README.es.md">🇪🇸 Español</a> ·
   <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
   <a href="./README.ar.md">🇸🇦 العربية</a> ·
@@ -25,11 +23,17 @@
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 打开个人资料仓库 &nbsp;</kbd></a>
-</p>
-
 </div>
+
+## 公开作品
+
+**个人资料系统** — 一个多语言 GitHub 个人资料；视觉资源保存在仓库中，配有易读的 Markdown 文字说明，并定期更新公开项目地图。
+
+[打开个人资料仓库](https://github.com/KS-GG-AI/KS-GG-AI) · [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories)
+
+<p align="center">
+  <img src="./assets/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
+</p>
 
 ## 我在构建什么
 
@@ -43,12 +47,15 @@
 
 这是一个区分公开项目与受保护私有工作的简洁地图。会按固定计划自动更新。
 
+- **公开作品** — [浏览当前公开仓库列表](https://github.com/KS-GG-AI?tab=repositories)。
+- **私有工作** — 会被有意遮蔽，名称和元数据绝不会显示在这里。
+
 <details>
 <summary><strong>查看项目地图</strong></summary>
 
 <br />
 
-<img src="./assets/project-map.svg?v=40072f63a900" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
 
 <sub>私有名称和元数据不会显示。<a href="https://github.com/KS-GG-AI?tab=repositories">浏览公开仓库</a>。</sub>
 
@@ -60,6 +67,12 @@
 
 <details>
 <summary><strong>查看三个工作原则</strong></summary>
+
+<br />
+
+- **清晰优先** — 让下一步一目了然。
+- **保持好奇** — 为发现更好的方法留出空间。
+- **持续改进** — 让小的迭代不断累积。
 
 <br />
 
@@ -76,6 +89,13 @@
 
 <br />
 
+- **编写** — TypeScript、JavaScript、Python
+- **构建** — Node.js、React、Next.js
+- **连接** — REST API、SQL、MCP
+- **交付** — Git、Docker、GitHub Actions
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 
 </details>
@@ -84,19 +104,16 @@
 
 这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
 
+核心工作集包括 TypeScript、JavaScript、Python、Node.js、React、Next.js、REST API、SQL、Docker 和 GitHub Actions。需要完整背景时可以展开下面的地图。
+
 <details>
-<summary><strong>查看可视化技术地图</strong></summary>
+<summary><strong>查看完整技术地图</strong></summary>
 
 <br />
 
 <img src="./assets/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
 <sub>如果想看动态版本，<a href="./assets/technology-stack.gif">打开 GIF 地图</a>。</sub>
-
-</details>
-
-<details>
-<summary><strong>以文本查看技术栈</strong></summary>
 
 <br />
 

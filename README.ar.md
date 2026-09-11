@@ -10,28 +10,32 @@
   <sub>واجهات واضحة · تدفقات عمل مترابطة · أنظمة موثوقة</sub>
 </p>
 
-<img src="./assets/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
-
 <p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
   <a href="./README.es.md">🇪🇸 Español</a> ·
   <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md"><strong>🇸🇦 العربية</strong></a> ·
+  <strong>🇸🇦 العربية</strong> ·
   <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
   <a href="./README.ru.md">🇷🇺 Русский</a> ·
   <a href="./README.fr.md">🇫🇷 Français</a> ·
   <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
-<p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; فتح مستودع الملف الشخصي &nbsp;</kbd></a>
-</p>
-
 </div>
 
 <div dir="rtl">
+
+## العمل العلني
+
+**نظام الملف الشخصي** — ملف GitHub متعدد اللغات، يحتوي على مواد مرئية محفوظة في المستودع وبدائل Markdown سهلة القراءة وخريطة مجدولة للمشاريع العلنية.
+
+[فتح مستودع الملف الشخصي](https://github.com/KS-GG-AI/KS-GG-AI) · [تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories)
+
+<p align="center">
+  <img src="./assets/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+</p>
 
 ## ما أبنيه
 
@@ -45,12 +49,15 @@
 
 عرض موجز يفصل المشاريع العامة عن العمل الخاص المحمي. يُحدَّث تلقائيًا وفق جدول منتظم.
 
+- **العمل العلني** — [تصفح قائمة المستودعات العامة الحالية](https://github.com/KS-GG-AI?tab=repositories).
+- **العمل الخاص** — يُخفى عمدًا؛ لا تظهر الأسماء والبيانات الوصفية هنا مطلقًا.
+
 <details>
 <summary><strong>استكشاف خريطة المشاريع</strong></summary>
 
 <br />
 
-<img src="./assets/project-map.svg?v=40072f63a900" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
 
 <sub>لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً. <a href="https://github.com/KS-GG-AI?tab=repositories">تصفح المستودعات العامة</a>.</sub>
 
@@ -62,6 +69,12 @@
 
 <details>
 <summary><strong>عرض مبادئ العمل الثلاثة</strong></summary>
+
+<br />
+
+- **الوضوح أولاً** — اجعل الخطوة التالية واضحة.
+- **ابقَ فضوليًا** — اترك مجالًا لاكتشاف طرق أفضل.
+- **واصل التحسين** — دع التحسينات الصغيرة تتراكم.
 
 <br />
 
@@ -78,6 +91,13 @@
 
 <br />
 
+- **الكتابة** — TypeScript، JavaScript، Python
+- **البناء** — Node.js، React، Next.js
+- **الربط** — REST API، SQL، MCP
+- **التسليم** — Git، Docker، GitHub Actions
+
+<br />
+
 <img src="./assets/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
 
 </details>
@@ -86,19 +106,16 @@
 
 هذه خريطة للعمل وليست قائمة تحقق. جُمعت التقنيات حسب نوع المشكلة التي تساعد في حلها.
 
+مجموعة العمل الأساسية هي TypeScript وJavaScript وPython وNode.js وReact وNext.js وREST API وSQL وDocker وGitHub Actions. تبقى الخريطة الكاملة متاحة أدناه عندما يكون السياق الإضافي مفيدًا.
+
 <details>
-<summary><strong>استكشاف الخريطة التقنية المرئية</strong></summary>
+<summary><strong>استكشاف الخريطة التقنية الكاملة</strong></summary>
 
 <br />
 
 <img src="./assets/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
 
 <sub>تريد النسخة المتحركة؟ <a href="./assets/technology-stack.gif">افتح خريطة GIF</a></sub>
-
-</details>
-
-<details>
-<summary><strong>عرض الحزمة التقنية كنص</strong></summary>
 
 <br />
 

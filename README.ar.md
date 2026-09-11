@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
+  <img src="./assets/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
+</p>
+
+<p>
+  <strong>أحوّل الأفكار إلى واقع بالبرمجة والفضول والعناية.</strong><br />
+  <sub>واجهات واضحة · تدفقات عمل مترابطة · أنظمة موثوقة</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,58 +26,51 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="مقدمة ملف KS-GG-AI" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="علامة KS-GG-AI متحركة" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="تأثير كتابة متحرك: أصنع أشياء مفيدة وأنظمة واضحة بعناية" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; استعراض المستودعات &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; عرض مصدر الملف الشخصي &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; فتح مستودع الملف الشخصي &nbsp;</kbd></a>
 </p>
 
 </div>
 
 <div dir="rtl">
 
-## ما أعمل عليه
+## ما أبنيه
 
 أبني الأجزاء في المنتج التي ينبغي أن تبدو بسيطة حتى عندما يكون العمل خلفها معقدًا: واجهات واضحة وأدوات مترابطة وسير عمل قابل للتكرار. يلتقي معظم عملي عند تقاطع تفكير المنتج والأتمتة والأنظمة.
 
-- **واجهات المنتج** — واجهات وتدفقات تجعل الخطوة التالية واضحة
+- **تجارب المنتج** — واجهات وتدفقات تجعل الخطوة التالية واضحة
 - **عمل مترابط** — واجهات API وتكاملات وأتمتة تقلل عمليات التسليم المتكررة
-- **مصمم للتطور** — أسس صغيرة يسهل اختبارها وتغييرها وصيانتها
+- **أسس قابلة للتطور** — أسس صغيرة يسهل اختبارها وتغييرها وصيانتها
 
-## لغات الملف الشخصي
+## طريقة العمل
 
-يتوفر هذا الملف الشخصي بعشر لغات. الكورية والإنجليزية هما نقطتا البداية، وتسهّل النسخ المترجمة الأخرى مشاركة السياق نفسه بين المناطق.
+أجعل القرارات سهلة القراءة والخطوة التالية ظاهرة: أبدأ صغيراً، أتعلم بسرعة، وأحسّن بوعي.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="ملف شخصي متاح بالإنجليزية والكورية والصينية والإسبانية والهندية والعربية والبرتغالية والروسية والفرنسية والإندونيسية" width="100%" /></a>
+<img src="./assets/principles.svg" alt="ثلاثة مبادئ: الوضوح أولاً، والبقاء فضولياً، والاستمرار في التحسين." width="100%" />
 
-## صندوق الأدوات
+## الأدوات الأساسية
 
-مجموعة عملية من الأدوات للكتابة والربط والتسليم والحفاظ على حركة البرمجيات.
+مجموعة مركزة لكتابة البرمجيات وتشكيل الواجهات وربط الأنظمة وتسليم التغييرات.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="صندوق الأدوات الأساسي" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="مبادئ البناء" width="100%" /></a>
-
-<br />
-
-<sub><i>اجعل المسار المفيد سهل المتابعة.</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
 
 ## المهارات والتقنيات
 
 هذه خريطة للعمل وليست قائمة تحقق. جُمعت التقنيات حسب نوع المشكلة التي تساعد في حلها.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="خريطة مرئية للمهارات التقنية" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="التركيز التقني" width="100%" /></a>
+<sub>تريد النسخة المتحركة؟ <a href="./assets/technology-stack.gif">افتح خريطة GIF</a></sub>
+
+<details>
+<summary><strong>عرض الحزمة التقنية كنص</strong></summary>
+
+<br />
+
+- **اللغات والترميز** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **الخدمات والبيانات والأتمتة** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, الأتمتة
+- **الواجهات والمنتج** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **التسليم والعمليات** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>
 
 </div>

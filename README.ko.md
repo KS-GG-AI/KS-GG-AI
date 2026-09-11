@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
+  <img src="./assets/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
+</p>
+
+<p>
+  <strong>코드, 호기심, 그리고 세심함으로 아이디어를 현실로 만듭니다.</strong><br />
+  <sub>명확한 인터페이스 · 연결된 워크플로 · 믿을 수 있는 시스템</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md"><strong>🇰🇷 한국어</strong></a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,56 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI 프로필 소개" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="움직이는 KS-GG-AI 마크" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI">
-  <img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것과 명확한 시스템을 세심하게 만듭니다" width="100%" />
-</a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; 저장소 둘러보기 &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 프로필 소스 보기 &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 프로필 저장소 열기 &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## 하는 일
+## 만드는 것
 
-겉으로는 단순하게 느껴져야 하지만 뒤에서는 여러 일이 연결되는 제품의 부분을 만듭니다. 다음 행동이 바로 보이는 화면, 도구 사이를 자연스럽게 잇는 연결, 반복 가능한 워크플로가 주된 관심사입니다.
+복잡한 일도 쓰는 사람에게는 단순하게 느껴지도록 만듭니다. 다음 행동이 보이는 인터페이스, 도구 사이의 자연스러운 연결, 반복 가능한 워크플로를 제품 관점·자동화·시스템 설계의 접점에서 다룹니다.
 
-- **제품 화면** — 다음 행동이 자연스럽게 보이는 인터페이스와 흐름
-- **연결된 작업** — 반복적인 전달 과정을 줄이는 API, 연동, 자동화
-- **바뀔 수 있게 설계** — 테스트·수정·유지가 쉬운 작은 기반
+- **제품 흐름** — 다음 행동이 자연스럽게 보이는 인터페이스와 흐름
+- **연결된 작업** — 반복적인 전달을 줄이는 API, 연동, 자동화
+- **변화를 견디는 기반** — 테스트, 수정, 유지보수가 쉬운 작은 기반
 
-## 프로필 언어
+## 일하는 방식
 
-이 프로필은 10개 언어로 제공합니다. 한국어와 영어를 중심으로, 같은 작업 맥락을 다양한 지역의 방문자가 편하게 읽을 수 있도록 구성했습니다.
+결정은 읽기 쉽게, 다음 단계는 눈에 보이게 둡니다. 작게 시작하고, 빠르게 배우고, 의도를 갖고 개선합니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="영어, 한국어, 중국어, 스페인어, 힌디어, 아랍어, 포르투갈어, 러시아어, 프랑스어, 인도네시아어로 제공되는 프로필" width="100%" /></a>
+<img src="./assets/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
 
 ## 핵심 도구
 
-아이디어를 실제로 쓸 수 있는 결과물로 옮길 때 쓰는 도구들입니다. 만들고, 연결하고, 배포하고, 운영하는 흐름을 함께 봅니다.
+작성, 인터페이스 구성, 시스템 연결, 변경 배포에 쓰는 도구를 흐름 중심으로 정리했습니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="TypeScript, Python, Node.js, Docker, GitHub 핵심 도구" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="제작 원칙" width="100%" /></a>
-
-<br />
-
-<sub><i>쓸모 있는 흐름이 자연스럽게 이어지도록.</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
 
 ## 기술과 도구
 
-기술을 체크리스트처럼 나열하기보다, 어떤 일을 해결하는 데 쓰이는지 기준으로 묶었습니다. 필요한 조합을 선택해 사용합니다.
+이것은 체크리스트가 아닌 작업 지도입니다. 기술은 어떤 문제를 해결하는지에 따라 묶었습니다.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="언어, AI와 백엔드, 웹과 프로덕트, 클라우드와 DevOps를 보여주는 기술 카드" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="KS-GG-AI 기술 분야" width="100%" /></a>
+<sub>움직이는 버전이 필요하다면 <a href="./assets/technology-stack.gif">GIF 지도 보기</a>.</sub>
+
+<details>
+<summary><strong>텍스트로 기술 스택 보기</strong></summary>
+
+<br />
+
+- **언어와 마크업** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **서비스·데이터·자동화** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 자동화
+- **인터페이스와 프로덕트** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **배포와 운영** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

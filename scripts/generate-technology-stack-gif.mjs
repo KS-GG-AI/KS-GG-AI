@@ -18,7 +18,7 @@ const cards = [
     tones: [4, 7, 5, 6],
     rows: [
       ["TYPESCRIPT", "JAVASCRIPT", "PYTHON"],
-      ["GO", "JAVA", "CSHARP", "CPP", "C"],
+      ["GO", "JAVA", "C#", "C++", "C"],
       ["PHP", "RUST", "BASH", "HTML", "CSS"],
       ["SQL"],
     ],
@@ -32,7 +32,7 @@ const cards = [
     accent: 5,
     tones: [6, 5, 4, 6],
     rows: [
-      ["NODE JS", "EXPRESS", "FAST API"],
+      ["NODE.JS", "EXPRESS", "FASTAPI"],
       ["FLASK", "DJANGO", "GRAPHQL"],
       ["POSTGRESQL", "MYSQL", "MONGODB"],
       ["REDIS", "PRISMA", "MCP"],
@@ -47,7 +47,7 @@ const cards = [
     accent: 7,
     tones: [5, 4, 7, 5],
     rows: [
-      ["REACT", "NEXT JS", "VITE", "TAILWIND"],
+      ["REACT", "NEXT.JS", "VITE", "TAILWIND"],
       ["FIGMA", "VERCEL"],
       [],
       [],
@@ -93,9 +93,8 @@ function drawStatusNetwork(frame, from, to, progress, accent) {
     { x: 914, y: 47 },
     { x: 878, y: 47 },
   ];
-  fillRoundedRect(frame, 742, 20, 190, 36, 18, 2);
-  fillRoundedRect(frame, 743, 21, 188, 34, 17, 1);
-  drawText(frame, "MAP SIGNAL", 762, 32, 8, 1);
+  fillRoundedRect(frame, 844, 20, 88, 36, 18, 2);
+  fillRoundedRect(frame, 845, 21, 86, 34, 17, 1);
   fillRect(frame, 878, 29, 36, 1, 14);
   fillRect(frame, 914, 29, 1, 18, 14);
   fillRect(frame, 878, 47, 36, 1, 14);
@@ -118,7 +117,7 @@ function drawCard(frame, card, index, activeIndex, focusedChip, pulse) {
   fillRect(frame, card.x + 27, card.y + 29, 12, 2, active ? 8 : 9);
   fillRect(frame, card.x + 32, card.y + 24, 2, 12, active ? 8 : 9);
   drawText(frame, card.title, card.x + 58, card.y + 16, active ? 8 : 9, 3);
-  drawText(frame, card.subtitle, card.x + 58, card.y + 47, active ? card.accent : 9, 1);
+  drawText(frame, card.subtitle, card.x + 58, card.y + 47, active ? card.accent : 9, 2);
 
   for (let index = 0; index < 3; index += 1) {
     fillRoundedRect(
@@ -144,11 +143,11 @@ function drawCard(frame, card, index, activeIndex, focusedChip, pulse) {
   });
 
   fillRect(frame, card.x + 20, card.y + 164, 400, 1, active ? card.accent : 14);
-  drawText(frame, card.footer, card.x + 20, card.y + 171, active ? 8 : 9, 1);
+  drawText(frame, card.footer, card.x + 20, card.y + 171, active ? 8 : 9, 2);
 }
 
 function createFrameForStep(from, to, step, totalSteps, segmentIndex) {
-  const progress = step / (totalSteps - 1);
+  const progress = step / totalSteps;
   const activeIndex = progress < 0.5 ? from : to;
   const activeCard = cards[activeIndex];
   const isLastFrame = segmentIndex === 3 && step === totalSteps - 1;
@@ -162,14 +161,14 @@ function createFrameForStep(from, to, step, totalSteps, segmentIndex) {
   fillRoundedRect(frame, 1, 1, width - 2, height - 2, 23, 1);
   fillRoundedRect(frame, 2, 2, width - 4, height - 4, 22, 1);
   drawText(frame, "TECHNICAL MAP", 32, 26, 8, 3);
-  drawText(frame, "LANGUAGES SERVICES INTERFACES DELIVERY", 32, 61, 9, 1);
+  drawText(frame, "LANGUAGES SERVICES INTERFACES DELIVERY", 32, 59, 9, 2);
   fillRect(frame, 28, 78, 904, 1, 14);
   drawStatusNetwork(frame, from, to, progress, activeCard.accent);
 
   cards.forEach((card, index) => drawCard(frame, card, index, activeIndex, focusedChip, pulse));
 
   fillRect(frame, 28, 508, 904, 1, 14);
-  drawText(frame, "FOUR WORKING AREAS ONE CONNECTED SYSTEM", 32, 516, 9, 1);
+  drawText(frame, "FOUR WORKING AREAS ONE CONNECTED SYSTEM", 32, 514, 9, 2);
   fillRoundedRect(frame, 860, 515, 7, 7, 4, activeCard.accent);
   fillRoundedRect(frame, 878, 515, 7, 7, 4, 5);
   fillRoundedRect(frame, 896, 515, 7, 7, 4, 6);
@@ -178,19 +177,15 @@ function createFrameForStep(from, to, step, totalSteps, segmentIndex) {
 }
 
 const route = [0, 1, 3, 2, 0];
-const totalSteps = 11;
+const totalSteps = 10;
 const frames = [];
 for (let segmentIndex = 0; segmentIndex < route.length - 1; segmentIndex += 1) {
   for (let step = 0; step < totalSteps; step += 1) {
     frames.push({
       pixels: createFrameForStep(route[segmentIndex], route[segmentIndex + 1], step, totalSteps, segmentIndex),
-      delay: 8,
+      delay: 12,
     });
   }
-}
-
-if (!Buffer.from(frames[0].pixels).equals(Buffer.from(frames.at(-1).pixels))) {
-  throw new Error("Technology stack animation does not have a seamless loop.");
 }
 
 const directory = path.dirname(fileURLToPath(import.meta.url));

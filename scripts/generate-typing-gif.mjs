@@ -109,7 +109,7 @@ function createFrame(suffix, index) {
   fillRoundedRect(frame, 756, 20, 144, 28, 14, 2);
   fillRoundedRect(frame, 757, 21, 142, 26, 13, 1);
   fillRect(frame, 774, 31, 7, 7, 7);
-  drawText(frame, "ACTIVE", 798, 27, 8, 2);
+  drawText(frame, "PROFILE", 798, 27, 8, 2);
 
   drawText(frame, "THOUGHTFUL SOFTWARE", 72, 137, 9, 2);
   fillRect(frame, 708, 143, 74, 1, 14);

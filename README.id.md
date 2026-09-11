@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
+  <img src="./assets/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
+</p>
+
+<p>
+  <strong>Mengubah ide menjadi kenyataan dengan kode, rasa ingin tahu, dan ketelitian.</strong><br />
+  <sub>Antarmuka jelas · alur kerja terhubung · sistem andal.</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,54 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Perkenalan KS-GG-AI" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Tanda animasi KS-GG-AI" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Efek mengetik animasi: membangun hal berguna dan sistem yang jelas dengan penuh perhatian" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Lihat repositori &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Lihat sumber profil &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Buka repositori profil &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## Yang saya kerjakan
+## Yang saya bangun
 
 Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun pekerjaan di baliknya tidak: antarmuka yang jelas, alat yang terhubung, dan alur kerja yang dapat diulang. Sebagian besar pekerjaan berada di pertemuan antara pemikiran produk, otomatisasi, dan sistem.
 
-- **Permukaan produk** — Antarmuka dan alur yang membuat langkah berikutnya terlihat jelas
+- **Pengalaman produk** — Antarmuka dan alur yang membuat langkah berikutnya terlihat jelas
 - **Kerja yang terhubung** — API, integrasi, dan otomatisasi yang mengurangi serah-terima rutin
 - **Dibuat untuk berkembang** — Fondasi kecil yang mudah diuji, diubah, dan dipelihara
 
-## Bahasa profil
+## Cara saya bekerja
 
-Profil ini tersedia dalam sepuluh bahasa. Bahasa Korea dan Inggris menjadi titik awal; versi lokal lainnya memudahkan berbagi konteks yang sama lintas wilayah.
+Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai dari kecil, belajar cepat, lalu memperbaiki dengan sengaja.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Profil tersedia dalam bahasa Inggris, Korea, Mandarin, Spanyol, Hindi, Arab, Portugis, Rusia, Prancis, dan Indonesia" width="100%" /></a>
+<img src="./assets/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
 
 ## Perangkat utama
 
-Sekumpulan alat praktis untuk menulis, menghubungkan, mengirimkan, dan menjaga perangkat lunak tetap bergerak.
+Seperangkat alat yang fokus untuk menulis kode, membentuk antarmuka, menghubungkan sistem, dan mengirimkan perubahan.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Perangkat utama" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Prinsip membangun" width="100%" /></a>
-
-<br />
-
-<sub><i>Jadikan jalur yang berguna mudah diikuti.</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
 
 ## Keahlian dan teknologi
 
 Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan masalah yang dibantu untuk diselesaikan.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Peta visual keahlian teknis" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Fokus teknologi" width="100%" /></a>
+<sub>Ingin versi bergerak? <a href="./assets/technology-stack.gif">Buka peta GIF</a>.</sub>
+
+<details>
+<summary><strong>Lihat stack dalam teks</strong></summary>
+
+<br />
+
+- **Bahasa dan markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Layanan, data, dan otomatisasi** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, otomatisasi
+- **Antarmuka dan produk** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Pengiriman dan operasi** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
+  <img src="./assets/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
+</p>
+
+<p>
+  <strong>कोड, जिज्ञासा और सावधानी से विचारों को आकार देता हूँ।</strong><br />
+  <sub>स्पष्ट इंटरफ़ेस · जुड़े हुए वर्कफ़्लो · भरोसेमंद सिस्टम</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,54 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI प्रोफ़ाइल परिचय" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="एनिमेटेड KS-GG-AI चिह्न" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="एनिमेटेड टाइपिंग प्रभाव: उपयोगी चीज़ें और स्पष्ट सिस्टम सावधानी से बनाते हुए" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; रिपॉज़िटरी देखें &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; प्रोफ़ाइल स्रोत देखें &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; प्रोफ़ाइल रिपॉज़िटरी खोलें &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## मैं किस पर काम करता हूँ
+## मैं क्या बनाता हूँ
 
 मैं किसी उत्पाद के उन हिस्सों को बनाता हूँ जो पीछे के जटिल काम के बावजूद उपयोग में सरल लगने चाहिए — स्पष्ट इंटरफ़ेस, जुड़े हुए टूल और दोहराए जा सकने वाले वर्कफ़्लो। मेरा अधिकांश काम प्रोडक्ट सोच, ऑटोमेशन और सिस्टम के मिलन बिंदु पर होता है।
 
-- **प्रोडक्ट सतहें** — ऐसे इंटरफ़ेस और फ्लो जिनमें अगला कदम तुरंत दिखे
+- **प्रोडक्ट अनुभव** — ऐसे इंटरफ़ेस और फ्लो जिनमें अगला कदम तुरंत दिखे
 - **जुड़ा हुआ काम** — API, इंटीग्रेशन और ऑटोमेशन जो रोज़मर्रा के हैंड-ऑफ कम करें
 - **बदलाव के लिए तैयार** — छोटे आधार जिन्हें टेस्ट, बदलना और बनाए रखना आसान हो
 
-## प्रोफ़ाइल भाषाएँ
+## मैं कैसे काम करता हूँ
 
-यह प्रोफ़ाइल दस भाषाओं में उपलब्ध है। कोरियाई और अंग्रेज़ी इसके शुरुआती संस्करण हैं; अन्य स्थानीयकृत दृश्य अलग-अलग क्षेत्रों में यही संदर्भ साझा करना आसान बनाते हैं।
+निर्णयों को पढ़ने में आसान और अगले कदम को साफ़ रखता हूँ: छोटा शुरू करता हूँ, जल्दी सीखता हूँ और इरादे के साथ सुधारता हूँ।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="अंग्रेज़ी, कोरियाई, चीनी, स्पेनिश, हिंदी, अरबी, पुर्तगाली, रूसी, फ़्रेंच और इंडोनेशियाई में उपलब्ध प्रोफ़ाइल" width="100%" /></a>
+<img src="./assets/principles.svg" alt="तीन सिद्धांत: पहले स्पष्टता, जिज्ञासु बने रहें, और सुधार करते रहें।" width="100%" />
 
-## टूलबॉक्स
+## मुख्य उपकरण
 
-लिखने, जोड़ने, डिलीवर करने और सॉफ़्टवेयर को चलते रहने देने के लिए व्यावहारिक टूलों का सेट।
+कोड लिखने, इंटरफ़ेस बनाने, सिस्टम जोड़ने और बदलाव पहुँचाने के लिए एक केंद्रित टूलसेट।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="मुख्य उपकरण" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="निर्माण सिद्धांत" width="100%" /></a>
-
-<br />
-
-<sub><i>उपयोगी रास्ते को आसानी से आगे बढ़ने दें।</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
 
 ## कौशल और प्रौद्योगिकियाँ
 
 यह काम का नक्शा है, चेकलिस्ट नहीं। तकनीकों को उन समस्याओं के अनुसार समूहित किया गया है जिन्हें वे हल करने में मदद करती हैं।
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="तकनीकी कौशलों का दृश्य मानचित्र" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="तकनीकी फोकस" width="100%" /></a>
+<sub>मूवमेंट वाला संस्करण चाहिए? <a href="./assets/technology-stack.gif">GIF नक्शा खोलें</a>।</sub>
+
+<details>
+<summary><strong>टेक स्टैक को टेक्स्ट में देखें</strong></summary>
+
+<br />
+
+- **भाषाएँ और मार्कअप** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **सेवाएँ, डेटा और ऑटोमेशन** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, ऑटोमेशन
+- **इंटरफ़ेस और प्रोडक्ट** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **डिलीवरी और ऑपरेशंस** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

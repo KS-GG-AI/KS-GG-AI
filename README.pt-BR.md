@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — interfaces claras, fluxos conectados e sistemas confiáveis." width="78%" />
+  <img src="./assets/avatar.gif" alt="Monograma animado do KS-GG-AI." width="20%" />
+</p>
+
+<p>
+  <strong>Transformo ideias em realidade com código, curiosidade e cuidado.</strong><br />
+  <sub>Interfaces claras · fluxos conectados · sistemas confiáveis.</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="Digitação animada: criando coisas úteis, sistemas claros e trabalho cuidadoso." width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,54 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Apresentação do KS-GG-AI" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Marca animada do KS-GG-AI" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Efeito de digitação animado: criando coisas úteis e sistemas claros com cuidado" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Explorar repositórios &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Ver código do perfil &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Abrir repositório do perfil &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## No que trabalho
+## O que construo
 
-Construo as partes de um produto que devem parecer simples mesmo quando o trabalho por trás delas não é: interfaces claras, ferramentas conectadas e fluxos repetíveis. Grande parte do meu trabalho fica entre produto, automação e sistemas.
+Construo as partes de um produto que devem parecer simples mesmo quando o trabalho por trás delas não é: interfaces claras, ferramentas conectadas e fluxos repetíveis. Grande parte do meu trabalho está na interseção entre produto, automação e sistemas.
 
-- **Superfícies de produto** — Interfaces e fluxos que deixam claro o próximo passo
+- **Experiências de produto** — Interfaces e fluxos que deixam claro o próximo passo
 - **Trabalho conectado** — APIs, integrações e automação que reduzem repasses rotineiros
 - **Feito para evoluir** — Bases pequenas e fáceis de testar, mudar e manter
 
-## Idiomas do perfil
+## Como trabalho
 
-Este perfil está disponível em dez idiomas. Coreano e inglês são os pontos de partida; as demais versões localizadas facilitam compartilhar o mesmo contexto entre regiões.
+Mantenho as decisões legíveis e o próximo passo visível: começo pequeno, aprendo rápido e melhoro com intenção.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Perfil disponível em inglês, coreano, chinês, espanhol, hindi, árabe, português, russo, francês e indonésio" width="100%" /></a>
+<img src="./assets/principles.svg" alt="Três princípios: clareza primeiro, manter a curiosidade e continuar melhorando." width="100%" />
 
-## Caixa de ferramentas
+## Ferramentas principais
 
-Um conjunto prático de ferramentas para escrever, conectar, entregar e manter o software em movimento.
+Um conjunto focado para escrever código, criar interfaces, conectar sistemas e entregar mudanças.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Ferramentas principais" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Princípios de construção" width="100%" /></a>
-
-<br />
-
-<sub><i>Faça com que o caminho útil seja fácil de seguir.</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="Ferramentas principais organizadas em torno de escrever, construir, conectar e entregar software." width="100%" />
 
 ## Habilidades e tecnologias
 
 Este é um mapa de trabalho, não uma lista de verificação. As tecnologias são agrupadas pelo tipo de problema que ajudam a resolver.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Mapa visual de habilidades técnicas" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="Mapa técnico de linguagens, serviços e dados, interfaces e produto, além de entrega e operações." width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Foco tecnológico" width="100%" /></a>
+<sub>Quer ver a versão animada? <a href="./assets/technology-stack.gif">Abrir o mapa GIF</a>.</sub>
+
+<details>
+<summary><strong>Ver a stack em texto</strong></summary>
+
+<br />
+
+- **Linguagens e marcação** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Serviços, dados e automação** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automação
+- **Interfaces e produto** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Entrega e operações** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

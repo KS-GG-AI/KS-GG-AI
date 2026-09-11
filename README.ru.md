@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
+  <img src="./assets/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
+</p>
+
+<p>
+  <strong>Превращаю идеи в реальность с помощью кода, любопытства и внимания к деталям.</strong><br />
+  <sub>Понятные интерфейсы · связанные процессы · надёжные системы.</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
@@ -14,54 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="Профиль KS-GG-AI" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="Анимированный знак KS-GG-AI" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="Анимация набора текста: создаю полезные вещи и понятные системы с вниманием к деталям" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; Репозитории &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Исходный код профиля &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; Открыть репозиторий профиля &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## Над чем я работаю
+## Что я создаю
 
 Я создаю те части продукта, которые должны быть простыми для пользователя, даже если внутри много работы: понятные интерфейсы, связанные инструменты и повторяемые процессы. Большая часть работы находится на стыке продукта, автоматизации и систем.
 
-- **Продуктовые поверхности** — Интерфейсы и сценарии, в которых следующий шаг очевиден
-- **Связанная работа** — API, интеграции и автоматизация, сокращающие рутинные передачи
-- **С запасом на изменения** — Небольшие основы, которые легко тестировать, менять и поддерживать
+- **Продуктовый опыт** — Интерфейсы и сценарии, в которых следующий шаг очевиден
+- **Связанная работа** — API, интеграции и автоматизация, сокращающие ручную передачу работы
+- **Основа для развития** — Небольшие основы, которые легко тестировать, менять и поддерживать
 
-## Языки профиля
+## Как я работаю
 
-Этот профиль доступен на десяти языках. Корейский и английский — отправные точки; остальные локализованные версии упрощают обмен тем же контекстом между регионами.
+Делаю решения понятными, а следующий шаг видимым: начинаю с малого, быстро учусь и улучшаю осмысленно.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="Профиль доступен на английском, корейском, китайском, испанском, хинди, арабском, португальском, русском, французском и индонезийском языках" width="100%" /></a>
+<img src="./assets/principles.svg" alt="Три принципа: сначала ясность, сохранять любопытство и продолжать улучшать." width="100%" />
 
-## Инструментарий
+## Основные инструменты
 
-Практичный набор инструментов для написания, соединения, поставки и поддержки движения программного обеспечения.
+Сфокусированный набор для написания кода, создания интерфейсов, соединения систем и поставки изменений.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="Основной инструментарий: TypeScript, Python, Node.js, Docker и GitHub" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="Принципы разработки" width="100%" /></a>
-
-<br />
-
-<sub><i>Пусть полезный путь будет легко пройти.</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
 
 ## Навыки и технологии
 
 Это рабочая карта, а не контрольный список. Технологии сгруппированы по задачам, которые они помогают решать.
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="Визуальная карта языков, AI и бэкенда, веба и продукта, облака и DevOps" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="Технологический фокус KS-GG-AI" width="100%" /></a>
+<sub>Хотите версию с движением? <a href="./assets/technology-stack.gif">Открыть GIF-карту</a>.</sub>
+
+<details>
+<summary><strong>Посмотреть стек в виде текста</strong></summary>
+
+<br />
+
+- **Языки и разметка** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Сервисы, данные и автоматизация** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, автоматизация
+- **Интерфейсы и продукт** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Поставка и операции** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

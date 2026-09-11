@@ -1,6 +1,18 @@
 <div align="center">
 
 <p>
+  <img src="./assets/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
+  <img src="./assets/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
+</p>
+
+<p>
+  <strong>用代码、好奇心和细心把想法变成现实。</strong><br />
+  <sub>清晰的界面 · 连贯的工作流 · 可靠的系统</sub>
+</p>
+
+<img src="./assets/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
+
+<p>
   <a href="./README.md">🇺🇸 English</a> ·
   <a href="./README.ko.md">🇰🇷 한국어</a> ·
   <a href="./README.zh-CN.md"><strong>🇨🇳 中文</strong></a> ·
@@ -14,54 +26,47 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI"><img src="./assets/hero.svg" alt="KS-GG-AI 个人简介" width="78%" /></a>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/avatar.gif" alt="动态 KS-GG-AI 标志" width="20%" /></a>
-</p>
-
-<a href="https://github.com/KS-GG-AI/KS-GG-AI"><img src="./assets/typing.gif" alt="动态打字效果：打造实用的事物、清晰的系统，并注重细节" width="100%" /></a>
-
-<p>
-  <a href="https://github.com/KS-GG-AI?tab=repositories"><kbd>&nbsp; 浏览仓库 &nbsp;</kbd></a>
-  &nbsp;
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 查看个人资料源码 &nbsp;</kbd></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI"><kbd>&nbsp; 打开个人资料仓库 &nbsp;</kbd></a>
 </p>
 
 </div>
 
-## 我在做什么
+## 我在构建什么
 
-我构建那些从外部看应当简单、但背后需要大量协作的产品部分：清晰的界面、可连接的工具和可重复的工作流。大部分工作位于产品思考、自动化和系统设计的交汇处。
+我构建那些对使用者而言应当简单、即使背后工作并不简单的产品部分：清晰的界面、相互连接的工具和可重复的工作流。大部分工作位于产品思考、自动化和系统设计的交汇处。
 
-- **产品界面** — 让下一步一目了然的界面和流程
-- **连接的工作** — 通过 API、集成和自动化减少重复交接
-- **为变化而构建** — 易于测试、调整和维护的小型基础
+- **产品体验** — 让下一步一目了然的界面和流程
+- **连接的流程** — 通过 API、集成和自动化减少重复交接
+- **可持续演进** — 易于测试、调整和维护的小型基础
 
-## 个人资料语言
+## 我的工作方式
 
-此个人资料提供 10 种语言版本。以韩语和英语为基础，同时提供其他本地化版本，便于不同地区的访客理解相同的工作内容。
+让决策更清楚、让下一步更可见：从小处开始，快速学习，有意识地持续改进。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/language-map.gif" alt="提供英语、韩语、中文、西班牙语、印地语、阿拉伯语、葡萄牙语、俄语、法语和印尼语版本的个人资料" width="100%" /></a>
+<img src="./assets/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
 
 ## 核心工具
 
-把想法变成可用成果时使用的一组实用工具：编写、连接、交付并持续运行。
+围绕编写代码、构建界面、连接系统和交付变更组织的一组核心工具。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/toolbox.gif" alt="核心工具" width="100%" /></a>
-
-<div align="center">
-
-<a href="https://github.com/KS-GG-AI"><img src="./assets/principles.svg" alt="构建原则" width="100%" /></a>
-
-<br />
-
-<sub><i>让有用的路径自然地延续下去。</i></sub>
-
-</div>
+<img src="./assets/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 
 ## 技能与技术
 
 这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-stack.gif" alt="技术栈视觉地图" width="100%" /></a>
+<img src="./assets/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
-<a href="https://github.com/KS-GG-AI/KS-GG-AI/tree/main/assets"><img src="./assets/technology-focus.gif" alt="技术重点" width="100%" /></a>
+<sub>如果想看动态版本，<a href="./assets/technology-stack.gif">打开 GIF 地图</a>。</sub>
+
+<details>
+<summary><strong>以文本查看技术栈</strong></summary>
+
+<br />
+
+- **语言与标记** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **服务、数据与自动化** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 自动化
+- **界面与产品** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **交付与运维** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
+
+</details>

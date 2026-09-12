@@ -75,11 +75,11 @@ Uma visão pública e baseada em fatos do que está sendo acompanhado e de como 
 
 <p><strong>Roteiro do projeto</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Roteiro público do projeto dividido em agora, próximo e depois." width="480" />
+<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="Roteiro público do projeto dividido em agora, próximo e depois." width="480" />
 
 <p><strong>Roteiro de desenvolvimento</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Roteiro público de desenvolvimento dividido em planejar, construir, verificar e publicar." width="480" />
+<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="Roteiro público de desenvolvimento dividido em planejar, construir, verificar e publicar." width="480" />
 
 <sub>Usa somente issues públicos do GitHub. Adicione um rótulo <code>roadmap:*</code> e um <code>stage:*</code> a um issue público para exibi-lo.</sub>
 

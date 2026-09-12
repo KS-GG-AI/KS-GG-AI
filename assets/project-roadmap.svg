@@ -11,8 +11,8 @@
 <circle cx="52" cy="112" r="9" fill="#111827" stroke="#67E8F9" stroke-width="2"/><circle cx="52" cy="112" r="3" fill="#67E8F9"/>
 <rect x="76" y="82" width="380" height="68" rx="15" fill="#111827" stroke="#67E8F9" stroke-opacity=".45"/>
 <text x="94" y="105" fill="#67E8F9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">NOW</text>
-<text x="154" y="105" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">NO PUBLIC ITEMS</text>
-<text x="94" y="130" fill="#D4D4E8" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with roadmap:now</text>
+<text x="154" y="105" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">01 PUBLIC ITEM</text>
+<text x="94" y="128" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">#1 · Plan a shared MCP i…</text>
 <circle cx="52" cy="190" r="9" fill="#111827" stroke="#C4B5FD" stroke-width="2"/><circle cx="52" cy="190" r="3" fill="#C4B5FD"/>
 <rect x="76" y="160" width="380" height="68" rx="15" fill="#111827" stroke="#C4B5FD" stroke-opacity=".45"/>
 <text x="94" y="183" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">NEXT</text>

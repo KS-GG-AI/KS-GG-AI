@@ -11,8 +11,8 @@
 <circle cx="52" cy="106" r="9" fill="#111827" stroke="#C4B5FD" stroke-width="2"/><circle cx="52" cy="106" r="3" fill="#C4B5FD"/>
 <rect x="76" y="82" width="380" height="49" rx="14" fill="#111827" stroke="#C4B5FD" stroke-opacity=".42"/>
 <text x="94" y="103" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">PLAN</text>
-<text x="164" y="103" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">0 PUBLIC ITEMS</text>
-<text x="94" y="121" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with stage:plan</text>
+<text x="164" y="103" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">01 PUBLIC ITEM</text>
+<text x="94" y="121" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">#1 · Plan a shared MCP i…</text>
 <circle cx="52" cy="168" r="9" fill="#111827" stroke="#67E8F9" stroke-width="2"/><circle cx="52" cy="168" r="3" fill="#67E8F9"/>
 <rect x="76" y="144" width="380" height="49" rx="14" fill="#111827" stroke="#67E8F9" stroke-opacity=".42"/>
 <text x="94" y="165" fill="#67E8F9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">BUILD</text>

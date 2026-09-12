@@ -75,11 +75,11 @@ Una vista pública y basada en hechos de lo que se está siguiendo y de cómo av
 
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
 
 <sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
 

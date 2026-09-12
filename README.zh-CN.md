@@ -75,11 +75,11 @@
 
 <p><strong>项目路线图</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
 
 <p><strong>开发路线图</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
 

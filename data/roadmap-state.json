@@ -4,8 +4,8 @@
   "username": "KS-GG-AI",
   "source": {
     "repositoryCount": 1,
-    "openIssueCount": 0,
-    "trackedIssueCount": 0,
+    "openIssueCount": 1,
+    "trackedIssueCount": 1,
     "visibility": "public-only"
   },
   "projectRoadmap": {
@@ -14,8 +14,15 @@
         "id": "now",
         "label": "NOW",
         "sourceLabel": "roadmap:now",
-        "count": 0,
-        "items": []
+        "count": 1,
+        "items": [
+          {
+            "repository": "KS-GG-AI",
+            "number": 1,
+            "title": "Plan a shared MCP integration fou…",
+            "updatedAt": "2026-09-12T03:54:27Z"
+          }
+        ]
       },
       {
         "id": "next",
@@ -39,8 +46,15 @@
         "id": "plan",
         "label": "PLAN",
         "sourceLabel": "stage:plan",
-        "count": 0,
-        "items": []
+        "count": 1,
+        "items": [
+          {
+            "repository": "KS-GG-AI",
+            "number": 1,
+            "title": "Plan a shared MCP integration fou…",
+            "updatedAt": "2026-09-12T03:54:27Z"
+          }
+        ]
       },
       {
         "id": "build",
@@ -65,6 +79,6 @@
       }
     ]
   },
-  "revision": "a6ed0d5dc67f",
-  "generatedAt": "2026-09-12T03:43:12.636Z"
+  "revision": "75dd6c83a62b",
+  "generatedAt": "2026-09-12T03:55:18.973Z"
 }

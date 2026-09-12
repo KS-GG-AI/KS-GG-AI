@@ -1,0 +1,52 @@
+name: Refresh public roadmaps
+
+on:
+  schedule:
+    - cron: "23 3 * * 1,4"
+  workflow_dispatch:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled, milestoned, demilestoned]
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: profile-readme-assets
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+
+      - name: Install roadmap tooling
+        run: npm ci --ignore-scripts
+
+      - name: Generate public roadmaps
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run roadmaps:update
+
+      - name: Test roadmap generator
+        run: npm run roadmaps:test
+
+      - name: Commit refreshed roadmaps
+        run: |
+          if git diff --quiet -- assets/project-roadmap.svg assets/development-roadmap.svg data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
+            echo "Public roadmaps are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- assets/project-roadmap.svg assets/development-roadmap.svg data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
+          git commit -m "chore: refresh public roadmaps"
+          git push

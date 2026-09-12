@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-project-map
+  group: profile-readme-assets
   cancel-in-progress: false
 
 jobs:

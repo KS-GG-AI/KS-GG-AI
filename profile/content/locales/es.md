@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — interfaces claras, flujos conectados y sistemas fiables." width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="Monograma animado de KS-GG-AI." width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — interfaces claras, flujos conectados y sistemas fiables." width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="Monograma animado de KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -11,16 +11,16 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
+  <a href="./ko.md">🇰🇷 한국어</a> ·
+  <a href="./zh-CN.md">🇨🇳 中文</a> ·
   <strong>🇪🇸 Español</strong> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./ru.md">🇷🇺 Русский</a> ·
+  <a href="./fr.md">🇫🇷 Français</a> ·
+  <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>
@@ -32,7 +32,7 @@
 [Abrir el repositorio del perfil](https://github.com/KS-GG-AI/KS-GG-AI) · [Ver repositorios públicos](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="Escritura animada: creando cosas útiles, sistemas claros y trabajo cuidadoso." width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="Escritura animada: creando cosas útiles, sistemas claros y trabajo cuidadoso." width="100%" />
 </p>
 
 ## Lo que construyo
@@ -55,7 +55,7 @@ Una vista compacta de los proyectos públicos y del trabajo privado protegido. S
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Mapa de proyectos que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Mapa de proyectos que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="480" />
 
 <sub>Los nombres y metadatos privados nunca se muestran. <a href="https://github.com/KS-GG-AI?tab=repositories">Ver repositorios públicos</a>.</sub>
 
@@ -75,11 +75,11 @@ Una vista pública y basada en hechos de lo que se está siguiendo y de cómo av
 
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
 
 <sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
 
@@ -104,7 +104,7 @@ Mantengo las decisiones claras y el siguiente paso visible: empiezo en pequeño,
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="Tres principios: claridad primero, mantener la curiosidad y seguir mejorando." width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="Tres principios: claridad primero, mantener la curiosidad y seguir mejorando." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ Un conjunto centrado en escribir código, dar forma a interfaces, conectar siste
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ El conjunto principal es TypeScript, JavaScript, Python, Node.js, React, Next.js
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
 
-<sub>¿Quieres ver la versión con movimiento? <a href="./profile/assets/motion/technology-stack.gif">Abrir el mapa GIF</a>.</sub>
+<sub>¿Quieres ver la versión con movimiento? <a href="../../assets/motion/technology-stack.gif">Abrir el mapa GIF</a>.</sub>
 
 <br />
 

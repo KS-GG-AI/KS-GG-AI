@@ -4,16 +4,56 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 export const readmeEntries = [
-  { file: "README.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.ko.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.zh-CN.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.es.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.hi.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.ar.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.pt-BR.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.ru.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.fr.md", assetReference: "./profile/assets/maps/project-map.svg" },
-  { file: "README.id.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  {
+    file: "README.md",
+    assetReference: "./profile/assets/maps/project-map.svg",
+    typingReference: "./profile/assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/ko.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/zh-CN.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/es.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/hi.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/ar.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/pt-BR.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/ru.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/fr.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
+  {
+    file: "profile/content/locales/id.md",
+    assetReference: "../../assets/maps/project-map.svg",
+    typingReference: "../../assets/motion/typing.gif",
+  },
 ];
 export const readmeNames = readmeEntries.map(({ file }) => file);
 const maxVisibleProjects = 3;

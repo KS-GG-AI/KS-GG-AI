@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
 </p>
 
 <p>
@@ -11,16 +11,16 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
+  <a href="./ko.md">🇰🇷 한국어</a> ·
   <strong>🇨🇳 中文</strong> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./es.md">🇪🇸 Español</a> ·
+  <a href="./hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./ru.md">🇷🇺 Русский</a> ·
+  <a href="./fr.md">🇫🇷 Français</a> ·
+  <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>
@@ -32,7 +32,7 @@
 [打开个人资料仓库](https://github.com/KS-GG-AI/KS-GG-AI) · [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
 </p>
 
 ## 我在构建什么
@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
 
 <sub>私有名称和元数据不会显示。<a href="https://github.com/KS-GG-AI?tab=repositories">浏览公开仓库</a>。</sub>
 
@@ -75,11 +75,11 @@
 
 <p><strong>项目路线图</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
 
 <p><strong>开发路线图</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
 
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
-<sub>如果想看动态版本，<a href="./profile/assets/motion/technology-stack.gif">打开 GIF 地图</a>。</sub>
+<sub>如果想看动态版本，<a href="../../assets/motion/technology-stack.gif">打开 GIF 地图</a>。</sub>
 
 <br />
 

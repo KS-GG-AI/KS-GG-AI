@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -11,15 +11,15 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
+  <a href="./ko.md">🇰🇷 한국어</a> ·
+  <a href="./zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./es.md">🇪🇸 Español</a> ·
+  <a href="./hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./ru.md">🇷🇺 Русский</a> ·
+  <a href="./fr.md">🇫🇷 Français</a> ·
   <strong>🇮🇩 Bahasa Indonesia</strong>
 </p>
 
@@ -32,7 +32,7 @@
 [Buka repositori profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
 </p>
 
 ## Yang saya bangun
@@ -55,7 +55,7 @@ Tampilan ringkas proyek publik dan pekerjaan privat yang terlindungi. Peta diper
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
 
 <sub>Nama dan metadata privat tidak pernah ditampilkan. <a href="https://github.com/KS-GG-AI?tab=repositories">Lihat repositori publik</a>.</sub>
 
@@ -75,11 +75,11 @@ Tampilan publik berbasis fakta tentang pekerjaan yang sedang dilacak dan bagaima
 
 <p><strong>Peta jalan proyek</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
 
 <p><strong>Peta jalan pengembangan</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
 
 <sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu label <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
 
@@ -104,7 +104,7 @@ Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ Seperangkat alat yang fokus untuk menulis kode, membentuk antarmuka, menghubungk
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ Set kerja utama adalah TypeScript, JavaScript, Python, Node.js, React, Next.js, 
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
 
-<sub>Ingin versi bergerak? <a href="./profile/assets/motion/technology-stack.gif">Buka peta GIF</a>.</sub>
+<sub>Ingin versi bergerak? <a href="../../assets/motion/technology-stack.gif">Buka peta GIF</a>.</sub>
 
 <br />
 

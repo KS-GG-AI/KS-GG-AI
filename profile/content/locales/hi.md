@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
 </p>
 
 <p>
@@ -11,16 +11,16 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
+  <a href="./ko.md">🇰🇷 한국어</a> ·
+  <a href="./zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./es.md">🇪🇸 Español</a> ·
   <strong>🇮🇳 हिन्दी</strong><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./ru.md">🇷🇺 Русский</a> ·
+  <a href="./fr.md">🇫🇷 Français</a> ·
+  <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>
@@ -32,7 +32,7 @@
 [प्रोफ़ाइल रिपॉज़िटरी खोलें](https://github.com/KS-GG-AI/KS-GG-AI) · [सार्वजनिक रिपॉज़िटरी देखें](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
 </p>
 
 ## मैं क्या बनाता हूँ
@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
 
 <sub>निजी नाम और मेटाडेटा कभी नहीं दिखाए जाते। <a href="https://github.com/KS-GG-AI?tab=repositories">सार्वजनिक रिपॉज़िटरी देखें</a>।</sub>
 
@@ -75,11 +75,11 @@
 
 <p><strong>प्रोजेक्ट रोडमैप</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
 
 <p><strong>डेवलपमेंट रोडमैप</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
 
 <sub>केवल सार्वजनिक GitHub Issue का उपयोग होता है। किसी सार्वजनिक Issue को दिखाने के लिए एक <code>roadmap:*</code> और एक <code>stage:*</code> लेबल जोड़ें।</sub>
 
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="तीन सिद्धांत: पहले स्पष्टता, जिज्ञासु बने रहें, और सुधार करते रहें।" width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="तीन सिद्धांत: पहले स्पष्टता, जिज्ञासु बने रहें, और सुधार करते रहें।" width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
 
-<sub>मूवमेंट वाला संस्करण चाहिए? <a href="./profile/assets/motion/technology-stack.gif">GIF नक्शा खोलें</a>।</sub>
+<sub>मूवमेंट वाला संस्करण चाहिए? <a href="../../assets/motion/technology-stack.gif">GIF नक्शा खोलें</a>।</sub>
 
 <br />
 

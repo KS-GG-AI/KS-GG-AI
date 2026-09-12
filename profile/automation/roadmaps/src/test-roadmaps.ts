@@ -155,14 +155,14 @@ assert.equal(publicSourceUrls.some((url) => url.includes("archived-repository/is
 
 const tempRoot = await mkdtemp(path.join(os.tmpdir(), "ks-gg-ai-roadmaps-"));
 try {
-  await mkdir(path.join(tempRoot, "data"), { recursive: true });
-  await writeFile(path.join(tempRoot, "data", "roadmap-state.json"), "sentinel-data\n", "utf8");
+  await mkdir(path.join(tempRoot, "profile", "data"), { recursive: true });
+  await writeFile(path.join(tempRoot, "profile", "data", "roadmap-state.json"), "sentinel-data\n", "utf8");
   await Promise.all(readmeEntries.map(async (entry) => {
     const file = path.join(tempRoot, entry.file);
     await mkdir(path.dirname(file), { recursive: true });
     const validReadme = '<img src="' + entry.projectRoadmapReference + '?v=old" />\n'
       + '<img src="' + entry.developmentRoadmapReference + '?v=old" />\n';
-    await writeFile(file, entry.file === "README.ko.md" ? "broken README" : validReadme, "utf8");
+    await writeFile(file, entry.file.endsWith("/ko.md") ? "broken README" : validReadme, "utf8");
   }));
   await assert.rejects(updateRoadmaps({
     root: tempRoot,
@@ -175,9 +175,9 @@ try {
           : response(200, [])
       ),
     },
-  }), /README\.ko\.md/);
-  assert.equal(await readFile(path.join(tempRoot, "data", "roadmap-state.json"), "utf8"), "sentinel-data\n");
-  await assert.rejects(readFile(path.join(tempRoot, "assets", "project-roadmap.svg"), "utf8"), { code: "ENOENT" });
+  }), /profile\/content\/locales\/ko\.md/);
+  assert.equal(await readFile(path.join(tempRoot, "profile", "data", "roadmap-state.json"), "utf8"), "sentinel-data\n");
+  await assert.rejects(readFile(path.join(tempRoot, "profile", "assets", "maps", "project-roadmap.svg"), "utf8"), { code: "ENOENT" });
 } finally {
   await rm(tempRoot, { recursive: true, force: true });
 }
@@ -202,8 +202,10 @@ assert.match(roadmapWorkflow, /contents: write\s+issues: read/);
 assert.match(roadmapWorkflow, /group: profile-readme-assets/);
 assert.match(roadmapWorkflow, /npm ci --prefix profile\/automation\/roadmaps --ignore-scripts/);
 assert.match(roadmapWorkflow, /git add -- profile\/assets\/maps\/project-roadmap\.svg profile\/assets\/maps\/development-roadmap\.svg profile\/data\/roadmap-state\.json/);
+assert.match(roadmapWorkflow, /profile\/content\/locales\/ko\.md/);
 assert.match(roadmapWorkflow, /actions\/checkout@[a-f0-9]{40}/);
 assert.match(roadmapWorkflow, /actions\/setup-node@[a-f0-9]{40}/);
 assert.match(projectMapWorkflow, /group: profile-readme-assets/);
+assert.match(projectMapWorkflow, /profile\/content\/locales\/ko\.md/);
 
 console.log("Roadmap generator checks passed.");

@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -11,16 +11,16 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
+  <a href="./ko.md">🇰🇷 한국어</a> ·
+  <a href="./zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./es.md">🇪🇸 Español</a> ·
+  <a href="./hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
   <strong>🇷🇺 Русский</strong> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./fr.md">🇫🇷 Français</a> ·
+  <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>
@@ -32,7 +32,7 @@
 [Открыть репозиторий профиля](https://github.com/KS-GG-AI/KS-GG-AI) · [Посмотреть публичные репозитории](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
 </p>
 
 ## Что я создаю
@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Карта проектов с рабочим пространством KS-GG-AI, публичными проектами и намеренно скрытой приватной работой." width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Карта проектов с рабочим пространством KS-GG-AI, публичными проектами и намеренно скрытой приватной работой." width="480" />
 
 <sub>Приватные имена и метаданные никогда не показываются. <a href="https://github.com/KS-GG-AI?tab=repositories">Посмотреть публичные репозитории</a>.</sub>
 
@@ -75,11 +75,11 @@
 
 <p><strong>Дорожная карта проекта</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
 
 <p><strong>Дорожная карта разработки</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
 
 <sub>Используются только публичные GitHub Issues. Добавьте к публичному issue одну метку <code>roadmap:*</code> и одну <code>stage:*</code>, чтобы он появился здесь.</sub>
 
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="Три принципа: сначала ясность, сохранять любопытство и продолжать улучшать." width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="Три принципа: сначала ясность, сохранять любопытство и продолжать улучшать." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
 
-<sub>Хотите версию с движением? <a href="./profile/assets/motion/technology-stack.gif">Открыть GIF-карту</a>.</sub>
+<sub>Хотите версию с движением? <a href="../../assets/motion/technology-stack.gif">Открыть GIF-карту</a>.</sub>
 
 <br />
 

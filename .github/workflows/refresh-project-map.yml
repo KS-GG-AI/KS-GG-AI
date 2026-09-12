@@ -35,12 +35,12 @@ jobs:
 
       - name: Commit generated project map
         run: |
-          if git diff --quiet -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
+          if git diff --quiet -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md; then
             echo "Project map is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
+          git add -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md
           git commit -m "chore: refresh project map"
           git push

@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
-  <img src="./profile/assets/identity/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
+  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
+  <img src="../../assets/identity/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
 </p>
 
 <p>
@@ -11,16 +11,16 @@
 </p>
 
 <p>
-  <a href="./README.md">🇺🇸 English</a> ·
+  <a href="../../../README.md">🇺🇸 English</a> ·
   <strong>🇰🇷 한국어</strong> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./es.md">🇪🇸 Español</a> ·
+  <a href="./hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./ar.md">🇸🇦 العربية</a> ·
+  <a href="./pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./ru.md">🇷🇺 Русский</a> ·
+  <a href="./fr.md">🇫🇷 Français</a> ·
+  <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>
@@ -32,7 +32,7 @@
 [프로필 저장소 열기](https://github.com/KS-GG-AI/KS-GG-AI) · [공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./profile/assets/motion/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+  <img src="../../assets/motion/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
 </p>
 
 ## 만드는 것
@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
 
 <sub>비공개 이름과 메타데이터는 표시하지 않습니다. <a href="https://github.com/KS-GG-AI?tab=repositories">공개 저장소 보기</a></sub>
 
@@ -75,11 +75,11 @@
 
 <p><strong>프로젝트 로드맵</strong></p>
 
-<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
 
 <p><strong>개발 로드맵</strong></p>
 
-<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
 
 <sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>
 
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
+<img src="../../assets/visuals/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./profile/assets/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
+<img src="../../assets/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./profile/assets/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
+<img src="../../assets/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 
-<sub>움직이는 버전이 필요하다면 <a href="./profile/assets/motion/technology-stack.gif">GIF 지도 보기</a>.</sub>
+<sub>움직이는 버전이 필요하다면 <a href="../../assets/motion/technology-stack.gif">GIF 지도 보기</a>.</sub>
 
 <br />
 

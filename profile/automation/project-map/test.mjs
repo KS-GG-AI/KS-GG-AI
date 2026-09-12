@@ -143,15 +143,16 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const persistedSnapshot = JSON.parse(await readFile(path.join(root, "profile", "data", "project-map.json"), "utf8"));
 const persistedSvg = await readFile(path.join(root, "profile", "assets", "maps", "project-map.svg"), "utf8");
 assert.equal(renderProjectMap(persistedSnapshot), persistedSvg);
-for (const { file, assetReference } of readmeEntries) {
+for (const { file, assetReference, typingReference } of readmeEntries) {
   const readme = await readFile(path.join(root, file), "utf8");
   const expression = new RegExp(assetReference.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\?v=([A-Za-z0-9-]+)", "g");
   const revisions = [...readme.matchAll(expression)].map((match) => match[1]);
   assert.deepEqual(revisions, [persistedSnapshot.revision]);
   assert.equal((readme.match(/<details>/g) ?? []).length, 5);
   assert.equal((readme.match(/<\/details>/g) ?? []).length, 5);
-  assert.equal(readme.includes('href="./' + file + '"'), false);
-  assert.ok(readme.indexOf('<img src="./profile/assets/motion/typing.gif"') > readme.indexOf("</div>"));
+  const selfReference = file === "README.md" ? "./README.md" : "./" + path.basename(file);
+  assert.equal(readme.includes('href="' + selfReference + '"'), false);
+  assert.ok(readme.indexOf('<img src="' + typingReference + '"') > readme.indexOf("</div>"));
 }
 
 console.log("Project map generator tests: PASS");

@@ -12,15 +12,15 @@
 
 <p>
   <strong>🇺🇸 English</strong> ·
-  <a href="./README.ko.md">🇰🇷 한국어</a> ·
-  <a href="./README.zh-CN.md">🇨🇳 中文</a> ·
-  <a href="./README.es.md">🇪🇸 Español</a> ·
-  <a href="./README.hi.md">🇮🇳 हिन्दी</a><br />
-  <a href="./README.ar.md">🇸🇦 العربية</a> ·
-  <a href="./README.pt-BR.md">🇧🇷 Português</a> ·
-  <a href="./README.ru.md">🇷🇺 Русский</a> ·
-  <a href="./README.fr.md">🇫🇷 Français</a> ·
-  <a href="./README.id.md">🇮🇩 Bahasa Indonesia</a>
+  <a href="./profile/content/locales/ko.md">🇰🇷 한국어</a> ·
+  <a href="./profile/content/locales/zh-CN.md">🇨🇳 中文</a> ·
+  <a href="./profile/content/locales/es.md">🇪🇸 Español</a> ·
+  <a href="./profile/content/locales/hi.md">🇮🇳 हिन्दी</a><br />
+  <a href="./profile/content/locales/ar.md">🇸🇦 العربية</a> ·
+  <a href="./profile/content/locales/pt-BR.md">🇧🇷 Português</a> ·
+  <a href="./profile/content/locales/ru.md">🇷🇺 Русский</a> ·
+  <a href="./profile/content/locales/fr.md">🇫🇷 Français</a> ·
+  <a href="./profile/content/locales/id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
 </div>

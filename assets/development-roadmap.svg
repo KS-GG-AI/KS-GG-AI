@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">KS-GG-AI development roadmap</title>
+<desc id="desc">Public issue delivery flow split into plan, build, verify, and ship stages.</desc>
+<defs><linearGradient id="surface" x1="0" y1="0" x2="480" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0D1E1D"/></linearGradient><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="28"/></filter></defs>
+<rect x=".5" y=".5" width="479" height="419" rx="22" fill="url(#surface)" stroke="#30354A"/>
+<circle cx="424" cy="62" r="62" fill="#7C3AED" fill-opacity=".14" filter="url(#glow)"/><circle cx="54" cy="378" r="66" fill="#06B6D4" fill-opacity=".09" filter="url(#glow)"/>
+<text x="24" y="31" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DEVELOPMENT ROADMAP</text>
+<text x="24" y="49" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".7">PUBLIC ISSUES · PLAN / BUILD / VERIFY / SHIP</text>
+<rect x="346" y="18" width="110" height="28" rx="14" fill="#0B1020" stroke="#C4B5FD" stroke-opacity=".42"/><circle cx="365" cy="32" r="4" fill="#67E8F9"/><text x="377" y="36" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">FLOW VIEW</text>
+<path d="M52 96V342" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>
+<circle cx="52" cy="106" r="9" fill="#111827" stroke="#C4B5FD" stroke-width="2"/><circle cx="52" cy="106" r="3" fill="#C4B5FD"/>
+<rect x="76" y="82" width="380" height="49" rx="14" fill="#111827" stroke="#C4B5FD" stroke-opacity=".42"/>
+<text x="94" y="103" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">PLAN</text>
+<text x="164" y="103" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">0 PUBLIC ITEMS</text>
+<text x="94" y="121" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with stage:plan</text>
+<circle cx="52" cy="168" r="9" fill="#111827" stroke="#67E8F9" stroke-width="2"/><circle cx="52" cy="168" r="3" fill="#67E8F9"/>
+<rect x="76" y="144" width="380" height="49" rx="14" fill="#111827" stroke="#67E8F9" stroke-opacity=".42"/>
+<text x="94" y="165" fill="#67E8F9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">BUILD</text>
+<text x="164" y="165" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">0 PUBLIC ITEMS</text>
+<text x="94" y="183" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with stage:build</text>
+<circle cx="52" cy="230" r="9" fill="#111827" stroke="#F9A8D4" stroke-width="2"/><circle cx="52" cy="230" r="3" fill="#F9A8D4"/>
+<rect x="76" y="206" width="380" height="49" rx="14" fill="#111827" stroke="#F9A8D4" stroke-opacity=".42"/>
+<text x="94" y="227" fill="#F9A8D4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">VERIFY</text>
+<text x="164" y="227" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">0 PUBLIC ITEMS</text>
+<text x="94" y="245" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with stage:verify</text>
+<circle cx="52" cy="292" r="9" fill="#111827" stroke="#A7F3D0" stroke-width="2"/><circle cx="52" cy="292" r="3" fill="#A7F3D0"/>
+<rect x="76" y="268" width="380" height="49" rx="14" fill="#111827" stroke="#A7F3D0" stroke-opacity=".42"/>
+<text x="94" y="289" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">SHIP</text>
+<text x="164" y="289" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">0 PUBLIC ITEMS</text>
+<text x="94" y="307" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with stage:ship</text>
+<path d="M24 380H456" stroke="#30354A"/>
+<text x="24" y="398" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">PUBLIC-ONLY SOURCE</text>
+<text x="456" y="398" fill="#98A2B8" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="end">STATE AS OF 2026-09-12</text>
+</svg>

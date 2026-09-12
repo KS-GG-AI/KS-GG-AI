@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "renderVersion": 2,
+  "username": "KS-GG-AI",
+  "source": {
+    "repositoryCount": 1,
+    "openIssueCount": 0,
+    "trackedIssueCount": 0,
+    "visibility": "public-only"
+  },
+  "projectRoadmap": {
+    "lanes": [
+      {
+        "id": "now",
+        "label": "NOW",
+        "sourceLabel": "roadmap:now",
+        "count": 0,
+        "items": []
+      },
+      {
+        "id": "next",
+        "label": "NEXT",
+        "sourceLabel": "roadmap:next",
+        "count": 0,
+        "items": []
+      },
+      {
+        "id": "later",
+        "label": "LATER",
+        "sourceLabel": "roadmap:later",
+        "count": 0,
+        "items": []
+      }
+    ]
+  },
+  "developmentRoadmap": {
+    "stages": [
+      {
+        "id": "plan",
+        "label": "PLAN",
+        "sourceLabel": "stage:plan",
+        "count": 0,
+        "items": []
+      },
+      {
+        "id": "build",
+        "label": "BUILD",
+        "sourceLabel": "stage:build",
+        "count": 0,
+        "items": []
+      },
+      {
+        "id": "verify",
+        "label": "VERIFY",
+        "sourceLabel": "stage:verify",
+        "count": 0,
+        "items": []
+      },
+      {
+        "id": "ship",
+        "label": "SHIP",
+        "sourceLabel": "stage:ship",
+        "count": 0,
+        "items": []
+      }
+    ]
+  },
+  "revision": "a6ed0d5dc67f",
+  "generatedAt": "2026-09-12T03:43:12.636Z"
+}

@@ -1,8 +1,12 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/locales/ar/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
-  <img src="../../assets/identity/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
+  <picture>
+    <img src="../../assets/locales/ar/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
+  </picture>
+  <picture>
+    <img src="../../assets/identity/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
+  </picture>
 </p>
 
 <p>
@@ -32,7 +36,9 @@
 أحوّل الأفكار المبكرة إلى واجهات منتجات مفيدة وأدوات مترابطة وتدفقات عمل تظل سهلة الفهم مع نموها.
 
 <p align="center">
-  <img src="../../assets/locales/ar/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+  <picture>
+    <img src="../../assets/locales/ar/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+  </picture>
 </p>
 
 ### ما أبنيه
@@ -65,15 +71,21 @@
 
 <p><strong>الأدوات الأساسية</strong></p>
 
-<img src="../../assets/locales/ar/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
+<picture>
+  <img src="../../assets/locales/ar/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
+</picture>
 
 <p><strong>الخريطة التقنية</strong></p>
 
-<img src="../../assets/locales/ar/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
+<picture>
+  <img src="../../assets/locales/ar/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
+</picture>
 
 <p><strong>نسخة متحركة</strong></p>
 
-<img src="../../assets/locales/ar/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
+<picture>
+  <img src="../../assets/locales/ar/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
+</picture>
 
 - **اللغات والترميز** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **الخدمات والبيانات والأتمتة** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, الأتمتة
@@ -95,17 +107,23 @@
 
 <p><strong>خريطة المشاريع</strong></p>
 
-<img src="../../assets/locales/ar/maps/project-map.svg?v=c237e445bed5" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+<picture>
+  <img src="../../assets/locales/ar/maps/project-map.svg?v=c237e445bed5" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+</picture>
 
 <sub>بيانات وصفية علنية فقط. لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً.</sub>
 
 <p><strong>خارطة طريق المشروع</strong></p>
 
-<img src="../../assets/locales/ar/maps/project-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
+<picture>
+  <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
+</picture>
 
 <p><strong>خارطة طريق التطوير</strong></p>
 
-<img src="../../assets/locales/ar/maps/development-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
+<picture>
+  <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
+</picture>
 
 <sub>يستخدم مسائل GitHub العامة فقط. أضف تسمية <code>roadmap:*</code> وتسمية <code>stage:*</code> إلى مسألة عامة لإظهارها.</sub>
 

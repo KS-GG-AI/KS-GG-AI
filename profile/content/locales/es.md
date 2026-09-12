@@ -1,8 +1,12 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/locales/es/identity/hero.svg" alt="KS-GG-AI — interfaces claras, flujos conectados y sistemas fiables." width="78%" />
-  <img src="../../assets/identity/avatar.gif" alt="Monograma animado de KS-GG-AI." width="20%" />
+  <picture>
+    <img src="../../assets/locales/es/identity/hero.svg" alt="KS-GG-AI — interfaces claras, flujos conectados y sistemas fiables." width="78%" />
+  </picture>
+  <picture>
+    <img src="../../assets/identity/avatar.gif" alt="Monograma animado de KS-GG-AI." width="20%" />
+  </picture>
 </p>
 
 <p>
@@ -30,7 +34,9 @@
 Convierto ideas tempranas en superficies de producto útiles, herramientas conectadas y flujos de trabajo que siguen siendo comprensibles al crecer.
 
 <p align="center">
-  <img src="../../assets/locales/es/motion/typing.gif" alt="Escritura animada: creando cosas útiles, sistemas claros y trabajo cuidadoso." width="100%" />
+  <picture>
+    <img src="../../assets/locales/es/motion/typing.gif" alt="Escritura animada: creando cosas útiles, sistemas claros y trabajo cuidadoso." width="100%" />
+  </picture>
 </p>
 
 ### Lo que construyo
@@ -63,15 +69,21 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 
 <p><strong>Herramientas principales</strong></p>
 
-<img src="../../assets/locales/es/visuals/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
+<picture>
+  <img src="../../assets/locales/es/visuals/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
+</picture>
 
 <p><strong>Mapa técnico</strong></p>
 
-<img src="../../assets/locales/es/visuals/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
+<picture>
+  <img src="../../assets/locales/es/visuals/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
+</picture>
 
 <p><strong>En movimiento</strong></p>
 
-<img src="../../assets/locales/es/motion/technology-stack.gif" alt="Mapa técnico animado." width="100%" />
+<picture>
+  <img src="../../assets/locales/es/motion/technology-stack.gif" alt="Mapa técnico animado." width="100%" />
+</picture>
 
 - **Lenguajes y marcado** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **Servicios, datos y automatización** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automatización
@@ -93,17 +105,23 @@ El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta
 
 <p><strong>Mapa de proyectos</strong></p>
 
-<img src="../../assets/locales/es/maps/project-map.svg?v=c237e445bed5" alt="Mapa de proyectos que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="480" />
+<picture>
+  <img src="../../assets/locales/es/maps/project-map.svg?v=c237e445bed5" alt="Mapa de proyectos que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="480" />
+</picture>
 
 <sub>Solo metadatos públicos. Los nombres y metadatos privados nunca se muestran.</sub>
 
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
-<img src="../../assets/locales/es/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+<picture>
+  <img src="../../assets/locales/es/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+</picture>
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
-<img src="../../assets/locales/es/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+<picture>
+  <img src="../../assets/locales/es/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+</picture>
 
 <sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
 

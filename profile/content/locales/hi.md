@@ -1,8 +1,12 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/locales/hi/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
-  <img src="../../assets/identity/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
+  <picture>
+    <img src="../../assets/locales/hi/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
+  </picture>
+  <picture>
+    <img src="../../assets/identity/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
+  </picture>
 </p>
 
 <p>
@@ -30,7 +34,9 @@
 शुरुआती विचारों को उपयोगी प्रोडक्ट सतहों, जुड़े हुए टूल और ऐसे वर्कफ़्लो में बदलता हूँ जो बढ़ने पर भी समझने में आसान रहें।
 
 <p align="center">
-  <img src="../../assets/locales/hi/motion/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
+  <picture>
+    <img src="../../assets/locales/hi/motion/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
+  </picture>
 </p>
 
 ### मैं क्या बनाता हूँ
@@ -63,15 +69,21 @@
 
 <p><strong>मुख्य टूलसेट</strong></p>
 
-<img src="../../assets/locales/hi/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
+<picture>
+  <img src="../../assets/locales/hi/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
+</picture>
 
 <p><strong>तकनीकी नक्शा</strong></p>
 
-<img src="../../assets/locales/hi/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
+<picture>
+  <img src="../../assets/locales/hi/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
+</picture>
 
 <p><strong>गतिशील रूप</strong></p>
 
-<img src="../../assets/locales/hi/motion/technology-stack.gif" alt="एनिमेटेड तकनीकी नक्शा।" width="100%" />
+<picture>
+  <img src="../../assets/locales/hi/motion/technology-stack.gif" alt="एनिमेटेड तकनीकी नक्शा।" width="100%" />
+</picture>
 
 - **भाषाएँ और मार्कअप** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **सेवाएँ, डेटा और ऑटोमेशन** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, ऑटोमेशन
@@ -93,17 +105,23 @@
 
 <p><strong>प्रोजेक्ट मैप</strong></p>
 
-<img src="../../assets/locales/hi/maps/project-map.svg?v=c237e445bed5" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
+<picture>
+  <img src="../../assets/locales/hi/maps/project-map.svg?v=c237e445bed5" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
+</picture>
 
 <sub>केवल सार्वजनिक मेटाडेटा उपयोग होता है। निजी नाम और मेटाडेटा कभी नहीं दिखाए जाते।</sub>
 
 <p><strong>प्रोजेक्ट रोडमैप</strong></p>
 
-<img src="../../assets/locales/hi/maps/project-roadmap.svg?v=f403fcebe8cc" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+<picture>
+  <img src="../../assets/locales/hi/maps/project-roadmap.svg?v=f403fcebe8cc" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+</picture>
 
 <p><strong>डेवलपमेंट रोडमैप</strong></p>
 
-<img src="../../assets/locales/hi/maps/development-roadmap.svg?v=f403fcebe8cc" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+<picture>
+  <img src="../../assets/locales/hi/maps/development-roadmap.svg?v=f403fcebe8cc" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+</picture>
 
 <sub>केवल सार्वजनिक GitHub Issue का उपयोग होता है। किसी सार्वजनिक Issue को दिखाने के लिए एक <code>roadmap:*</code> और एक <code>stage:*</code> लेबल जोड़ें।</sub>
 

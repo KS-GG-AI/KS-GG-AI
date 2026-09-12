@@ -1,8 +1,12 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/locales/ko/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
-  <img src="../../assets/identity/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
+  <picture>
+    <img src="../../assets/locales/ko/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
+  </picture>
+  <picture>
+    <img src="../../assets/identity/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
+  </picture>
 </p>
 
 <p>
@@ -30,7 +34,9 @@
 초기 아이디어를 쓰기 쉬운 제품 화면, 자연스럽게 연결되는 도구, 성장해도 이해하기 쉬운 워크플로로 만듭니다.
 
 <p align="center">
-  <img src="../../assets/locales/ko/motion/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+  <picture>
+    <img src="../../assets/locales/ko/motion/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+  </picture>
 </p>
 
 ### 만드는 것
@@ -63,15 +69,21 @@
 
 <p><strong>핵심 도구</strong></p>
 
-<img src="../../assets/locales/ko/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
+<picture>
+  <img src="../../assets/locales/ko/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
+</picture>
 
 <p><strong>기술 지도</strong></p>
 
-<img src="../../assets/locales/ko/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
+<picture>
+  <img src="../../assets/locales/ko/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
+</picture>
 
 <p><strong>움직이는 지도</strong></p>
 
-<img src="../../assets/locales/ko/motion/technology-stack.gif" alt="움직이는 기술 지도." width="100%" />
+<picture>
+  <img src="../../assets/locales/ko/motion/technology-stack.gif" alt="움직이는 기술 지도." width="100%" />
+</picture>
 
 - **언어와 마크업** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **서비스·데이터·자동화** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 자동화
@@ -93,17 +105,23 @@
 
 <p><strong>프로젝트 지도</strong></p>
 
-<img src="../../assets/locales/ko/maps/project-map.svg?v=c237e445bed5" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
+<picture>
+  <img src="../../assets/locales/ko/maps/project-map.svg?v=c237e445bed5" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
+</picture>
 
 <sub>공개 메타데이터만 사용합니다. 비공개 이름과 메타데이터는 표시하지 않습니다.</sub>
 
 <p><strong>프로젝트 로드맵</strong></p>
 
-<img src="../../assets/locales/ko/maps/project-roadmap.svg?v=f403fcebe8cc" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+<picture>
+  <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=f403fcebe8cc" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+</picture>
 
 <p><strong>개발 로드맵</strong></p>
 
-<img src="../../assets/locales/ko/maps/development-roadmap.svg?v=f403fcebe8cc" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+<picture>
+  <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=f403fcebe8cc" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+</picture>
 
 <sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>
 

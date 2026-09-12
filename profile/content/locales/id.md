@@ -1,8 +1,12 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/locales/id/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
-  <img src="../../assets/identity/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
+  <picture>
+    <img src="../../assets/locales/id/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
+  </picture>
+  <picture>
+    <img src="../../assets/identity/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
+  </picture>
 </p>
 
 <p>
@@ -30,7 +34,9 @@
 Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, dan alur kerja yang tetap mudah dipahami saat berkembang.
 
 <p align="center">
-  <img src="../../assets/locales/id/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
+  <picture>
+    <img src="../../assets/locales/id/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
+  </picture>
 </p>
 
 ### Yang saya bangun
@@ -63,15 +69,21 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 
 <p><strong>Perangkat utama</strong></p>
 
-<img src="../../assets/locales/id/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+<picture>
+  <img src="../../assets/locales/id/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+</picture>
 
 <p><strong>Peta teknis</strong></p>
 
-<img src="../../assets/locales/id/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
+<picture>
+  <img src="../../assets/locales/id/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
+</picture>
 
 <p><strong>Dalam gerak</strong></p>
 
-<img src="../../assets/locales/id/motion/technology-stack.gif" alt="Peta teknis animasi." width="100%" />
+<picture>
+  <img src="../../assets/locales/id/motion/technology-stack.gif" alt="Peta teknis animasi." width="100%" />
+</picture>
 
 - **Bahasa dan markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **Layanan, data, dan otomatisasi** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, otomatisasi
@@ -93,17 +105,23 @@ Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pet
 
 <p><strong>Peta proyek</strong></p>
 
-<img src="../../assets/locales/id/maps/project-map.svg?v=c237e445bed5" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+<picture>
+  <img src="../../assets/locales/id/maps/project-map.svg?v=c237e445bed5" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+</picture>
 
 <sub>Hanya metadata publik. Nama dan metadata privat tidak pernah ditampilkan.</sub>
 
 <p><strong>Peta jalan proyek</strong></p>
 
-<img src="../../assets/locales/id/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+<picture>
+  <img src="../../assets/locales/id/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+</picture>
 
 <p><strong>Peta jalan pengembangan</strong></p>
 
-<img src="../../assets/locales/id/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+<picture>
+  <img src="../../assets/locales/id/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+</picture>
 
 <sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
 

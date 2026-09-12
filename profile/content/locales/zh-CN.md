@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/zh-CN/identity/hero-compact.svg" />
     <img src="../../assets/locales/zh-CN/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@
 <p><strong>核心工具</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/zh-CN/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/zh-CN/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 </picture>
 
 <p><strong>技术地图</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/zh-CN/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/zh-CN/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 </picture>
 
 <p><strong>动态地图</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/zh-CN/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/zh-CN/motion/technology-stack.gif" alt="动态技术地图。" width="100%" />
 </picture>
 

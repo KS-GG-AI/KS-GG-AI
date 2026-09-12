@@ -26,6 +26,14 @@ const accents = [
   { border: "#F9A8D4", fill: "#151320", ink: "#FBCFE8", soft: "#A694AF" },
   { border: "#A7F3D0", fill: "#101A1B", ink: "#BBF7D0", soft: "#89AAA4" },
 ];
+const compactStackTools = [
+  ["TypeScript", "Python", "Go", "SQL"],
+  ["React", "Next.js", "Vite", "Figma"],
+  ["Node.js", "FastAPI", "PostgreSQL", "MCP"],
+  ["Docker", "GitHub Actions", "Cloudflare", "Terraform"],
+];
+const compactStackWidth = 640;
+const compactStackHeight = 786;
 
 function escapeXml(value) {
   return String(value).replace(/[&<>"']/g, (character) => ({
@@ -90,6 +98,32 @@ export function renderHeroSvg(localeCode) {
   });
 }
 
+export function renderCompactHeroSvg(localeCode) {
+  const locale = getVisualLocale(localeCode);
+  const { family, direction, rtl } = typography(locale);
+  const titleX = rtl ? 592 : 48;
+  const iconX = rtl ? 530 : 48;
+  const badgeX = rtl ? 34 : 402;
+  const eyebrowSize = compactSize(locale.hero.eyebrow, 30, 20);
+  const badgeSize = compactSize(locale.hero.status, 20, 14);
+  return frameSvg({
+    width: 640,
+    height: 332,
+    title: "KS-GG-AI — " + locale.hero.eyebrow,
+    description: locale.hero.status,
+    direction,
+    markup: [
+      '<defs><linearGradient id="bg" x1="48" y1="16" x2="592" y2="316" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".52" stop-color="#241642"/><stop offset="1" stop-color="#0D1020"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="640" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#A78BFA" stop-opacity=".65"/><stop offset=".55" stop-color="#67E8F9" stop-opacity=".48"/><stop offset="1" stop-color="#A7F3D0" stop-opacity=".48"/></linearGradient><filter id="blur" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="24"/></filter></defs>',
+      '<rect width="640" height="332" rx="24" fill="url(#bg)"/><circle cx="560" cy="64" r="88" fill="#7C3AED" fill-opacity=".2" filter="url(#blur)"/><circle cx="98" cy="278" r="92" fill="#0EA5E9" fill-opacity=".12" filter="url(#blur)"/>',
+      '<path d="M0 258C96 224 162 290 260 252C354 215 414 132 496 166C550 188 596 154 640 124" stroke="url(#line)" stroke-width="2"/><g fill="#DDD6FE" fill-opacity=".72"><circle cx="58" cy="64" r="2"/><circle cx="112" cy="112" r="1.5"/><circle cx="554" cy="206" r="2"/><circle cx="598" cy="158" r="1.5"/></g>',
+      '<rect x="' + iconX + '" y="68" width="54" height="54" rx="17" fill="#A78BFA" fill-opacity=".16" stroke="#C4B5FD" stroke-opacity=".58"/><path d="M' + (iconX + 17) + ' 95H' + (iconX + 37) + 'M' + (iconX + 27) + ' 85V105" stroke="#DDD6FE" stroke-width="3" stroke-linecap="round"/>',
+      text("KS-GG-AI", { x: titleX, y: 184, size: 58, weight: 700, family, anchor: "start", direction }),
+      text(locale.hero.eyebrow, { x: titleX, y: 218, size: eyebrowSize, weight: 700, family, anchor: "start", direction, letterSpacing: rtl ? ".8" : "2.5" }),
+      '<g transform="translate(' + badgeX + ' 246)"><rect width="204" height="50" rx="25" fill="#0B1020" fill-opacity=".64" stroke="#A78BFA" stroke-opacity=".36"/><circle cx="' + (rtl ? 172 : 30) + '" cy="25" r="7" fill="#A7F3D0"/>' + text(locale.hero.status, { x: rtl ? 148 : 48, y: 32, fill: "#EDE9FE", size: badgeSize, weight: 700, family, anchor: "start", direction }) + "</g>",
+    ].join("\n"),
+  });
+}
+
 function toolboxCard(locale, group, tools, x, index) {
   const { family, direction, rtl } = typography(locale);
   const cardWidth = index === 3 ? 232 : 212;
@@ -134,6 +168,49 @@ export function renderToolboxSvg(localeCode) {
       '<rect x="' + badgeX + '" y="23" width="172" height="30" rx="15" fill="#121A26" stroke="#344056"/><circle cx="' + badgeDotX + '" cy="38" r="4" fill="#F9A8D4"/>',
       text(locale.toolbox.badge, { x: badgeTextX, y: 42, fill: "#D9E4F5", size: compactSize(locale.toolbox.badge, 10, 7), weight: 700, family, anchor: badgeAnchor, direction }),
       ...locale.toolbox.groups.map((group, index) => toolboxCard(locale, group, commonTools[index], positions[index], index)),
+    ].join("\n"),
+  });
+}
+
+function compactToolboxCard(locale, group, tools, y, index) {
+  const { family, direction, rtl } = typography(locale);
+  const accent = accents[index];
+  const x = 28;
+  const width = 584;
+  const contentX = rtl ? x + width - 56 : x + 56;
+  const toolTextX = rtl ? x + width - 48 : x + 48;
+  const toolLine = tools.join("  ·  ");
+  return [
+    '<rect x="' + x + '" y="' + y + '" width="' + width + '" height="116" rx="18" fill="' + accent.fill + '" stroke="' + accent.border + '" stroke-opacity=".58"/>',
+    '<circle cx="' + (rtl ? x + width - 28 : x + 28) + '" cy="' + (y + 29) + '" r="13" fill="' + accent.border + '" fill-opacity=".22"/><path d="M' + (rtl ? x + width - 34 : x + 22) + ' ' + (y + 29) + 'H' + (rtl ? x + width - 22 : x + 34) + 'M' + (rtl ? x + width - 28 : x + 28) + ' ' + (y + 23) + 'V' + (y + 35) + '" stroke="' + accent.ink + '" stroke-width="1.7" stroke-linecap="round"/>',
+    text(group.label, { x: contentX, y: y + 30, size: compactSize(group.label, 22, 14), weight: 700, family, anchor: "start", direction }),
+    text(group.detail, { x: contentX, y: y + 53, fill: accent.soft, size: compactSize(group.detail, 13, 9), weight: 600, family, anchor: "start", direction, letterSpacing: ".35" }),
+    '<rect x="' + (x + 28) + '" y="' + (y + 69) + '" width="528" height="29" rx="10" fill="#0D1420" stroke="' + accent.border + '" stroke-opacity=".2"/>',
+    text(toolLine, { x: toolTextX, y: y + 89, fill: "#EDE9FE", size: 15, weight: 700, family, anchor: "start", direction }),
+  ].join("\n");
+}
+
+export function renderCompactToolboxSvg(localeCode) {
+  const locale = getVisualLocale(localeCode);
+  const { family, direction, rtl } = typography(locale);
+  const headerX = rtl ? 612 : 28;
+  const badgeX = rtl ? 28 : 430;
+  const badgeDotX = rtl ? 184 : 454;
+  const badgeTextX = rtl ? 165 : 474;
+  return frameSvg({
+    width: 640,
+    height: 682,
+    title: locale.toolbox.title,
+    description: locale.toolbox.subtitle,
+    direction,
+    markup: [
+      '<defs><linearGradient id="surface" x1="0" y1="0" x2="640" y2="682" gradientUnits="userSpaceOnUse"><stop stop-color="#14111F"/><stop offset=".55" stop-color="#101720"/><stop offset="1" stop-color="#0D1919"/></linearGradient><linearGradient id="rule" x1="28" y1="0" x2="612" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#A78BFA" stop-opacity=".7"/><stop offset=".52" stop-color="#67E8F9" stop-opacity=".55"/><stop offset="1" stop-color="#A7F3D0" stop-opacity=".5"/></linearGradient></defs>',
+      '<rect x=".5" y=".5" width="639" height="681" rx="24" fill="url(#surface)" stroke="#31364A"/><path d="M28 102H612" stroke="url(#rule)" stroke-width="1.5"/>',
+      text(locale.toolbox.title, { x: headerX, y: 48, size: compactSize(locale.toolbox.title, 30, 19), weight: 700, family, anchor: "start", direction }),
+      text(locale.toolbox.subtitle, { x: headerX, y: 76, fill: "#A7A2B7", size: compactSize(locale.toolbox.subtitle, 16, 10), weight: 600, family, anchor: "start", direction, letterSpacing: ".35" }),
+      '<rect x="' + badgeX + '" y="27" width="182" height="34" rx="17" fill="#121A26" stroke="#344056"/><circle cx="' + badgeDotX + '" cy="44" r="5" fill="#F9A8D4"/>',
+      text(locale.toolbox.badge, { x: badgeTextX, y: 50, fill: "#D9E4F5", size: compactSize(locale.toolbox.badge, 12, 8), weight: 700, family, anchor: "start", direction }),
+      ...locale.toolbox.groups.map((group, index) => compactToolboxCard(locale, group, commonTools[index], 126 + index * 132, index)),
     ].join("\n"),
   });
 }
@@ -201,6 +278,64 @@ export function renderTechnologyStackSvg(localeCode, activeIndex = null, motionS
       ...locale.stack.groups.map((group, index) => stackCard(locale, group, index, positions[index], activeIndex)),
       '<path d="M28 506H932" stroke="#344056"/><circle cx="' + (rtl ? 904 : 56) + '" cy="516" r="4" fill="#A7F3D0"/>',
       text(locale.stack.footer, { x: rtl ? 884 : 76, y: 520, fill: "#B4B1C5", size: compactSize(locale.stack.footer, 10, 7), weight: 700, family, anchor: "start", direction, letterSpacing: ".28" }),
+    ].join("\n"),
+  });
+}
+
+function compactChipRows(chips, x, y, width, accent) {
+  const rows = [];
+  let cursorX = x;
+  let cursorY = y;
+  for (const chip of chips) {
+    const chipWidth = Math.min(width, Math.max(82, Array.from(chip).length * 9 + 32));
+    if (cursorX + chipWidth > x + width) {
+      cursorX = x;
+      cursorY += 38;
+    }
+    rows.push('<rect x="' + cursorX + '" y="' + cursorY + '" width="' + chipWidth + '" height="30" rx="10" fill="#111827" stroke="' + accent.border + '" stroke-opacity=".3"/>');
+    rows.push('<text x="' + (cursorX + chipWidth / 2) + '" y="' + (cursorY + 20) + '" fill="#EDE9FE" font-family="Noto Sans, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">' + escapeXml(chip) + "</text>");
+    cursorX += chipWidth + 8;
+  }
+  return rows.join("\n");
+}
+
+function compactStackCard(locale, group, index, y, activeIndex) {
+  const { family, direction, rtl } = typography(locale);
+  const accent = accents[index];
+  const active = activeIndex === index;
+  const x = 28;
+  const width = 584;
+  const contentX = rtl ? x + width - 56 : x + 56;
+  return [
+    '<rect x="' + x + '" y="' + y + '" width="' + width + '" height="142" rx="19" fill="' + accent.fill + '" stroke="' + accent.border + '" stroke-opacity="' + (active ? ".96" : ".54") + '" stroke-width="' + (active ? "2" : "1") + '"/>',
+    '<circle cx="' + (rtl ? x + width - 29 : x + 29) + '" cy="' + (y + 30) + '" r="14" fill="' + accent.border + '" fill-opacity="' + (active ? ".34" : ".18") + '"/><path d="M' + (rtl ? x + width - 35 : x + 23) + ' ' + (y + 30) + 'H' + (rtl ? x + width - 23 : x + 35) + 'M' + (rtl ? x + width - 29 : x + 29) + ' ' + (y + 24) + 'V' + (y + 36) + '" stroke="' + accent.ink + '" stroke-width="1.7" stroke-linecap="round"/>',
+    text(group.label, { x: contentX, y: y + 31, size: compactSize(group.label, 23, 14), weight: 700, family, anchor: "start", direction }),
+    text(group.detail, { x: contentX, y: y + 55, fill: accent.soft, size: compactSize(group.detail, 13, 9), weight: 600, family, anchor: "start", direction, letterSpacing: ".25" }),
+    compactChipRows(compactStackTools[index], x + 28, y + 78, 528, accent),
+  ].join("\n");
+}
+
+export function renderCompactTechnologyStackSvg(localeCode, activeIndex = null, motionStep = 0) {
+  const locale = getVisualLocale(localeCode);
+  const { family, direction, rtl } = typography(locale);
+  const headerX = rtl ? 612 : 28;
+  const markerX = 492 + Math.round((motionStep % 5) * 19);
+  const motionAccent = activeIndex === null ? "#67E8F9" : accents[activeIndex].border;
+  return frameSvg({
+    width: compactStackWidth,
+    height: compactStackHeight,
+    title: locale.stack.title,
+    description: locale.stack.subtitle,
+    direction,
+    markup: [
+      '<defs><linearGradient id="bg" x1="0" y1="0" x2="640" y2="786" gradientUnits="userSpaceOnUse"><stop stop-color="#11101B"/><stop offset="1" stop-color="#0C151A"/></linearGradient><linearGradient id="accent" x1="28" y1="0" x2="612" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#A78BFA"/><stop offset=".5" stop-color="#67E8F9"/><stop offset="1" stop-color="#A7F3D0"/></linearGradient></defs>',
+      '<rect x=".5" y=".5" width="639" height="785" rx="25" fill="url(#bg)" stroke="#2B3141"/><path d="M28 102H612" stroke="url(#accent)" stroke-opacity=".5" stroke-width="1.5"/>',
+      text(locale.stack.title, { x: headerX, y: 49, size: compactSize(locale.stack.title, 31, 19), weight: 700, family, anchor: "start", direction }),
+      text(locale.stack.subtitle, { x: headerX, y: 77, fill: "#918BAA", size: compactSize(locale.stack.subtitle, 16, 10), weight: 600, family, anchor: "start", direction, letterSpacing: ".35" }),
+      '<g><rect x="466" y="28" width="146" height="34" rx="17" fill="#101827" stroke="#344056"/><path d="M486 45H586" stroke="#4F6178" stroke-width="1.5"/><circle cx="' + markerX + '" cy="45" r="5" fill="' + motionAccent + '"/><circle cx="586" cy="45" r="3.5" fill="#F9A8D4"/></g>',
+      ...locale.stack.groups.map((group, index) => compactStackCard(locale, group, index, 124 + index * 150, activeIndex)),
+      '<path d="M28 748H612" stroke="#344056"/><circle cx="' + (rtl ? 584 : 56) + '" cy="764" r="5" fill="#A7F3D0"/>',
+      text(locale.stack.footer, { x: rtl ? 560 : 80, y: 769, fill: "#B4B1C5", size: compactSize(locale.stack.footer, 13, 9), weight: 700, family, anchor: "start", direction, letterSpacing: ".25" }),
     ].join("\n"),
   });
 }
@@ -304,22 +439,42 @@ function stackFrames(locale) {
   return { frames, delays };
 }
 
+function compactStackFrames(locale) {
+  const frames = [];
+  const delays = [];
+  for (let activeIndex = 0; activeIndex < 4; activeIndex += 1) {
+    for (let step = 0; step < 5; step += 1) {
+      frames.push(renderCompactTechnologyStackSvg(locale.code, activeIndex, activeIndex * 5 + step));
+      delays.push(step === 4 ? 240 : 92);
+    }
+  }
+  return { frames, delays };
+}
+
 function localizedTarget(locale, section, file) {
   return path.join(root, "profile", "assets", "locales", locale.code, section, file);
 }
 
 async function writeLocaleAssets(locale) {
   const hero = renderHeroSvg(locale.code);
+  const compactHero = renderCompactHeroSvg(locale.code);
   const toolbox = renderToolboxSvg(locale.code);
+  const compactToolbox = renderCompactToolboxSvg(locale.code);
   const stack = renderTechnologyStackSvg(locale.code);
+  const compactStack = renderCompactTechnologyStackSvg(locale.code);
   const typing = typingFrames(locale);
   const animatedStack = stackFrames(locale);
+  const animatedCompactStack = compactStackFrames(locale);
   await Promise.all([
     writeIfChanged(localizedTarget(locale, "identity", "hero.svg"), hero),
+    writeIfChanged(localizedTarget(locale, "identity", "hero-compact.svg"), compactHero),
     writeIfChanged(localizedTarget(locale, "visuals", "toolbox.svg"), toolbox),
+    writeIfChanged(localizedTarget(locale, "visuals", "toolbox-compact.svg"), compactToolbox),
     writeIfChanged(localizedTarget(locale, "visuals", "technology-stack.svg"), stack),
+    writeIfChanged(localizedTarget(locale, "visuals", "technology-stack-compact.svg"), compactStack),
     encodeGif(typing.frames, 800, 144, typing.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "typing.gif"), value)),
     encodeGif(animatedStack.frames, 960, 532, animatedStack.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "technology-stack.gif"), value)),
+    encodeGif(animatedCompactStack.frames, compactStackWidth, compactStackHeight, animatedCompactStack.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "technology-stack-compact.gif"), value)),
   ]);
 }
 

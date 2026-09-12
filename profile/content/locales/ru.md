@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/ru/identity/hero-compact.svg" />
     <img src="../../assets/locales/ru/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@
 <p><strong>Основные инструменты</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ru/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/ru/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
 </picture>
 
 <p><strong>Техническая карта</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ru/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/ru/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
 </picture>
 
 <p><strong>В движении</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ru/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/ru/motion/technology-stack.gif" alt="Анимированная техническая карта." width="100%" />
 </picture>
 

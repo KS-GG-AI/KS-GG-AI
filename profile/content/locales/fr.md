@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/fr/identity/hero-compact.svg" />
     <img src="../../assets/locales/fr/identity/hero.svg" alt="KS-GG-AI — interfaces claires, flux connectés et systèmes fiables." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@ Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt q
 <p><strong>Outils essentiels</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/fr/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/fr/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
 </picture>
 
 <p><strong>Carte technique</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/fr/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/fr/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
 </picture>
 
 <p><strong>En mouvement</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/fr/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/fr/motion/technology-stack.gif" alt="Carte technique animée." width="100%" />
 </picture>
 

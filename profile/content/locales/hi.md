@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/hi/identity/hero-compact.svg" />
     <img src="../../assets/locales/hi/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@
 <p><strong>मुख्य टूलसेट</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/hi/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/hi/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
 </picture>
 
 <p><strong>तकनीकी नक्शा</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/hi/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/hi/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
 </picture>
 
 <p><strong>गतिशील रूप</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/hi/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/hi/motion/technology-stack.gif" alt="एनिमेटेड तकनीकी नक्शा।" width="100%" />
 </picture>
 

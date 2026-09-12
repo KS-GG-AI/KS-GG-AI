@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/ko/identity/hero-compact.svg" />
     <img src="../../assets/locales/ko/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@
 <p><strong>핵심 도구</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ko/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/ko/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
 </picture>
 
 <p><strong>기술 지도</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ko/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/ko/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 </picture>
 
 <p><strong>움직이는 지도</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ko/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/ko/motion/technology-stack.gif" alt="움직이는 기술 지도." width="100%" />
 </picture>
 

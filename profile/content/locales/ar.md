@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/ar/identity/hero-compact.svg" />
     <img src="../../assets/locales/ar/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
   </picture>
   <picture>
@@ -72,18 +73,21 @@
 <p><strong>الأدوات الأساسية</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ar/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/ar/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
 </picture>
 
 <p><strong>الخريطة التقنية</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ar/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/ar/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
 </picture>
 
 <p><strong>نسخة متحركة</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/ar/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/ar/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
 </picture>
 

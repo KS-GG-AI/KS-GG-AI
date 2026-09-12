@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/id/identity/hero-compact.svg" />
     <img src="../../assets/locales/id/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 <p><strong>Perangkat utama</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/id/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/id/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
 </picture>
 
 <p><strong>Peta teknis</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/id/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/id/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
 </picture>
 
 <p><strong>Dalam gerak</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/id/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/id/motion/technology-stack.gif" alt="Peta teknis animasi." width="100%" />
 </picture>
 

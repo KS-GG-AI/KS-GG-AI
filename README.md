@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="./profile/assets/locales/en/identity/hero-compact.svg" />
     <img src="./profile/assets/locales/en/identity/hero.svg" alt="KS-GG-AI — clear interfaces, connected workflows, and reliable systems." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@ A practical working set, grouped by the job it helps with rather than treated as
 <p><strong>Core toolkit</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="./profile/assets/locales/en/visuals/toolbox-compact.svg" />
   <img src="./profile/assets/locales/en/visuals/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
 </picture>
 
 <p><strong>Technical map</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="./profile/assets/locales/en/visuals/technology-stack-compact.svg" />
   <img src="./profile/assets/locales/en/visuals/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
 </picture>
 
 <p><strong>In motion</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="./profile/assets/locales/en/motion/technology-stack-compact.gif" />
   <img src="./profile/assets/locales/en/motion/technology-stack.gif" alt="Animated technical map." width="100%" />
 </picture>
 

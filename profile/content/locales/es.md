@@ -2,6 +2,7 @@
 
 <p>
   <picture>
+    <source media="(max-width: 840px)" srcset="../../assets/locales/es/identity/hero-compact.svg" />
     <img src="../../assets/locales/es/identity/hero.svg" alt="KS-GG-AI — interfaces claras, flujos conectados y sistemas fiables." width="78%" />
   </picture>
   <picture>
@@ -70,18 +71,21 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 <p><strong>Herramientas principales</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/es/visuals/toolbox-compact.svg" />
   <img src="../../assets/locales/es/visuals/toolbox.svg" alt="Herramientas principales organizadas alrededor de escribir, construir, conectar y entregar software." width="100%" />
 </picture>
 
 <p><strong>Mapa técnico</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/es/visuals/technology-stack-compact.svg" />
   <img src="../../assets/locales/es/visuals/technology-stack.svg" alt="Mapa técnico de lenguajes, servicios y datos, interfaces y producto, más entrega y operaciones." width="100%" />
 </picture>
 
 <p><strong>En movimiento</strong></p>
 
 <picture>
+  <source media="(max-width: 840px)" srcset="../../assets/locales/es/motion/technology-stack-compact.gif" />
   <img src="../../assets/locales/es/motion/technology-stack.gif" alt="Mapa técnico animado." width="100%" />
 </picture>
 

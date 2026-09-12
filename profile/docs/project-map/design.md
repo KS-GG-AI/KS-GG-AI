@@ -9,8 +9,8 @@ flowchart LR
   T["선택적 읽기 전용 시크릿"] --> Q["비공개 메타데이터 API"]
   P --> G["안전한 프로젝트 지도 생성기"]
   Q --> G
-  G --> D["data/project-map.json"]
-  G --> A["assets/project-map.svg"]
+  G --> D["profile/data/project-map.json"]
+  G --> A["profile/assets/maps/project-map.svg"]
   G --> R["README 캐시 버전"]
   A --> M["접기·펼치기 프로필 UI"]
   D --> C["변경 감지"]
@@ -31,7 +31,7 @@ REQ-01, REQ-03, REQ-04, REQ-05, REQ-06에 대응한다. 생성기는 공개 정�
 
 ## 3. 데이터 모델
 
-`data/project-map.json`에는 다음 안전한 정보만 둔다.
+`profile/data/project-map.json`에는 다음 안전한 정보만 둔다.
 
 - `username`
 - `renderVersion`
@@ -47,7 +47,7 @@ REQ-01, REQ-03, REQ-04, REQ-05, REQ-06에 대응한다. 생성기는 공개 정�
 - 공개 조회: `GET /users/{username}/repos?type=owner`
 - 선택적 비공개 조회: `GET /user/repos?affiliation=owner&visibility=all`
 - 입력 환경 변수: `PROFILE_USERNAME`, `PROFILE_REPOSITORY_READ_TOKEN`
-- 출력: `assets/project-map.svg`, `data/project-map.json`, README의 `project-map.svg?v={revision}`
+- 출력: `profile/assets/maps/project-map.svg`, `profile/data/project-map.json`, README의 `project-map.svg?v={revision}`
 
 REQ-01, REQ-04, REQ-06에 대응한다.
 

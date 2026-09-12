@@ -8,9 +8,9 @@ flowchart LR
   Workflow --> Build["TypeScript 컴파일"]
   Build --> Api["공개 GitHub Issues API"]
   Api --> Generator["공개 로드맵 생성기"]
-  Generator --> State["data/roadmap-state.json"]
-  Generator --> ProjectSvg["assets/project-roadmap.svg"]
-  Generator --> DeliverySvg["assets/development-roadmap.svg"]
+  Generator --> State["profile/data/roadmap-state.json"]
+  Generator --> ProjectSvg["profile/assets/maps/project-roadmap.svg"]
+  Generator --> DeliverySvg["profile/assets/maps/development-roadmap.svg"]
   Generator --> Readmes["10개 README 캐시 버전"]
   State --> Verify["단위·정적 검증"]
   ProjectSvg --> Profile["네이티브 접기 프로필 UI"]
@@ -31,7 +31,7 @@ REQ-01~REQ-08에 대응한다. 워크플로는 공개 계정 API만 읽고, 비�
 
 ## 3. 데이터 모델
 
-`data/roadmap-state.json`의 안전한 형태는 다음과 같다.
+`profile/data/roadmap-state.json`의 안전한 형태는 다음과 같다.
 
 - `username`, `schemaVersion`, `renderVersion`, `revision`, `generatedAt`
 - 공개 소유 저장소 수와 공개 이슈 수
@@ -46,7 +46,7 @@ REQ-01~REQ-08에 대응한다. 워크플로는 공개 계정 API만 읽고, 비�
 - 공개 이슈: `GET /repos/{owner}/{repo}/issues?state=open`
 - 입력 환경 변수: `PROFILE_USERNAME`, 선택적 `GITHUB_TOKEN`
 - 라벨 계약: `roadmap:now`, `roadmap:next`, `roadmap:later`, `stage:plan`, `stage:build`, `stage:verify`, `stage:ship`
-- 출력: `data/roadmap-state.json`, `assets/project-roadmap.svg`, `assets/development-roadmap.svg`, README의 `?v={revision}`
+- 출력: `profile/data/roadmap-state.json`, `profile/assets/maps/project-roadmap.svg`, `profile/assets/maps/development-roadmap.svg`, README의 `?v={revision}`
 
 REQ-01~REQ-06에 대응한다.
 
@@ -81,7 +81,7 @@ REQ-01~REQ-06에 대응한다.
 
 ## 9. 배포·운영 환경
 
-Node.js 22가 설치된 GitHub Actions Ubuntu runner에서 `npm ci --ignore-scripts`, 컴파일, 생성, 테스트 순서로 실행한다. 월·목 UTC 03:23의 예약 실행과 수동 실행을 제공한다. 기본 브랜치의 프로필 저장소 이슈 이벤트는 빠른 동기화를 보조하고, 다른 공개 저장소 변경은 예약 실행이 수집한다.
+Node.js 22가 설치된 GitHub Actions Ubuntu runner에서 `npm ci --prefix profile/automation/roadmaps --ignore-scripts`, 컴파일, 생성, 테스트 순서로 실행한다. 월·목 UTC 03:23의 예약 실행과 수동 실행을 제공한다. 기본 브랜치의 프로필 저장소 이슈 이벤트는 빠른 동기화를 보조하고, 다른 공개 저장소 변경은 예약 실행이 수집한다.
 
 ## 10. 외부 의존성과 그 대안
 

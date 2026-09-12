@@ -55,7 +55,7 @@ Uma visão compacta dos projetos públicos e do trabalho privado protegido. É a
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="Mapa de projetos que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Mapa de projetos que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
 
 <sub>Nomes e metadados privados nunca são exibidos. <a href="https://github.com/KS-GG-AI?tab=repositories">Ver repositórios públicos</a>.</sub>
 

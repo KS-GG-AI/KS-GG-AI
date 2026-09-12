@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
 
 <sub>비공개 이름과 메타데이터는 표시하지 않습니다. <a href="https://github.com/KS-GG-AI?tab=repositories">공개 저장소 보기</a></sub>
 

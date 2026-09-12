@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला प्रोजेक्ट मैप।" width="480" />
 
 <sub>निजी नाम और मेटाडेटा कभी नहीं दिखाए जाते। <a href="https://github.com/KS-GG-AI?tab=repositories">सार्वजनिक रिपॉज़िटरी देखें</a>।</sub>
 

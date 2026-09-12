@@ -3,18 +3,19 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-export const readmeNames = [
-  "README.md",
-  "README.ko.md",
-  "README.zh-CN.md",
-  "README.es.md",
-  "README.hi.md",
-  "README.ar.md",
-  "README.pt-BR.md",
-  "README.ru.md",
-  "README.fr.md",
-  "README.id.md",
+export const readmeEntries = [
+  { file: "README.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.ko.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.zh-CN.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.es.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.hi.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.ar.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.pt-BR.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.ru.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.fr.md", assetReference: "./profile/assets/maps/project-map.svg" },
+  { file: "README.id.md", assetReference: "./profile/assets/maps/project-map.svg" },
 ];
+export const readmeNames = readmeEntries.map(({ file }) => file);
 const maxVisibleProjects = 3;
 const renderVersion = 4;
 const svgWidth = 480;
@@ -324,8 +325,12 @@ export function isValidProjectSnapshot(snapshot) {
   return /^[a-f0-9]{12}$/.test(snapshot.revision ?? "") && !Number.isNaN(Date.parse(snapshot.generatedAt ?? ""));
 }
 
-function updateReadmeRevision(text, revision) {
-  const expression = /(\.\/assets\/project-map\.svg)\?v=[A-Za-z0-9-]+/g;
+function escapeRegularExpression(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function updateReadmeRevision(text, assetReference, revision) {
+  const expression = new RegExp("(" + escapeRegularExpression(assetReference) + ")\\?v=[A-Za-z0-9-]+", "g");
   const matches = [...text.matchAll(expression)];
   if (matches.length !== 1) throw new Error("Each localized README must contain one project-map SVG reference.");
   return text.replace(expression, "$1?v=" + revision);
@@ -342,18 +347,18 @@ export async function updateProjectMap({ root, username, privateToken }) {
     privateSyncEnabled: Boolean(privateToken),
     privateRepositoryCount,
   });
-  const dataPath = path.join(root, "data", "project-map.json");
+  const dataPath = path.join(root, "profile", "data", "project-map.json");
   const existing = await readJsonIfPresent(dataPath);
   const existingSemantic = isValidProjectSnapshot(existing) ? semanticSnapshot(existing) : null;
   const changed = JSON.stringify(existingSemantic) !== JSON.stringify(semanticState);
   const snapshot = changed
     ? { ...semanticState, revision: revisionFor(semanticState), generatedAt: new Date().toISOString() }
     : existing;
-  const readmeUpdates = await Promise.all(readmeNames.map(async (name) => {
-    const file = path.join(root, name);
-    return { file, text: updateReadmeRevision(await readFile(file, "utf8"), snapshot.revision) };
+  const readmeUpdates = await Promise.all(readmeEntries.map(async ({ file: readmePath, assetReference }) => {
+    const file = path.join(root, readmePath);
+    return { file, text: updateReadmeRevision(await readFile(file, "utf8"), assetReference, snapshot.revision) };
   }));
-  const assetsDirectory = path.join(root, "assets");
+  const assetsDirectory = path.join(root, "profile", "assets", "maps");
   await mkdir(path.dirname(dataPath), { recursive: true });
   await mkdir(assetsDirectory, { recursive: true });
   await writeIfChanged(dataPath, JSON.stringify(snapshot, null, 2) + "\n");
@@ -371,7 +376,7 @@ export async function updateProjectMap({ root, username, privateToken }) {
 }
 
 async function main() {
-  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
   const result = await updateProjectMap({
     root,
     username: process.env.PROFILE_USERNAME ?? "KS-GG-AI",

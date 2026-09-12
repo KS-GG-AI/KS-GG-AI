@@ -7,10 +7,11 @@ import {
   fetchRepositoryPages,
   isValidProjectSnapshot,
   privateProjectLabel,
+  readmeEntries,
   readmeNames,
   renderProjectMap,
   selectProjectRepositories,
-} from "./update-project-map.mjs";
+} from "./update.mjs";
 
 function response(status, payload, headers = {}) {
   return {
@@ -138,17 +139,18 @@ await assert.rejects(
 );
 assert.equal(deniedAttempts, 1);
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const persistedSnapshot = JSON.parse(await readFile(path.join(root, "data", "project-map.json"), "utf8"));
-const persistedSvg = await readFile(path.join(root, "assets", "project-map.svg"), "utf8");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+const persistedSnapshot = JSON.parse(await readFile(path.join(root, "profile", "data", "project-map.json"), "utf8"));
+const persistedSvg = await readFile(path.join(root, "profile", "assets", "maps", "project-map.svg"), "utf8");
 assert.equal(renderProjectMap(persistedSnapshot), persistedSvg);
-for (const name of readmeNames) {
-  const readme = await readFile(path.join(root, name), "utf8");
-  const revisions = [...readme.matchAll(/\.\/assets\/project-map\.svg\?v=([A-Za-z0-9-]+)/g)].map((match) => match[1]);
+for (const { file, assetReference } of readmeEntries) {
+  const readme = await readFile(path.join(root, file), "utf8");
+  const expression = new RegExp(assetReference.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\?v=([A-Za-z0-9-]+)", "g");
+  const revisions = [...readme.matchAll(expression)].map((match) => match[1]);
   assert.deepEqual(revisions, [persistedSnapshot.revision]);
   assert.equal((readme.match(/<details>/g) ?? []).length, 5);
   assert.equal((readme.match(/<\/details>/g) ?? []).length, 5);
-  assert.equal(readme.includes('href="./' + name + '"'), false);
+  assert.equal(readme.includes('href="./' + file + '"'), false);
   assert.ok(readme.indexOf('<img src="./assets/typing.gif"') > readme.indexOf("</div>"));
 }
 

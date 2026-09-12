@@ -55,7 +55,7 @@ Tampilan ringkas proyek publik dan pekerjaan privat yang terlindungi. Peta diper
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
 
 <sub>Nama dan metadata privat tidak pernah ditampilkan. <a href="https://github.com/KS-GG-AI?tab=repositories">Lihat repositori publik</a>.</sub>
 

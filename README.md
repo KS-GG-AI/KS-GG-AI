@@ -55,7 +55,7 @@ A compact view of public projects and protected private work. It refreshes autom
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
 
 <sub>Private names and metadata are never shown. <a href="https://github.com/KS-GG-AI?tab=repositories">Browse public repositories</a>.</sub>
 

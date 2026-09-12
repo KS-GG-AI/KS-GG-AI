@@ -28,19 +28,19 @@ jobs:
       - name: Generate project map
         env:
           PROFILE_REPOSITORY_READ_TOKEN: ${{ secrets.PROFILE_REPOSITORY_READ_TOKEN }}
-        run: node scripts/update-project-map.mjs
+        run: node profile/automation/project-map/update.mjs
 
       - name: Test project map generator
-        run: node scripts/test-project-map.mjs
+        run: node profile/automation/project-map/test.mjs
 
       - name: Commit generated project map
         run: |
-          if git diff --quiet -- assets/project-map.svg data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
+          if git diff --quiet -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
             echo "Project map is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- assets/project-map.svg data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
+          git add -- profile/assets/maps/project-map.svg profile/data/project-map.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
           git commit -m "chore: refresh project map"
           git push

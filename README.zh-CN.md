@@ -55,7 +55,7 @@
 
 <br />
 
-<img src="./assets/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
 
 <sub>私有名称和元数据不会显示。<a href="https://github.com/KS-GG-AI?tab=repositories">浏览公开仓库</a>。</sub>
 

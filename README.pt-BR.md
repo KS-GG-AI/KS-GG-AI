@@ -61,6 +61,34 @@ Uma visão compacta dos projetos públicos e do trabalho privado protegido. É a
 
 </details>
 
+## Roteiros
+
+Uma visão pública e baseada em fatos do que está sendo acompanhado e de como a entrega avança. Lê apenas issues públicos do GitHub com rótulos de roteiro e etapa, e é atualizada regularmente.
+
+- **Direção do projeto** — Agora, próximo e depois
+- **Fluxo de entrega** — Planejar, construir, verificar e publicar
+
+<details>
+<summary><strong>Explorar roteiros públicos</strong></summary>
+
+<br />
+
+<p><strong>Roteiro do projeto</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Roteiro público do projeto dividido em agora, próximo e depois." width="480" />
+
+<p><strong>Roteiro de desenvolvimento</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Roteiro público de desenvolvimento dividido em planejar, construir, verificar e publicar." width="480" />
+
+<sub>Usa somente issues públicos do GitHub. Adicione um rótulo <code>roadmap:*</code> e um <code>stage:*</code> a um issue público para exibi-lo.</sub>
+
+<br />
+
+[Ver issues públicos acompanhados](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## Como trabalho
 
 Mantenho as decisões legíveis e o próximo passo visível: começo pequeno, aprendo rápido e melhoro com intenção.

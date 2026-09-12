@@ -61,6 +61,34 @@ A compact view of public projects and protected private work. It refreshes autom
 
 </details>
 
+## Roadmaps
+
+A public, fact-based view of what is being tracked and how it moves through delivery. It reads only public GitHub issues with roadmap and stage labels, then refreshes on a schedule.
+
+- **Project direction** — Now, next, and later
+- **Delivery flow** — Plan, build, verify, and ship
+
+<details>
+<summary><strong>Explore public roadmaps</strong></summary>
+
+<br />
+
+<p><strong>Project roadmap</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Public project roadmap split into now, next, and later lanes." width="480" />
+
+<p><strong>Development roadmap</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
+
+<sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear.</sub>
+
+<br />
+
+[Browse public tracked issues](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## How I work
 
 I keep decisions legible and the next step visible: start small, learn quickly, and improve with intent.

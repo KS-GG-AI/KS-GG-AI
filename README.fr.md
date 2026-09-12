@@ -61,6 +61,34 @@ Une vue compacte des projets publics et du travail privé protégé. Elle se met
 
 </details>
 
+## Feuilles de route
+
+Une vue publique, fondée sur les faits, du travail suivi et de son cheminement jusqu'à la livraison. Elle lit uniquement les issues GitHub publiques portant des labels de feuille de route et d'étape, puis se met à jour selon un calendrier.
+
+- **Direction du projet** — Maintenant, ensuite et plus tard
+- **Flux de livraison** — Planifier, construire, vérifier et publier
+
+<details>
+<summary><strong>Explorer les feuilles de route publiques</strong></summary>
+
+<br />
+
+<p><strong>Feuille de route du projet</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
+
+<p><strong>Feuille de route de développement</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
+
+<sub>Utilise uniquement des issues GitHub publiques. Ajoutez un label <code>roadmap:*</code> et un label <code>stage:*</code> à une issue publique pour l'afficher.</sub>
+
+<br />
+
+[Parcourir les issues publiques suivies](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## Ma façon de travailler
 
 Je garde les décisions lisibles et la prochaine étape visible : je commence petit, j’apprends vite et j’améliore avec intention.

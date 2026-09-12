@@ -61,6 +61,34 @@ Una vista compacta de los proyectos públicos y del trabajo privado protegido. S
 
 </details>
 
+## Hojas de ruta
+
+Una vista pública y basada en hechos de lo que se está siguiendo y de cómo avanza la entrega. Solo lee issues públicos de GitHub con etiquetas de hoja de ruta y etapa, y se actualiza de forma programada.
+
+- **Dirección del proyecto** — Ahora, después y más adelante
+- **Flujo de entrega** — Planificar, construir, verificar y publicar
+
+<details>
+<summary><strong>Explorar las hojas de ruta públicas</strong></summary>
+
+<br />
+
+<p><strong>Hoja de ruta del proyecto</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+
+<p><strong>Hoja de ruta de desarrollo</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+
+<sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
+
+<br />
+
+[Ver issues públicos seguidos](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## Cómo trabajo
 
 Mantengo las decisiones claras y el siguiente paso visible: empiezo en pequeño, aprendo rápido y mejoro con intención.

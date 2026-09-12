@@ -61,6 +61,34 @@
 
 </details>
 
+## 路线图
+
+基于公开 Issue 标签展示当前方向与交付流程。它不会读取或显示私有项目，并会按计划自动更新。
+
+- **项目方向** — 当前、下一步与以后
+- **交付流程** — 规划、构建、验证与发布
+
+<details>
+<summary><strong>查看公开路线图</strong></summary>
+
+<br />
+
+<p><strong>项目路线图</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+
+<p><strong>开发路线图</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+
+<sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
+
+<br />
+
+[浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## 我的工作方式
 
 让决策更清楚、让下一步更可见：从小处开始，快速学习，有意识地持续改进。

@@ -61,6 +61,34 @@
 
 </details>
 
+## 로드맵
+
+공개 이슈 라벨을 기준으로 현재 방향과 전달 흐름을 보여줍니다. 비공개 항목을 읽거나 표시하지 않으며, 정기 실행으로 갱신됩니다.
+
+- **프로젝트 방향** — 지금, 다음, 이후
+- **개발 흐름** — 계획, 구현, 검증, 배포
+
+<details>
+<summary><strong>공개 로드맵 보기</strong></summary>
+
+<br />
+
+<p><strong>프로젝트 로드맵</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+
+<p><strong>개발 로드맵</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+
+<sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>
+
+<br />
+
+[공개 추적 이슈 보기](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## 일하는 방식
 
 결정은 읽기 쉽게, 다음 단계는 눈에 보이게 둡니다. 작게 시작하고, 빠르게 배우고, 의도를 갖고 개선합니다.

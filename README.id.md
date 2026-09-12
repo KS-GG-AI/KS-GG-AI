@@ -61,6 +61,34 @@ Tampilan ringkas proyek publik dan pekerjaan privat yang terlindungi. Peta diper
 
 </details>
 
+## Peta jalan
+
+Tampilan publik berbasis fakta tentang pekerjaan yang sedang dilacak dan bagaimana pekerjaan itu bergerak menuju rilis. Hanya issue GitHub publik dengan label roadmap dan tahap yang dibaca, lalu diperbarui secara terjadwal.
+
+- **Arah proyek** — Sekarang, berikutnya, dan nanti
+- **Alur pengiriman** — Rencanakan, bangun, verifikasi, dan rilis
+
+<details>
+<summary><strong>Jelajahi peta jalan publik</strong></summary>
+
+<br />
+
+<p><strong>Peta jalan proyek</strong></p>
+
+<img src="./assets/project-roadmap.svg?v=a6ed0d5dc67f" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+
+<p><strong>Peta jalan pengembangan</strong></p>
+
+<img src="./assets/development-roadmap.svg?v=a6ed0d5dc67f" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+
+<sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu label <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
+
+<br />
+
+[Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
 ## Cara saya bekerja
 
 Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai dari kecil, belajar cepat, lalu memperbaiki dengan sengaja.

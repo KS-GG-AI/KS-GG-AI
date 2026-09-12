@@ -10,7 +10,7 @@ import {
   fetchPaginated,
   isValidRoadmapSnapshot,
   normalizePublicIssues,
-  readmeNames,
+  readmeEntries,
   renderDevelopmentRoadmap,
   renderProjectRoadmap,
   selectPublicRepositories,
@@ -31,6 +31,10 @@ function response(status: number, payload: unknown, headers: Record<string, stri
       return payload;
     },
   };
+}
+
+function normalizeLineEndings(value: string): string {
+  return value.replace(/\r\n/g, "\n");
 }
 
 const publicRepositories = selectPublicRepositories([
@@ -153,12 +157,13 @@ const tempRoot = await mkdtemp(path.join(os.tmpdir(), "ks-gg-ai-roadmaps-"));
 try {
   await mkdir(path.join(tempRoot, "data"), { recursive: true });
   await writeFile(path.join(tempRoot, "data", "roadmap-state.json"), "sentinel-data\n", "utf8");
-  const validReadme = '<img src="./assets/project-roadmap.svg?v=old" />\n<img src="./assets/development-roadmap.svg?v=old" />\n';
-  await Promise.all(readmeNames.map(async (name) => writeFile(
-    path.join(tempRoot, name),
-    name === "README.ko.md" ? "broken README" : validReadme,
-    "utf8",
-  )));
+  await Promise.all(readmeEntries.map(async (entry) => {
+    const file = path.join(tempRoot, entry.file);
+    await mkdir(path.dirname(file), { recursive: true });
+    const validReadme = '<img src="' + entry.projectRoadmapReference + '?v=old" />\n'
+      + '<img src="' + entry.developmentRoadmapReference + '?v=old" />\n';
+    await writeFile(file, entry.file === "README.ko.md" ? "broken README" : validReadme, "utf8");
+  }));
   await assert.rejects(updateRoadmaps({
     root: tempRoot,
     username: "KS-GG-AI",
@@ -177,25 +182,26 @@ try {
   await rm(tempRoot, { recursive: true, force: true });
 }
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
-const localSnapshot = JSON.parse(await readFile(path.join(root, "data", "roadmap-state.json"), "utf8")) as unknown;
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../..");
+const localSnapshot = JSON.parse(await readFile(path.join(root, "profile", "data", "roadmap-state.json"), "utf8")) as unknown;
 assert.ok(isValidRoadmapSnapshot(localSnapshot));
-assert.equal(await readFile(path.join(root, "assets", "project-roadmap.svg"), "utf8"), renderProjectRoadmap(localSnapshot));
-assert.equal(await readFile(path.join(root, "assets", "development-roadmap.svg"), "utf8"), renderDevelopmentRoadmap(localSnapshot));
+assert.equal(normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "maps", "project-roadmap.svg"), "utf8")), renderProjectRoadmap(localSnapshot));
+assert.equal(normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "maps", "development-roadmap.svg"), "utf8")), renderDevelopmentRoadmap(localSnapshot));
 
-for (const name of readmeNames) {
-  const text = await readFile(path.join(root, name), "utf8");
-  assert.equal((text.match(/<details>/g) ?? []).length, 5, name + " must have five disclosure panels.");
-  assert.equal((text.match(/\.\/assets\/project-roadmap\.svg\?v=[A-Za-z0-9-]+/g) ?? []).length, 1, name + " must reference one project roadmap.");
-  assert.equal((text.match(/\.\/assets\/development-roadmap\.svg\?v=[A-Za-z0-9-]+/g) ?? []).length, 1, name + " must reference one development roadmap.");
+for (const entry of readmeEntries) {
+  const text = await readFile(path.join(root, entry.file), "utf8");
+  const escapeRegularExpression = (value: string): string => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  assert.equal((text.match(/<details>/g) ?? []).length, 5, entry.file + " must have five disclosure panels.");
+  assert.equal((text.match(new RegExp(escapeRegularExpression(entry.projectRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one project roadmap.");
+  assert.equal((text.match(new RegExp(escapeRegularExpression(entry.developmentRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one development roadmap.");
 }
 
 const roadmapWorkflow = await readFile(path.join(root, ".github", "workflows", "refresh-roadmaps.yml"), "utf8");
 const projectMapWorkflow = await readFile(path.join(root, ".github", "workflows", "refresh-project-map.yml"), "utf8");
 assert.match(roadmapWorkflow, /contents: write\s+issues: read/);
 assert.match(roadmapWorkflow, /group: profile-readme-assets/);
-assert.match(roadmapWorkflow, /npm ci --ignore-scripts/);
-assert.match(roadmapWorkflow, /git add -- assets\/project-roadmap\.svg assets\/development-roadmap\.svg data\/roadmap-state\.json/);
+assert.match(roadmapWorkflow, /npm ci --prefix profile\/automation\/roadmaps --ignore-scripts/);
+assert.match(roadmapWorkflow, /git add -- profile\/assets\/maps\/project-roadmap\.svg profile\/assets\/maps\/development-roadmap\.svg profile\/data\/roadmap-state\.json/);
 assert.match(roadmapWorkflow, /actions\/checkout@[a-f0-9]{40}/);
 assert.match(roadmapWorkflow, /actions\/setup-node@[a-f0-9]{40}/);
 assert.match(projectMapWorkflow, /group: profile-readme-assets/);

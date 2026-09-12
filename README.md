@@ -75,11 +75,11 @@ A public, fact-based view of what is being tracked and how it moves through deli
 
 <p><strong>Project roadmap</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="Public project roadmap split into now, next, and later lanes." width="480" />
+<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Public project roadmap split into now, next, and later lanes." width="480" />
 
 <p><strong>Development roadmap</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
+<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
 
 <sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear.</sub>
 

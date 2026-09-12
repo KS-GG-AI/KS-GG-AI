@@ -29,24 +29,24 @@ jobs:
           node-version: 22
 
       - name: Install roadmap tooling
-        run: npm ci --ignore-scripts
+        run: npm ci --prefix profile/automation/roadmaps --ignore-scripts
 
       - name: Generate public roadmaps
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run roadmaps:update
+        run: npm run --prefix profile/automation/roadmaps roadmaps:update
 
       - name: Test roadmap generator
-        run: npm run roadmaps:test
+        run: npm run --prefix profile/automation/roadmaps roadmaps:test
 
       - name: Commit refreshed roadmaps
         run: |
-          if git diff --quiet -- assets/project-roadmap.svg assets/development-roadmap.svg data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
+          if git diff --quiet -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md; then
             echo "Public roadmaps are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- assets/project-roadmap.svg assets/development-roadmap.svg data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
+          git add -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/data/roadmap-state.json README.md README.ko.md README.zh-CN.md README.es.md README.hi.md README.ar.md README.pt-BR.md README.ru.md README.fr.md README.id.md
           git commit -m "chore: refresh public roadmaps"
           git push

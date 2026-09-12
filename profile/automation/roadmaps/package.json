@@ -1,0 +1,14 @@
+{
+  "name": "ks-gg-ai-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "roadmaps:build": "tsc --project tsconfig.json",
+    "roadmaps:update": "npm run roadmaps:build && node dist/update-roadmaps.js",
+    "roadmaps:test": "npm run roadmaps:build && node dist/test-roadmaps.js"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.2",
+    "typescript": "7.0.2"
+  }
+}

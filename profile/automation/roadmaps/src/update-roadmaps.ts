@@ -3,18 +3,59 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
-export const readmeNames = [
-  "README.md",
-  "README.ko.md",
-  "README.zh-CN.md",
-  "README.es.md",
-  "README.hi.md",
-  "README.ar.md",
-  "README.pt-BR.md",
-  "README.ru.md",
-  "README.fr.md",
-  "README.id.md",
+export const readmeEntries = [
+  {
+    file: "README.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.ko.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.zh-CN.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.es.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.hi.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.ar.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.pt-BR.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.ru.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.fr.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
+  {
+    file: "README.id.md",
+    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+  },
 ];
+export const readmeNames = readmeEntries.map(({ file }) => file);
 
 const renderVersion = 2;
 const svgWidth = 480;
@@ -568,12 +609,23 @@ async function writeIfChanged(file: string, value: string): Promise<void> {
   if (existing !== value) await writeFile(file, value, "utf8");
 }
 
-function updateReadmeReferences(text: string, revision: string): string {
-  const assets = ["project-roadmap.svg", "development-roadmap.svg"];
-  return assets.reduce((updated, asset) => {
-    const expression = new RegExp("(\\./assets\\/" + asset.replace(".", "\\.") + ")\\?v=[A-Za-z0-9-]+", "g");
+function escapeRegularExpression(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function updateReadmeReferences(
+  text: string,
+  entry: (typeof readmeEntries)[number],
+  revision: string,
+): string {
+  const assets = [
+    entry.projectRoadmapReference,
+    entry.developmentRoadmapReference,
+  ];
+  return assets.reduce((updated, assetReference) => {
+    const expression = new RegExp("(" + escapeRegularExpression(assetReference) + ")\\?v=[A-Za-z0-9-]+", "g");
     const matches = [...updated.matchAll(expression)];
-    if (matches.length !== 1) throw new Error("Each localized README must contain one " + asset + " reference.");
+    if (matches.length !== 1) throw new Error("Each localized README must contain one roadmap SVG reference.");
     return updated.replace(expression, "$1?v=" + revision);
   }, text);
 }
@@ -594,7 +646,7 @@ export async function updateRoadmaps({
 }> {
   const source = await fetchPublicRoadmapSource(username, token.trim(), apiBaseUrl, fetchOptions);
   const semanticState = createRoadmapState({ username, ...source });
-  const dataPath = path.join(root, "data", "roadmap-state.json");
+  const dataPath = path.join(root, "profile", "data", "roadmap-state.json");
   const existing = await readJsonIfPresent(dataPath);
   const existingSemantic = isValidRoadmapSnapshot(existing) ? semanticSnapshot(existing) : null;
   const changed = JSON.stringify(existingSemantic) !== JSON.stringify(semanticState);
@@ -603,17 +655,17 @@ export async function updateRoadmaps({
     : existing as RoadmapSnapshot;
   const projectSvg = renderProjectRoadmap(snapshot);
   const developmentSvg = renderDevelopmentRoadmap(snapshot);
-  const readmeUpdates = await Promise.all(readmeNames.map(async (name) => {
-    const file = path.join(root, name);
+  const readmeUpdates = await Promise.all(readmeEntries.map(async (entry) => {
+    const file = path.join(root, entry.file);
     try {
-      return { file, text: updateReadmeReferences(await readFile(file, "utf8"), snapshot.revision ?? "") };
+      return { file, text: updateReadmeReferences(await readFile(file, "utf8"), entry, snapshot.revision ?? "") };
     } catch (error) {
       const message = error instanceof Error ? error.message : "README validation failed.";
-      throw new Error(name + ": " + message);
+      throw new Error(entry.file + ": " + message);
     }
   }));
 
-  const assetsDirectory = path.join(root, "assets");
+  const assetsDirectory = path.join(root, "profile", "assets", "maps");
   await mkdir(path.dirname(dataPath), { recursive: true });
   await mkdir(assetsDirectory, { recursive: true });
   await writeIfChanged(dataPath, JSON.stringify(snapshot, null, 2) + "\n");
@@ -631,7 +683,7 @@ export async function updateRoadmaps({
 }
 
 async function main(): Promise<void> {
-  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+  const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../..");
   const result = await updateRoadmaps({
     root,
     username: process.env.PROFILE_USERNAME ?? "KS-GG-AI",

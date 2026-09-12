@@ -75,11 +75,11 @@
 
 <p><strong>प्रोजेक्ट रोडमैप</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
 
 <p><strong>डेवलपमेंट रोडमैप</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
 
 <sub>केवल सार्वजनिक GitHub Issue का उपयोग होता है। किसी सार्वजनिक Issue को दिखाने के लिए एक <code>roadmap:*</code> और एक <code>stage:*</code> लेबल जोड़ें।</sub>
 

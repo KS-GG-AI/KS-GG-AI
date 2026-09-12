@@ -75,11 +75,11 @@ Une vue publique, fondée sur les faits, du travail suivi et de son cheminement 
 
 <p><strong>Feuille de route du projet</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
+<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
 
 <p><strong>Feuille de route de développement</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
+<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
 
 <sub>Utilise uniquement des issues GitHub publiques. Ajoutez un label <code>roadmap:*</code> et un label <code>stage:*</code> à une issue publique pour l'afficher.</sub>
 

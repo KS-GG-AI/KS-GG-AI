@@ -75,11 +75,11 @@ Tampilan publik berbasis fakta tentang pekerjaan yang sedang dilacak dan bagaima
 
 <p><strong>Peta jalan proyek</strong></p>
 
-<img src="./assets/project-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+<img src="./profile/assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
 
 <p><strong>Peta jalan pengembangan</strong></p>
 
-<img src="./assets/development-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+<img src="./profile/assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
 
 <sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu label <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
 

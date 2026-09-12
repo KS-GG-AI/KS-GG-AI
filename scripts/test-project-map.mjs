@@ -146,8 +146,8 @@ for (const name of readmeNames) {
   const readme = await readFile(path.join(root, name), "utf8");
   const revisions = [...readme.matchAll(/\.\/assets\/project-map\.svg\?v=([A-Za-z0-9-]+)/g)].map((match) => match[1]);
   assert.deepEqual(revisions, [persistedSnapshot.revision]);
-  assert.equal((readme.match(/<details>/g) ?? []).length, 4);
-  assert.equal((readme.match(/<\/details>/g) ?? []).length, 4);
+  assert.equal((readme.match(/<details>/g) ?? []).length, 5);
+  assert.equal((readme.match(/<\/details>/g) ?? []).length, 5);
   assert.equal(readme.includes('href="./' + name + '"'), false);
   assert.ok(readme.indexOf('<img src="./assets/typing.gif"') > readme.indexOf("</div>"));
 }

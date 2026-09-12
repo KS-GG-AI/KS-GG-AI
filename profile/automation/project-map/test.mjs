@@ -44,7 +44,8 @@ assert.equal(privateProjectLabel(1), "PRIVATE · ███ · 01");
 assert.equal(privateProjectLabel(12), "PRIVATE · ███ · 12");
 assert.equal(state.private.count, 4);
 assert.equal(state.private.labels.length, 3);
-assert.equal(state.renderVersion, 4);
+assert.equal(state.renderVersion, 5);
+assert.equal(state.visualLocaleVersion, 2);
 assert.doesNotMatch(serialized, new RegExp(privateRepositoryName, "i"));
 assert.doesNotMatch(svg, new RegExp(privateRepositoryName, "i"));
 assert.match(svg, /tools &amp; &lt;systems&gt;/);
@@ -53,6 +54,8 @@ assert.match(svg, /PRIVATE · ███ · \+ 2/);
 assert.match(svg, /<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
 assert.match(svg, /height="596" viewBox="0 0 480 596"/);
 assert.match(svg, /STATE UPDATED 2026-09-10/);
+assert.match(renderProjectMap(snapshot, "ko"), /프로젝트 지도/);
+assert.match(renderProjectMap(snapshot, "ar"), /direction="rtl"/);
 
 const compactState = createProjectState({
   username: "KS-GG-AI",
@@ -143,7 +146,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const persistedSnapshot = JSON.parse(await readFile(path.join(root, "profile", "data", "project-map.json"), "utf8"));
 const persistedSvg = await readFile(path.join(root, "profile", "assets", "maps", "project-map.svg"), "utf8");
 assert.equal(renderProjectMap(persistedSnapshot), persistedSvg);
-for (const { file, assetReference, typingReference } of readmeEntries) {
+for (const { file, locale, assetReference, typingReference } of readmeEntries) {
   const readme = await readFile(path.join(root, file), "utf8");
   const expression = new RegExp(assetReference.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\?v=([A-Za-z0-9-]+)", "g");
   const revisions = [...readme.matchAll(expression)].map((match) => match[1]);
@@ -155,6 +158,8 @@ for (const { file, assetReference, typingReference } of readmeEntries) {
   const selfReference = file === "README.md" ? "./README.md" : "./" + path.basename(file);
   assert.equal(readme.includes('href="' + selfReference + '"'), false);
   assert.ok(readme.indexOf('<img src="' + typingReference + '"') > readme.indexOf("</div>"));
+  const localeSvg = await readFile(path.join(root, "profile", "assets", "locales", locale, "maps", "project-map.svg"), "utf8");
+  assert.equal(localeSvg, renderProjectMap(persistedSnapshot, locale));
 }
 
 console.log("Project map generator tests: PASS");

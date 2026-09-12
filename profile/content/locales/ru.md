@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
+  <img src="../../assets/locales/ru/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
   <img src="../../assets/identity/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
 </p>
 
@@ -30,7 +30,7 @@
 Превращаю ранние идеи в полезные продуктовые поверхности, связанные инструменты и процессы, которые остаются понятными по мере роста.
 
 <p align="center">
-  <img src="../../assets/motion/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
+  <img src="../../assets/locales/ru/motion/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
 </p>
 
 ### Что я создаю
@@ -51,10 +51,10 @@
 
 Практический набор, сгруппированный по задачам, которые он помогает решать, а не как контрольный список.
 
-- **Писать** — TypeScript, JavaScript, Python
-- **Создавать** — Node.js, React, Next.js
-- **Соединять** — REST API, SQL, MCP
-- **Поставлять** — Git, Docker, GitHub Actions
+- **Основа** — TypeScript, JavaScript, Python, Go
+- **Продуктовые поверхности** — React, Next.js, Vite, Tailwind CSS, Figma
+- **Связанные системы** — Node.js, REST API, PostgreSQL, MCP
+- **Поставка и надёжность** — Git, Docker, GitHub Actions, облачные платформы
 
 <details>
 <summary><strong>Открыть визуальный стек</strong></summary>
@@ -63,15 +63,15 @@
 
 <p><strong>Основные инструменты</strong></p>
 
-<img src="../../assets/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
+<img src="../../assets/locales/ru/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
 
 <p><strong>Техническая карта</strong></p>
 
-<img src="../../assets/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
+<img src="../../assets/locales/ru/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
 
 <p><strong>В движении</strong></p>
 
-<img src="../../assets/motion/technology-stack.gif" alt="Анимированная техническая карта." width="100%" />
+<img src="../../assets/locales/ru/motion/technology-stack.gif" alt="Анимированная техническая карта." width="100%" />
 
 - **Языки и разметка** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **Сервисы, данные и автоматизация** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, автоматизация
@@ -93,17 +93,17 @@
 
 <p><strong>Карта проектов</strong></p>
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Карта проектов с рабочим пространством KS-GG-AI, публичными проектами и намеренно скрытой приватной работой." width="480" />
+<img src="../../assets/locales/ru/maps/project-map.svg?v=c237e445bed5" alt="Карта проектов с рабочим пространством KS-GG-AI, публичными проектами и намеренно скрытой приватной работой." width="480" />
 
 <sub>Только публичные метаданные. Приватные имена и метаданные никогда не показываются.</sub>
 
 <p><strong>Дорожная карта проекта</strong></p>
 
-<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
+<img src="../../assets/locales/ru/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
 
 <p><strong>Дорожная карта разработки</strong></p>
 
-<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
+<img src="../../assets/locales/ru/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
 
 <sub>Используются только публичные GitHub Issues. Добавьте к публичному issue одну метку <code>roadmap:*</code> и одну <code>stage:*</code>, чтобы он появился здесь.</sub>
 

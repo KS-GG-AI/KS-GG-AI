@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="420" viewBox="0 0 480 420" fill="none" role="img" aria-labelledby="title desc" direction="rtl">
+<title id="title">خارطة طريق التطوير</title>
+<desc id="desc">تدفق مسائل عامة مقسم إلى التخطيط والبناء والتحقق والإصدار.</desc>
+<defs><linearGradient id="surface" x1="0" y1="0" x2="480" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0D1E1D"/></linearGradient><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="28"/></filter></defs>
+<rect x=".5" y=".5" width="479" height="419" rx="22" fill="url(#surface)" stroke="#30354A"/>
+<circle cx="424" cy="62" r="62" fill="#7C3AED" fill-opacity=".14" filter="url(#glow)"/><circle cx="54" cy="378" r="66" fill="#06B6D4" fill-opacity=".09" filter="url(#glow)"/>
+<text x="456" y="31" fill="#F5F3FF" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">خارطة طريق التطوير</text>
+<text x="456" y="49" fill="#AAB2C4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext" letter-spacing=".25">مسائل عامة · تخطيط / بناء / تحقق / إصدار</text>
+<rect x="24" y="18" width="110" height="28" rx="14" fill="#0B1020" stroke="#C4B5FD" stroke-opacity=".42"/><circle cx="126" cy="32" r="4" fill="#67E8F9"/><text x="444" y="36" fill="#EDE9FE" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="9" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">عرض التدفق</text>
+<path d="M428 96V342" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>
+<circle cx="428" cy="106" r="9" fill="#111827" stroke="#C4B5FD" stroke-width="2"/><circle cx="428" cy="106" r="3" fill="#C4B5FD"/>
+<rect x="24" y="79" width="380" height="58" rx="14" fill="#111827" stroke="#C4B5FD" stroke-opacity=".42"/>
+<text x="386" y="98" fill="#C4B5FD" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تخطيط</text>
+<text x="386" y="111" fill="#AAB2C4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext" letter-spacing=".2">01 عنصر عام</text>
+<text x="386" y="128" fill="#F5F3FF" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">#1 · Plan a shared MCP i…</text>
+<circle cx="428" cy="168" r="9" fill="#111827" stroke="#67E8F9" stroke-width="2"/><circle cx="428" cy="168" r="3" fill="#67E8F9"/>
+<rect x="24" y="141" width="380" height="58" rx="14" fill="#111827" stroke="#67E8F9" stroke-opacity=".42"/>
+<text x="386" y="160" fill="#67E8F9" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">بناء</text>
+<text x="386" y="173" fill="#AAB2C4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext" letter-spacing=".2">لا عناصر عامة</text>
+<text x="386" y="190" fill="#F5F3FF" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا توجد مسألة عامة بهذا الوسم stage:build</text>
+<circle cx="428" cy="230" r="9" fill="#111827" stroke="#F9A8D4" stroke-width="2"/><circle cx="428" cy="230" r="3" fill="#F9A8D4"/>
+<rect x="24" y="203" width="380" height="58" rx="14" fill="#111827" stroke="#F9A8D4" stroke-opacity=".42"/>
+<text x="386" y="222" fill="#F9A8D4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تحقق</text>
+<text x="386" y="235" fill="#AAB2C4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext" letter-spacing=".2">لا عناصر عامة</text>
+<text x="386" y="252" fill="#F5F3FF" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا توجد مسألة عامة بهذا الوسم stage:verify</text>
+<circle cx="428" cy="292" r="9" fill="#111827" stroke="#A7F3D0" stroke-width="2"/><circle cx="428" cy="292" r="3" fill="#A7F3D0"/>
+<rect x="24" y="265" width="380" height="58" rx="14" fill="#111827" stroke="#A7F3D0" stroke-opacity=".42"/>
+<text x="386" y="284" fill="#A7F3D0" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إصدار</text>
+<text x="386" y="297" fill="#AAB2C4" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext" letter-spacing=".2">لا عناصر عامة</text>
+<text x="386" y="314" fill="#F5F3FF" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا توجد مسألة عامة بهذا الوسم stage:ship</text>
+<path d="M24 380H456" stroke="#30354A"/>
+<text x="456" y="398" fill="#A7F3D0" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مصدر عام فقط</text>
+<text x="24" y="398" fill="#98A2B8" font-family="Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" text-anchor="end" direction="rtl" unicode-bidi="plaintext">الحالة في 2026-09-12</text>
+</svg>

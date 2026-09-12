@@ -1,0 +1,349 @@
+{
+  "version": 2,
+  "locales": [
+    {
+      "code": "en",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "PRODUCT · AUTOMATION · SYSTEMS", "status": "clear by design" },
+      "typing": { "label": "PROFILE NOTE", "prefix": "BUILDING ", "phrases": ["USEFUL THINGS.", "CLEAR SYSTEMS.", "WITH CARE."], "footer": "THOUGHTFUL SOFTWARE" },
+      "toolbox": {
+        "title": "CORE TOOLKIT", "subtitle": "A WORKING SET FOR HOW WORK MOVES", "badge": "4 WORK AREAS",
+        "groups": [
+          { "label": "WRITE", "detail": "LANGUAGES & SCRIPTING" },
+          { "label": "BUILD", "detail": "RUNTIME & INTERFACES" },
+          { "label": "CONNECT", "detail": "SERVICES & WORKFLOWS" },
+          { "label": "SHIP", "detail": "VERSIONING & DELIVERY" }
+        ]
+      },
+      "stack": {
+        "title": "TECH STACK MAP", "subtitle": "FOUR CAPABILITIES · ONE DELIVERY LOOP", "footer": "FOUNDATION → SURFACES → SYSTEMS → DELIVERY",
+        "groups": [
+          { "label": "FOUNDATION", "detail": "LANGUAGES & MARKUP" },
+          { "label": "PRODUCT SURFACES", "detail": "INTERFACES & FEEDBACK" },
+          { "label": "CONNECTED SYSTEMS", "detail": "APIS, DATA & AUTOMATION" },
+          { "label": "DELIVERY", "detail": "RELIABILITY & OPERATIONS" }
+        ]
+      },
+      "projectMap": {
+        "title": "PROJECT MAP", "subtitle": "PUBLIC SURFACES · MASKED PRIVATE WORK", "autoSync": "AUTO SYNC", "workspace": "WORKSPACE", "workspaceDetail": "PROJECT TOPOLOGY · PROFILE VIEW",
+        "public": "PUBLIC", "publicDescription": "VISIBLE PROJECTS", "private": "PRIVATE", "masked": "MASKED", "privateDescription": "PROTECTED LANE",
+        "noPublicTitle": "NO PUBLIC PROJECTS", "noPublicSubtitle": "PUBLIC LANE READY", "privateWorkTitle": "PRIVATE WORK", "privateWorkSubtitle": "MASKED BY DEFAULT",
+        "noPrivateTitle": "NO PRIVATE PROJECTS", "noPrivateSubtitle": "CONNECTED SCOPE", "privateHiddenSubtitle": "NAME AND METADATA HIDDEN", "additionalPrivateTitle": "ADDITIONAL PRIVATE PROJECTS", "additionalPrivateSubtitle": "PROJECTS HIDDEN",
+        "more": "MORE", "footerPublic": "PUBLIC METADATA ONLY", "footerPrivate": "PRIVATE ENTRIES REDACTED", "stateUpdated": "STATE UPDATED", "description": "A project topology that separates public projects from intentionally masked private work."
+      },
+      "roadmaps": {
+        "projectTitle": "PROJECT ROADMAP", "projectSubtitle": "PUBLIC ISSUES · NOW / NEXT / LATER", "projectDescription": "Public issue roadmap split into now, next, and later lanes.",
+        "developmentTitle": "DEVELOPMENT ROADMAP", "developmentSubtitle": "PUBLIC ISSUES · PLAN / BUILD / VERIFY / SHIP", "developmentDescription": "Public issue delivery flow split into plan, build, verify, and ship stages.",
+        "autoRefresh": "AUTO REFRESH", "flowView": "FLOW VIEW", "publicItem": "PUBLIC ITEM", "noPublicItems": "NO PUBLIC ITEMS", "noIssue": "No public issue with", "more": "MORE", "publicOnly": "PUBLIC-ONLY SOURCE", "stateAsOf": "STATE AS OF",
+        "lanes": { "now": "NOW", "next": "NEXT", "later": "LATER" }, "stages": { "plan": "PLAN", "build": "BUILD", "verify": "VERIFY", "ship": "SHIP" }
+      }
+    },
+    {
+      "code": "ko",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans KR, Malgun Gothic, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "제품 · 자동화 · 시스템", "status": "명확하게 설계" },
+      "typing": { "label": "프로필 노트", "prefix": "만드는 중: ", "phrases": ["쓸모 있는 것.", "명확한 시스템.", "세심하게."], "footer": "생각 깊은 소프트웨어" },
+      "toolbox": {
+        "title": "핵심 도구", "subtitle": "일이 흐르는 방식에 맞춘 작업 도구", "badge": "4개 작업 영역",
+        "groups": [
+          { "label": "작성", "detail": "언어와 스크립팅" }, { "label": "구성", "detail": "런타임과 인터페이스" },
+          { "label": "연결", "detail": "서비스와 워크플로" }, { "label": "배포", "detail": "버전 관리와 전달" }
+        ]
+      },
+      "stack": {
+        "title": "기술 스택 지도", "subtitle": "4개 역량 · 하나의 배포 흐름", "footer": "기반 → 제품 경험 → 연결된 시스템 → 배포",
+        "groups": [
+          { "label": "기반", "detail": "언어와 마크업" }, { "label": "제품 경험", "detail": "인터페이스와 피드백" },
+          { "label": "연결된 시스템", "detail": "API · 데이터 · 자동화" }, { "label": "배포와 안정성", "detail": "운영과 신뢰성" }
+        ]
+      },
+      "projectMap": {
+        "title": "프로젝트 지도", "subtitle": "공개 작업 · 마스킹된 비공개 작업", "autoSync": "자동 동기화", "workspace": "작업 공간", "workspaceDetail": "프로젝트 구조 · 프로필 보기",
+        "public": "공개", "publicDescription": "표시되는 프로젝트", "private": "비공개", "masked": "마스킹", "privateDescription": "보호된 영역",
+        "noPublicTitle": "공개 프로젝트 없음", "noPublicSubtitle": "공개 영역 준비됨", "privateWorkTitle": "비공개 작업", "privateWorkSubtitle": "기본값으로 마스킹",
+        "noPrivateTitle": "비공개 프로젝트 없음", "noPrivateSubtitle": "연결된 범위", "privateHiddenSubtitle": "이름과 메타데이터 숨김", "additionalPrivateTitle": "추가 비공개 프로젝트", "additionalPrivateSubtitle": "추가 프로젝트 숨김",
+        "more": "더 보기", "footerPublic": "공개 메타데이터만", "footerPrivate": "비공개 항목은 마스킹됨", "stateUpdated": "상태 갱신", "description": "공개 프로젝트와 의도적으로 마스킹한 비공개 작업을 나누어 보여주는 프로젝트 구조입니다."
+      },
+      "roadmaps": {
+        "projectTitle": "프로젝트 로드맵", "projectSubtitle": "공개 이슈 · 지금 / 다음 / 이후", "projectDescription": "공개 이슈를 지금, 다음, 이후 구간으로 나눈 로드맵입니다.",
+        "developmentTitle": "개발 로드맵", "developmentSubtitle": "공개 이슈 · 계획 / 구현 / 검증 / 배포", "developmentDescription": "공개 이슈 흐름을 계획, 구현, 검증, 배포 단계로 나눈 지도입니다.",
+        "autoRefresh": "자동 갱신", "flowView": "흐름 보기", "publicItem": "공개 항목", "noPublicItems": "공개 항목 없음", "noIssue": "해당 라벨의 공개 이슈 없음", "more": "더 보기", "publicOnly": "공개 데이터만", "stateAsOf": "상태 기준",
+        "lanes": { "now": "지금", "next": "다음", "later": "이후" }, "stages": { "plan": "계획", "build": "구현", "verify": "검증", "ship": "배포" }
+      }
+    },
+    {
+      "code": "zh-CN",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans CJK SC, Microsoft YaHei, PingFang SC, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "产品 · 自动化 · 系统", "status": "清晰设计" },
+      "typing": { "label": "个人资料便笺", "prefix": "正在构建：", "phrases": ["有用的事物。", "清晰的系统。", "用心打磨。"], "footer": "用心的软件" },
+      "toolbox": {
+        "title": "核心工具", "subtitle": "围绕工作流程组织的工具集", "badge": "4 个工作领域",
+        "groups": [
+          { "label": "编写", "detail": "语言与脚本" }, { "label": "构建", "detail": "运行时与界面" },
+          { "label": "连接", "detail": "服务与工作流" }, { "label": "交付", "detail": "版本与发布" }
+        ]
+      },
+      "stack": {
+        "title": "技术栈地图", "subtitle": "四种能力 · 一条交付链路", "footer": "基础 → 产品界面 → 连接系统 → 交付",
+        "groups": [
+          { "label": "基础", "detail": "语言与标记" }, { "label": "产品界面", "detail": "界面与反馈" },
+          { "label": "连接系统", "detail": "API · 数据 · 自动化" }, { "label": "交付与可靠性", "detail": "运维与稳定性" }
+        ]
+      },
+      "projectMap": {
+        "title": "项目地图", "subtitle": "公开工作 · 已遮蔽的私有工作", "autoSync": "自动同步", "workspace": "工作空间", "workspaceDetail": "项目结构 · 个人资料视图",
+        "public": "公开", "publicDescription": "可见项目", "private": "私有", "masked": "已遮蔽", "privateDescription": "受保护区域",
+        "noPublicTitle": "暂无公开项目", "noPublicSubtitle": "公开区域已就绪", "privateWorkTitle": "私有工作", "privateWorkSubtitle": "默认遮蔽",
+        "noPrivateTitle": "暂无私有项目", "noPrivateSubtitle": "已连接范围", "privateHiddenSubtitle": "名称与元数据已隐藏", "additionalPrivateTitle": "更多私有项目", "additionalPrivateSubtitle": "其他项目已隐藏",
+        "more": "更多", "footerPublic": "仅公开元数据", "footerPrivate": "私有条目已遮蔽", "stateUpdated": "状态更新", "description": "将公开项目与有意遮蔽的私有工作分开呈现的项目结构图。"
+      },
+      "roadmaps": {
+        "projectTitle": "项目路线图", "projectSubtitle": "公开 Issue · 当前 / 下一步 / 以后", "projectDescription": "按当前、下一步和以后划分的公开 Issue 路线图。",
+        "developmentTitle": "开发路线图", "developmentSubtitle": "公开 Issue · 规划 / 构建 / 验证 / 发布", "developmentDescription": "按规划、构建、验证和发布阶段划分的公开 Issue 流程图。",
+        "autoRefresh": "自动刷新", "flowView": "流程视图", "publicItem": "公开项目", "noPublicItems": "暂无公开项目", "noIssue": "没有带此标签的公开 Issue", "more": "更多", "publicOnly": "仅公开数据", "stateAsOf": "状态截至",
+        "lanes": { "now": "当前", "next": "下一步", "later": "以后" }, "stages": { "plan": "规划", "build": "构建", "verify": "验证", "ship": "发布" }
+      }
+    },
+    {
+      "code": "es",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "PRODUCTO · AUTOMATIZACIÓN · SISTEMAS", "status": "claridad por diseño" },
+      "typing": { "label": "NOTA DE PERFIL", "prefix": "CREANDO ", "phrases": ["COSAS ÚTILES.", "SISTEMAS CLAROS.", "CON CUIDADO."], "footer": "SOFTWARE CUIDADOSO" },
+      "toolbox": {
+        "title": "HERRAMIENTAS CLAVE", "subtitle": "UN CONJUNTO PARA EL FLUJO DE TRABAJO", "badge": "4 ÁREAS DE TRABAJO",
+        "groups": [
+          { "label": "ESCRIBIR", "detail": "LENGUAJES Y SCRIPTS" }, { "label": "CONSTRUIR", "detail": "RUNTIME E INTERFACES" },
+          { "label": "CONECTAR", "detail": "SERVICIOS Y FLUJOS" }, { "label": "ENTREGAR", "detail": "VERSIONADO Y ENTREGA" }
+        ]
+      },
+      "stack": {
+        "title": "MAPA DE TECNOLOGÍAS", "subtitle": "CUATRO CAPACIDADES · UN CICLO DE ENTREGA", "footer": "BASE → SUPERFICIES → SISTEMAS → ENTREGA",
+        "groups": [
+          { "label": "BASE", "detail": "LENGUAJES Y MARCADO" }, { "label": "SUPERFICIES", "detail": "INTERFACES Y FEEDBACK" },
+          { "label": "SISTEMAS CONECTADOS", "detail": "API, DATOS Y AUTOMATIZACIÓN" }, { "label": "ENTREGA", "detail": "FIABILIDAD Y OPERACIONES" }
+        ]
+      },
+      "projectMap": {
+        "title": "MAPA DE PROYECTOS", "subtitle": "TRABAJO PÚBLICO · TRABAJO PRIVADO OCULTO", "autoSync": "SINCRONIZACIÓN", "workspace": "ESPACIO DE TRABAJO", "workspaceDetail": "TOPOLOGÍA · VISTA DE PERFIL",
+        "public": "PÚBLICO", "publicDescription": "PROYECTOS VISIBLES", "private": "PRIVADO", "masked": "OCULTO", "privateDescription": "ÁREA PROTEGIDA",
+        "noPublicTitle": "SIN PROYECTOS PÚBLICOS", "noPublicSubtitle": "ÁREA PÚBLICA LISTA", "privateWorkTitle": "TRABAJO PRIVADO", "privateWorkSubtitle": "OCULTO POR DEFECTO",
+        "noPrivateTitle": "SIN PROYECTOS PRIVADOS", "noPrivateSubtitle": "ÁMBITO CONECTADO", "privateHiddenSubtitle": "NOMBRE Y METADATOS OCULTOS", "additionalPrivateTitle": "MÁS PROYECTOS PRIVADOS", "additionalPrivateSubtitle": "PROYECTOS OCULTOS",
+        "more": "MÁS", "footerPublic": "SOLO METADATOS PÚBLICOS", "footerPrivate": "ENTRADAS PRIVADAS OCULTAS", "stateUpdated": "ESTADO ACTUALIZADO", "description": "Una topología de proyectos que separa proyectos públicos de trabajo privado intencionalmente oculto."
+      },
+      "roadmaps": {
+        "projectTitle": "HOJA DE RUTA DEL PROYECTO", "projectSubtitle": "ISSUES PÚBLICOS · AHORA / DESPUÉS / MÁS TARDE", "projectDescription": "Hoja de ruta de issues públicos dividida en ahora, después y más tarde.",
+        "developmentTitle": "HOJA DE RUTA DE DESARROLLO", "developmentSubtitle": "ISSUES PÚBLICOS · PLANEAR / CONSTRUIR / VERIFICAR / PUBLICAR", "developmentDescription": "Flujo de issues públicos dividido en planear, construir, verificar y publicar.",
+        "autoRefresh": "ACTUALIZACIÓN", "flowView": "VISTA DE FLUJO", "publicItem": "ITEM PÚBLICO", "noPublicItems": "SIN ITEMS PÚBLICOS", "noIssue": "No hay issue público con", "more": "MÁS", "publicOnly": "SOLO DATOS PÚBLICOS", "stateAsOf": "ESTADO A",
+        "lanes": { "now": "AHORA", "next": "DESPUÉS", "later": "MÁS TARDE" }, "stages": { "plan": "PLANEAR", "build": "CONSTRUIR", "verify": "VERIFICAR", "ship": "PUBLICAR" }
+      }
+    },
+    {
+      "code": "hi",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans Devanagari, Nirmala UI, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "उत्पाद · स्वचालन · सिस्टम", "status": "स्पष्ट डिज़ाइन" },
+      "typing": { "label": "प्रोफ़ाइल नोट", "prefix": "बना रहा हूँ: ", "phrases": ["उपयोगी चीज़ें।", "स्पष्ट सिस्टम।", "सावधानी से।"], "footer": "विचारशील सॉफ़्टवेयर" },
+      "toolbox": {
+        "title": "मुख्य टूलकिट", "subtitle": "काम के बहाव के लिए व्यावहारिक उपकरण", "badge": "4 कार्य क्षेत्र",
+        "groups": [
+          { "label": "लिखें", "detail": "भाषाएँ और स्क्रिप्ट" }, { "label": "बनाएँ", "detail": "रनटाइम और इंटरफ़ेस" },
+          { "label": "जोड़ें", "detail": "सेवाएँ और वर्कफ़्लो" }, { "label": "डिलीवर", "detail": "वर्ज़न और रिलीज़" }
+        ]
+      },
+      "stack": {
+        "title": "टेक स्टैक मैप", "subtitle": "चार क्षमताएँ · एक डिलीवरी चक्र", "footer": "आधार → उत्पाद → सिस्टम → डिलीवरी",
+        "groups": [
+          { "label": "आधार", "detail": "भाषाएँ और मार्कअप" }, { "label": "उत्पाद अनुभव", "detail": "इंटरफ़ेस और फीडबैक" },
+          { "label": "जुड़े सिस्टम", "detail": "API, डेटा और ऑटोमेशन" }, { "label": "डिलीवरी", "detail": "विश्वसनीयता और ऑपरेशंस" }
+        ]
+      },
+      "projectMap": {
+        "title": "प्रोजेक्ट मैप", "subtitle": "सार्वजनिक काम · छिपा निजी काम", "autoSync": "ऑटो सिंक", "workspace": "कार्यस्थान", "workspaceDetail": "प्रोजेक्ट संरचना · प्रोफ़ाइल दृश्य",
+        "public": "सार्वजनिक", "publicDescription": "दिखने वाले प्रोजेक्ट", "private": "निजी", "masked": "छिपा", "privateDescription": "सुरक्षित क्षेत्र",
+        "noPublicTitle": "कोई सार्वजनिक प्रोजेक्ट नहीं", "noPublicSubtitle": "सार्वजनिक क्षेत्र तैयार", "privateWorkTitle": "निजी काम", "privateWorkSubtitle": "डिफ़ॉल्ट रूप से छिपा",
+        "noPrivateTitle": "कोई निजी प्रोजेक्ट नहीं", "noPrivateSubtitle": "जुड़ा दायरा", "privateHiddenSubtitle": "नाम और मेटाडेटा छिपे हैं", "additionalPrivateTitle": "और निजी प्रोजेक्ट", "additionalPrivateSubtitle": "प्रोजेक्ट छिपे हैं",
+        "more": "और", "footerPublic": "केवल सार्वजनिक मेटाडेटा", "footerPrivate": "निजी प्रविष्टियाँ छिपी हैं", "stateUpdated": "स्थिति अपडेट", "description": "सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए निजी काम को अलग दिखाने वाली प्रोजेक्ट संरचना।"
+      },
+      "roadmaps": {
+        "projectTitle": "प्रोजेक्ट रोडमैप", "projectSubtitle": "सार्वजनिक इश्यू · अभी / अगला / बाद में", "projectDescription": "अभी, अगले और बाद के हिस्सों में बँटा सार्वजनिक इश्यू रोडमैप।",
+        "developmentTitle": "डेवलपमेंट रोडमैप", "developmentSubtitle": "सार्वजनिक इश्यू · योजना / निर्माण / सत्यापन / रिलीज़", "developmentDescription": "योजना, निर्माण, सत्यापन और रिलीज़ में बँटा सार्वजनिक इश्यू प्रवाह।",
+        "autoRefresh": "ऑटो रिफ्रेश", "flowView": "फ्लो दृश्य", "publicItem": "सार्वजनिक आइटम", "noPublicItems": "कोई सार्वजनिक आइटम नहीं", "noIssue": "इस लेबल के साथ कोई सार्वजनिक इश्यू नहीं", "more": "और", "publicOnly": "केवल सार्वजनिक डेटा", "stateAsOf": "स्थिति",
+        "lanes": { "now": "अभी", "next": "अगला", "later": "बाद में" }, "stages": { "plan": "योजना", "build": "निर्माण", "verify": "सत्यापन", "ship": "रिलीज़" }
+      }
+    },
+    {
+      "code": "ar",
+      "direction": "rtl",
+      "fontFamily": "Noto Naskh Arabic, Noto Sans Arabic, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "منتج · أتمتة · أنظمة", "status": "واضح في التصميم" },
+      "typing": { "label": "ملاحظة الملف", "prefix": "أبني: ", "phrases": ["أشياء مفيدة.", "أنظمة واضحة.", "بعناية."], "footer": "برمجيات مدروسة" },
+      "toolbox": {
+        "title": "الأدوات الأساسية", "subtitle": "مجموعة عملية بحسب تدفق العمل", "badge": "٤ مجالات عمل",
+        "groups": [
+          { "label": "الكتابة", "detail": "لغات ونصوص برمجية" }, { "label": "البناء", "detail": "وقت التشغيل والواجهات" },
+          { "label": "الربط", "detail": "الخدمات وسير العمل" }, { "label": "التسليم", "detail": "الإصدارات والنشر" }
+        ]
+      },
+      "stack": {
+        "title": "خريطة المكدس التقني", "subtitle": "أربع قدرات · دورة تسليم واحدة", "footer": "الأساس ← المنتج ← الأنظمة ← التسليم",
+        "groups": [
+          { "label": "الأساس", "detail": "اللغات والترميز" }, { "label": "تجارب المنتج", "detail": "الواجهات والتغذية الراجعة" },
+          { "label": "أنظمة مترابطة", "detail": "API والبيانات والأتمتة" }, { "label": "التسليم", "detail": "الموثوقية والعمليات" }
+        ]
+      },
+      "projectMap": {
+        "title": "خريطة المشاريع", "subtitle": "عمل عام · عمل خاص محجوب", "autoSync": "مزامنة تلقائية", "workspace": "مساحة العمل", "workspaceDetail": "هيكل المشاريع · عرض الملف",
+        "public": "عام", "publicDescription": "مشاريع ظاهرة", "private": "خاص", "masked": "محجوب", "privateDescription": "مسار محمي",
+        "noPublicTitle": "لا مشاريع عامة", "noPublicSubtitle": "المسار العام جاهز", "privateWorkTitle": "عمل خاص", "privateWorkSubtitle": "محجوب افتراضياً",
+        "noPrivateTitle": "لا مشاريع خاصة", "noPrivateSubtitle": "نطاق متصل", "privateHiddenSubtitle": "الاسم والبيانات الوصفية مخفية", "additionalPrivateTitle": "مشاريع خاصة إضافية", "additionalPrivateSubtitle": "المشاريع مخفية",
+        "more": "المزيد", "footerPublic": "بيانات وصفية عامة فقط", "footerPrivate": "المدخلات الخاصة محجوبة", "stateUpdated": "تحديث الحالة", "description": "بنية مشاريع تفصل المشاريع العامة عن العمل الخاص المحجوب عمداً."
+      },
+      "roadmaps": {
+        "projectTitle": "خارطة طريق المشروع", "projectSubtitle": "مسائل عامة · الآن / التالي / لاحقاً", "projectDescription": "خارطة مسائل عامة مقسمة إلى الآن والتالي ولاحقاً.",
+        "developmentTitle": "خارطة طريق التطوير", "developmentSubtitle": "مسائل عامة · تخطيط / بناء / تحقق / إصدار", "developmentDescription": "تدفق مسائل عامة مقسم إلى التخطيط والبناء والتحقق والإصدار.",
+        "autoRefresh": "تحديث تلقائي", "flowView": "عرض التدفق", "publicItem": "عنصر عام", "noPublicItems": "لا عناصر عامة", "noIssue": "لا توجد مسألة عامة بهذا الوسم", "more": "المزيد", "publicOnly": "مصدر عام فقط", "stateAsOf": "الحالة في",
+        "lanes": { "now": "الآن", "next": "التالي", "later": "لاحقاً" }, "stages": { "plan": "تخطيط", "build": "بناء", "verify": "تحقق", "ship": "إصدار" }
+      }
+    },
+    {
+      "code": "pt-BR",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "PRODUTO · AUTOMAÇÃO · SISTEMAS", "status": "clareza por design" },
+      "typing": { "label": "NOTA DO PERFIL", "prefix": "CRIANDO ", "phrases": ["COISAS ÚTEIS.", "SISTEMAS CLAROS.", "COM CUIDADO."], "footer": "SOFTWARE ATENCIOSO" },
+      "toolbox": {
+        "title": "FERRAMENTAS-CHAVE", "subtitle": "UM CONJUNTO PARA O FLUXO DE TRABALHO", "badge": "4 ÁREAS DE TRABALHO",
+        "groups": [
+          { "label": "ESCREVER", "detail": "LINGUAGENS E SCRIPTS" }, { "label": "CONSTRUIR", "detail": "RUNTIME E INTERFACES" },
+          { "label": "CONECTAR", "detail": "SERVIÇOS E FLUXOS" }, { "label": "ENTREGAR", "detail": "VERSÃO E ENTREGA" }
+        ]
+      },
+      "stack": {
+        "title": "MAPA DE TECNOLOGIAS", "subtitle": "QUATRO CAPACIDADES · UM CICLO DE ENTREGA", "footer": "BASE → SUPERFÍCIES → SISTEMAS → ENTREGA",
+        "groups": [
+          { "label": "BASE", "detail": "LINGUAGENS E MARCAÇÃO" }, { "label": "SUPERFÍCIES", "detail": "INTERFACES E FEEDBACK" },
+          { "label": "SISTEMAS CONECTADOS", "detail": "APIs, DADOS E AUTOMAÇÃO" }, { "label": "ENTREGA", "detail": "CONFIABILIDADE E OPERAÇÕES" }
+        ]
+      },
+      "projectMap": {
+        "title": "MAPA DE PROJETOS", "subtitle": "TRABALHO PÚBLICO · TRABALHO PRIVADO MASCARADO", "autoSync": "SINCRONIZAÇÃO", "workspace": "ESPAÇO DE TRABALHO", "workspaceDetail": "TOPOLOGIA · VISÃO DE PERFIL",
+        "public": "PÚBLICO", "publicDescription": "PROJETOS VISÍVEIS", "private": "PRIVADO", "masked": "MASCARADO", "privateDescription": "ÁREA PROTEGIDA",
+        "noPublicTitle": "SEM PROJETOS PÚBLICOS", "noPublicSubtitle": "ÁREA PÚBLICA PRONTA", "privateWorkTitle": "TRABALHO PRIVADO", "privateWorkSubtitle": "MASCARADO POR PADRÃO",
+        "noPrivateTitle": "SEM PROJETOS PRIVADOS", "noPrivateSubtitle": "ESCOPO CONECTADO", "privateHiddenSubtitle": "NOME E METADADOS OCULTOS", "additionalPrivateTitle": "MAIS PROJETOS PRIVADOS", "additionalPrivateSubtitle": "PROJETOS OCULTOS",
+        "more": "MAIS", "footerPublic": "SOMENTE METADADOS PÚBLICOS", "footerPrivate": "ENTRADAS PRIVADAS OCULTAS", "stateUpdated": "ESTADO ATUALIZADO", "description": "Uma topologia de projetos que separa projetos públicos de trabalho privado intencionalmente mascarado."
+      },
+      "roadmaps": {
+        "projectTitle": "ROTEIRO DO PROJETO", "projectSubtitle": "ISSUES PÚBLICAS · AGORA / PRÓXIMO / DEPOIS", "projectDescription": "Roteiro de issues públicas dividido em agora, próximo e depois.",
+        "developmentTitle": "ROTEIRO DE DESENVOLVIMENTO", "developmentSubtitle": "ISSUES PÚBLICAS · PLANEJAR / CONSTRUIR / VERIFICAR / PUBLICAR", "developmentDescription": "Fluxo de issues públicas dividido em planejar, construir, verificar e publicar.",
+        "autoRefresh": "ATUALIZAÇÃO", "flowView": "VISTA DE FLUXO", "publicItem": "ITEM PÚBLICO", "noPublicItems": "SEM ITENS PÚBLICOS", "noIssue": "Nenhuma issue pública com", "more": "MAIS", "publicOnly": "SOMENTE DADOS PÚBLICOS", "stateAsOf": "ESTADO EM",
+        "lanes": { "now": "AGORA", "next": "PRÓXIMO", "later": "DEPOIS" }, "stages": { "plan": "PLANEJAR", "build": "CONSTRUIR", "verify": "VERIFICAR", "ship": "PUBLICAR" }
+      }
+    },
+    {
+      "code": "ru",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "ПРОДУКТ · АВТОМАТИЗАЦИЯ · СИСТЕМЫ", "status": "ясно по замыслу" },
+      "typing": { "label": "ЗАМЕТКА ПРОФИЛЯ", "prefix": "СОЗДАЮ ", "phrases": ["ПОЛЕЗНЫЕ ВЕЩИ.", "ПОНЯТНЫЕ СИСТЕМЫ.", "ВНИМАТЕЛЬНО."], "footer": "ПРОДУМАННОЕ ПО" },
+      "toolbox": {
+        "title": "ОСНОВНЫЕ ИНСТРУМЕНТЫ", "subtitle": "НАБОР ДЛЯ РАБОЧЕГО ПОТОКА", "badge": "4 РАБОЧИЕ ОБЛАСТИ",
+        "groups": [
+          { "label": "ПИСАТЬ", "detail": "ЯЗЫКИ И СКРИПТЫ" }, { "label": "СОЗДАВАТЬ", "detail": "RUNTIME И ИНТЕРФЕЙСЫ" },
+          { "label": "СВЯЗЫВАТЬ", "detail": "СЕРВИСЫ И ПРОЦЕССЫ" }, { "label": "ПОСТАВЛЯТЬ", "detail": "ВЕРСИИ И ДОСТАВКА" }
+        ]
+      },
+      "stack": {
+        "title": "КАРТА ТЕХНОЛОГИЙ", "subtitle": "ЧЕТЫРЕ ВОЗМОЖНОСТИ · ОДИН ЦИКЛ ПОСТАВКИ", "footer": "ОСНОВА → ИНТЕРФЕЙСЫ → СИСТЕМЫ → ПОСТАВКА",
+        "groups": [
+          { "label": "ОСНОВА", "detail": "ЯЗЫКИ И РАЗМЕТКА" }, { "label": "ПРОДУКТОВЫЕ ПОВЕРХНОСТИ", "detail": "ИНТЕРФЕЙСЫ И ОБРАТНАЯ СВЯЗЬ" },
+          { "label": "СВЯЗАННЫЕ СИСТЕМЫ", "detail": "API, ДАННЫЕ И АВТОМАТИЗАЦИЯ" }, { "label": "ПОСТАВКА", "detail": "НАДЁЖНОСТЬ И ОПЕРАЦИИ" }
+        ]
+      },
+      "projectMap": {
+        "title": "КАРТА ПРОЕКТОВ", "subtitle": "ПУБЛИЧНАЯ РАБОТА · СКРЫТАЯ ПРИВАТНАЯ РАБОТА", "autoSync": "АВТОСИНХРОНИЗАЦИЯ", "workspace": "РАБОЧЕЕ ПРОСТРАНСТВО", "workspaceDetail": "СТРУКТУРА ПРОЕКТОВ · ПРОФИЛЬ",
+        "public": "ПУБЛИЧНО", "publicDescription": "ВИДИМЫЕ ПРОЕКТЫ", "private": "ПРИВАТНО", "masked": "СКРЫТО", "privateDescription": "ЗАЩИЩЁННАЯ ОБЛАСТЬ",
+        "noPublicTitle": "НЕТ ПУБЛИЧНЫХ ПРОЕКТОВ", "noPublicSubtitle": "ПУБЛИЧНАЯ ОБЛАСТЬ ГОТОВА", "privateWorkTitle": "ПРИВАТНАЯ РАБОТА", "privateWorkSubtitle": "СКРЫТА ПО УМОЛЧАНИЮ",
+        "noPrivateTitle": "НЕТ ПРИВАТНЫХ ПРОЕКТОВ", "noPrivateSubtitle": "ПОДКЛЮЧЁННАЯ ОБЛАСТЬ", "privateHiddenSubtitle": "ИМЯ И МЕТАДАННЫЕ СКРЫТЫ", "additionalPrivateTitle": "ДОПОЛНИТЕЛЬНЫЕ ПРИВАТНЫЕ ПРОЕКТЫ", "additionalPrivateSubtitle": "ПРОЕКТЫ СКРЫТЫ",
+        "more": "ЕЩЁ", "footerPublic": "ТОЛЬКО ПУБЛИЧНЫЕ МЕТАДАННЫЕ", "footerPrivate": "ПРИВАТНЫЕ ЗАПИСИ СКРЫТЫ", "stateUpdated": "СТАТУС ОБНОВЛЁН", "description": "Структура проектов, разделяющая публичные проекты и намеренно скрытую приватную работу."
+      },
+      "roadmaps": {
+        "projectTitle": "ДОРОЖНАЯ КАРТА ПРОЕКТА", "projectSubtitle": "ПУБЛИЧНЫЕ ISSUES · СЕЙЧАС / ДАЛЬШЕ / ПОЗЖЕ", "projectDescription": "Карта публичных issues, разделённая на сейчас, дальше и позже.",
+        "developmentTitle": "ДОРОЖНАЯ КАРТА РАЗРАБОТКИ", "developmentSubtitle": "ПУБЛИЧНЫЕ ISSUES · ПЛАН / РАЗРАБОТКА / ПРОВЕРКА / ВЫПУСК", "developmentDescription": "Поток публичных issues, разделённый на план, разработку, проверку и выпуск.",
+        "autoRefresh": "АВТООБНОВЛЕНИЕ", "flowView": "ВИД ПОТОКА", "publicItem": "ПУБЛИЧНЫЙ ЭЛЕМЕНТ", "noPublicItems": "НЕТ ПУБЛИЧНЫХ ЭЛЕМЕНТОВ", "noIssue": "Нет публичного issue с", "more": "ЕЩЁ", "publicOnly": "ТОЛЬКО ПУБЛИЧНЫЕ ДАННЫЕ", "stateAsOf": "СТАТУС НА",
+        "lanes": { "now": "СЕЙЧАС", "next": "ДАЛЬШЕ", "later": "ПОЗЖЕ" }, "stages": { "plan": "ПЛАН", "build": "РАЗРАБОТКА", "verify": "ПРОВЕРКА", "ship": "ВЫПУСК" }
+      }
+    },
+    {
+      "code": "fr",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "PRODUIT · AUTOMATISATION · SYSTÈMES", "status": "clair par conception" },
+      "typing": { "label": "NOTE DE PROFIL", "prefix": "CRÉATION DE ", "phrases": ["CHOSES UTILES.", "SYSTÈMES CLAIRS.", "AVEC SOIN."], "footer": "LOGICIEL SOIGNÉ" },
+      "toolbox": {
+        "title": "OUTILS ESSENTIELS", "subtitle": "UN ENSEMBLE POUR LE FLUX DE TRAVAIL", "badge": "4 ESPACES DE TRAVAIL",
+        "groups": [
+          { "label": "ÉCRIRE", "detail": "LANGAGES ET SCRIPTS" }, { "label": "CONSTRUIRE", "detail": "RUNTIME ET INTERFACES" },
+          { "label": "CONNECTER", "detail": "SERVICES ET FLUX" }, { "label": "LIVRER", "detail": "VERSIONNAGE ET LIVRAISON" }
+        ]
+      },
+      "stack": {
+        "title": "CARTE TECHNIQUE", "subtitle": "QUATRE CAPACITÉS · UNE BOUCLE DE LIVRAISON", "footer": "BASE → SURFACES → SYSTÈMES → LIVRAISON",
+        "groups": [
+          { "label": "BASE", "detail": "LANGAGES ET BALISAGE" }, { "label": "SURFACES PRODUIT", "detail": "INTERFACES ET RETOURS" },
+          { "label": "SYSTÈMES CONNECTÉS", "detail": "API, DONNÉES ET AUTOMATISATION" }, { "label": "LIVRAISON", "detail": "FIABILITÉ ET OPÉRATIONS" }
+        ]
+      },
+      "projectMap": {
+        "title": "CARTE DES PROJETS", "subtitle": "TRAVAIL PUBLIC · TRAVAIL PRIVÉ MASQUÉ", "autoSync": "SYNCHRO AUTO", "workspace": "ESPACE DE TRAVAIL", "workspaceDetail": "TOPOLOGIE · VUE PROFIL",
+        "public": "PUBLIC", "publicDescription": "PROJETS VISIBLES", "private": "PRIVÉ", "masked": "MASQUÉ", "privateDescription": "ZONE PROTÉGÉE",
+        "noPublicTitle": "AUCUN PROJET PUBLIC", "noPublicSubtitle": "ZONE PUBLIQUE PRÊTE", "privateWorkTitle": "TRAVAIL PRIVÉ", "privateWorkSubtitle": "MASQUÉ PAR DÉFAUT",
+        "noPrivateTitle": "AUCUN PROJET PRIVÉ", "noPrivateSubtitle": "PÉRIMÈTRE CONNECTÉ", "privateHiddenSubtitle": "NOM ET MÉTADONNÉES MASQUÉS", "additionalPrivateTitle": "AUTRES PROJETS PRIVÉS", "additionalPrivateSubtitle": "PROJETS MASQUÉS",
+        "more": "PLUS", "footerPublic": "MÉTADONNÉES PUBLIQUES UNIQUEMENT", "footerPrivate": "ENTRÉES PRIVÉES MASQUÉES", "stateUpdated": "ÉTAT ACTUALISÉ", "description": "Une topologie qui sépare les projets publics du travail privé volontairement masqué."
+      },
+      "roadmaps": {
+        "projectTitle": "FEUILLE DE ROUTE DU PROJET", "projectSubtitle": "ISSUES PUBLICS · MAINTENANT / ENSUITE / PLUS TARD", "projectDescription": "Feuille de route d'issues publics répartie entre maintenant, ensuite et plus tard.",
+        "developmentTitle": "FEUILLE DE ROUTE DE DÉVELOPPEMENT", "developmentSubtitle": "ISSUES PUBLICS · PLANIFIER / CONSTRUIRE / VÉRIFIER / PUBLIER", "developmentDescription": "Flux d'issues publics réparti entre planifier, construire, vérifier et publier.",
+        "autoRefresh": "ACTUALISATION", "flowView": "VUE DU FLUX", "publicItem": "ÉLÉMENT PUBLIC", "noPublicItems": "AUCUN ÉLÉMENT PUBLIC", "noIssue": "Aucune issue publique avec", "more": "PLUS", "publicOnly": "DONNÉES PUBLIQUES UNIQUEMENT", "stateAsOf": "ÉTAT AU",
+        "lanes": { "now": "MAINTENANT", "next": "ENSUITE", "later": "PLUS TARD" }, "stages": { "plan": "PLANIFIER", "build": "CONSTRUIRE", "verify": "VÉRIFIER", "ship": "PUBLIER" }
+      }
+    },
+    {
+      "code": "id",
+      "direction": "ltr",
+      "fontFamily": "Noto Sans, Segoe UI, Arial, sans-serif",
+      "hero": { "eyebrow": "PRODUK · OTOMATISASI · SISTEM", "status": "jelas sejak desain" },
+      "typing": { "label": "CATATAN PROFIL", "prefix": "MEMBANGUN ", "phrases": ["HAL YANG BERGUNA.", "SISTEM YANG JELAS.", "DENGAN CERMAT."], "footer": "PERANGKAT LUNAK YANG TERPIKIRKAN" },
+      "toolbox": {
+        "title": "PERANGKAT UTAMA", "subtitle": "SEPERANGKAT ALAT UNTUK ALUR KERJA", "badge": "4 AREA KERJA",
+        "groups": [
+          { "label": "MENULIS", "detail": "BAHASA DAN SKRIP" }, { "label": "MEMBANGUN", "detail": "RUNTIME DAN ANTARMUKA" },
+          { "label": "MENGHUBUNGKAN", "detail": "LAYANAN DAN ALUR" }, { "label": "MENGIRIMKAN", "detail": "VERSI DAN RILIS" }
+        ]
+      },
+      "stack": {
+        "title": "PETA TEKNOLOGI", "subtitle": "EMPAT KEMAMPUAN · SATU SIKLUS PENGIRIMAN", "footer": "DASAR → PERMUKAAN → SISTEM → PENGIRIMAN",
+        "groups": [
+          { "label": "DASAR", "detail": "BAHASA DAN MARKUP" }, { "label": "PERMUKAAN PRODUK", "detail": "ANTARMUKA DAN MASUKAN" },
+          { "label": "SISTEM TERHUBUNG", "detail": "API, DATA, DAN OTOMATISASI" }, { "label": "PENGIRIMAN", "detail": "KEANDALAN DAN OPERASI" }
+        ]
+      },
+      "projectMap": {
+        "title": "PETA PROYEK", "subtitle": "KARYA PUBLIK · KARYA PRIVAT TERSAMAR", "autoSync": "SINKRON OTOMATIS", "workspace": "RUANG KERJA", "workspaceDetail": "TOPOLOGI PROYEK · TAMPILAN PROFIL",
+        "public": "PUBLIK", "publicDescription": "PROYEK TERLIHAT", "private": "PRIVAT", "masked": "TERSAMAR", "privateDescription": "AREA TERLINDUNGI",
+        "noPublicTitle": "BELUM ADA PROYEK PUBLIK", "noPublicSubtitle": "AREA PUBLIK SIAP", "privateWorkTitle": "KARYA PRIVAT", "privateWorkSubtitle": "TERSAMAR SECARA BAWAAN",
+        "noPrivateTitle": "BELUM ADA PROYEK PRIVAT", "noPrivateSubtitle": "CAKUPAN TERHUBUNG", "privateHiddenSubtitle": "NAMA DAN METADATA DISEMBUNYIKAN", "additionalPrivateTitle": "PROYEK PRIVAT LAIN", "additionalPrivateSubtitle": "PROYEK DISEMBUNYIKAN",
+        "more": "LAINNYA", "footerPublic": "HANYA METADATA PUBLIK", "footerPrivate": "ENTRI PRIVAT DISEMBUNYIKAN", "stateUpdated": "STATUS DIPERBARUI", "description": "Topologi proyek yang memisahkan proyek publik dari karya privat yang sengaja disamarkan."
+      },
+      "roadmaps": {
+        "projectTitle": "PETA JALAN PROYEK", "projectSubtitle": "ISSUE PUBLIK · SEKARANG / BERIKUTNYA / NANTI", "projectDescription": "Peta issue publik yang dibagi menjadi sekarang, berikutnya, dan nanti.",
+        "developmentTitle": "PETA JALAN PENGEMBANGAN", "developmentSubtitle": "ISSUE PUBLIK · RENCANA / BANGUN / VERIFIKASI / RILIS", "developmentDescription": "Alur issue publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis.",
+        "autoRefresh": "PEMBARUAN", "flowView": "TAMPILAN ALUR", "publicItem": "ITEM PUBLIK", "noPublicItems": "TIDAK ADA ITEM PUBLIK", "noIssue": "Tidak ada issue publik dengan", "more": "LAINNYA", "publicOnly": "HANYA DATA PUBLIK", "stateAsOf": "STATUS PADA",
+        "lanes": { "now": "SEKARANG", "next": "BERIKUTNYA", "later": "NANTI" }, "stages": { "plan": "RENCANA", "build": "BANGUN", "verify": "VERIFIKASI", "ship": "RILIS" }
+      }
+    }
+  ]
+}

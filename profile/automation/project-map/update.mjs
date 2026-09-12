@@ -2,62 +2,73 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { getVisualLocale, visualLocaleVersion, visualLocales } from "../visuals/locale-catalog.mjs";
 
 export const readmeEntries = [
   {
     file: "README.md",
-    assetReference: "./profile/assets/maps/project-map.svg",
-    typingReference: "./profile/assets/motion/typing.gif",
+    locale: "en",
+    assetReference: "./profile/assets/locales/en/maps/project-map.svg",
+    typingReference: "./profile/assets/locales/en/motion/typing.gif",
   },
   {
     file: "profile/content/locales/ko.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "ko",
+    assetReference: "../../assets/locales/ko/maps/project-map.svg",
+    typingReference: "../../assets/locales/ko/motion/typing.gif",
   },
   {
     file: "profile/content/locales/zh-CN.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "zh-CN",
+    assetReference: "../../assets/locales/zh-CN/maps/project-map.svg",
+    typingReference: "../../assets/locales/zh-CN/motion/typing.gif",
   },
   {
     file: "profile/content/locales/es.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "es",
+    assetReference: "../../assets/locales/es/maps/project-map.svg",
+    typingReference: "../../assets/locales/es/motion/typing.gif",
   },
   {
     file: "profile/content/locales/hi.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "hi",
+    assetReference: "../../assets/locales/hi/maps/project-map.svg",
+    typingReference: "../../assets/locales/hi/motion/typing.gif",
   },
   {
     file: "profile/content/locales/ar.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "ar",
+    assetReference: "../../assets/locales/ar/maps/project-map.svg",
+    typingReference: "../../assets/locales/ar/motion/typing.gif",
   },
   {
     file: "profile/content/locales/pt-BR.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "pt-BR",
+    assetReference: "../../assets/locales/pt-BR/maps/project-map.svg",
+    typingReference: "../../assets/locales/pt-BR/motion/typing.gif",
   },
   {
     file: "profile/content/locales/ru.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "ru",
+    assetReference: "../../assets/locales/ru/maps/project-map.svg",
+    typingReference: "../../assets/locales/ru/motion/typing.gif",
   },
   {
     file: "profile/content/locales/fr.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "fr",
+    assetReference: "../../assets/locales/fr/maps/project-map.svg",
+    typingReference: "../../assets/locales/fr/motion/typing.gif",
   },
   {
     file: "profile/content/locales/id.md",
-    assetReference: "../../assets/maps/project-map.svg",
-    typingReference: "../../assets/motion/typing.gif",
+    locale: "id",
+    assetReference: "../../assets/locales/id/maps/project-map.svg",
+    typingReference: "../../assets/locales/id/motion/typing.gif",
   },
 ];
 export const readmeNames = readmeEntries.map(({ file }) => file);
 const maxVisibleProjects = 3;
-const renderVersion = 4;
+const renderVersion = 5;
 const svgWidth = 480;
 const requestTimeoutMs = 12_000;
 const maxRequestAttempts = 3;
@@ -103,6 +114,7 @@ export function createProjectState({ username, publicProjects, privateSyncEnable
   return {
     schemaVersion: 1,
     renderVersion,
+    visualLocaleVersion,
     username: cleanText(username, "KS-GG-AI", 40),
     publicProjects: normalizedPublicProjects,
     private: privateSyncEnabled
@@ -123,52 +135,68 @@ function revisionFor(state) {
   return createHash("sha256").update(JSON.stringify(state)).digest("hex").slice(0, 12);
 }
 
-function laneHeader(y, label, description, accent) {
+function localizedText(locale, value, x, y, options = {}) {
+  const rtl = locale.direction === "rtl";
+  const anchor = options.anchor ?? "start";
+  return '<text x="' + x + '" y="' + y + '" fill="' + (options.fill ?? "#F5F3FF") + '" font-family="' + escapeXml(locale.fontFamily) + '" font-size="' + (options.size ?? 13) + '" font-weight="' + (options.weight ?? 400) + '" text-anchor="' + anchor + '" direction="' + locale.direction + '" unicode-bidi="plaintext"' + (options.letterSpacing === undefined ? "" : ' letter-spacing="' + options.letterSpacing + '"') + ">" + escapeXml(value) + "</text>";
+}
+
+function laneHeader(y, label, description, accent, locale) {
+  const rtl = locale.direction === "rtl";
+  const textX = rtl ? 416 : 64;
   return [
     '<rect x="24" y="' + y + '" width="432" height="40" rx="13" fill="#111827" stroke="' + accent + '" stroke-opacity=".52"/>',
-    '<circle cx="48" cy="' + (y + 20) + '" r="5" fill="' + accent + '"/>',
-    '<text x="64" y="' + (y + 18) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing=".6">' + escapeXml(label) + '</text>',
-    '<text x="64" y="' + (y + 32) + '" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".7">' + escapeXml(description) + '</text>',
+    '<circle cx="' + (rtl ? 432 : 48) + '" cy="' + (y + 20) + '" r="5" fill="' + accent + '"/>',
+    localizedText(locale, label, textX, y + 18, { size: 13, weight: 700, letterSpacing: ".35" }),
+    localizedText(locale, description, textX, y + 32, { fill: "#9AA4BA", size: 8, letterSpacing: ".3" }),
   ].join("");
 }
 
-function projectCard(y, title, subtitle, accent) {
+function projectCard(y, title, subtitle, accent, locale) {
+  const rtl = locale.direction === "rtl";
+  const textX = rtl ? 414 : 66;
   return [
     '<rect x="42" y="' + y + '" width="396" height="52" rx="13" fill="#10121F" stroke="#293244"/>',
-    '<rect x="42" y="' + y + '" width="4" height="52" rx="2" fill="' + accent + '"/>',
-    '<text x="66" y="' + (y + 23) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">' + escapeXml(title) + '</text>',
-    '<text x="66" y="' + (y + 40) + '" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".5">' + escapeXml(subtitle) + '</text>',
+    '<rect x="' + (rtl ? 434 : 42) + '" y="' + y + '" width="4" height="52" rx="2" fill="' + accent + '"/>',
+    localizedText(locale, title, textX, y + 23, { size: 16, weight: 700 }),
+    localizedText(locale, subtitle, textX, y + 40, { fill: "#9AA4BA", size: 10, letterSpacing: ".2" }),
   ].join("");
 }
 
-function visiblePublicCards(projects) {
-  if (projects.length === 0) return [{ name: "NO PUBLIC PROJECTS", language: "PUBLIC LANE READY" }];
+function visiblePublicCards(projects, locale) {
+  const labels = locale.projectMap;
+  if (projects.length === 0) return [{ name: labels.noPublicTitle, language: labels.noPublicSubtitle }];
   if (projects.length <= maxVisibleProjects) return projects;
   return [
     ...projects.slice(0, maxVisibleProjects - 1),
-    { name: "+ " + String(projects.length - (maxVisibleProjects - 1)) + " MORE", language: "PUBLIC PROJECTS" },
+    { name: "+ " + String(projects.length - (maxVisibleProjects - 1)) + " " + labels.more, language: labels.publicDescription },
   ];
 }
 
-function visiblePrivateCards(privateState) {
+function visiblePrivateCards(privateState, locale) {
+  const labels = locale.projectMap;
+  const privateLabel = (index) => labels.private + " · ███ · " + countLabel(index);
   if (privateState.status !== "connected") {
-    return [{ title: "PRIVATE WORK", subtitle: "MASKED BY DEFAULT" }];
+    return [{ title: labels.privateWorkTitle, subtitle: labels.privateWorkSubtitle }];
   }
   if (privateState.count === 0) {
-    return [{ title: "NO PRIVATE PROJECTS", subtitle: "CONNECTED SCOPE" }];
+    return [{ title: labels.noPrivateTitle, subtitle: labels.noPrivateSubtitle }];
   }
   if (privateState.count <= maxVisibleProjects) {
-    return privateState.labels.map((label) => ({ title: label, subtitle: "NAME AND METADATA HIDDEN" }));
+    return privateState.labels.map((_, index) => ({ title: privateLabel(index + 1), subtitle: labels.privateHiddenSubtitle }));
   }
   return [
-    ...privateState.labels.slice(0, maxVisibleProjects - 1).map((label) => ({ title: label, subtitle: "NAME AND METADATA HIDDEN" })),
-    { title: "PRIVATE · ███ · + " + String(privateState.count - (maxVisibleProjects - 1)), subtitle: "ADDITIONAL PROJECTS HIDDEN" },
+    ...privateState.labels.slice(0, maxVisibleProjects - 1).map((_, index) => ({ title: privateLabel(index + 1), subtitle: labels.privateHiddenSubtitle })),
+    { title: labels.private + " · ███ · + " + String(privateState.count - (maxVisibleProjects - 1)), subtitle: labels.additionalPrivateSubtitle },
   ];
 }
 
-export function renderProjectMap(snapshot) {
-  const publicCards = visiblePublicCards(snapshot.publicProjects);
-  const privateCards = visiblePrivateCards(snapshot.private);
+export function renderProjectMap(snapshot, localeCode = "en") {
+  const locale = getVisualLocale(localeCode);
+  const labels = locale.projectMap;
+  const rtl = locale.direction === "rtl";
+  const publicCards = visiblePublicCards(snapshot.publicProjects, locale);
+  const privateCards = visiblePrivateCards(snapshot.private, locale);
   const cardHeight = 52;
   const cardStep = 60;
   const publicCardsTop = 188;
@@ -180,35 +208,39 @@ export function renderProjectMap(snapshot) {
   const footerTextY = footerLineY + 20;
   const svgHeight = Math.max(420, footerTextY + 14);
   const lowerGlowY = Math.max(282, svgHeight - 72);
-  const publicCardMarkup = publicCards.map((project, index) => projectCard(publicCardsTop + index * cardStep, project.name, project.language, "#67E8F9")).join("");
-  const privateCardMarkup = privateCards.map((project, index) => projectCard(privateCardsTop + index * cardStep, project.title, project.subtitle, "#F9A8D4")).join("");
+  const publicCardMarkup = publicCards.map((project, index) => projectCard(publicCardsTop + index * cardStep, project.name, project.language, "#67E8F9", locale)).join("");
+  const privateCardMarkup = privateCards.map((project, index) => projectCard(privateCardsTop + index * cardStep, project.title, project.subtitle, "#F9A8D4", locale)).join("");
   const privateLaneLabel = snapshot.private.status === "connected"
-    ? "PRIVATE · MASKED · " + countLabel(snapshot.private.count)
-    : "PRIVATE · MASKED";
+    ? labels.private + " · " + labels.masked + " · " + countLabel(snapshot.private.count)
+    : labels.private + " · " + labels.masked;
   const updatedDate = String(snapshot.generatedAt ?? "").slice(0, 10);
+  const badgeWidth = Math.max(107, Math.min(154, 36 + Array.from(labels.autoSync).length * 7));
+  const badgeX = rtl ? 24 : 456 - badgeWidth;
+  const badgeTextX = rtl ? badgeX + badgeWidth - 12 : badgeX + 29;
+  const workspaceTextX = rtl ? 404 : 76;
 
   return [
-    '<svg xmlns="http://www.w3.org/2000/svg" width="' + svgWidth + '" height="' + svgHeight + '" viewBox="0 0 ' + svgWidth + ' ' + svgHeight + '" fill="none" role="img" aria-labelledby="title desc">',
-    '<title id="title">' + escapeXml(snapshot.username) + ' project map</title>',
-    '<desc id="desc">A project topology that separates public projects from intentionally masked private work.</desc>',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + svgWidth + '" height="' + svgHeight + '" viewBox="0 0 ' + svgWidth + ' ' + svgHeight + '" fill="none" role="img" aria-labelledby="title desc" direction="' + locale.direction + '">',
+    '<title id="title">' + escapeXml(labels.title) + '</title>',
+    '<desc id="desc">' + escapeXml(labels.description) + '</desc>',
     '<defs><linearGradient id="background" x1="22" y1="10" x2="' + (svgWidth - 14) + '" y2="' + (svgHeight - 10) + '" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0E1D1D"/></linearGradient><filter id="glow" x="-20%" y="-30%" width="140%" height="160%"><feGaussianBlur stdDeviation="24"/></filter></defs>',
     '<rect width="' + svgWidth + '" height="' + svgHeight + '" rx="24" fill="url(#background)"/>',
     '<circle cx="426" cy="62" r="62" fill="#7C3AED" fill-opacity=".16" filter="url(#glow)"/><circle cx="58" cy="' + lowerGlowY + '" r="74" fill="#06B6D4" fill-opacity=".1" filter="url(#glow)"/>',
-    '<text x="24" y="30" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">PROJECT MAP</text>',
-    '<text x="24" y="46" fill="#9AA4BA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".9">PUBLIC SURFACES · MASKED PRIVATE WORK</text>',
-    '<rect x="349" y="17" width="107" height="24" rx="12" fill="#0B1020" fill-opacity=".72" stroke="#67E8F9" stroke-opacity=".34"/><circle cx="367" cy="29" r="4" fill="#A7F3D0"/><text x="378" y="32" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="700">AUTO SYNC</text>',
+    localizedText(locale, labels.title, rtl ? 456 : 24, 30, { size: 17, weight: 700 }),
+    localizedText(locale, labels.subtitle, rtl ? 456 : 24, 46, { fill: "#9AA4BA", size: 8, letterSpacing: ".35" }),
+    '<rect x="' + badgeX + '" y="17" width="' + badgeWidth + '" height="24" rx="12" fill="#0B1020" fill-opacity=".72" stroke="#67E8F9" stroke-opacity=".34"/><circle cx="' + (rtl ? badgeX + badgeWidth - 12 : badgeX + 18) + '" cy="29" r="4" fill="#A7F3D0"/>' + localizedText(locale, labels.autoSync, badgeTextX, 32, { fill: "#EDE9FE", size: 8, weight: 700, anchor: "start" }),
     '<rect x="24" y="66" width="432" height="54" rx="16" fill="#111827" stroke="#A78BFA" stroke-opacity=".62"/><rect x="25" y="67" width="430" height="52" rx="15" fill="#131225"/>',
-    '<circle cx="52" cy="93" r="11" fill="#A78BFA" fill-opacity=".2" stroke="#C4B5FD" stroke-opacity=".65"/><path d="M46 93H58M52 87V99" stroke="#DDD6FE" stroke-width="2" stroke-linecap="round"/>',
-    '<text x="76" y="90" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">' + escapeXml(snapshot.username) + ' · WORKSPACE</text>',
-    '<text x="76" y="107" fill="#AFA6C8" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".75">PROJECT TOPOLOGY · PROFILE VIEW</text>',
+    '<circle cx="' + (rtl ? 428 : 52) + '" cy="93" r="11" fill="#A78BFA" fill-opacity=".2" stroke="#C4B5FD" stroke-opacity=".65"/><path d="M' + (rtl ? 422 : 46) + ' 93H' + (rtl ? 434 : 58) + 'M' + (rtl ? 428 : 52) + ' 87V99" stroke="#DDD6FE" stroke-width="2" stroke-linecap="round"/>',
+    localizedText(locale, snapshot.username + " · " + labels.workspace, workspaceTextX, 90, { size: 14, weight: 700 }),
+    localizedText(locale, labels.workspaceDetail, workspaceTextX, 107, { fill: "#AFA6C8", size: 8, letterSpacing: ".25" }),
     '<path d="M240 120V138" stroke="#4C4668" stroke-width="1.5" stroke-linecap="round"/>',
-    laneHeader(138, "PUBLIC · " + countLabel(snapshot.publicProjects.length), "VISIBLE PROJECTS", "#67E8F9"),
-    laneHeader(privateHeaderY, privateLaneLabel, "PROTECTED LANE", "#F9A8D4"),
+    laneHeader(138, labels.public + " · " + countLabel(snapshot.publicProjects.length), labels.publicDescription, "#67E8F9", locale),
+    laneHeader(privateHeaderY, privateLaneLabel, labels.privateDescription, "#F9A8D4", locale),
     publicCardMarkup,
     privateCardMarkup,
     '<path d="M24 ' + footerLineY + 'H456" stroke="#32364D" stroke-width="1"/>',
-    '<text x="24" y="' + footerTextY + '" fill="#8C96AA" font-family="Arial, Helvetica, sans-serif" font-size="8" letter-spacing=".35">PUBLIC METADATA ONLY · PRIVATE ENTRIES REDACTED</text>',
-    '<text x="456" y="' + footerTextY + '" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="8" text-anchor="end">STATE UPDATED ' + escapeXml(updatedDate) + '</text>',
+    localizedText(locale, labels.footerPublic + " · " + labels.footerPrivate, rtl ? 456 : 24, footerTextY, { fill: "#8C96AA", size: 8, letterSpacing: ".15" }),
+    localizedText(locale, labels.stateUpdated + " " + updatedDate, rtl ? 24 : 456, footerTextY, { fill: "#A7F3D0", size: 8, anchor: "end" }),
     '</svg>',
   ].join("\n");
 }
@@ -338,6 +370,7 @@ function semanticSnapshot(snapshot) {
   return {
     schemaVersion: snapshot.schemaVersion,
     renderVersion: snapshot.renderVersion,
+    visualLocaleVersion: snapshot.visualLocaleVersion,
     username: snapshot.username,
     publicProjects: snapshot.publicProjects,
     private: snapshot.private,
@@ -346,7 +379,7 @@ function semanticSnapshot(snapshot) {
 
 export function isValidProjectSnapshot(snapshot) {
   if (!snapshot || typeof snapshot !== "object") return false;
-  if (snapshot.schemaVersion !== 1 || snapshot.renderVersion !== renderVersion) return false;
+  if (snapshot.schemaVersion !== 1 || snapshot.renderVersion !== renderVersion || snapshot.visualLocaleVersion !== visualLocaleVersion) return false;
   if (typeof snapshot.username !== "string" || snapshot.username.length === 0) return false;
   if (!Array.isArray(snapshot.publicProjects) || !snapshot.publicProjects.every((project) => (
     project
@@ -402,7 +435,14 @@ export async function updateProjectMap({ root, username, privateToken }) {
   await mkdir(path.dirname(dataPath), { recursive: true });
   await mkdir(assetsDirectory, { recursive: true });
   await writeIfChanged(dataPath, JSON.stringify(snapshot, null, 2) + "\n");
-  await writeIfChanged(path.join(assetsDirectory, "project-map.svg"), renderProjectMap(snapshot));
+  await Promise.all([
+    writeIfChanged(path.join(assetsDirectory, "project-map.svg"), renderProjectMap(snapshot, "en")),
+    ...visualLocales.map(async ({ code }) => {
+      const localeDirectory = path.join(root, "profile", "assets", "locales", code, "maps");
+      await mkdir(localeDirectory, { recursive: true });
+      await writeIfChanged(path.join(localeDirectory, "project-map.svg"), renderProjectMap(snapshot, code));
+    }),
+  ]);
   for (const update of readmeUpdates) {
     await writeIfChanged(update.file, update.text);
   }

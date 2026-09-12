@@ -41,12 +41,12 @@ jobs:
 
       - name: Commit refreshed roadmaps
         run: |
-          if git diff --quiet -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md; then
+          if git diff --quiet -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/assets/locales profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md; then
             echo "Public roadmaps are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md
+          git add -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/assets/locales profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md
           git commit -m "chore: refresh public roadmaps"
           git push

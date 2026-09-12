@@ -75,6 +75,8 @@ assert.equal(state.developmentRoadmap.stages.find((stage) => stage.id === "plan"
 assert.match(projectSvg, /Build &lt;public&gt; route/);
 assert.match(renderProjectRoadmap(emptySnapshot), /No public issue with roadmap:next/);
 assert.match(renderDevelopmentRoadmap(emptySnapshot), /No public issue with stage:build/);
+assert.match(renderProjectRoadmap(snapshot, "ko"), /프로젝트 로드맵/);
+assert.match(renderDevelopmentRoadmap(snapshot, "ar"), /direction="rtl"/);
 assert.doesNotMatch(projectSvg, new RegExp(privateTitle, "i"));
 assert.doesNotMatch(developmentSvg, /<script|onload=|https:\/\//i);
 assert.equal(isValidRoadmapSnapshot(snapshot), true);
@@ -110,8 +112,8 @@ const overflowSnapshot = {
   revision: "a1b2c3d4e5f6",
   generatedAt: "2026-09-12T00:00:00.000Z",
 };
-assert.match(renderProjectRoadmap(overflowSnapshot), /03 PUBLIC ITEMS · \+1 MORE/);
-assert.match(renderDevelopmentRoadmap(overflowSnapshot), /03 PUBLIC ITEMS · \+2 MORE/);
+assert.match(renderProjectRoadmap(overflowSnapshot), /03 PUBLIC ITEM · \+1 MORE/);
+assert.match(renderDevelopmentRoadmap(overflowSnapshot), /03 PUBLIC ITEM · \+2 MORE/);
 
 const retryResponses = [
   response(429, [], { "retry-after": "0" }),
@@ -197,6 +199,14 @@ for (const entry of readmeEntries) {
   assert.equal((text.match(/<summary>/g) ?? []).length, disclosureCount, entry.file + " must label every disclosure panel.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.projectRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one project roadmap.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.developmentRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one development roadmap.");
+  assert.equal(
+    normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "locales", entry.locale, "maps", "project-roadmap.svg"), "utf8")),
+    renderProjectRoadmap(localSnapshot, entry.locale),
+  );
+  assert.equal(
+    normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "locales", entry.locale, "maps", "development-roadmap.svg"), "utf8")),
+    renderDevelopmentRoadmap(localSnapshot, entry.locale),
+  );
 }
 
 const roadmapWorkflow = await readFile(path.join(root, ".github", "workflows", "refresh-roadmaps.yml"), "utf8");
@@ -204,11 +214,12 @@ const projectMapWorkflow = await readFile(path.join(root, ".github", "workflows"
 assert.match(roadmapWorkflow, /contents: write\s+issues: read/);
 assert.match(roadmapWorkflow, /group: profile-readme-assets/);
 assert.match(roadmapWorkflow, /npm ci --prefix profile\/automation\/roadmaps --ignore-scripts/);
-assert.match(roadmapWorkflow, /git add -- profile\/assets\/maps\/project-roadmap\.svg profile\/assets\/maps\/development-roadmap\.svg profile\/data\/roadmap-state\.json/);
+assert.match(roadmapWorkflow, /profile\/assets\/locales/);
 assert.match(roadmapWorkflow, /profile\/content\/locales\/ko\.md/);
 assert.match(roadmapWorkflow, /actions\/checkout@[a-f0-9]{40}/);
 assert.match(roadmapWorkflow, /actions\/setup-node@[a-f0-9]{40}/);
 assert.match(projectMapWorkflow, /group: profile-readme-assets/);
 assert.match(projectMapWorkflow, /profile\/content\/locales\/ko\.md/);
+assert.match(projectMapWorkflow, /profile\/assets\/locales/);
 
 console.log("Roadmap generator checks passed.");

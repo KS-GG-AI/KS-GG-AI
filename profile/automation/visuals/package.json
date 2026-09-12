@@ -1,0 +1,13 @@
+{
+  "name": "ks-gg-ai-profile-visuals",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "visuals:update": "node generate-localized-assets.mjs",
+    "visuals:test": "node test-localized-assets.mjs"
+  },
+  "devDependencies": {
+    "gifenc": "1.0.3",
+    "sharp": "0.35.4"
+  }
+}

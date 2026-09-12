@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
+  <img src="../../assets/locales/ar/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
   <img src="../../assets/identity/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
 </p>
 
@@ -32,7 +32,7 @@
 أحوّل الأفكار المبكرة إلى واجهات منتجات مفيدة وأدوات مترابطة وتدفقات عمل تظل سهلة الفهم مع نموها.
 
 <p align="center">
-  <img src="../../assets/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+  <img src="../../assets/locales/ar/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
 </p>
 
 ### ما أبنيه
@@ -53,10 +53,10 @@
 
 مجموعة أدوات عملية، مجمعة وفق المهمة التي تساعد على إنجازها لا بوصفها قائمة تحقق.
 
-- **الكتابة** — TypeScript، JavaScript، Python
-- **البناء** — Node.js، React، Next.js
-- **الربط** — REST API، SQL، MCP
-- **التسليم** — Git، Docker، GitHub Actions
+- **الأساس** — TypeScript، JavaScript، Python، Go
+- **تجارب المنتج** — React، Next.js، Vite، Tailwind CSS، Figma
+- **أنظمة مترابطة** — Node.js، REST API، PostgreSQL، MCP
+- **التسليم والموثوقية** — Git، Docker، GitHub Actions، منصات سحابية
 
 <details>
 <summary><strong>استكشاف المكدس المرئي</strong></summary>
@@ -65,15 +65,15 @@
 
 <p><strong>الأدوات الأساسية</strong></p>
 
-<img src="../../assets/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
+<img src="../../assets/locales/ar/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
 
 <p><strong>الخريطة التقنية</strong></p>
 
-<img src="../../assets/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
+<img src="../../assets/locales/ar/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
 
 <p><strong>نسخة متحركة</strong></p>
 
-<img src="../../assets/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
+<img src="../../assets/locales/ar/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
 
 - **اللغات والترميز** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **الخدمات والبيانات والأتمتة** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, الأتمتة
@@ -95,17 +95,17 @@
 
 <p><strong>خريطة المشاريع</strong></p>
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+<img src="../../assets/locales/ar/maps/project-map.svg?v=c237e445bed5" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
 
 <sub>بيانات وصفية علنية فقط. لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً.</sub>
 
 <p><strong>خارطة طريق المشروع</strong></p>
 
-<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
+<img src="../../assets/locales/ar/maps/project-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
 
 <p><strong>خارطة طريق التطوير</strong></p>
 
-<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
+<img src="../../assets/locales/ar/maps/development-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
 
 <sub>يستخدم مسائل GitHub العامة فقط. أضف تسمية <code>roadmap:*</code> وتسمية <code>stage:*</code> إلى مسألة عامة لإظهارها.</sub>
 

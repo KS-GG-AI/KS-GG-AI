@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
+  <img src="../../assets/locales/zh-CN/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
   <img src="../../assets/identity/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
 </p>
 
@@ -30,7 +30,7 @@
 把早期想法做成易用的产品界面、连贯的工具和即使成长后也容易理解的工作流。
 
 <p align="center">
-  <img src="../../assets/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
+  <img src="../../assets/locales/zh-CN/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
 </p>
 
 ### 我构建什么
@@ -51,10 +51,10 @@
 
 这是一套按实际工作来组织的工具，而不是一张清单。
 
-- **编写** — TypeScript、JavaScript、Python
-- **构建** — Node.js、React、Next.js
-- **连接** — REST API、SQL、MCP
-- **交付** — Git、Docker、GitHub Actions
+- **基础** — TypeScript、JavaScript、Python、Go
+- **产品界面** — React、Next.js、Vite、Tailwind CSS、Figma
+- **连接系统** — Node.js、REST API、PostgreSQL、MCP
+- **交付与可靠性** — Git、Docker、GitHub Actions、云平台
 
 <details>
 <summary><strong>查看可视化技术栈</strong></summary>
@@ -63,15 +63,15 @@
 
 <p><strong>核心工具</strong></p>
 
-<img src="../../assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
+<img src="../../assets/locales/zh-CN/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 
 <p><strong>技术地图</strong></p>
 
-<img src="../../assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
+<img src="../../assets/locales/zh-CN/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
 <p><strong>动态地图</strong></p>
 
-<img src="../../assets/motion/technology-stack.gif" alt="动态技术地图。" width="100%" />
+<img src="../../assets/locales/zh-CN/motion/technology-stack.gif" alt="动态技术地图。" width="100%" />
 
 - **语言与标记** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **服务、数据与自动化** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 自动化
@@ -93,17 +93,17 @@
 
 <p><strong>项目地图</strong></p>
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+<img src="../../assets/locales/zh-CN/maps/project-map.svg?v=c237e445bed5" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
 
 <sub>仅使用公开元数据。私有名称和元数据不会显示。</sub>
 
 <p><strong>项目路线图</strong></p>
 
-<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+<img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=f403fcebe8cc" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
 
 <p><strong>开发路线图</strong></p>
 
-<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+<img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=f403fcebe8cc" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
 

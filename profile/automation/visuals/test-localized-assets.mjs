@@ -1,0 +1,62 @@
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { localeAssetReference, visualLocales } from "./locale-catalog.mjs";
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+const documents = new Map([
+  ["en", "README.md"],
+  ...visualLocales.filter(({ code }) => code !== "en").map(({ code }) => [code, "profile/content/locales/" + code + ".md"]),
+]);
+const assets = [
+  ["identity", "hero.svg"],
+  ["motion", "typing.gif"],
+  ["visuals", "toolbox.svg"],
+  ["visuals", "technology-stack.svg"],
+  ["motion", "technology-stack.gif"],
+  ["maps", "project-map.svg"],
+  ["maps", "project-roadmap.svg"],
+  ["maps", "development-roadmap.svg"],
+];
+
+function gifFrameCount(data) {
+  let frames = 0;
+  for (let index = 0; index < data.length - 2; index += 1) {
+    if (data[index] === 0x21 && data[index + 1] === 0xf9 && data[index + 2] === 0x04) frames += 1;
+  }
+  return frames;
+}
+
+for (const locale of visualLocales) {
+  const document = documents.get(locale.code);
+  assert.ok(document, locale.code + " must have a localized document.");
+  const markdown = await readFile(path.join(root, document), "utf8");
+  for (const [section, file] of assets) {
+    const assetPath = path.join(root, "profile", "assets", "locales", locale.code, section, file);
+    const content = await readFile(assetPath);
+    assert.ok(content.length > 256, locale.code + " must include " + section + "/" + file + ".");
+    const reference = localeAssetReference(locale.code, section, file, locale.code !== "en");
+    assert.ok(markdown.includes(reference), document + " must reference its own " + section + "/" + file + ".");
+    if (file.endsWith(".gif")) {
+      assert.equal(content.subarray(0, 6).toString("ascii"), "GIF89a");
+      assert.ok(gifFrameCount(content) > 12, locale.code + " must contain an animated " + file + ".");
+    } else {
+      const svg = content.toString("utf8");
+      assert.match(svg, /role="img"/);
+      if (locale.direction === "rtl") assert.match(svg, /direction="rtl"/);
+    }
+  }
+  const hero = await readFile(path.join(root, "profile", "assets", "locales", locale.code, "identity", "hero.svg"), "utf8");
+  const stack = await readFile(path.join(root, "profile", "assets", "locales", locale.code, "visuals", "technology-stack.svg"), "utf8");
+  assert.ok(hero.includes(locale.hero.eyebrow), locale.code + " hero text must be localized.");
+  assert.ok(stack.includes(locale.stack.title), locale.code + " technology map title must be localized.");
+}
+
+for (const [section, file] of assets.slice(0, 5)) {
+  const legacy = await readFile(path.join(root, "profile", "assets", section, file));
+  const english = await readFile(path.join(root, "profile", "assets", "locales", "en", section, file));
+  assert.deepEqual(legacy, english, "English compatibility asset must mirror the en locale: " + section + "/" + file);
+}
+
+console.log("Localized visual asset checks passed.");

@@ -1,0 +1,53 @@
+name: Refresh localized visual assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "profile/automation/visuals/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-readme-assets
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+
+      - name: Install locale font coverage
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes fonts-noto-core fonts-noto-cjk
+
+      - name: Install visual tooling
+        run: npm ci --prefix profile/automation/visuals --ignore-scripts
+
+      - name: Generate localized visual assets
+        run: npm run --prefix profile/automation/visuals visuals:update
+
+      - name: Test localized visual assets
+        run: npm run --prefix profile/automation/visuals visuals:test
+
+      - name: Commit localized visual assets
+        run: |
+          if git diff --quiet -- profile/assets/locales profile/assets/identity/hero.svg profile/assets/visuals/toolbox.svg profile/assets/visuals/technology-stack.svg profile/assets/motion/typing.gif profile/assets/motion/technology-stack.gif; then
+            echo "Localized visual assets are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile/assets/locales profile/assets/identity/hero.svg profile/assets/visuals/toolbox.svg profile/assets/visuals/technology-stack.svg profile/assets/motion/typing.gif profile/assets/motion/technology-stack.gif
+          git commit -m "chore: refresh localized visual assets"
+          git push

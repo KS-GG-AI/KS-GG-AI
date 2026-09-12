@@ -1,7 +1,7 @@
 <div align="center">
 
 <p>
-  <img src="../../assets/identity/hero.svg" alt="KS-GG-AI — interfaces claires, flux connectés et systèmes fiables." width="78%" />
+  <img src="../../assets/locales/fr/identity/hero.svg" alt="KS-GG-AI — interfaces claires, flux connectés et systèmes fiables." width="78%" />
   <img src="../../assets/identity/avatar.gif" alt="Monogramme animé de KS-GG-AI." width="20%" />
 </p>
 
@@ -30,7 +30,7 @@
 Je transforme les premières idées en surfaces produit utiles, outils connectés et flux de travail qui restent faciles à comprendre à mesure qu'ils évoluent.
 
 <p align="center">
-  <img src="../../assets/motion/typing.gif" alt="Frappe animée : créer des choses utiles, des systèmes clairs et un travail soigné." width="100%" />
+  <img src="../../assets/locales/fr/motion/typing.gif" alt="Frappe animée : créer des choses utiles, des systèmes clairs et un travail soigné." width="100%" />
 </p>
 
 ### Ce que je construis
@@ -51,10 +51,10 @@ Je transforme les premières idées en surfaces produit utiles, outils connecté
 
 Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt que comme une checklist.
 
-- **Écrire** — TypeScript, JavaScript, Python
-- **Construire** — Node.js, React, Next.js
-- **Connecter** — REST API, SQL, MCP
-- **Livrer** — Git, Docker, GitHub Actions
+- **Base** — TypeScript, JavaScript, Python, Go
+- **Surfaces produit** — React, Next.js, Vite, Tailwind CSS, Figma
+- **Systèmes connectés** — Node.js, REST API, PostgreSQL, MCP
+- **Livraison et fiabilité** — Git, Docker, GitHub Actions, plateformes cloud
 
 <details>
 <summary><strong>Explorer le stack visuel</strong></summary>
@@ -63,15 +63,15 @@ Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt q
 
 <p><strong>Outils essentiels</strong></p>
 
-<img src="../../assets/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
+<img src="../../assets/locales/fr/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
 
 <p><strong>Carte technique</strong></p>
 
-<img src="../../assets/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
+<img src="../../assets/locales/fr/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
 
 <p><strong>En mouvement</strong></p>
 
-<img src="../../assets/motion/technology-stack.gif" alt="Carte technique animée." width="100%" />
+<img src="../../assets/locales/fr/motion/technology-stack.gif" alt="Carte technique animée." width="100%" />
 
 - **Langages et balisage** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
 - **Services, données et automatisation** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automatisation
@@ -93,17 +93,17 @@ Le travail public reste facile à explorer ; le travail privé est volontairemen
 
 <p><strong>Carte des projets</strong></p>
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
+<img src="../../assets/locales/fr/maps/project-map.svg?v=c237e445bed5" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
 
 <sub>Uniquement des métadonnées publiques. Les noms et métadonnées privés ne sont jamais affichés.</sub>
 
 <p><strong>Feuille de route du projet</strong></p>
 
-<img src="../../assets/maps/project-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
+<img src="../../assets/locales/fr/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
 
 <p><strong>Feuille de route de développement</strong></p>
 
-<img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
+<img src="../../assets/locales/fr/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
 
 <sub>Utilise uniquement des issues GitHub publiques. Ajoutez un label <code>roadmap:*</code> et un label <code>stage:*</code> à une issue publique pour l'afficher.</sub>
 

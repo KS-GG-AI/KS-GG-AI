@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -6,64 +7,119 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 export const readmeEntries = [
   {
     file: "README.md",
-    projectRoadmapReference: "./profile/assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "./profile/assets/maps/development-roadmap.svg",
+    locale: "en",
+    projectRoadmapReference: "./profile/assets/locales/en/maps/project-roadmap.svg",
+    developmentRoadmapReference: "./profile/assets/locales/en/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/ko.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "ko",
+    projectRoadmapReference: "../../assets/locales/ko/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/ko/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/zh-CN.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "zh-CN",
+    projectRoadmapReference: "../../assets/locales/zh-CN/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/zh-CN/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/es.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "es",
+    projectRoadmapReference: "../../assets/locales/es/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/es/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/hi.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "hi",
+    projectRoadmapReference: "../../assets/locales/hi/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/hi/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/ar.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "ar",
+    projectRoadmapReference: "../../assets/locales/ar/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/ar/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/pt-BR.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "pt-BR",
+    projectRoadmapReference: "../../assets/locales/pt-BR/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/pt-BR/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/ru.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "ru",
+    projectRoadmapReference: "../../assets/locales/ru/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/ru/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/fr.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "fr",
+    projectRoadmapReference: "../../assets/locales/fr/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/fr/maps/development-roadmap.svg",
   },
   {
     file: "profile/content/locales/id.md",
-    projectRoadmapReference: "../../assets/maps/project-roadmap.svg",
-    developmentRoadmapReference: "../../assets/maps/development-roadmap.svg",
+    locale: "id",
+    projectRoadmapReference: "../../assets/locales/id/maps/project-roadmap.svg",
+    developmentRoadmapReference: "../../assets/locales/id/maps/development-roadmap.svg",
   },
 ];
 export const readmeNames = readmeEntries.map(({ file }) => file);
 
-const renderVersion = 2;
+const renderVersion = 3;
 const svgWidth = 480;
 const requestTimeoutMs = 12_000;
 const maxRequestAttempts = 3;
 const maxRetryDelayMs = 5_000;
 const maxProjectItemsPerLane = 2;
 const maxDevelopmentItemsPerStage = 1;
+
+type RoadmapLocaleCopy = {
+  projectTitle: string;
+  projectSubtitle: string;
+  projectDescription: string;
+  developmentTitle: string;
+  developmentSubtitle: string;
+  developmentDescription: string;
+  autoRefresh: string;
+  flowView: string;
+  publicItem: string;
+  noPublicItems: string;
+  noIssue: string;
+  more: string;
+  publicOnly: string;
+  stateAsOf: string;
+  lanes: Record<"now" | "next" | "later", string>;
+  stages: Record<"plan" | "build" | "verify" | "ship", string>;
+};
+
+type VisualLocale = {
+  code: string;
+  direction: "ltr" | "rtl";
+  fontFamily: string;
+  roadmaps: RoadmapLocaleCopy;
+};
+
+type VisualLocaleCatalog = {
+  version: number;
+  locales: VisualLocale[];
+};
+
+const visualCatalogPath = fileURLToPath(new URL("../../visuals/visual-locales.json", import.meta.url));
+const visualCatalog = JSON.parse(readFileSync(visualCatalogPath, "utf8")) as VisualLocaleCatalog;
+if (!Number.isInteger(visualCatalog.version) || !Array.isArray(visualCatalog.locales) || visualCatalog.locales.length === 0) {
+  throw new Error("Visual locale catalog is invalid.");
+}
+const visualLocaleVersion = visualCatalog.version;
+const visualLocales = visualCatalog.locales;
+
+function getVisualLocale(code: string): VisualLocale {
+  const locale = visualLocales.find((candidate) => candidate.code === code);
+  if (!locale) throw new Error("Unknown visual locale: " + code);
+  return locale;
+}
 
 const projectLaneDefinitions = [
   { id: "now", label: "NOW", sourceLabel: "roadmap:now", accent: "#67E8F9" },
@@ -115,6 +171,7 @@ type DevelopmentStage = {
 export type RoadmapSnapshot = {
   schemaVersion: 1;
   renderVersion: number;
+  visualLocaleVersion: number;
   username: string;
   source: {
     repositoryCount: number;
@@ -383,6 +440,7 @@ export function createRoadmapState({
   return {
     schemaVersion: 1,
     renderVersion,
+    visualLocaleVersion,
     username: cleanText(username, "KS-GG-AI", 40),
     source: {
       repositoryCount: repositories.length,
@@ -457,7 +515,7 @@ function isStage(value: unknown, validIds: readonly string[]): boolean {
 }
 
 export function isValidRoadmapSnapshot(value: unknown): value is RoadmapSnapshot {
-  if (!isRecord(value) || value.schemaVersion !== 1 || value.renderVersion !== renderVersion) return false;
+  if (!isRecord(value) || value.schemaVersion !== 1 || value.renderVersion !== renderVersion || value.visualLocaleVersion !== visualLocaleVersion) return false;
   if (typeof value.username !== "string" || value.username.length === 0) return false;
   if (!isRecord(value.source)) return false;
   const repositoryCount = value.source.repositoryCount;
@@ -485,9 +543,20 @@ function semanticSnapshot(snapshot: RoadmapSnapshot): Omit<RoadmapSnapshot, "rev
   return semantic;
 }
 
-function svgStart(title: string, description: string, height: number): string[] {
+function localizedText(
+  locale: VisualLocale,
+  value: string,
+  x: number,
+  y: number,
+  options: { fill?: string; size?: number; weight?: number; anchor?: "start" | "end"; letterSpacing?: string } = {},
+): string {
+  const anchor = options.anchor ?? "start";
+  return '<text x="' + x + '" y="' + y + '" fill="' + (options.fill ?? "#F5F3FF") + '" font-family="' + escapeXml(locale.fontFamily) + '" font-size="' + (options.size ?? 14) + '" font-weight="' + (options.weight ?? 400) + '" text-anchor="' + anchor + '" direction="' + locale.direction + '" unicode-bidi="plaintext"' + (options.letterSpacing === undefined ? "" : ' letter-spacing="' + options.letterSpacing + '"') + ">" + escapeXml(value) + "</text>";
+}
+
+function svgStart(locale: VisualLocale, title: string, description: string, height: number): string[] {
   return [
-    '<svg xmlns="http://www.w3.org/2000/svg" width="' + svgWidth + '" height="' + height + '" viewBox="0 0 ' + svgWidth + ' ' + height + '" fill="none" role="img" aria-labelledby="title desc">',
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + svgWidth + '" height="' + height + '" viewBox="0 0 ' + svgWidth + ' ' + height + '" fill="none" role="img" aria-labelledby="title desc" direction="' + locale.direction + '">',
     '<title id="title">' + escapeXml(title) + '</title>',
     '<desc id="desc">' + escapeXml(description) + '</desc>',
     '<defs><linearGradient id="surface" x1="0" y1="0" x2="480" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#17112B"/><stop offset=".54" stop-color="#101926"/><stop offset="1" stop-color="#0D1E1D"/></linearGradient><filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="28"/></filter></defs>',
@@ -496,11 +565,13 @@ function svgStart(title: string, description: string, height: number): string[] 
   ];
 }
 
-function svgFooter(snapshot: RoadmapSnapshot, y: number): string[] {
+function svgFooter(snapshot: RoadmapSnapshot, y: number, locale: VisualLocale): string[] {
+  const copy = locale.roadmaps;
+  const rtl = locale.direction === "rtl";
   return [
     '<path d="M24 ' + (y - 18) + 'H456" stroke="#30354A"/>',
-    '<text x="24" y="' + y + '" fill="#A7F3D0" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700">PUBLIC-ONLY SOURCE</text>',
-    '<text x="456" y="' + y + '" fill="#98A2B8" font-family="Arial, Helvetica, sans-serif" font-size="10" text-anchor="end">STATE AS OF ' + escapeXml(String(snapshot.generatedAt).slice(0, 10)) + '</text>',
+    localizedText(locale, copy.publicOnly, rtl ? 456 : 24, y, { fill: "#A7F3D0", size: 10, weight: 700 }),
+    localizedText(locale, copy.stateAsOf + " " + String(snapshot.generatedAt).slice(0, 10), rtl ? 24 : 456, y, { fill: "#98A2B8", size: 10, anchor: "end" }),
     '</svg>',
   ];
 }
@@ -509,18 +580,38 @@ function issueLine(item: RoadmapItem): string {
   return "#" + item.number + " · " + cleanText(item.title, "UNTITLED PUBLIC ISSUE", 20);
 }
 
-export function renderProjectRoadmap(snapshot: RoadmapSnapshot): string {
+function itemHeadline(count: number, hiddenItemCount: number, copy: RoadmapLocaleCopy): string {
+  if (count === 0) return copy.noPublicItems;
+  return countLabel(count) + " " + copy.publicItem + (hiddenItemCount > 0 ? " · +" + hiddenItemCount + " " + copy.more : "");
+}
+
+function emptyIssueText(sourceLabel: string, copy: RoadmapLocaleCopy): string {
+  return cleanText(copy.noIssue + " " + sourceLabel, copy.noIssue, 42);
+}
+
+export function renderProjectRoadmap(snapshot: RoadmapSnapshot, localeCode = "en"): string {
+  const locale = getVisualLocale(localeCode);
+  const copy = locale.roadmaps;
+  const rtl = locale.direction === "rtl";
+  const railX = rtl ? 428 : 52;
+  const cardX = rtl ? 24 : 76;
+  const cardTextX = rtl ? 386 : 94;
+  const cardAnchor = "start";
+  const badgeX = rtl ? 24 : 334;
+  const badgeTextX = rtl ? 444 : 365;
+  const badgeAnchor = "start";
   const height = 400;
   const markup = svgStart(
-    snapshot.username + " project roadmap",
-    "Public issue roadmap split into now, next, and later lanes.",
+    locale,
+    copy.projectTitle,
+    copy.projectDescription,
     height,
   );
   markup.push(
-    '<text x="24" y="31" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">PROJECT ROADMAP</text>',
-    '<text x="24" y="49" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".7">PUBLIC ISSUES · NOW / NEXT / LATER</text>',
-    '<rect x="334" y="18" width="122" height="28" rx="14" fill="#0B1020" stroke="#67E8F9" stroke-opacity=".4"/><circle cx="353" cy="32" r="4" fill="#A7F3D0"/><text x="365" y="36" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">AUTO REFRESH</text>',
-    '<path d="M52 96V330" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>',
+    localizedText(locale, copy.projectTitle, rtl ? 456 : 24, 31, { size: 18, weight: 700 }),
+    localizedText(locale, copy.projectSubtitle, rtl ? 456 : 24, 49, { fill: "#AAB2C4", size: 10, letterSpacing: ".25" }),
+    '<rect x="' + badgeX + '" y="18" width="122" height="28" rx="14" fill="#0B1020" stroke="#67E8F9" stroke-opacity=".4"/><circle cx="' + (rtl ? 126 : 353) + '" cy="32" r="4" fill="#A7F3D0"/>' + localizedText(locale, copy.autoRefresh, badgeTextX, 36, { fill: "#EDE9FE", size: 9, weight: 700, anchor: badgeAnchor }),
+    '<path d="M' + railX + ' 96V330" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>',
   );
 
   snapshot.projectRoadmap.lanes.forEach((lane, index) => {
@@ -528,39 +619,50 @@ export function renderProjectRoadmap(snapshot: RoadmapSnapshot): string {
     const accent = definition?.accent ?? "#67E8F9";
     const y = 112 + index * 78;
     const hiddenItemCount = lane.count - lane.items.length;
-    const headline = (lane.count === 0 ? "NO PUBLIC ITEMS" : countLabel(lane.count) + " PUBLIC ITEM" + (lane.count === 1 ? "" : "S"))
-      + (hiddenItemCount > 0 ? " · +" + hiddenItemCount + " MORE" : "");
+    const headline = itemHeadline(lane.count, hiddenItemCount, copy);
+    const laneName = copy.lanes[lane.id];
     markup.push(
-      '<circle cx="52" cy="' + y + '" r="9" fill="#111827" stroke="' + accent + '" stroke-width="2"/><circle cx="52" cy="' + y + '" r="3" fill="' + accent + '"/>',
-      '<rect x="76" y="' + (y - 30) + '" width="380" height="68" rx="15" fill="#111827" stroke="' + accent + '" stroke-opacity=".45"/>',
-      '<text x="94" y="' + (y - 7) + '" fill="' + accent + '" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">' + lane.label + '</text>',
-      '<text x="154" y="' + (y - 7) + '" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">' + escapeXml(headline) + '</text>',
+      '<circle cx="' + railX + '" cy="' + y + '" r="9" fill="#111827" stroke="' + accent + '" stroke-width="2"/><circle cx="' + railX + '" cy="' + y + '" r="3" fill="' + accent + '"/>',
+      '<rect x="' + cardX + '" y="' + (y - 34) + '" width="380" height="72" rx="15" fill="#111827" stroke="' + accent + '" stroke-opacity=".45"/>',
+      localizedText(locale, laneName, cardTextX, y - 12, { fill: accent, size: 14, weight: 700, anchor: cardAnchor }),
+      localizedText(locale, headline, cardTextX, y + 2, { fill: "#AAB2C4", size: 9, anchor: cardAnchor, letterSpacing: ".2" }),
     );
     if (lane.items.length === 0) {
-      markup.push('<text x="94" y="' + (y + 18) + '" fill="#D4D4E8" font-family="Arial, Helvetica, sans-serif" font-size="14">No public issue with ' + escapeXml(lane.sourceLabel) + '</text>');
+      markup.push(localizedText(locale, emptyIssueText(lane.sourceLabel, copy), cardTextX, y + 22, { fill: "#D4D4E8", size: 12, anchor: cardAnchor }));
     } else {
       lane.items.forEach((item, itemIndex) => {
-        markup.push('<text x="94" y="' + (y + 16 + itemIndex * 18) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">' + escapeXml(issueLine(item)) + '</text>');
+        markup.push(localizedText(locale, issueLine(item), cardTextX, y + 20 + itemIndex * 17, { size: 12, anchor: cardAnchor }));
       });
     }
   });
 
-  markup.push(...svgFooter(snapshot, 378));
+  markup.push(...svgFooter(snapshot, 378, locale));
   return markup.join("\n");
 }
 
-export function renderDevelopmentRoadmap(snapshot: RoadmapSnapshot): string {
+export function renderDevelopmentRoadmap(snapshot: RoadmapSnapshot, localeCode = "en"): string {
+  const locale = getVisualLocale(localeCode);
+  const copy = locale.roadmaps;
+  const rtl = locale.direction === "rtl";
+  const railX = rtl ? 428 : 52;
+  const cardX = rtl ? 24 : 76;
+  const cardTextX = rtl ? 386 : 94;
+  const cardAnchor = "start";
+  const badgeX = rtl ? 24 : 346;
+  const badgeTextX = rtl ? 444 : 377;
+  const badgeAnchor = "start";
   const height = 420;
   const markup = svgStart(
-    snapshot.username + " development roadmap",
-    "Public issue delivery flow split into plan, build, verify, and ship stages.",
+    locale,
+    copy.developmentTitle,
+    copy.developmentDescription,
     height,
   );
   markup.push(
-    '<text x="24" y="31" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DEVELOPMENT ROADMAP</text>',
-    '<text x="24" y="49" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".7">PUBLIC ISSUES · PLAN / BUILD / VERIFY / SHIP</text>',
-    '<rect x="346" y="18" width="110" height="28" rx="14" fill="#0B1020" stroke="#C4B5FD" stroke-opacity=".42"/><circle cx="365" cy="32" r="4" fill="#67E8F9"/><text x="377" y="36" fill="#EDE9FE" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700">FLOW VIEW</text>',
-    '<path d="M52 96V342" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>',
+    localizedText(locale, copy.developmentTitle, rtl ? 456 : 24, 31, { size: 18, weight: 700 }),
+    localizedText(locale, copy.developmentSubtitle, rtl ? 456 : 24, 49, { fill: "#AAB2C4", size: 10, letterSpacing: ".25" }),
+    '<rect x="' + badgeX + '" y="18" width="110" height="28" rx="14" fill="#0B1020" stroke="#C4B5FD" stroke-opacity=".42"/><circle cx="' + (rtl ? 126 : 365) + '" cy="32" r="4" fill="#67E8F9"/>' + localizedText(locale, copy.flowView, badgeTextX, 36, { fill: "#EDE9FE", size: 9, weight: 700, anchor: badgeAnchor }),
+    '<path d="M' + railX + ' 96V342" stroke="#4C4668" stroke-width="2" stroke-linecap="round"/>',
   );
 
   snapshot.developmentRoadmap.stages.forEach((stage, index) => {
@@ -568,19 +670,19 @@ export function renderDevelopmentRoadmap(snapshot: RoadmapSnapshot): string {
     const accent = definition?.accent ?? "#67E8F9";
     const y = 106 + index * 62;
     const hiddenItemCount = stage.count - stage.items.length;
-    const headline = (stage.count === 0 ? "0 PUBLIC ITEMS" : countLabel(stage.count) + " PUBLIC ITEM" + (stage.count === 1 ? "" : "S"))
-      + (hiddenItemCount > 0 ? " · +" + hiddenItemCount + " MORE" : "");
+    const headline = itemHeadline(stage.count, hiddenItemCount, copy);
     const item = stage.items[0];
+    const stageName = copy.stages[stage.id];
     markup.push(
-      '<circle cx="52" cy="' + y + '" r="9" fill="#111827" stroke="' + accent + '" stroke-width="2"/><circle cx="52" cy="' + y + '" r="3" fill="' + accent + '"/>',
-      '<rect x="76" y="' + (y - 24) + '" width="380" height="49" rx="14" fill="#111827" stroke="' + accent + '" stroke-opacity=".42"/>',
-      '<text x="94" y="' + (y - 3) + '" fill="' + accent + '" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">' + stage.label + '</text>',
-      '<text x="164" y="' + (y - 3) + '" fill="#AAB2C4" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing=".4">' + escapeXml(headline) + '</text>',
-      '<text x="94" y="' + (y + 15) + '" fill="#F5F3FF" font-family="Arial, Helvetica, sans-serif" font-size="14">' + escapeXml(item ? issueLine(item) : "No public issue with " + stage.sourceLabel) + '</text>',
+      '<circle cx="' + railX + '" cy="' + y + '" r="9" fill="#111827" stroke="' + accent + '" stroke-width="2"/><circle cx="' + railX + '" cy="' + y + '" r="3" fill="' + accent + '"/>',
+      '<rect x="' + cardX + '" y="' + (y - 27) + '" width="380" height="58" rx="14" fill="#111827" stroke="' + accent + '" stroke-opacity=".42"/>',
+      localizedText(locale, stageName, cardTextX, y - 8, { fill: accent, size: 14, weight: 700, anchor: cardAnchor }),
+      localizedText(locale, headline, cardTextX, y + 5, { fill: "#AAB2C4", size: 9, anchor: cardAnchor, letterSpacing: ".2" }),
+      localizedText(locale, item ? issueLine(item) : emptyIssueText(stage.sourceLabel, copy), cardTextX, y + 22, { size: 12, anchor: cardAnchor }),
     );
   });
 
-  markup.push(...svgFooter(snapshot, 398));
+  markup.push(...svgFooter(snapshot, 398, locale));
   return markup.join("\n");
 }
 
@@ -653,8 +755,8 @@ export async function updateRoadmaps({
   const snapshot: RoadmapSnapshot = changed
     ? { ...semanticState, revision: revisionFor(semanticState), generatedAt: now().toISOString() }
     : existing as RoadmapSnapshot;
-  const projectSvg = renderProjectRoadmap(snapshot);
-  const developmentSvg = renderDevelopmentRoadmap(snapshot);
+  const projectSvg = renderProjectRoadmap(snapshot, "en");
+  const developmentSvg = renderDevelopmentRoadmap(snapshot, "en");
   const readmeUpdates = await Promise.all(readmeEntries.map(async (entry) => {
     const file = path.join(root, entry.file);
     try {
@@ -669,8 +771,18 @@ export async function updateRoadmaps({
   await mkdir(path.dirname(dataPath), { recursive: true });
   await mkdir(assetsDirectory, { recursive: true });
   await writeIfChanged(dataPath, JSON.stringify(snapshot, null, 2) + "\n");
-  await writeIfChanged(path.join(assetsDirectory, "project-roadmap.svg"), projectSvg);
-  await writeIfChanged(path.join(assetsDirectory, "development-roadmap.svg"), developmentSvg);
+  await Promise.all([
+    writeIfChanged(path.join(assetsDirectory, "project-roadmap.svg"), projectSvg),
+    writeIfChanged(path.join(assetsDirectory, "development-roadmap.svg"), developmentSvg),
+    ...visualLocales.map(async ({ code }) => {
+      const localeDirectory = path.join(root, "profile", "assets", "locales", code, "maps");
+      await mkdir(localeDirectory, { recursive: true });
+      await Promise.all([
+        writeIfChanged(path.join(localeDirectory, "project-roadmap.svg"), renderProjectRoadmap(snapshot, code)),
+        writeIfChanged(path.join(localeDirectory, "development-roadmap.svg"), renderDevelopmentRoadmap(snapshot, code)),
+      ]);
+    }),
+  ]);
   for (const update of readmeUpdates) await writeIfChanged(update.file, update.text);
 
   return {

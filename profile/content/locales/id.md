@@ -25,53 +25,77 @@
 
 </div>
 
-## Karya publik
+## Tentang
 
-**Sistem profil** — Profil GitHub multibahasa dengan visual yang tersimpan di repositori, alternatif Markdown yang mudah dibaca, dan peta proyek publik yang diperbarui terjadwal.
-
-[Buka repositori profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories)
+Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, dan alur kerja yang tetap mudah dipahami saat berkembang.
 
 <p align="center">
   <img src="../../assets/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
 </p>
 
-## Yang saya bangun
-
-Saya membangun bagian dari produk yang seharusnya terasa sederhana meskipun pekerjaan di baliknya tidak: antarmuka yang jelas, alat yang terhubung, dan alur kerja yang dapat diulang. Sebagian besar pekerjaan berada di pertemuan antara pemikiran produk, otomatisasi, dan sistem.
+### Yang saya bangun
 
 - **Pengalaman produk** — Antarmuka dan alur yang membuat langkah berikutnya terlihat jelas
 - **Kerja yang terhubung** — API, integrasi, dan otomatisasi yang mengurangi serah-terima rutin
 - **Dibuat untuk berkembang** — Fondasi kecil yang mudah diuji, diubah, dan dipelihara
 
-## Peta proyek
+### Cara saya bekerja
 
-Tampilan ringkas proyek publik dan pekerjaan privat yang terlindungi. Peta diperbarui otomatis secara berkala.
+- **Utamakan kejelasan** — Jadikan langkah berikutnya jelas.
+- **Tetap ingin tahu** — Sisakan ruang untuk menemukan cara yang lebih baik.
+- **Terus berkembang** — Biarkan iterasi kecil terus bertambah.
 
-- **Karya publik** — [Lihat daftar repositori publik saat ini](https://github.com/KS-GG-AI?tab=repositories).
-- **Pekerjaan privat** — Sengaja disamarkan; nama dan metadata tidak pernah muncul di sini.
+<p align="center"><sub>Berguna. Jelas. Terus menjadi lebih baik.</sub></p>
+
+## Stack
+
+Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk diselesaikan, bukan sebagai daftar periksa.
+
+- **Menulis** — TypeScript, JavaScript, Python
+- **Membangun** — Node.js, React, Next.js
+- **Menghubungkan** — REST API, SQL, MCP
+- **Mengirimkan** — Git, Docker, GitHub Actions
 
 <details>
-<summary><strong>Jelajahi peta proyek</strong></summary>
+<summary><strong>Jelajahi stack visual</strong></summary>
 
 <br />
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+<p><strong>Perangkat utama</strong></p>
 
-<sub>Nama dan metadata privat tidak pernah ditampilkan. <a href="https://github.com/KS-GG-AI?tab=repositories">Lihat repositori publik</a>.</sub>
+<img src="../../assets/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+
+<p><strong>Peta teknis</strong></p>
+
+<img src="../../assets/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
+
+<p><strong>Dalam gerak</strong></p>
+
+<img src="../../assets/motion/technology-stack.gif" alt="Peta teknis animasi." width="100%" />
+
+- **Bahasa dan markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Layanan, data, dan otomatisasi** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, otomatisasi
+- **Antarmuka dan produk** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Pengiriman dan operasi** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
 
 </details>
 
-## Peta jalan
+## Proyek
 
-Tampilan publik berbasis fakta tentang pekerjaan yang sedang dilacak dan bagaimana pekerjaan itu bergerak menuju rilis. Hanya issue GitHub publik dengan label roadmap dan tahap yang dibaca, lalu diperbarui secara terjadwal.
+Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Peta berikut diperbarui hanya dari repositori dan issue publik.
 
-- **Arah proyek** — Sekarang, berikutnya, dan nanti
-- **Alur pengiriman** — Rencanakan, bangun, verifikasi, dan rilis
+[Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
 <details>
-<summary><strong>Jelajahi peta jalan publik</strong></summary>
+<summary><strong>Jelajahi proyek dan peta jalan</strong></summary>
 
 <br />
+
+<p><strong>Peta proyek</strong></p>
+
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+
+<sub>Hanya metadata publik. Nama dan metadata privat tidak pernah ditampilkan.</sub>
 
 <p><strong>Peta jalan proyek</strong></p>
 
@@ -81,73 +105,12 @@ Tampilan publik berbasis fakta tentang pekerjaan yang sedang dilacak dan bagaima
 
 <img src="../../assets/maps/development-roadmap.svg?v=75dd6c83a62b" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
 
-<sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu label <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
-
-<br />
-
-[Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+<sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
 
 </details>
 
-## Cara saya bekerja
+## Kontak
 
-Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai dari kecil, belajar cepat, lalu memperbaiki dengan sengaja.
+Untuk karya publik, masukan, atau melihat implementasi lebih dekat, ini adalah titik awal yang paling jelas.
 
-<details>
-<summary><strong>Lihat tiga prinsip kerja</strong></summary>
-
-<br />
-
-- **Utamakan kejelasan** — Jadikan langkah berikutnya jelas.
-- **Tetap ingin tahu** — Sisakan ruang untuk menemukan cara yang lebih baik.
-- **Terus berkembang** — Biarkan iterasi kecil terus bertambah.
-
-<br />
-
-<img src="../../assets/visuals/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
-
-</details>
-
-## Perangkat utama
-
-Seperangkat alat yang fokus untuk menulis kode, membentuk antarmuka, menghubungkan sistem, dan mengirimkan perubahan.
-
-<details>
-<summary><strong>Jelajahi perangkat utama</strong></summary>
-
-<br />
-
-- **Menulis** — TypeScript, JavaScript, Python
-- **Membangun** — Node.js, React, Next.js
-- **Menghubungkan** — REST API, SQL, MCP
-- **Mengirimkan** — Git, Docker, GitHub Actions
-
-<br />
-
-<img src="../../assets/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
-
-</details>
-
-## Keahlian dan teknologi
-
-Ini adalah peta kerja, bukan daftar periksa. Teknologi dikelompokkan berdasarkan masalah yang dibantu untuk diselesaikan.
-
-Set kerja utama adalah TypeScript, JavaScript, Python, Node.js, React, Next.js, REST API, SQL, Docker, dan GitHub Actions. Peta lengkap tetap tersedia di bawah saat konteks tambahan diperlukan.
-
-<details>
-<summary><strong>Jelajahi peta teknis lengkap</strong></summary>
-
-<br />
-
-<img src="../../assets/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
-
-<sub>Ingin versi bergerak? <a href="../../assets/motion/technology-stack.gif">Buka peta GIF</a>.</sub>
-
-<br />
-
-- **Bahasa dan markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
-- **Layanan, data, dan otomatisasi** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, otomatisasi
-- **Antarmuka dan produk** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
-- **Pengiriman dan operasi** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
-
-</details>
+[Profil GitHub](https://github.com/KS-GG-AI) · [Repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Buka issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Sumber profil](https://github.com/KS-GG-AI/KS-GG-AI)

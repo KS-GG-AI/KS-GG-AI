@@ -25,53 +25,77 @@
 
 </div>
 
-## Working in public
+## About
 
-**Profile system** — A multilingual GitHub profile with repository-hosted visuals, readable Markdown fallbacks, and a scheduled public-project map.
-
-[Open the profile repository](https://github.com/KS-GG-AI/KS-GG-AI) · [Browse public repositories](https://github.com/KS-GG-AI?tab=repositories)
+I turn early ideas into useful product surfaces, connected tools, and workflows that stay understandable as they grow.
 
 <p align="center">
   <img src="./profile/assets/motion/typing.gif" alt="Animated typing: crafting useful things, clear systems, and careful work." width="100%" />
 </p>
 
-## What I build
-
-I build the parts of a product that should feel simple even when the work behind them is not: clear interfaces, connected tools, and repeatable workflows. Most of that sits where product thinking, automation, and systems meet.
+### What I build
 
 - **Product surfaces** — Interfaces and flows that make the next action obvious
 - **Connected work** — APIs, integrations, and automation that reduce routine hand-offs
 - **Built to evolve** — Small foundations that stay easy to test, change, and maintain
 
-## Project map
+### How I work
 
-A compact view of public projects and protected private work. It refreshes automatically on a regular schedule.
+- **Clarity first** — Make the next step obvious.
+- **Stay curious** — Leave room to discover better ways.
+- **Keep improving** — Let small iterations add up.
 
-- **Public work** — [Browse the current public repository list](https://github.com/KS-GG-AI?tab=repositories).
-- **Private work** — Intentionally masked; names and metadata never appear here.
+<p align="center"><sub>Make it useful. Make it clear. Keep making it better.</sub></p>
+
+## Stack
+
+A practical working set, grouped by the job it helps with rather than treated as a checklist.
+
+- **Write** — TypeScript, JavaScript, Python
+- **Build** — Node.js, React, Next.js
+- **Connect** — REST APIs, SQL, MCP
+- **Ship** — Git, Docker, GitHub Actions
 
 <details>
-<summary><strong>Explore the project map</strong></summary>
+<summary><strong>Explore the visual stack</strong></summary>
 
 <br />
 
-<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
+<p><strong>Core toolkit</strong></p>
 
-<sub>Private names and metadata are never shown. <a href="https://github.com/KS-GG-AI?tab=repositories">Browse public repositories</a>.</sub>
+<img src="./profile/assets/visuals/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
+
+<p><strong>Technical map</strong></p>
+
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
+
+<p><strong>In motion</strong></p>
+
+<img src="./profile/assets/motion/technology-stack.gif" alt="Animated technical map." width="100%" />
+
+- **Languages & markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Services, data & automation** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automation
+- **Interfaces & product** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Delivery & operations** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
 
 </details>
 
-## Roadmaps
+## Projects
 
-A public, fact-based view of what is being tracked and how it moves through delivery. It reads only public GitHub issues with roadmap and stage labels, then refreshes on a schedule.
+Public work stays easy to browse; private work stays intentionally masked. The maps below refresh from public repository and issue data only.
 
-- **Project direction** — Now, next, and later
-- **Delivery flow** — Plan, build, verify, and ship
+[Browse public repositories](https://github.com/KS-GG-AI?tab=repositories) · [Browse public tracked issues](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
 <details>
-<summary><strong>Explore public roadmaps</strong></summary>
+<summary><strong>Explore projects and roadmaps</strong></summary>
 
 <br />
+
+<p><strong>Project map</strong></p>
+
+<img src="./profile/assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
+
+<sub>Public metadata only. Private names and metadata are never shown.</sub>
 
 <p><strong>Project roadmap</strong></p>
 
@@ -83,71 +107,10 @@ A public, fact-based view of what is being tracked and how it moves through deli
 
 <sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear.</sub>
 
-<br />
-
-[Browse public tracked issues](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
-
 </details>
 
-## How I work
+## Contact
 
-I keep decisions legible and the next step visible: start small, learn quickly, and improve with intent.
+For public work, feedback, or a closer look at the implementation, these are the clearest starting points.
 
-<details>
-<summary><strong>See the three working principles</strong></summary>
-
-<br />
-
-- **Clarity first** — Make the next step obvious.
-- **Stay curious** — Leave room to discover better ways.
-- **Keep improving** — Let small iterations add up.
-
-<br />
-
-<img src="./profile/assets/visuals/principles.svg" alt="Three principles: Clarity first, stay curious, and keep improving." width="100%" />
-
-</details>
-
-## Core toolkit
-
-A focused working set for writing code, shaping interfaces, connecting systems, and shipping changes.
-
-<details>
-<summary><strong>Explore the core toolkit</strong></summary>
-
-<br />
-
-- **Write** — TypeScript, JavaScript, Python
-- **Build** — Node.js, React, Next.js
-- **Connect** — REST APIs, SQL, MCP
-- **Ship** — Git, Docker, GitHub Actions
-
-<br />
-
-<img src="./profile/assets/visuals/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
-
-</details>
-
-## Skills & technologies
-
-This is a working map, not a checklist. Technologies are grouped by the kind of problem they help solve.
-
-The core working set is TypeScript, JavaScript, Python, Node.js, React, Next.js, REST APIs, SQL, Docker, and GitHub Actions. The full map stays available when the extra context is useful.
-
-<details>
-<summary><strong>Explore the complete technical map</strong></summary>
-
-<br />
-
-<img src="./profile/assets/visuals/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
-
-<sub>Want the motion version? <a href="./profile/assets/motion/technology-stack.gif">Open the animated map</a>.</sub>
-
-<br />
-
-- **Languages & markup** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
-- **Services, data & automation** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automation
-- **Interfaces & product** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
-- **Delivery & operations** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
-
-</details>
+[GitHub profile](https://github.com/KS-GG-AI) · [Public repositories](https://github.com/KS-GG-AI?tab=repositories) · [Open an issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Profile source](https://github.com/KS-GG-AI/KS-GG-AI)

@@ -27,53 +27,77 @@
 
 <div dir="rtl">
 
-## العمل العلني
+## نبذة
 
-**نظام الملف الشخصي** — ملف GitHub متعدد اللغات، يحتوي على مواد مرئية محفوظة في المستودع وبدائل Markdown سهلة القراءة وخريطة مجدولة للمشاريع العلنية.
-
-[فتح مستودع الملف الشخصي](https://github.com/KS-GG-AI/KS-GG-AI) · [تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories)
+أحوّل الأفكار المبكرة إلى واجهات منتجات مفيدة وأدوات مترابطة وتدفقات عمل تظل سهلة الفهم مع نموها.
 
 <p align="center">
   <img src="../../assets/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
 </p>
 
-## ما أبنيه
-
-أبني الأجزاء في المنتج التي ينبغي أن تبدو بسيطة حتى عندما يكون العمل خلفها معقدًا: واجهات واضحة وأدوات مترابطة وسير عمل قابل للتكرار. يلتقي معظم عملي عند تقاطع تفكير المنتج والأتمتة والأنظمة.
+### ما أبنيه
 
 - **تجارب المنتج** — واجهات وتدفقات تجعل الخطوة التالية واضحة
 - **عمل مترابط** — واجهات API وتكاملات وأتمتة تقلل عمليات التسليم المتكررة
 - **أسس قابلة للتطور** — أسس صغيرة يسهل اختبارها وتغييرها وصيانتها
 
-## خريطة المشاريع
+### طريقة العمل
 
-عرض موجز يفصل المشاريع العامة عن العمل الخاص المحمي. يُحدَّث تلقائيًا وفق جدول منتظم.
+- **الوضوح أولاً** — اجعل الخطوة التالية واضحة.
+- **ابقَ فضوليًا** — اترك مجالًا لاكتشاف طرق أفضل.
+- **واصل التحسين** — دع التحسينات الصغيرة تتراكم.
 
-- **العمل العلني** — [تصفح قائمة المستودعات العامة الحالية](https://github.com/KS-GG-AI?tab=repositories).
-- **العمل الخاص** — يُخفى عمدًا؛ لا تظهر الأسماء والبيانات الوصفية هنا مطلقًا.
+<p align="center"><sub>مفيد. واضح. أفضل باستمرار.</sub></p>
+
+## التقنيات
+
+مجموعة أدوات عملية، مجمعة وفق المهمة التي تساعد على إنجازها لا بوصفها قائمة تحقق.
+
+- **الكتابة** — TypeScript، JavaScript، Python
+- **البناء** — Node.js، React، Next.js
+- **الربط** — REST API، SQL، MCP
+- **التسليم** — Git، Docker، GitHub Actions
 
 <details>
-<summary><strong>استكشاف خريطة المشاريع</strong></summary>
+<summary><strong>استكشاف المكدس المرئي</strong></summary>
 
 <br />
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+<p><strong>الأدوات الأساسية</strong></p>
 
-<sub>لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً. <a href="https://github.com/KS-GG-AI?tab=repositories">تصفح المستودعات العامة</a>.</sub>
+<img src="../../assets/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
+
+<p><strong>الخريطة التقنية</strong></p>
+
+<img src="../../assets/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
+
+<p><strong>نسخة متحركة</strong></p>
+
+<img src="../../assets/motion/technology-stack.gif" alt="خريطة تقنية متحركة." width="100%" />
+
+- **اللغات والترميز** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **الخدمات والبيانات والأتمتة** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, الأتمتة
+- **الواجهات والمنتج** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **التسليم والعمليات** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
 
 </details>
 
-## خرائط الطريق
+## المشاريع
 
-عرض علني قائم على الحقائق لما يجري تتبعه وكيف ينتقل عبر التسليم. يقرأ مسائل GitHub العامة ذات تسميات خارطة الطريق والمرحلة فقط، ثم يتجدد بانتظام.
+يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. تتحدث الخرائط التالية من بيانات المستودعات والمسائل العلنية فقط.
 
-- **اتجاه المشروع** — الآن، التالي، ولاحقًا
-- **تدفق التسليم** — التخطيط، البناء، التحقق، والإصدار
+[تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
 <details>
-<summary><strong>استكشاف خرائط الطريق العلنية</strong></summary>
+<summary><strong>استكشاف المشاريع وخرائط الطريق</strong></summary>
 
 <br />
+
+<p><strong>خريطة المشاريع</strong></p>
+
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+
+<sub>بيانات وصفية علنية فقط. لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً.</sub>
 
 <p><strong>خارطة طريق المشروع</strong></p>
 
@@ -85,73 +109,12 @@
 
 <sub>يستخدم مسائل GitHub العامة فقط. أضف تسمية <code>roadmap:*</code> وتسمية <code>stage:*</code> إلى مسألة عامة لإظهارها.</sub>
 
-<br />
-
-[تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
-
 </details>
 
-## طريقة العمل
+## التواصل
 
-أجعل القرارات سهلة القراءة والخطوة التالية ظاهرة: أبدأ صغيراً، أتعلم بسرعة، وأحسّن بوعي.
+للعمل العلني أو الملاحظات أو الاطلاع الأقرب على التنفيذ، هذه أوضح نقاط البداية.
 
-<details>
-<summary><strong>عرض مبادئ العمل الثلاثة</strong></summary>
-
-<br />
-
-- **الوضوح أولاً** — اجعل الخطوة التالية واضحة.
-- **ابقَ فضوليًا** — اترك مجالًا لاكتشاف طرق أفضل.
-- **واصل التحسين** — دع التحسينات الصغيرة تتراكم.
-
-<br />
-
-<img src="../../assets/visuals/principles.svg" alt="ثلاثة مبادئ: الوضوح أولاً، والبقاء فضولياً، والاستمرار في التحسين." width="100%" />
-
-</details>
-
-## الأدوات الأساسية
-
-مجموعة مركزة لكتابة البرمجيات وتشكيل الواجهات وربط الأنظمة وتسليم التغييرات.
-
-<details>
-<summary><strong>استكشاف الأدوات الأساسية</strong></summary>
-
-<br />
-
-- **الكتابة** — TypeScript، JavaScript، Python
-- **البناء** — Node.js، React، Next.js
-- **الربط** — REST API، SQL، MCP
-- **التسليم** — Git، Docker، GitHub Actions
-
-<br />
-
-<img src="../../assets/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
-
-</details>
-
-## المهارات والتقنيات
-
-هذه خريطة للعمل وليست قائمة تحقق. جُمعت التقنيات حسب نوع المشكلة التي تساعد في حلها.
-
-مجموعة العمل الأساسية هي TypeScript وJavaScript وPython وNode.js وReact وNext.js وREST API وSQL وDocker وGitHub Actions. تبقى الخريطة الكاملة متاحة أدناه عندما يكون السياق الإضافي مفيدًا.
-
-<details>
-<summary><strong>استكشاف الخريطة التقنية الكاملة</strong></summary>
-
-<br />
-
-<img src="../../assets/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
-
-<sub>تريد النسخة المتحركة؟ <a href="../../assets/motion/technology-stack.gif">افتح خريطة GIF</a></sub>
-
-<br />
-
-- **اللغات والترميز** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
-- **الخدمات والبيانات والأتمتة** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, الأتمتة
-- **الواجهات والمنتج** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
-- **التسليم والعمليات** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
-
-</details>
+[ملف GitHub](https://github.com/KS-GG-AI) · [المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [فتح مسألة](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [مصدر الملف الشخصي](https://github.com/KS-GG-AI/KS-GG-AI)
 
 </div>

@@ -25,53 +25,77 @@
 
 </div>
 
-## 公开作品
+## 关于
 
-**个人资料系统** — 一个多语言 GitHub 个人资料；视觉资源保存在仓库中，配有易读的 Markdown 文字说明，并定期更新公开项目地图。
-
-[打开个人资料仓库](https://github.com/KS-GG-AI/KS-GG-AI) · [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories)
+把早期想法做成易用的产品界面、连贯的工具和即使成长后也容易理解的工作流。
 
 <p align="center">
   <img src="../../assets/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
 </p>
 
-## 我在构建什么
-
-我构建那些对使用者而言应当简单、即使背后工作并不简单的产品部分：清晰的界面、相互连接的工具和可重复的工作流。大部分工作位于产品思考、自动化和系统设计的交汇处。
+### 我构建什么
 
 - **产品体验** — 让下一步一目了然的界面和流程
 - **连接的流程** — 通过 API、集成和自动化减少重复交接
 - **可持续演进** — 易于测试、调整和维护的小型基础
 
-## 项目地图
+### 工作方式
 
-这是一个区分公开项目与受保护私有工作的简洁地图。会按固定计划自动更新。
+- **清晰优先** — 让下一步一目了然。
+- **保持好奇** — 为发现更好的方法留出空间。
+- **持续改进** — 让小的迭代不断累积。
 
-- **公开作品** — [浏览当前公开仓库列表](https://github.com/KS-GG-AI?tab=repositories)。
-- **私有工作** — 会被有意遮蔽，名称和元数据绝不会显示在这里。
+<p align="center"><sub>有用。清晰。持续变得更好。</sub></p>
+
+## 技术栈
+
+这是一套按实际工作来组织的工具，而不是一张清单。
+
+- **编写** — TypeScript、JavaScript、Python
+- **构建** — Node.js、React、Next.js
+- **连接** — REST API、SQL、MCP
+- **交付** — Git、Docker、GitHub Actions
 
 <details>
-<summary><strong>查看项目地图</strong></summary>
+<summary><strong>查看可视化技术栈</strong></summary>
 
 <br />
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+<p><strong>核心工具</strong></p>
 
-<sub>私有名称和元数据不会显示。<a href="https://github.com/KS-GG-AI?tab=repositories">浏览公开仓库</a>。</sub>
+<img src="../../assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
+
+<p><strong>技术地图</strong></p>
+
+<img src="../../assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
+
+<p><strong>动态地图</strong></p>
+
+<img src="../../assets/motion/technology-stack.gif" alt="动态技术地图。" width="100%" />
+
+- **语言与标记** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **服务、数据与自动化** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 自动化
+- **界面与产品** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **交付与运维** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
 
 </details>
 
-## 路线图
+## 项目
 
-基于公开 Issue 标签展示当前方向与交付流程。它不会读取或显示私有项目，并会按计划自动更新。
+公开作品保持易于浏览，私有工作则有意隐藏。下面的地图只根据公开仓库和公开 Issue 更新。
 
-- **项目方向** — 当前、下一步与以后
-- **交付流程** — 规划、构建、验证与发布
+[浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
 <details>
-<summary><strong>查看公开路线图</strong></summary>
+<summary><strong>查看项目与路线图</strong></summary>
 
 <br />
+
+<p><strong>项目地图</strong></p>
+
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
+
+<sub>仅使用公开元数据。私有名称和元数据不会显示。</sub>
 
 <p><strong>项目路线图</strong></p>
 
@@ -83,71 +107,10 @@
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
 
-<br />
-
-[浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
-
 </details>
 
-## 我的工作方式
+## 联系
 
-让决策更清楚、让下一步更可见：从小处开始，快速学习，有意识地持续改进。
+如需查看公开工作、提交反馈或了解实现细节，可从下面的入口开始。
 
-<details>
-<summary><strong>查看三个工作原则</strong></summary>
-
-<br />
-
-- **清晰优先** — 让下一步一目了然。
-- **保持好奇** — 为发现更好的方法留出空间。
-- **持续改进** — 让小的迭代不断累积。
-
-<br />
-
-<img src="../../assets/visuals/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
-
-</details>
-
-## 核心工具
-
-围绕编写代码、构建界面、连接系统和交付变更组织的一组核心工具。
-
-<details>
-<summary><strong>查看核心工具</strong></summary>
-
-<br />
-
-- **编写** — TypeScript、JavaScript、Python
-- **构建** — Node.js、React、Next.js
-- **连接** — REST API、SQL、MCP
-- **交付** — Git、Docker、GitHub Actions
-
-<br />
-
-<img src="../../assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
-
-</details>
-
-## 技能与技术
-
-这是一张工作地图，而不是清单。技术按它们帮助解决的问题来组织。
-
-核心工作集包括 TypeScript、JavaScript、Python、Node.js、React、Next.js、REST API、SQL、Docker 和 GitHub Actions。需要完整背景时可以展开下面的地图。
-
-<details>
-<summary><strong>查看完整技术地图</strong></summary>
-
-<br />
-
-<img src="../../assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
-
-<sub>如果想看动态版本，<a href="../../assets/motion/technology-stack.gif">打开 GIF 地图</a>。</sub>
-
-<br />
-
-- **语言与标记** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
-- **服务、数据与自动化** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, 自动化
-- **界面与产品** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
-- **交付与运维** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
-
-</details>
+[GitHub 个人资料](https://github.com/KS-GG-AI) · [公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [创建 Issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [个人资料源码](https://github.com/KS-GG-AI/KS-GG-AI)

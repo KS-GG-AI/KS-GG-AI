@@ -25,53 +25,77 @@
 
 </div>
 
-## Travail public
+## À propos
 
-**Système de profil** — Un profil GitHub multilingue avec des visuels hébergés dans le dépôt, des alternatives Markdown lisibles et une carte planifiée des projets publics.
-
-[Ouvrir le dépôt du profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Voir les dépôts publics](https://github.com/KS-GG-AI?tab=repositories)
+Je transforme les premières idées en surfaces produit utiles, outils connectés et flux de travail qui restent faciles à comprendre à mesure qu'ils évoluent.
 
 <p align="center">
   <img src="../../assets/motion/typing.gif" alt="Frappe animée : créer des choses utiles, des systèmes clairs et un travail soigné." width="100%" />
 </p>
 
-## Ce que je construis
-
-Je construis les parties d’un produit qui doivent paraître simples, même lorsque le travail derrière ne l’est pas : interfaces claires, outils connectés et workflows reproductibles. L’essentiel se situe à la rencontre du produit, de l’automatisation et des systèmes.
+### Ce que je construis
 
 - **Expériences produit** — Interfaces et parcours qui rendent la prochaine action évidente
 - **Travail connecté** — API, intégrations et automatisation qui réduisent les transmissions répétitives
 - **Conçu pour évoluer** — De petites fondations faciles à tester, modifier et maintenir
 
-## Carte des projets
+### Ma façon de travailler
 
-Une vue compacte des projets publics et du travail privé protégé. Elle se met à jour automatiquement selon une planification régulière.
+- **La clarté d’abord** — Rendre la prochaine étape évidente.
+- **Rester curieux** — Laisser de la place pour découvrir de meilleures approches.
+- **Continuer à améliorer** — Laisser les petites itérations s’accumuler.
 
-- **Travail public** — [Voir la liste actuelle des dépôts publics](https://github.com/KS-GG-AI?tab=repositories).
-- **Travail privé** — Il est volontairement masqué ; les noms et métadonnées n’apparaissent jamais ici.
+<p align="center"><sub>Utile. Clair. Toujours mieux.</sub></p>
+
+## Stack
+
+Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt que comme une checklist.
+
+- **Écrire** — TypeScript, JavaScript, Python
+- **Construire** — Node.js, React, Next.js
+- **Connecter** — REST API, SQL, MCP
+- **Livrer** — Git, Docker, GitHub Actions
 
 <details>
-<summary><strong>Explorer la carte des projets</strong></summary>
+<summary><strong>Explorer le stack visuel</strong></summary>
 
 <br />
 
-<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
+<p><strong>Outils essentiels</strong></p>
 
-<sub>Les noms et métadonnées privés ne sont jamais affichés. <a href="https://github.com/KS-GG-AI?tab=repositories">Voir les dépôts publics</a>.</sub>
+<img src="../../assets/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
+
+<p><strong>Carte technique</strong></p>
+
+<img src="../../assets/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
+
+<p><strong>En mouvement</strong></p>
+
+<img src="../../assets/motion/technology-stack.gif" alt="Carte technique animée." width="100%" />
+
+- **Langages et balisage** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
+- **Services, données et automatisation** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automatisation
+- **Interfaces et produit** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
+- **Livraison et opérations** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
 
 </details>
 
-## Feuilles de route
+## Projets
 
-Une vue publique, fondée sur les faits, du travail suivi et de son cheminement jusqu'à la livraison. Elle lit uniquement les issues GitHub publiques portant des labels de feuille de route et d'étape, puis se met à jour selon un calendrier.
+Le travail public reste facile à explorer ; le travail privé est volontairement masqué. Les cartes ci-dessous sont mises à jour uniquement à partir de dépôts et d'issues publics.
 
-- **Direction du projet** — Maintenant, ensuite et plus tard
-- **Flux de livraison** — Planifier, construire, vérifier et publier
+[Voir les dépôts publics](https://github.com/KS-GG-AI?tab=repositories) · [Parcourir les issues publiques suivies](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
 <details>
-<summary><strong>Explorer les feuilles de route publiques</strong></summary>
+<summary><strong>Explorer les projets et feuilles de route</strong></summary>
 
 <br />
+
+<p><strong>Carte des projets</strong></p>
+
+<img src="../../assets/maps/project-map.svg?v=949e2dd9bcc4" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
+
+<sub>Uniquement des métadonnées publiques. Les noms et métadonnées privés ne sont jamais affichés.</sub>
 
 <p><strong>Feuille de route du projet</strong></p>
 
@@ -83,71 +107,10 @@ Une vue publique, fondée sur les faits, du travail suivi et de son cheminement 
 
 <sub>Utilise uniquement des issues GitHub publiques. Ajoutez un label <code>roadmap:*</code> et un label <code>stage:*</code> à une issue publique pour l'afficher.</sub>
 
-<br />
-
-[Parcourir les issues publiques suivies](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
-
 </details>
 
-## Ma façon de travailler
+## Contact
 
-Je garde les décisions lisibles et la prochaine étape visible : je commence petit, j’apprends vite et j’améliore avec intention.
+Pour le travail public, les retours ou un regard plus proche sur l'implémentation, ce sont les points de départ les plus clairs.
 
-<details>
-<summary><strong>Voir les trois principes de travail</strong></summary>
-
-<br />
-
-- **La clarté d’abord** — Rendre la prochaine étape évidente.
-- **Rester curieux** — Laisser de la place pour découvrir de meilleures approches.
-- **Continuer à améliorer** — Laisser les petites itérations s’accumuler.
-
-<br />
-
-<img src="../../assets/visuals/principles.svg" alt="Trois principes : la clarté d’abord, rester curieux et continuer à s’améliorer." width="100%" />
-
-</details>
-
-## Outils essentiels
-
-Un ensemble ciblé pour écrire du code, façonner des interfaces, connecter des systèmes et livrer des changements.
-
-<details>
-<summary><strong>Explorer les outils essentiels</strong></summary>
-
-<br />
-
-- **Écrire** — TypeScript, JavaScript, Python
-- **Construire** — Node.js, React, Next.js
-- **Connecter** — REST API, SQL, MCP
-- **Livrer** — Git, Docker, GitHub Actions
-
-<br />
-
-<img src="../../assets/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
-
-</details>
-
-## Compétences et technologies
-
-C’est une carte de travail, pas une checklist. Les technologies sont regroupées selon les problèmes qu’elles aident à résoudre.
-
-Le socle de travail est TypeScript, JavaScript, Python, Node.js, React, Next.js, REST API, SQL, Docker et GitHub Actions. La carte complète reste disponible ci-dessous quand davantage de contexte est utile.
-
-<details>
-<summary><strong>Explorer la carte technique complète</strong></summary>
-
-<br />
-
-<img src="../../assets/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
-
-<sub>Vous voulez la version animée ? <a href="../../assets/motion/technology-stack.gif">Ouvrir la carte GIF</a>.</sub>
-
-<br />
-
-- **Langages et balisage** — TypeScript, JavaScript, Python, Go, Java, C#, C++, C, PHP, Rust, Bash, HTML, CSS, SQL
-- **Services, données et automatisation** — Node.js, Express, FastAPI, Flask, Django, GraphQL, PostgreSQL, MySQL, MongoDB, Redis, Prisma, LLMs, MCP, automatisation
-- **Interfaces et produit** — React, Next.js, Vite, Tailwind CSS, Figma, Vercel
-- **Livraison et opérations** — Docker, Kubernetes, AWS, Google Cloud, Azure, Cloudflare, Nginx, Linux, GitHub Actions, Terraform, Git, GitLab, Ansible, Ubuntu
-
-</details>
+[Profil GitHub](https://github.com/KS-GG-AI) · [Dépôts publics](https://github.com/KS-GG-AI?tab=repositories) · [Ouvrir une issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Source du profil](https://github.com/KS-GG-AI/KS-GG-AI)

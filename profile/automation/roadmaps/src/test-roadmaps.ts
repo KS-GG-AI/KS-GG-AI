@@ -191,7 +191,10 @@ assert.equal(normalizeLineEndings(await readFile(path.join(root, "profile", "ass
 for (const entry of readmeEntries) {
   const text = await readFile(path.join(root, entry.file), "utf8");
   const escapeRegularExpression = (value: string): string => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  assert.equal((text.match(/<details>/g) ?? []).length, 5, entry.file + " must have five disclosure panels.");
+  const disclosureCount = (text.match(/<details>/g) ?? []).length;
+  assert.equal(disclosureCount, 2, entry.file + " must have two disclosure panels.");
+  assert.equal((text.match(/<\/details>/g) ?? []).length, disclosureCount, entry.file + " must close every disclosure panel.");
+  assert.equal((text.match(/<summary>/g) ?? []).length, disclosureCount, entry.file + " must label every disclosure panel.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.projectRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one project roadmap.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.developmentRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one development roadmap.");
 }

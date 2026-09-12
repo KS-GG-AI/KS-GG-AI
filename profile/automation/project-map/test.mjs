@@ -148,8 +148,10 @@ for (const { file, assetReference, typingReference } of readmeEntries) {
   const expression = new RegExp(assetReference.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\?v=([A-Za-z0-9-]+)", "g");
   const revisions = [...readme.matchAll(expression)].map((match) => match[1]);
   assert.deepEqual(revisions, [persistedSnapshot.revision]);
-  assert.equal((readme.match(/<details>/g) ?? []).length, 5);
-  assert.equal((readme.match(/<\/details>/g) ?? []).length, 5);
+  const disclosureCount = (readme.match(/<details>/g) ?? []).length;
+  assert.equal(disclosureCount, 2);
+  assert.equal((readme.match(/<\/details>/g) ?? []).length, disclosureCount);
+  assert.equal((readme.match(/<summary>/g) ?? []).length, disclosureCount);
   const selfReference = file === "README.md" ? "./README.md" : "./" + path.basename(file);
   assert.equal(readme.includes('href="' + selfReference + '"'), false);
   assert.ok(readme.indexOf('<img src="' + typingReference + '"') > readme.indexOf("</div>"));

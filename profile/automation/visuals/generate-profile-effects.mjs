@@ -176,7 +176,7 @@ function createFocusAnimation() {
 }
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
-const assetsDirectory = path.resolve(directory, "../assets");
+const assetsDirectory = path.resolve(directory, "../../assets/motion");
 const animations = [
   ["toolbox.gif", createToolboxAnimation()],
   ["language-map.gif", createLanguageAnimation()],

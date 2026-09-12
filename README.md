@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — clear interfaces, connected workflows, and reliable systems." width="78%" />
-  <img src="./assets/avatar.gif" alt="Animated KS-GG-AI monogram." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — clear interfaces, connected workflows, and reliable systems." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="Animated KS-GG-AI monogram." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [Open the profile repository](https://github.com/KS-GG-AI/KS-GG-AI) · [Browse public repositories](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="Animated typing: crafting useful things, clear systems, and careful work." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="Animated typing: crafting useful things, clear systems, and careful work." width="100%" />
 </p>
 
 ## What I build
@@ -104,7 +104,7 @@ I keep decisions legible and the next step visible: start small, learn quickly, 
 
 <br />
 
-<img src="./assets/principles.svg" alt="Three principles: Clarity first, stay curious, and keep improving." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="Three principles: Clarity first, stay curious, and keep improving." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ A focused working set for writing code, shaping interfaces, connecting systems, 
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="Core toolkit organized around writing, building, connecting, and shipping software." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ The core working set is TypeScript, JavaScript, Python, Node.js, React, Next.js,
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Technical map of languages, services and data, interfaces and product, plus delivery and operations." width="100%" />
 
-<sub>Want the motion version? <a href="./assets/technology-stack.gif">Open the animated map</a>.</sub>
+<sub>Want the motion version? <a href="./profile/assets/motion/technology-stack.gif">Open the animated map</a>.</sub>
 
 <br />
 

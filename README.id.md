@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
-  <img src="./assets/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — antarmuka jelas, alur kerja terhubung, dan sistem andal." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="Monogram animasi KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [Buka repositori profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="Efek mengetik animasi: hal berguna, sistem yang jelas, dan pekerjaan yang teliti." width="100%" />
 </p>
 
 ## Yang saya bangun
@@ -104,7 +104,7 @@ Saya menjaga keputusan tetap mudah dibaca dan langkah berikutnya terlihat: mulai
 
 <br />
 
-<img src="./assets/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="Tiga prinsip: utamakan kejelasan, tetap ingin tahu, dan terus berkembang." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ Seperangkat alat yang fokus untuk menulis kode, membentuk antarmuka, menghubungk
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="Perangkat utama yang disusun untuk menulis, membangun, menghubungkan, dan mengirimkan perangkat lunak." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ Set kerja utama adalah TypeScript, JavaScript, Python, Node.js, React, Next.js, 
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Peta teknis untuk bahasa, layanan dan data, antarmuka dan produk, serta pengiriman dan operasi." width="100%" />
 
-<sub>Ingin versi bergerak? <a href="./assets/technology-stack.gif">Buka peta GIF</a>.</sub>
+<sub>Ingin versi bergerak? <a href="./profile/assets/motion/technology-stack.gif">Buka peta GIF</a>.</sub>
 
 <br />
 

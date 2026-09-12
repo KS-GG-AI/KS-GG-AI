@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
-  <img src="./assets/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — 清晰的界面、连贯的工作流和可靠的系统。" width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="动态 KS-GG-AI 字母标识。" width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [打开个人资料仓库](https://github.com/KS-GG-AI/KS-GG-AI) · [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="动态打字：打造实用的事物、清晰的系统和用心的实现。" width="100%" />
 </p>
 
 ## 我在构建什么
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./assets/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="三项原则：先追求清晰，保持好奇，持续改进。" width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="按编写、构建、连接和交付流程组织的核心工具。" width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="展示语言、服务与数据、界面与产品、交付与运维的技术地图。" width="100%" />
 
-<sub>如果想看动态版本，<a href="./assets/technology-stack.gif">打开 GIF 地图</a>。</sub>
+<sub>如果想看动态版本，<a href="./profile/assets/motion/technology-stack.gif">打开 GIF 地图</a>。</sub>
 
 <br />
 

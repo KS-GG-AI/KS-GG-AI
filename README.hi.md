@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
-  <img src="./assets/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — स्पष्ट इंटरफ़ेस, जुड़े हुए वर्कफ़्लो और भरोसेमंद सिस्टम।" width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="एनिमेटेड KS-GG-AI मोनोग्राम।" width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [प्रोफ़ाइल रिपॉज़िटरी खोलें](https://github.com/KS-GG-AI/KS-GG-AI) · [सार्वजनिक रिपॉज़िटरी देखें](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="एनिमेटेड टाइपिंग: उपयोगी चीज़ें, स्पष्ट सिस्टम और ध्यान से किया गया काम।" width="100%" />
 </p>
 
 ## मैं क्या बनाता हूँ
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./assets/principles.svg" alt="तीन सिद्धांत: पहले स्पष्टता, जिज्ञासु बने रहें, और सुधार करते रहें।" width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="तीन सिद्धांत: पहले स्पष्टता, जिज्ञासु बने रहें, और सुधार करते रहें।" width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="लिखने, बनाने, जोड़ने और सॉफ़्टवेयर पहुँचाने के आसपास व्यवस्थित मुख्य उपकरण।" width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="भाषाओं, सेवाओं और डेटा, इंटरफ़ेस और प्रोडक्ट, तथा डिलीवरी और ऑपरेशंस का तकनीकी नक्शा।" width="100%" />
 
-<sub>मूवमेंट वाला संस्करण चाहिए? <a href="./assets/technology-stack.gif">GIF नक्शा खोलें</a>।</sub>
+<sub>मूवमेंट वाला संस्करण चाहिए? <a href="./profile/assets/motion/technology-stack.gif">GIF नक्शा खोलें</a>।</sub>
 
 <br />
 

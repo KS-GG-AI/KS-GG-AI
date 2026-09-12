@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — interfaces claires, flux connectés et systèmes fiables." width="78%" />
-  <img src="./assets/avatar.gif" alt="Monogramme animé de KS-GG-AI." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — interfaces claires, flux connectés et systèmes fiables." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="Monogramme animé de KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [Ouvrir le dépôt du profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Voir les dépôts publics](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="Frappe animée : créer des choses utiles, des systèmes clairs et un travail soigné." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="Frappe animée : créer des choses utiles, des systèmes clairs et un travail soigné." width="100%" />
 </p>
 
 ## Ce que je construis
@@ -104,7 +104,7 @@ Je garde les décisions lisibles et la prochaine étape visible : je commence pe
 
 <br />
 
-<img src="./assets/principles.svg" alt="Trois principes : la clarté d’abord, rester curieux et continuer à s’améliorer." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="Trois principes : la clarté d’abord, rester curieux et continuer à s’améliorer." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ Un ensemble ciblé pour écrire du code, façonner des interfaces, connecter des
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="Outils essentiels organisés autour de l’écriture, la construction, la connexion et la livraison de logiciels." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ Le socle de travail est TypeScript, JavaScript, Python, Node.js, React, Next.js,
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Carte technique des langages, services et données, interfaces et produit, puis livraison et opérations." width="100%" />
 
-<sub>Vous voulez la version animée ? <a href="./assets/technology-stack.gif">Ouvrir la carte GIF</a>.</sub>
+<sub>Vous voulez la version animée ? <a href="./profile/assets/motion/technology-stack.gif">Ouvrir la carte GIF</a>.</sub>
 
 <br />
 

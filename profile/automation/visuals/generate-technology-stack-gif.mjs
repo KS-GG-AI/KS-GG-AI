@@ -189,7 +189,7 @@ for (let segmentIndex = 0; segmentIndex < route.length - 1; segmentIndex += 1) {
 }
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
-const target = path.resolve(directory, "../assets/technology-stack.gif");
+const target = path.resolve(directory, "../../assets/motion/technology-stack.gif");
 await mkdir(path.dirname(target), { recursive: true });
 await writeFile(target, encodeGif(frames, width, height));
 console.log("Wrote " + target + " (" + frames.length + " frames)");

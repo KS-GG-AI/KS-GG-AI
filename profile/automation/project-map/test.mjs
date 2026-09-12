@@ -151,7 +151,7 @@ for (const { file, assetReference } of readmeEntries) {
   assert.equal((readme.match(/<details>/g) ?? []).length, 5);
   assert.equal((readme.match(/<\/details>/g) ?? []).length, 5);
   assert.equal(readme.includes('href="./' + file + '"'), false);
-  assert.ok(readme.indexOf('<img src="./assets/typing.gif"') > readme.indexOf("</div>"));
+  assert.ok(readme.indexOf('<img src="./profile/assets/motion/typing.gif"') > readme.indexOf("</div>"));
 }
 
 console.log("Project map generator tests: PASS");

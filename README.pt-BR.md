@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — interfaces claras, fluxos conectados e sistemas confiáveis." width="78%" />
-  <img src="./assets/avatar.gif" alt="Monograma animado do KS-GG-AI." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — interfaces claras, fluxos conectados e sistemas confiáveis." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="Monograma animado do KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [Abrir o repositório do perfil](https://github.com/KS-GG-AI/KS-GG-AI) · [Ver repositórios públicos](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="Digitação animada: criando coisas úteis, sistemas claros e trabalho cuidadoso." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="Digitação animada: criando coisas úteis, sistemas claros e trabalho cuidadoso." width="100%" />
 </p>
 
 ## O que construo
@@ -104,7 +104,7 @@ Mantenho as decisões legíveis e o próximo passo visível: começo pequeno, ap
 
 <br />
 
-<img src="./assets/principles.svg" alt="Três princípios: clareza primeiro, manter a curiosidade e continuar melhorando." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="Três princípios: clareza primeiro, manter a curiosidade e continuar melhorando." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@ Um conjunto focado para escrever código, criar interfaces, conectar sistemas e 
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="Ferramentas principais organizadas em torno de escrever, construir, conectar e entregar software." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="Ferramentas principais organizadas em torno de escrever, construir, conectar e entregar software." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@ O conjunto principal é TypeScript, JavaScript, Python, Node.js, React, Next.js,
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="Mapa técnico de linguagens, serviços e dados, interfaces e produto, além de entrega e operações." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Mapa técnico de linguagens, serviços e dados, interfaces e produto, além de entrega e operações." width="100%" />
 
-<sub>Quer ver a versão animada? <a href="./assets/technology-stack.gif">Abrir o mapa GIF</a>.</sub>
+<sub>Quer ver a versão animada? <a href="./profile/assets/motion/technology-stack.gif">Abrir o mapa GIF</a>.</sub>
 
 <br />
 

@@ -242,7 +242,7 @@ for (let phraseIndex = 0; phraseIndex < phrases.length; phraseIndex += 1) {
 }
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
-const target = path.resolve(directory, "../assets/typing.gif");
+const target = path.resolve(directory, "../../assets/motion/typing.gif");
 await mkdir(path.dirname(target), { recursive: true });
 await writeFile(target, encodeGif(frames));
 console.log("Wrote " + target + " (" + frames.length + " frames)");

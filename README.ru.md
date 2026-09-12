@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
-  <img src="./assets/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — понятные интерфейсы, связанные процессы и надёжные системы." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="Анимированная монограмма KS-GG-AI." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [Открыть репозиторий профиля](https://github.com/KS-GG-AI/KS-GG-AI) · [Посмотреть публичные репозитории](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="Анимация набора: полезные вещи, понятные системы и внимание к деталям." width="100%" />
 </p>
 
 ## Что я создаю
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./assets/principles.svg" alt="Три принципа: сначала ясность, сохранять любопытство и продолжать улучшать." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="Три принципа: сначала ясность, сохранять любопытство и продолжать улучшать." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="Основные инструменты, организованные вокруг написания, создания, соединения и поставки программного обеспечения." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="Техническая карта языков, сервисов и данных, интерфейсов и продукта, поставки и операций." width="100%" />
 
-<sub>Хотите версию с движением? <a href="./assets/technology-stack.gif">Открыть GIF-карту</a>.</sub>
+<sub>Хотите версию с движением? <a href="./profile/assets/motion/technology-stack.gif">Открыть GIF-карту</a>.</sub>
 
 <br />
 

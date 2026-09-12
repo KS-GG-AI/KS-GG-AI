@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
-  <img src="./assets/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — واجهات واضحة وتدفقات عمل مترابطة وأنظمة موثوقة." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="رمز KS-GG-AI المتحرك." width="20%" />
 </p>
 
 <p>
@@ -34,7 +34,7 @@
 [فتح مستودع الملف الشخصي](https://github.com/KS-GG-AI/KS-GG-AI) · [تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="كتابة متحركة: أصنع أشياء مفيدة وأنظمة واضحة وعملاً متقناً." width="100%" />
 </p>
 
 ## ما أبنيه
@@ -106,7 +106,7 @@
 
 <br />
 
-<img src="./assets/principles.svg" alt="ثلاثة مبادئ: الوضوح أولاً، والبقاء فضولياً، والاستمرار في التحسين." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="ثلاثة مبادئ: الوضوح أولاً، والبقاء فضولياً، والاستمرار في التحسين." width="100%" />
 
 </details>
 
@@ -126,7 +126,7 @@
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="أدوات أساسية مرتبة حول الكتابة والبناء والربط وتسليم البرمجيات." width="100%" />
 
 </details>
 
@@ -141,9 +141,9 @@
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="خريطة تقنية للغات والخدمات والبيانات والواجهات والمنتج والتسليم والعمليات." width="100%" />
 
-<sub>تريد النسخة المتحركة؟ <a href="./assets/technology-stack.gif">افتح خريطة GIF</a></sub>
+<sub>تريد النسخة المتحركة؟ <a href="./profile/assets/motion/technology-stack.gif">افتح خريطة GIF</a></sub>
 
 <br />
 

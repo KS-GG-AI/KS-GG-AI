@@ -1,8 +1,8 @@
 <div align="center">
 
 <p>
-  <img src="./assets/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
-  <img src="./assets/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
+  <img src="./profile/assets/identity/hero.svg" alt="KS-GG-AI — 명확한 인터페이스, 연결된 워크플로, 믿을 수 있는 시스템." width="78%" />
+  <img src="./profile/assets/identity/avatar.gif" alt="움직이는 KS-GG-AI 모노그램." width="20%" />
 </p>
 
 <p>
@@ -32,7 +32,7 @@
 [프로필 저장소 열기](https://github.com/KS-GG-AI/KS-GG-AI) · [공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories)
 
 <p align="center">
-  <img src="./assets/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
+  <img src="./profile/assets/motion/typing.gif" alt="타이핑 효과: 쓸모 있는 것, 명확한 시스템, 세심한 작업을 만듭니다." width="100%" />
 </p>
 
 ## 만드는 것
@@ -104,7 +104,7 @@
 
 <br />
 
-<img src="./assets/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
+<img src="./profile/assets/visuals/principles.svg" alt="세 가지 원칙: 명확성을 먼저, 호기심을 유지하고, 꾸준히 개선합니다." width="100%" />
 
 </details>
 
@@ -124,7 +124,7 @@
 
 <br />
 
-<img src="./assets/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
+<img src="./profile/assets/visuals/toolbox.svg" alt="작성, 구성, 연결, 배포 흐름으로 구성한 핵심 도구." width="100%" />
 
 </details>
 
@@ -139,9 +139,9 @@
 
 <br />
 
-<img src="./assets/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
+<img src="./profile/assets/visuals/technology-stack.svg" alt="언어, 서비스와 데이터, 인터페이스와 프로덕트, 배포와 운영을 보여주는 기술 지도." width="100%" />
 
-<sub>움직이는 버전이 필요하다면 <a href="./assets/technology-stack.gif">GIF 지도 보기</a>.</sub>
+<sub>움직이는 버전이 필요하다면 <a href="./profile/assets/motion/technology-stack.gif">GIF 지도 보기</a>.</sub>
 
 <br />
 

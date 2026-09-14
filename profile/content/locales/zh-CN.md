@@ -122,13 +122,13 @@
 <p><strong>项目路线图</strong></p>
 
 <picture>
-  <img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=f403fcebe8cc" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+  <img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=a7d09f789e26" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
 </picture>
 
 <p><strong>开发路线图</strong></p>
 
 <picture>
-  <img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=f403fcebe8cc" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+  <img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=a7d09f789e26" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
 </picture>
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>

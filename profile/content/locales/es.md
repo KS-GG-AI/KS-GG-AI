@@ -122,13 +122,13 @@ El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
 <picture>
-  <img src="../../assets/locales/es/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+  <img src="../../assets/locales/es/maps/project-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
 </picture>
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
 <picture>
-  <img src="../../assets/locales/es/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+  <img src="../../assets/locales/es/maps/development-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
 </picture>
 
 <sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>

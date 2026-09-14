@@ -124,13 +124,13 @@
 <p><strong>خارطة طريق المشروع</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
+  <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
 </picture>
 
 <p><strong>خارطة طريق التطوير</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=f403fcebe8cc" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
+  <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
 </picture>
 
 <sub>يستخدم مسائل GitHub العامة فقط. أضف تسمية <code>roadmap:*</code> وتسمية <code>stage:*</code> إلى مسألة عامة لإظهارها.</sub>

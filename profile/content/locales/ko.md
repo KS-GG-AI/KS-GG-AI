@@ -122,13 +122,13 @@
 <p><strong>프로젝트 로드맵</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=f403fcebe8cc" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+  <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=a7d09f789e26" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
 </picture>
 
 <p><strong>개발 로드맵</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=f403fcebe8cc" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+  <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=a7d09f789e26" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
 </picture>
 
 <sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>

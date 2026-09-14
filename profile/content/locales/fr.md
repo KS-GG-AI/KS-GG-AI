@@ -122,13 +122,13 @@ Le travail public reste facile à explorer ; le travail privé est volontairemen
 <p><strong>Feuille de route du projet</strong></p>
 
 <picture>
-  <img src="../../assets/locales/fr/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
+  <img src="../../assets/locales/fr/maps/project-roadmap.svg?v=a7d09f789e26" alt="Feuille de route publique du projet répartie entre maintenant, ensuite et plus tard." width="480" />
 </picture>
 
 <p><strong>Feuille de route de développement</strong></p>
 
 <picture>
-  <img src="../../assets/locales/fr/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
+  <img src="../../assets/locales/fr/maps/development-roadmap.svg?v=a7d09f789e26" alt="Feuille de route publique de développement répartie entre planifier, construire, vérifier et publier." width="480" />
 </picture>
 
 <sub>Utilise uniquement des issues GitHub publiques. Ajoutez un label <code>roadmap:*</code> et un label <code>stage:*</code> à une issue publique pour l'afficher.</sub>

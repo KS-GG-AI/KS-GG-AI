@@ -122,13 +122,13 @@ Public work stays easy to browse; private work stays intentionally masked. The o
 <p><strong>Project roadmap</strong></p>
 
 <picture>
-  <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Public project roadmap split into now, next, and later lanes." width="480" />
+  <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=a7d09f789e26" alt="Public project roadmap split into now, next, and later lanes." width="480" />
 </picture>
 
 <p><strong>Development roadmap</strong></p>
 
 <picture>
-  <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
+  <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=a7d09f789e26" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
 </picture>
 
 <sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear.</sub>

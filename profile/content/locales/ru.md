@@ -122,13 +122,13 @@
 <p><strong>Дорожная карта проекта</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=f403fcebe8cc" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
+  <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
 </picture>
 
 <p><strong>Дорожная карта разработки</strong></p>
 
 <picture>
-  <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=f403fcebe8cc" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
+  <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
 </picture>
 
 <sub>Используются только публичные GitHub Issues. Добавьте к публичному issue одну метку <code>roadmap:*</code> и одну <code>stage:*</code>, чтобы он появился здесь.</sub>

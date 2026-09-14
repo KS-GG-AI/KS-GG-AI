@@ -98,7 +98,7 @@
 
 ## 项目
 
-公开作品保持易于浏览，私有工作则有意隐藏。下面的地图只根据公开仓库和公开 Issue 更新。
+公开作品保持易于浏览，私有工作则有意隐藏。组织地图中的私有仓库仅以遮蔽标签显示，路线图只根据公开 Issue 更新。
 
 [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@
 
 <br />
 
-<p><strong>项目地图</strong></p>
+<p><strong>组织地图</strong></p>
 
-<picture>
-  <img src="../../assets/locales/zh-CN/maps/project-map.svg?v=c237e445bed5" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的项目地图。" width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的组织地图。" width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>仅使用公开元数据。私有名称和元数据不会显示。</sub>
+<sub>私有仓库仅以遮蔽标签的形式显示。</sub>
 
 <p><strong>项目路线图</strong></p>
 

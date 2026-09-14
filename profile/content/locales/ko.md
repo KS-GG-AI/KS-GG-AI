@@ -98,7 +98,7 @@
 
 ## 프로젝트
 
-공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 아래 지도는 공개 저장소와 공개 이슈만 바탕으로 갱신됩니다.
+공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 조직 지도에서 비공개 저장소는 마스킹한 라벨로만 보이고, 로드맵은 공개 이슈만 바탕으로 갱신됩니다.
 
 [공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories) · [공개 추적 이슈 보기](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@
 
 <br />
 
-<p><strong>프로젝트 지도</strong></p>
+<p><strong>조직 지도</strong></p>
 
-<picture>
-  <img src="../../assets/locales/ko/maps/project-map.svg?v=c237e445bed5" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 프로젝트 지도." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 조직 지도." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>공개 메타데이터만 사용합니다. 비공개 이름과 메타데이터는 표시하지 않습니다.</sub>
+<sub>비공개 저장소는 마스킹한 라벨로만 표시됩니다.</sub>
 
 <p><strong>프로젝트 로드맵</strong></p>
 

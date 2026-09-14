@@ -210,16 +210,15 @@ for (const entry of readmeEntries) {
 }
 
 const roadmapWorkflow = await readFile(path.join(root, ".github", "workflows", "refresh-roadmaps.yml"), "utf8");
-const projectMapWorkflow = await readFile(path.join(root, ".github", "workflows", "refresh-project-map.yml"), "utf8");
-assert.match(roadmapWorkflow, /contents: write\s+issues: read/);
+assert.match(roadmapWorkflow, /^permissions:\s+contents: read$/m);
+assert.match(roadmapWorkflow, /generate:[\s\S]*?permissions:\s+contents: read\s+issues: read[\s\S]*?persist-credentials: false/);
+assert.match(roadmapWorkflow, /commit:[\s\S]*?permissions:\s+contents: write/);
+assert.doesNotMatch(roadmapWorkflow.slice(roadmapWorkflow.indexOf("\n  commit:")), /secrets\./, "The commit job must not receive secrets.");
 assert.match(roadmapWorkflow, /group: profile-readme-assets/);
 assert.match(roadmapWorkflow, /npm ci --prefix profile\/automation\/roadmaps --ignore-scripts/);
 assert.match(roadmapWorkflow, /profile\/assets\/locales/);
-assert.match(roadmapWorkflow, /profile\/content\/locales\/ko\.md/);
+assert.match(roadmapWorkflow, /profile\/content\/locales/);
 assert.match(roadmapWorkflow, /actions\/checkout@[a-f0-9]{40}/);
 assert.match(roadmapWorkflow, /actions\/setup-node@[a-f0-9]{40}/);
-assert.match(projectMapWorkflow, /group: profile-readme-assets/);
-assert.match(projectMapWorkflow, /profile\/content\/locales\/ko\.md/);
-assert.match(projectMapWorkflow, /profile\/assets\/locales/);
 
 console.log("Roadmap generator checks passed.");

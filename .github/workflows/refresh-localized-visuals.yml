@@ -7,24 +7,30 @@ on:
       - "profile/automation/visuals/**"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: profile-readme-assets
   cancel-in-progress: false
 
 jobs:
-  refresh:
-    runs-on: ubuntu-latest
+  # Renders the localized visuals with third-party image code, so it never
+  # holds a credential that can push.
+  generate:
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
+    permissions:
+      contents: read
     steps:
       - name: Check out profile repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: "24"
 
       - name: Install locale font coverage
         run: |
@@ -40,14 +46,46 @@ jobs:
       - name: Test localized visual assets
         run: npm run --prefix profile/automation/visuals visuals:test
 
+      - name: Upload localized visual assets
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: localized-visuals
+          retention-days: 1
+          path: |
+            profile/assets/locales
+            profile/assets/identity/hero.svg
+            profile/assets/visuals/toolbox.svg
+            profile/assets/visuals/technology-stack.svg
+            profile/assets/motion/typing.gif
+            profile/assets/motion/technology-stack.gif
+
+  # Commits what the generate job produced. Holds push access but runs no
+  # dependency code.
+  commit:
+    needs: generate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download localized visual assets
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: localized-visuals
+          path: profile/assets
+
       - name: Commit localized visual assets
         run: |
-          if git diff --quiet -- profile/assets/locales profile/assets/identity/hero.svg profile/assets/visuals/toolbox.svg profile/assets/visuals/technology-stack.svg profile/assets/motion/typing.gif profile/assets/motion/technology-stack.gif; then
+          paths="profile/assets/locales profile/assets/identity/hero.svg profile/assets/visuals/toolbox.svg profile/assets/visuals/technology-stack.svg profile/assets/motion/typing.gif profile/assets/motion/technology-stack.gif"
+          if [ -z "$(git status --porcelain -- $paths)" ]; then
             echo "Localized visual assets are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/assets/locales profile/assets/identity/hero.svg profile/assets/visuals/toolbox.svg profile/assets/visuals/technology-stack.svg profile/assets/motion/typing.gif profile/assets/motion/technology-stack.gif
+          git add -- $paths
           git commit -m "chore: refresh localized visual assets"
           git push

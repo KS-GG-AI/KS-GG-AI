@@ -1,3 +1,4 @@
 **/node_modules/
 .build/
 profile/automation/roadmaps/dist/
+profile/automation/visuals/dist/

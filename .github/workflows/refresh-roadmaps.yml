@@ -8,25 +8,31 @@ on:
     types: [opened, edited, closed, reopened, labeled, unlabeled, milestoned, demilestoned]
 
 permissions:
-  contents: write
-  issues: read
+  contents: read
 
 concurrency:
   group: profile-readme-assets
   cancel-in-progress: false
 
 jobs:
-  refresh:
-    runs-on: ubuntu-latest
+  # Reads public issues and renders the roadmaps. Runs dependency code, so it
+  # never holds a credential that can push.
+  generate:
+    runs-on: ubuntu-24.04
     timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: read
     steps:
       - name: Check out profile repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Set up Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: "24"
 
       - name: Install roadmap tooling
         run: npm ci --prefix profile/automation/roadmaps --ignore-scripts
@@ -39,14 +45,45 @@ jobs:
       - name: Test roadmap generator
         run: npm run --prefix profile/automation/roadmaps roadmaps:test
 
+      - name: Upload refreshed roadmaps
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: roadmaps
+          retention-days: 1
+          path: |
+            README.md
+            profile/assets/maps/project-roadmap.svg
+            profile/assets/maps/development-roadmap.svg
+            profile/assets/locales/*/maps/*-roadmap.svg
+            profile/data/roadmap-state.json
+            profile/content/locales/*.md
+
+  # Commits what the generate job produced. Holds push access but no secrets
+  # and runs no dependency code.
+  commit:
+    needs: generate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download refreshed roadmaps
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: roadmaps
+
       - name: Commit refreshed roadmaps
         run: |
-          if git diff --quiet -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/assets/locales profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md; then
+          paths="README.md profile/assets/maps profile/assets/locales profile/data/roadmap-state.json profile/content/locales"
+          if [ -z "$(git status --porcelain -- $paths)" ]; then
             echo "Public roadmaps are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- profile/assets/maps/project-roadmap.svg profile/assets/maps/development-roadmap.svg profile/assets/locales profile/data/roadmap-state.json README.md profile/content/locales/ko.md profile/content/locales/zh-CN.md profile/content/locales/es.md profile/content/locales/hi.md profile/content/locales/ar.md profile/content/locales/pt-BR.md profile/content/locales/ru.md profile/content/locales/fr.md profile/content/locales/id.md
+          git add -- $paths
           git commit -m "chore: refresh public roadmaps"
           git push

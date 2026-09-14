@@ -98,7 +98,7 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 
 ## Proyek
 
-Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Peta berikut diperbarui hanya dari repositori dan issue publik.
+Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pada peta organisasi, repositori privat hanya tampil sebagai label yang disamarkan, dan roadmap diperbarui hanya dari issue publik.
 
 [Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@ Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pet
 
 <br />
 
-<p><strong>Peta proyek</strong></p>
+<p><strong>Peta organisasi</strong></p>
 
-<picture>
-  <img src="../../assets/locales/id/maps/project-map.svg?v=c237e445bed5" alt="Peta proyek yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Peta organisasi yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>Hanya metadata publik. Nama dan metadata privat tidak pernah ditampilkan.</sub>
+<sub>Repositori privat hanya ditampilkan sebagai label yang disamarkan.</sub>
 
 <p><strong>Peta jalan proyek</strong></p>
 

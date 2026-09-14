@@ -98,7 +98,7 @@ A practical working set, grouped by the job it helps with rather than treated as
 
 ## Projects
 
-Public work stays easy to browse; private work stays intentionally masked. The maps below refresh from public repository and issue data only.
+Public work stays easy to browse; private work stays intentionally masked. The organization map shows private repositories only as masked labels, and the roadmaps refresh from public issue data only.
 
 [Browse public repositories](https://github.com/KS-GG-AI?tab=repositories) · [Browse public tracked issues](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@ Public work stays easy to browse; private work stays intentionally masked. The m
 
 <br />
 
-<p><strong>Project map</strong></p>
+<p><strong>Organization map</strong></p>
 
-<picture>
-  <img src="./profile/assets/locales/en/maps/project-map.svg?v=c237e445bed5" alt="Project map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Organization map showing the KS-GG-AI workspace, public projects, and intentionally masked private work." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>Public metadata only. Private names and metadata are never shown.</sub>
+<sub>Private repositories appear only as masked labels.</sub>
 
 <p><strong>Project roadmap</strong></p>
 

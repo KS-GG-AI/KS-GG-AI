@@ -2,24 +2,23 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { localeAssetReference, visualLocales } from "./locale-catalog.mjs";
+import { localeAssetReference, visualLocales } from "./locale-catalog.js";
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
-const documents = new Map([
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../..");
+const documents = new Map<string, string>([
   ["en", "README.md"],
-  ...visualLocales.filter(({ code }) => code !== "en").map(({ code }) => [code, "profile/content/locales/" + code + ".md"]),
+  ...visualLocales.filter(({ code }) => code !== "en").map(({ code }): [string, string] => [code, "profile/content/locales/" + code + ".md"]),
 ]);
-const assets = [
+const assets: Array<[string, string]> = [
   ["identity", "hero.svg"],
   ["motion", "typing.gif"],
   ["visuals", "toolbox.svg"],
   ["visuals", "technology-stack.svg"],
   ["motion", "technology-stack.gif"],
-  ["maps", "project-map.svg"],
   ["maps", "project-roadmap.svg"],
   ["maps", "development-roadmap.svg"],
 ];
-const compactAssets = [
+const compactAssets: Array<[string, string, string]> = [
   ["identity", "hero.svg", "hero-compact.svg"],
   ["visuals", "toolbox.svg", "toolbox-compact.svg"],
   ["visuals", "technology-stack.svg", "technology-stack-compact.svg"],
@@ -27,7 +26,7 @@ const compactAssets = [
 ];
 const compactAssetKeys = new Set(compactAssets.map(([section, file]) => section + "/" + file));
 
-function gifFrameCount(data) {
+function gifFrameCount(data: Buffer): number {
   let frames = 0;
   for (let index = 0; index < data.length - 2; index += 1) {
     if (data[index] === 0x21 && data[index + 1] === 0xf9 && data[index + 2] === 0x04) frames += 1;
@@ -35,11 +34,11 @@ function gifFrameCount(data) {
   return frames;
 }
 
-function escapeRegularExpression(value) {
+function escapeRegularExpression(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function assertNonInteractivePicture(markdown, source, document) {
+function assertNonInteractivePicture(markdown: string, source: string, document: string): void {
   const escapedSource = escapeRegularExpression(source) + '(?:\\?[^"\\s]*)?';
   const picture = new RegExp(
     '<picture>\\s*(?:<source\\s+[^>]*\\/?>\\s*)*<img\\s+[^>]*src="' + escapedSource + '"[^>]*\\/?>\\s*<\\/picture>',
@@ -53,7 +52,7 @@ function assertNonInteractivePicture(markdown, source, document) {
   assert.doesNotMatch(markdown, linkedPicture, document + " must not link " + source + " to an asset page.");
 }
 
-function assertCompactPicture(markdown, source, compactSource, document) {
+function assertCompactPicture(markdown: string, source: string, compactSource: string, document: string): void {
   const escapedSource = escapeRegularExpression(source) + '(?:\\?[^"\\s]*)?';
   const escapedCompactSource = escapeRegularExpression(compactSource);
   const picture = new RegExp(

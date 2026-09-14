@@ -98,7 +98,7 @@ Um conjunto prático, agrupado pelo trabalho que ajuda a resolver e não como um
 
 ## Projetos
 
-O trabalho público permanece fácil de explorar; o trabalho privado fica intencionalmente oculto. Os mapas abaixo são atualizados apenas a partir de repositórios e issues públicos.
+O trabalho público permanece fácil de explorar; o trabalho privado fica intencionalmente oculto. No mapa da organização, os repositórios privados aparecem apenas como rótulos mascarados, e os roadmaps são atualizados apenas a partir de issues públicos.
 
 [Ver repositórios públicos](https://github.com/KS-GG-AI?tab=repositories) · [Ver issues públicos acompanhados](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@ O trabalho público permanece fácil de explorar; o trabalho privado fica intenc
 
 <br />
 
-<p><strong>Mapa de projetos</strong></p>
+<p><strong>Mapa da organização</strong></p>
 
-<picture>
-  <img src="../../assets/locales/pt-BR/maps/project-map.svg?v=c237e445bed5" alt="Mapa de projetos que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Mapa da organização que mostra o espaço de trabalho KS-GG-AI, projetos públicos e trabalho privado intencionalmente mascarado." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>Somente metadados públicos. Nomes e metadados privados nunca são exibidos.</sub>
+<sub>Os repositórios privados aparecem apenas como rótulos mascarados.</sub>
 
 <p><strong>Roteiro do projeto</strong></p>
 

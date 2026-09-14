@@ -3,11 +3,40 @@ import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import sharp from "sharp";
 import gifenc from "gifenc";
-import { getVisualLocale, visualLocales } from "./locale-catalog.mjs";
+import { getVisualLocale, visualLocales, type LabeledGroup, type VisualLocale } from "./locale-catalog.js";
 
 const { GIFEncoder, applyPalette, quantize } = gifenc;
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../..");
+interface Accent {
+  border: string;
+  fill: string;
+  ink: string;
+  soft: string;
+}
+
+interface TextOptions {
+  x: number;
+  y: number;
+  fill?: string;
+  size?: number;
+  weight?: number;
+  anchor?: string;
+  family: string;
+  letterSpacing?: string;
+  direction?: string;
+}
+
+interface Position {
+  x: number;
+  y: number;
+}
+
+interface AnimationFrames {
+  frames: string[];
+  delays: number[];
+}
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../..");
 const commonTools = [
   ["TypeScript", "JavaScript", "Python"],
   ["Node.js", "React", "Next.js"],
@@ -20,7 +49,7 @@ const stackTools = [
   ["Node.js", "Express", "FastAPI", "Flask", "Django", "GraphQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma", "MCP"],
   ["Docker", "Kubernetes", "AWS", "Google Cloud", "Azure", "Cloudflare", "Nginx", "Linux", "GitHub Actions", "Terraform", "Git", "GitLab"],
 ];
-const accents = [
+const accents: Accent[] = [
   { border: "#A78BFA", fill: "#151222", ink: "#C4B5FD", soft: "#928BAA" },
   { border: "#67E8F9", fill: "#101B22", ink: "#A5F3FC", soft: "#83A2AC" },
   { border: "#F9A8D4", fill: "#151320", ink: "#FBCFE8", soft: "#A694AF" },
@@ -34,31 +63,39 @@ const compactStackTools = [
 ];
 const compactStackWidth = 640;
 const compactStackHeight = 786;
+const xmlEntities: Record<string, string> = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  '"': "&quot;",
+  "'": "&apos;",
+};
 
-function escapeXml(value) {
-  return String(value).replace(/[&<>"']/g, (character) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&apos;",
-  })[character]);
+function escapeXml(value: unknown): string {
+  return String(value).replace(/[&<>"']/g, (character) => xmlEntities[character]);
 }
 
-function text(value, { x, y, fill = "#F5F3FF", size = 14, weight = 400, anchor = "start", family, letterSpacing, direction = "ltr" }) {
+function text(value: string, { x, y, fill = "#F5F3FF", size = 14, weight = 400, anchor = "start", family, letterSpacing, direction = "ltr" }: TextOptions): string {
   const spacing = letterSpacing === undefined ? "" : ' letter-spacing="' + letterSpacing + '"';
   return '<text x="' + x + '" y="' + y + '" fill="' + fill + '" font-family="' + escapeXml(family) + '" font-size="' + size + '" font-weight="' + weight + '" text-anchor="' + anchor + '" direction="' + direction + '" unicode-bidi="plaintext"' + spacing + ">" + escapeXml(value) + "</text>";
 }
 
-function compactSize(value, standard, minimum) {
+function compactSize(value: string, standard: number, minimum: number): number {
   return Math.max(minimum, standard - Math.max(0, Array.from(value).length - 18) * 0.45);
 }
 
-function typography(locale) {
+function typography(locale: VisualLocale): { family: string; direction: string; rtl: boolean } {
   return { family: locale.fontFamily, direction: locale.direction, rtl: locale.direction === "rtl" };
 }
 
-function frameSvg({ width, height, title, description, direction = "ltr", markup }) {
+function frameSvg({ width, height, title, description, direction = "ltr", markup }: {
+  width: number;
+  height: number;
+  title: string;
+  description: string;
+  direction?: string;
+  markup: string;
+}): string {
   return [
     '<svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" viewBox="0 0 ' + width + " " + height + '" fill="none" role="img" aria-labelledby="title desc" direction="' + direction + '">',
     '<title id="title">' + escapeXml(title) + "</title>",
@@ -68,7 +105,7 @@ function frameSvg({ width, height, title, description, direction = "ltr", markup
   ].join("\n");
 }
 
-export function renderHeroSvg(localeCode) {
+export function renderHeroSvg(localeCode: string): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const titleX = rtl ? 1128 : 72;
@@ -98,7 +135,7 @@ export function renderHeroSvg(localeCode) {
   });
 }
 
-export function renderCompactHeroSvg(localeCode) {
+export function renderCompactHeroSvg(localeCode: string): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const titleX = rtl ? 592 : 48;
@@ -124,7 +161,7 @@ export function renderCompactHeroSvg(localeCode) {
   });
 }
 
-function toolboxCard(locale, group, tools, x, index) {
+function toolboxCard(locale: VisualLocale, group: LabeledGroup, tools: string[], x: number, index: number): string {
   const { family, direction, rtl } = typography(locale);
   const cardWidth = index === 3 ? 232 : 212;
   const accent = accents[index];
@@ -144,7 +181,7 @@ function toolboxCard(locale, group, tools, x, index) {
   ].join("\n");
 }
 
-export function renderToolboxSvg(localeCode) {
+export function renderToolboxSvg(localeCode: string): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const positions = rtl ? [720, 476, 252, 28] : [28, 252, 476, 700];
@@ -172,7 +209,7 @@ export function renderToolboxSvg(localeCode) {
   });
 }
 
-function compactToolboxCard(locale, group, tools, y, index) {
+function compactToolboxCard(locale: VisualLocale, group: LabeledGroup, tools: string[], y: number, index: number): string {
   const { family, direction, rtl } = typography(locale);
   const accent = accents[index];
   const x = 28;
@@ -190,7 +227,7 @@ function compactToolboxCard(locale, group, tools, y, index) {
   ].join("\n");
 }
 
-export function renderCompactToolboxSvg(localeCode) {
+export function renderCompactToolboxSvg(localeCode: string): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const headerX = rtl ? 612 : 28;
@@ -215,8 +252,8 @@ export function renderCompactToolboxSvg(localeCode) {
   });
 }
 
-function chipRows(chips, x, y, width, accent) {
-  const rows = [];
+function chipRows(chips: string[], x: number, y: number, width: number, accent: Accent): string {
+  const rows: string[] = [];
   let cursorX = x;
   let cursorY = y;
   for (const chip of chips) {
@@ -232,7 +269,7 @@ function chipRows(chips, x, y, width, accent) {
   return rows.join("\n");
 }
 
-function stackCard(locale, group, index, position, activeIndex) {
+function stackCard(locale: VisualLocale, group: LabeledGroup, index: number, position: Position, activeIndex: number | null): string {
   const { family, direction, rtl } = typography(locale);
   const accent = accents[index];
   const active = activeIndex === index;
@@ -253,10 +290,10 @@ function stackCard(locale, group, index, position, activeIndex) {
   ].join("\n");
 }
 
-export function renderTechnologyStackSvg(localeCode, activeIndex = null, motionStep = 0) {
+export function renderTechnologyStackSvg(localeCode: string, activeIndex: number | null = null, motionStep = 0): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
-  const positions = rtl
+  const positions: Position[] = rtl
     ? [{ x: 492, y: 98 }, { x: 28, y: 98 }, { x: 492, y: 304 }, { x: 28, y: 304 }]
     : [{ x: 28, y: 98 }, { x: 492, y: 98 }, { x: 28, y: 304 }, { x: 492, y: 304 }];
   const headerX = rtl ? 928 : 32;
@@ -282,8 +319,8 @@ export function renderTechnologyStackSvg(localeCode, activeIndex = null, motionS
   });
 }
 
-function compactChipRows(chips, x, y, width, accent) {
-  const rows = [];
+function compactChipRows(chips: string[], x: number, y: number, width: number, accent: Accent): string {
+  const rows: string[] = [];
   let cursorX = x;
   let cursorY = y;
   for (const chip of chips) {
@@ -299,7 +336,7 @@ function compactChipRows(chips, x, y, width, accent) {
   return rows.join("\n");
 }
 
-function compactStackCard(locale, group, index, y, activeIndex) {
+function compactStackCard(locale: VisualLocale, group: LabeledGroup, index: number, y: number, activeIndex: number | null): string {
   const { family, direction, rtl } = typography(locale);
   const accent = accents[index];
   const active = activeIndex === index;
@@ -315,7 +352,7 @@ function compactStackCard(locale, group, index, y, activeIndex) {
   ].join("\n");
 }
 
-export function renderCompactTechnologyStackSvg(localeCode, activeIndex = null, motionStep = 0) {
+export function renderCompactTechnologyStackSvg(localeCode: string, activeIndex: number | null = null, motionStep = 0): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const headerX = rtl ? 612 : 28;
@@ -340,12 +377,12 @@ export function renderCompactTechnologyStackSvg(localeCode, activeIndex = null, 
   });
 }
 
-export function renderTypingSvg(localeCode, phrase, caretVisible) {
+export function renderTypingSvg(localeCode: string, phrase: string, caretVisible: boolean): string {
   const locale = getVisualLocale(localeCode);
   const { family, direction, rtl } = typography(locale);
   const width = 800;
   const height = 144;
-  const prompt = rtl ? locale.typing.prefix + phrase : locale.typing.prefix + phrase;
+  const prompt = locale.typing.prefix + phrase;
   const promptSize = locale.code === "ar" || locale.code === "hi" ? 21 : 25;
   const lineStart = rtl ? 744 : 56;
   const anchor = "start";
@@ -372,12 +409,12 @@ export function renderTypingSvg(localeCode, phrase, caretVisible) {
   });
 }
 
-async function writeIfChanged(file, value) {
-  let existing = null;
+async function writeIfChanged(file: string, value: string | Buffer): Promise<void> {
+  let existing: Buffer | null = null;
   try {
     existing = await readFile(file);
   } catch (error) {
-    if (!error || typeof error !== "object" || error.code !== "ENOENT") throw error;
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
   }
   const output = Buffer.isBuffer(value) ? value : Buffer.from(value, "utf8");
   if (!existing || !existing.equals(output)) {
@@ -386,8 +423,8 @@ async function writeIfChanged(file, value) {
   }
 }
 
-async function encodeGif(frameMarkup, width, height, delays) {
-  const rasterFrames = [];
+async function encodeGif(frameMarkup: string[], width: number, height: number, delays: number[]): Promise<Buffer> {
+  const rasterFrames: Buffer[] = [];
   for (const svg of frameMarkup) {
     const { data, info } = await sharp(Buffer.from(svg)).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
     if (info.width !== width || info.height !== height) throw new Error("Unexpected GIF frame dimensions.");
@@ -406,9 +443,9 @@ async function encodeGif(frameMarkup, width, height, delays) {
   return Buffer.from(gif.bytes());
 }
 
-function typingFrames(locale) {
-  const frames = [];
-  const delays = [];
+function typingFrames(locale: VisualLocale): AnimationFrames {
+  const frames: string[] = [];
+  const delays: number[] = [];
   for (const phrase of locale.typing.phrases) {
     const characters = Array.from(phrase);
     for (let index = 1; index <= characters.length; index += 1) {
@@ -427,60 +464,42 @@ function typingFrames(locale) {
   return { frames, delays };
 }
 
-function stackFrames(locale) {
-  const frames = [];
-  const delays = [];
+function stackFrames(locale: VisualLocale, render: typeof renderTechnologyStackSvg): AnimationFrames {
+  const frames: string[] = [];
+  const delays: number[] = [];
   for (let activeIndex = 0; activeIndex < 4; activeIndex += 1) {
     for (let step = 0; step < 5; step += 1) {
-      frames.push(renderTechnologyStackSvg(locale.code, activeIndex, activeIndex * 5 + step));
+      frames.push(render(locale.code, activeIndex, activeIndex * 5 + step));
       delays.push(step === 4 ? 240 : 92);
     }
   }
   return { frames, delays };
 }
 
-function compactStackFrames(locale) {
-  const frames = [];
-  const delays = [];
-  for (let activeIndex = 0; activeIndex < 4; activeIndex += 1) {
-    for (let step = 0; step < 5; step += 1) {
-      frames.push(renderCompactTechnologyStackSvg(locale.code, activeIndex, activeIndex * 5 + step));
-      delays.push(step === 4 ? 240 : 92);
-    }
-  }
-  return { frames, delays };
-}
-
-function localizedTarget(locale, section, file) {
+function localizedTarget(locale: VisualLocale, section: string, file: string): string {
   return path.join(root, "profile", "assets", "locales", locale.code, section, file);
 }
 
-async function writeLocaleAssets(locale) {
-  const hero = renderHeroSvg(locale.code);
-  const compactHero = renderCompactHeroSvg(locale.code);
-  const toolbox = renderToolboxSvg(locale.code);
-  const compactToolbox = renderCompactToolboxSvg(locale.code);
-  const stack = renderTechnologyStackSvg(locale.code);
-  const compactStack = renderCompactTechnologyStackSvg(locale.code);
+async function writeLocaleAssets(locale: VisualLocale): Promise<void> {
   const typing = typingFrames(locale);
-  const animatedStack = stackFrames(locale);
-  const animatedCompactStack = compactStackFrames(locale);
+  const animatedStack = stackFrames(locale, renderTechnologyStackSvg);
+  const animatedCompactStack = stackFrames(locale, renderCompactTechnologyStackSvg);
   await Promise.all([
-    writeIfChanged(localizedTarget(locale, "identity", "hero.svg"), hero),
-    writeIfChanged(localizedTarget(locale, "identity", "hero-compact.svg"), compactHero),
-    writeIfChanged(localizedTarget(locale, "visuals", "toolbox.svg"), toolbox),
-    writeIfChanged(localizedTarget(locale, "visuals", "toolbox-compact.svg"), compactToolbox),
-    writeIfChanged(localizedTarget(locale, "visuals", "technology-stack.svg"), stack),
-    writeIfChanged(localizedTarget(locale, "visuals", "technology-stack-compact.svg"), compactStack),
+    writeIfChanged(localizedTarget(locale, "identity", "hero.svg"), renderHeroSvg(locale.code)),
+    writeIfChanged(localizedTarget(locale, "identity", "hero-compact.svg"), renderCompactHeroSvg(locale.code)),
+    writeIfChanged(localizedTarget(locale, "visuals", "toolbox.svg"), renderToolboxSvg(locale.code)),
+    writeIfChanged(localizedTarget(locale, "visuals", "toolbox-compact.svg"), renderCompactToolboxSvg(locale.code)),
+    writeIfChanged(localizedTarget(locale, "visuals", "technology-stack.svg"), renderTechnologyStackSvg(locale.code)),
+    writeIfChanged(localizedTarget(locale, "visuals", "technology-stack-compact.svg"), renderCompactTechnologyStackSvg(locale.code)),
     encodeGif(typing.frames, 800, 144, typing.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "typing.gif"), value)),
     encodeGif(animatedStack.frames, 960, 532, animatedStack.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "technology-stack.gif"), value)),
     encodeGif(animatedCompactStack.frames, compactStackWidth, compactStackHeight, animatedCompactStack.delays).then((value) => writeIfChanged(localizedTarget(locale, "motion", "technology-stack-compact.gif"), value)),
   ]);
 }
 
-async function writeEnglishCompatibilityAssets() {
+async function writeEnglishCompatibilityAssets(): Promise<void> {
   const english = getVisualLocale("en");
-  const copy = async (section, file, destination) => writeIfChanged(
+  const copy = async (section: string, file: string, destination: string): Promise<void> => writeIfChanged(
     path.join(root, "profile", "assets", section, destination),
     await readFile(localizedTarget(english, section, file)),
   );
@@ -493,7 +512,7 @@ async function writeEnglishCompatibilityAssets() {
   ]);
 }
 
-export async function generateLocalizedVisualAssets() {
+export async function generateLocalizedVisualAssets(): Promise<{ locales: string[] }> {
   for (const locale of visualLocales) await writeLocaleAssets(locale);
   await writeEnglishCompatibilityAssets();
   return { locales: visualLocales.map(({ code }) => code) };

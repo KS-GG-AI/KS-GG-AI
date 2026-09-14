@@ -3,11 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "visuals:update": "node generate-localized-assets.mjs",
-    "visuals:test": "node test-localized-assets.mjs"
+    "visuals:build": "tsc --project tsconfig.json",
+    "visuals:update": "npm run visuals:build && node dist/generate-localized-assets.js",
+    "visuals:test": "npm run visuals:build && node dist/test-localized-assets.js"
   },
   "devDependencies": {
+    "@types/node": "22.20.2",
     "gifenc": "1.0.3",
-    "sharp": "0.35.4"
+    "sharp": "0.35.4",
+    "typescript": "7.0.2"
   }
 }

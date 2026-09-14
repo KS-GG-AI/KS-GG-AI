@@ -98,7 +98,7 @@ Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt q
 
 ## Projets
 
-Le travail public reste facile à explorer ; le travail privé est volontairement masqué. Les cartes ci-dessous sont mises à jour uniquement à partir de dépôts et d'issues publics.
+Le travail public reste facile à explorer ; le travail privé est volontairement masqué. Sur la carte de l'organisation, les dépôts privés n'apparaissent que sous forme d'étiquettes masquées, et les feuilles de route sont mises à jour uniquement à partir d'issues publiques.
 
 [Voir les dépôts publics](https://github.com/KS-GG-AI?tab=repositories) · [Parcourir les issues publiques suivies](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -107,13 +107,17 @@ Le travail public reste facile à explorer ; le travail privé est volontairemen
 
 <br />
 
-<p><strong>Carte des projets</strong></p>
+<p><strong>Carte de l'organisation</strong></p>
 
-<picture>
-  <img src="../../assets/locales/fr/maps/project-map.svg?v=c237e445bed5" alt="Carte des projets montrant l’espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Carte de l'organisation montrant l'espace de travail KS-GG-AI, les projets publics et le travail privé volontairement masqué." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>Uniquement des métadonnées publiques. Les noms et métadonnées privés ne sont jamais affichés.</sub>
+<sub>Les dépôts privés n'apparaissent que sous forme d'étiquettes masquées.</sub>
 
 <p><strong>Feuille de route du projet</strong></p>
 

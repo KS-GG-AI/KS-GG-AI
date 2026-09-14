@@ -100,7 +100,7 @@
 
 ## المشاريع
 
-يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. تتحدث الخرائط التالية من بيانات المستودعات والمسائل العلنية فقط.
+يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. في خريطة المؤسسة تظهر المستودعات الخاصة كتسميات مخفية فقط، وتتحدث خرائط الطريق من بيانات المسائل العلنية فقط.
 
 [تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 
@@ -109,13 +109,17 @@
 
 <br />
 
-<p><strong>خريطة المشاريع</strong></p>
+<p><strong>خريطة المؤسسة</strong></p>
 
-<picture>
-  <img src="../../assets/locales/ar/maps/project-map.svg?v=c237e445bed5" alt="خريطة مشاريع تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
-</picture>
+<p>
+  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+    <picture>
+      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="خريطة مؤسسة تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+    </picture>
+  </a>
+</p>
 
-<sub>بيانات وصفية علنية فقط. لا تظهر الأسماء والبيانات الوصفية الخاصة مطلقاً.</sub>
+<sub>تظهر المستودعات الخاصة فقط كتسميات مخفية.</sub>
 
 <p><strong>خارطة طريق المشروع</strong></p>
 

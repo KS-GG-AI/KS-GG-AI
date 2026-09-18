@@ -28,6 +28,13 @@
   <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
+  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+</p>
+
 </div>
 
 <div dir="rtl">
@@ -101,6 +108,43 @@
 ## المشاريع
 
 يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. في خريطة المؤسسة تظهر المستودعات الخاصة كتسميات مخفية فقط، وتتحدث خرائط الطريق من بيانات المسائل العلنية فقط.
+
+### الأنظمة والحلول المميزة
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>بيئة تشغيل AdGuard Home عالية الأداء ومحصنة للإنتاج مع تبديل ZRAM المضغوط، وTCP BBR، وHTTP/2 وHTTP/3 (QUIC/DoQ)، وعزل مستقل متعدد العقد.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
+        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
+      </p>
+      <ul>
+        <li><strong>⚡ ضبط الأداء</strong>: ذاكرة تبديل ZRAM (zstd) بسعة 1 جيجابايت (swappiness 180, page-cluster 0) + مخازن مؤقتة لـ UDP بسعة 7.5 ميجابايت</li>
+        <li><strong>🔒 بروتوكولات متطورة</strong>: واجهة مستخدم ويب عبر HTTP/2 على المنفذ 443 + بروتوكولات DNS-over-QUIC (DoQ) وDoT على المنفذ 853 مع شهادة SAN لمدة 20 عاماً</li>
+        <li><strong>🏛️ عزل بدون توقف</strong>: تشغيل مستقل Zero-SPOF بدون تبعيات مع تحويل فشل DNS فوري خلال ثانية واحدة</li>
+        <li><strong>🌐 توجيه ذكي</strong>: دمج بروكسي ByeDPI SOCKS5 وخادم Python PAC لتجاوز الحجب الانتقائي</li>
+        <li><strong>🌍 دعم متعدد اللغات</strong>: توثيق شامل بـ 10 لغات (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ar.md">الوثائق العربية</a>، 한국어، English، إلخ)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>خريطة طبولوجية آلية لمساحات العمل والمستودعات لحسابات ومنظمات GitHub مع حماية خصوصية المستودعات الخاصة.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
+        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
+      </p>
+      <ul>
+        <li><strong>🔄 أتمتة يومية</strong>: سير عمل GitHub Actions مجدول يومياً بدون أي تسريب للرموز السرية</li>
+        <li><strong>🛡️ حماية الخصوصية</strong>: إخفاء معرفات المستودعات الخاصة مع الحفاظ على وضوح البنية المعمارية العامة</li>
+        <li><strong>🎨 تمثيل مرئي تفاعلي</strong>: توليد مخططات SVG ديناميكية وصور GIF متحركة لكافة الحسابات</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 [تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 

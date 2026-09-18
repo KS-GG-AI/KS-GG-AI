@@ -28,6 +28,13 @@
   <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
+  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+</p>
+
 </div>
 
 ## 소개
@@ -99,6 +106,43 @@
 ## 프로젝트
 
 공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 조직 지도에서 비공개 저장소는 마스킹한 라벨로만 보이고, 로드맵은 공개 이슈만 바탕으로 갱신됩니다.
+
+### 주요 시스템 및 솔루션
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>ZRAM 압축 스왑, TCP BBR, HTTP/2 및 HTTP/3(QUIC/DoQ), 단독 노드 무중단 격리를 적용한 고성능 AdGuard Home 프로덕션 스택.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
+        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
+      </p>
+      <ul>
+        <li><strong>⚡ 성능 최적화</strong>: 1GB ZRAM(zstd) 압축 스왑(swappiness 180, page-cluster 0) + 7.5MB 대용량 UDP 소켓 버퍼</li>
+        <li><strong>🔒 차세대 프로토콜</strong>: 포트 443 HTTP/2 웹 UI + 포트 853 DNS-over-QUIC(DoQ)/DoT (2046년까지 유효한 20년 자체 SAN 인증서)</li>
+        <li><strong>🏛️ 무중단 격리</strong>: 물리 노드 간 종속 없는 Zero-SPOF 단독 운영 및 게스트 1초 즉각 DNS 장애 폴백</li>
+        <li><strong>🌐 스마트 라우팅</strong>: ByeDPI SOCKS5 프록시 및 경량 Python PAC 데몬 연동 선별 우회</li>
+        <li><strong>🌍 다국어 지원</strong>: 10개 언어 전체 번역 문서 제공 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ko.md">한국어 설명서</a>, English 등)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>GitHub 계정 및 조직의 작업 공간과 저장소 구조를 시각화하고 프라이버시를 안전하게 보호하는 자동 생성 맵.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
+        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
+      </p>
+      <ul>
+        <li><strong>🔄 무인 자동화</strong>: GitHub Actions 기반 매일 정기 스케줄 갱신 및 시크릿 유출 없는 격리 워크플로</li>
+        <li><strong>🛡️ 프라이버시 보호</strong>: 비공개 저장소 식별자를 안전하게 마스킹 처리하여 전체 아키텍처만 공개</li>
+        <li><strong>🎨 동적 시각화</strong>: 모든 조직 및 계정 단위 다이내믹 SVG 다이어그램 및 움직이는 애니메이션 GIF 생성</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 [공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories) · [공개 추적 이슈 보기](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 

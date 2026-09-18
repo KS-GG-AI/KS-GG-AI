@@ -28,6 +28,13 @@
   <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
+  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+</p>
+
 </div>
 
 ## À propos
@@ -99,6 +106,43 @@ Un ensemble pratique, regroupé par le travail qu'il aide à accomplir plutôt q
 ## Projets
 
 Le travail public reste facile à explorer ; le travail privé est volontairement masqué. Sur la carte de l'organisation, les dépôts privés n'apparaissent que sous forme d'étiquettes masquées, et les feuilles de route sont mises à jour uniquement à partir d'issues publiques.
+
+### Systèmes et Solutions Phares
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>Stack AdGuard Home durcie pour la production avec swap compressé ZRAM, TCP BBR, HTTP/2 et HTTP/3 (QUIC/DoQ), et résilience autonome multinœud.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
+        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
+      </p>
+      <ul>
+        <li><strong>⚡ Performance</strong> : Swap ZRAM (zstd) de 1 Go (swappiness 180, page-cluster 0) + tampons de socket UDP de 7,5 Mo</li>
+        <li><strong>🔒 Protocoles modernes</strong> : UI Web HTTP/2 sur le port 443 + DNS-over-QUIC (DoQ) et DoT sur le port 853 avec certificat SAN de 20 ans</li>
+        <li><strong>🏛️ Résilience</strong> : Isolation autonome Zero-SPOF avec basculement DNS ultra-rapide en 1 seconde</li>
+        <li><strong>🌐 Routage intelligent</strong> : Proxy ByeDPI SOCKS5 + démon Python PAC pour contournement sélectif</li>
+        <li><strong>🌍 Multilingue</strong> : Documentation intégrale en 10 langues (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/fr.md">Français</a>, 한국어, English, etc.)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>Cartographie automatisée et respectueuse de la vie privée des espaces de travail et dépôts GitHub pour comptes et organisations.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
+        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
+      </p>
+      <ul>
+        <li><strong>🔄 Automatisation</strong> : Flux planifié quotidiennement sur GitHub Actions sans aucune fuite de secret</li>
+        <li><strong>🛡️ Confidentialité</strong> : Masquage volontaire des dépôts privés tout en exposant l'architecture globale</li>
+        <li><strong>🎨 Visualisation dynamique</strong> : Génération de diagrammes vectoriels SVG dynamiques et de GIF animés</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 [Voir les dépôts publics](https://github.com/KS-GG-AI?tab=repositories) · [Parcourir les issues publiques suivies](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 

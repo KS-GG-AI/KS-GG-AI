@@ -28,6 +28,13 @@
   <a href="./id.md">🇮🇩 Bahasa Indonesia</a>
 </p>
 
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
+  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+</p>
+
 </div>
 
 ## 关于
@@ -99,6 +106,43 @@
 ## 项目
 
 公开作品保持易于浏览，私有工作则有意隐藏。组织地图中的私有仓库仅以遮蔽标签显示，路线图只根据公开 Issue 更新。
+
+### 精选系统与解决方案
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>应用 ZRAM 压缩交换、TCP BBR、HTTP/2 及 HTTP/3 (QUIC/DoQ)、独立物理节点无中断隔离的高性能 AdGuard Home 生产级技术栈。</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
+        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
+      </p>
+      <ul>
+        <li><strong>⚡ 性能优化</strong>: 1GB ZRAM (zstd) 内存压缩交换 (swappiness 180, page-cluster 0) + 7.5MB 大容量 UDP 套接字缓冲区</li>
+        <li><strong>🔒 现代协议</strong>: 端口 443 HTTP/2 管理界面 + 端口 853 DNS-over-QUIC (DoQ)/DoT (有效期至 2046 年的 20 年自签名 SAN 证书)</li>
+        <li><strong>🏛️ 无中断隔离</strong>: 物理节点间无依赖 Zero-SPOF 独立运行，客户端 1 秒极速 DNS 故障切换</li>
+        <li><strong>🌐 智能分流</strong>: 集成 ByeDPI SOCKS5 代理与轻量 Python PAC 守护进程实现规则分流</li>
+        <li><strong>🌍 多语言支持</strong>: 完整提供 10 种语言本地化文档 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/zh-CN.md">中文文档</a>、한국어、English 等)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>为 GitHub 账号及组织自动生成工作区与仓库拓扑图，并兼顾隐私保护的开源项目。</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
+        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
+      </p>
+      <ul>
+        <li><strong>🔄 定时自动化</strong>: 基于 GitHub Actions 每日自动执行，安全隔离无令牌泄露</li>
+        <li><strong>🛡️ 隐私保护</strong>: 自动遮蔽私有仓库名称与标识，仅对外展示公开技术架构</li>
+        <li><strong>🎨 动态可视化</strong>: 生成全账号动态 SVG 图表与动效 GIF 架构图</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 [浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 

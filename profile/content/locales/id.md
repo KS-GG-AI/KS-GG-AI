@@ -28,6 +28,13 @@
   <strong>🇮🇩 Bahasa Indonesia</strong>
 </p>
 
+<p>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
+  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
+  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
+  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+</p>
+
 </div>
 
 ## Tentang
@@ -99,6 +106,43 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 ## Proyek
 
 Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pada peta organisasi, repositori privat hanya tampil sebagai label yang disamarkan, dan roadmap diperbarui hanya dari issue publik.
+
+### Sistem & Solusi Unggulan
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>Stack AdGuard Home yang diperkeras untuk produksi dengan swap terkompresi ZRAM, TCP BBR, HTTP/2 & HTTP/3 (QUIC/DoQ), dan ketahanan mandiri multi-node.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
+        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
+      </p>
+      <ul>
+        <li><strong>⚡ Kinerja</strong>: 1GB ZRAM (zstd) swap terkompresi (swappiness 180, page-cluster 0) + buffer soket UDP 7.5MB</li>
+        <li><strong>🔒 Protokol Modern</strong>: UI Web HTTP/2 pada port 443 + DNS-over-QUIC (DoQ) & DoT pada port 853 dengan sertifikat SAN 20 tahun</li>
+        <li><strong>🏛️ Ketahanan Mandiri</strong>: Isolasi multi-node Zero-SPOF dengan failover DNS instan 1 detik</li>
+        <li><strong>🌐 Perutean Cerdas</strong>: Proksi ByeDPI SOCKS5 dan daemon Python PAC untuk bypass domain selektif</li>
+        <li><strong>🌍 Multibahasa</strong>: Dokumentasi lengkap dalam 10 bahasa (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/id.md">Bahasa Indonesia</a>, 한국어, English, dll.)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>Peta visual otomatis untuk ruang kerja dan repositori akun & organisasi GitHub dengan perlindungan privasi.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
+        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
+        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
+      </p>
+      <ul>
+        <li><strong>🔄 Otomatisasi Terjadwal</strong>: Alur kerja harian GitHub Actions tanpa risiko kebocoran token rahasia</li>
+        <li><strong>🛡️ Privasi Terjaga</strong>: Menyamarkan repositori privat secara aman sambil menampilkan arsitektur publik</li>
+        <li><strong>🎨 Visualisasi Dinamis</strong>: Pembuatan diagram vektor SVG dinamis dan animasi GIF topologi</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 [Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
 

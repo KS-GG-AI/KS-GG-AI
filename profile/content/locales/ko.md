@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 소개</h2></summary>
 
 초기 아이디어를 쓰기 쉬운 제품 화면, 자연스럽게 연결되는 도구, 성장해도 이해하기 쉬운 워크플로로 만듭니다.
@@ -68,7 +68,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 주요 프로젝트 및 솔루션</h2></summary>
 
 공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 조직 지도에서 비공개 저장소는 마스킹한 라벨로만 보이고, 로드맵은 공개 이슈만 바탕으로 갱신됩니다.

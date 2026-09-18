@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 About</h2></summary>
 
 I turn early ideas into useful product surfaces, connected tools, and workflows that stay understandable as they grow.
@@ -68,7 +68,7 @@ I turn early ideas into useful product surfaces, connected tools, and workflows 
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 Projects & Solutions</h2></summary>
 
 Public work stays easy to browse; private work stays intentionally masked. The organization map shows private repositories only as masked labels, and the roadmaps refresh from public issue data only.

@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 Sobre mí</h2></summary>
 
 Convierto ideas tempranas en superficies de producto útiles, herramientas conectadas y flujos de trabajo que siguen siendo comprensibles al crecer.
@@ -68,7 +68,7 @@ Convierto ideas tempranas en superficies de producto útiles, herramientas conec
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 Proyectos y Soluciones</h2></summary>
 
 El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta intencionalmente. En el mapa de la organización, los repositorios privados solo aparecen como etiquetas enmascaradas, y las hojas de ruta se actualizan solo con issues públicos.

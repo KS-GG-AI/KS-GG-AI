@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 À propos</h2></summary>
 
 Je transforme les premières idées en surfaces produit utiles, outils connectés et flux de travail qui restent faciles à comprendre à mesure qu'ils évoluent.
@@ -68,7 +68,7 @@ Je transforme les premières idées en surfaces produit utiles, outils connecté
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 Projets et Solutions</h2></summary>
 
 Le travail public reste facile à explorer ; le travail privé est volontairement masqué. Sur la carte de l'organisation, les dépôts privés n'apparaissent que sous forme d'étiquettes masquées, et les feuilles de route sont mises à jour uniquement à partir d'issues publiques.

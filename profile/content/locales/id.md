@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 Tentang</h2></summary>
 
 Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, dan alur kerja yang tetap mudah dipahami saat berkembang.
@@ -68,7 +68,7 @@ Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, da
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 Proyek & Solusi Unggulan</h2></summary>
 
 Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pada peta organisasi, repositori privat hanya tampil sebagai label yang disamarkan, dan roadmap diperbarui hanya dari issue publik.

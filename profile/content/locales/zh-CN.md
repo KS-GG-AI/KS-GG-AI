@@ -39,7 +39,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">💡 关于</h2></summary>
 
 把早期想法做成易用的产品界面、连贯的工具和即使成长后也容易理解的工作流。
@@ -68,7 +68,7 @@
 
 ---
 
-<details open>
+<details>
 <summary><h2 style="display:inline-block; margin:0;">🚀 核心项目与解决方案</h2></summary>
 
 公开作品保持易于浏览，私有工作则有意隐藏。组织地图中的私有仓库仅以遮蔽标签显示，路线图只根据公开 Issue 更新。

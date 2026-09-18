@@ -78,9 +78,14 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="AdGuard Home 独立安全防护徽章" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>应用 ZRAM 压缩交换、TCP BBR、HTTP/2 及 HTTP/3 (QUIC/DoQ)、独立物理节点无中断隔离的高性能 AdGuard Home 生产级技术栈。</em></p>
       <p>

@@ -78,9 +78,14 @@ O trabalho público permanece fácil de explorar; o trabalho privado fica intenc
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="Emblema de escudo de defesa AdGuard Home" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>Stack AdGuard Home reforçado para produção com ZRAM, TCP BBR, HTTP/2 e HTTP/3 (QUIC/DoQ) e resiliência autônoma multinó.</em></p>
       <p>

@@ -80,9 +80,14 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="شارة درع حماية AdGuard Home" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>بيئة تشغيل AdGuard Home عالية الأداء ومحصنة للإنتاج مع تبديل ZRAM المضغوط، وTCP BBR، وHTTP/2 وHTTP/3 (QUIC/DoQ)، وعزل مستقل متعدد العقد.</em></p>
       <p>

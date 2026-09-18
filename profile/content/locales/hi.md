@@ -78,9 +78,14 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="AdGuard Home रक्षा उपकरण बैज" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>ZRAM कंप्रेस्ड स्वैप, TCP BBR, HTTP/2 और HTTP/3 (QUIC/DoQ), और मल्टी-नोड स्टैंडअलोन रेजिलिएंस के साथ प्रोडक्शन-ग्रेड AdGuard Home स्टैक।</em></p>
       <p>

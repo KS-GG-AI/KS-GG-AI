@@ -78,9 +78,14 @@ Public work stays easy to browse; private work stays intentionally masked. The o
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="./profile/assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="./profile/assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="./profile/assets/projects/adguardhome-shield.gif" alt="AdGuard Home Defense Appliance Badge" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>Production-grade, hardened AdGuard Home stack with ZRAM, TCP BBR, HTTP/2 & HTTP/3 (QUIC/DoQ), and multi-node standalone resilience.</em></p>
       <p>

@@ -78,9 +78,14 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="Защитный кибер-бейдж AdGuard Home" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>Продакшн-стек AdGuard Home с компрессионным ZRAM-свопом, TCP BBR, поддержкой HTTP/2 и HTTP/3 (QUIC/DoQ) и автономной отказоустойчивостью.</em></p>
       <p>

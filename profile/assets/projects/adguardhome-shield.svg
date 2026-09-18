@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">AdGuard Home Defense Appliance Badge</title>
+  <desc id="desc">Production Hardened Security Shield Pod</desc>
+  <defs>
+    <linearGradient id="shield-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0817"/>
+      <stop offset="50%" stop-color="#111625"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <linearGradient id="shield-neon" x1="40" y1="40" x2="472" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="35%" stop-color="#67E8F9"/>
+      <stop offset="70%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="shield-core-grad" x1="160" y1="120" x2="352" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090E17"/>
+    </linearGradient>
+    <linearGradient id="check-neon" x1="210" y1="200" x2="310" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="shield-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7.00" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    <pattern id="shield-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1F293D" stroke-width="0.75" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Card Frame (512x512 with rx=96) -->
+  <rect width="512" height="512" rx="96" fill="url(#shield-bg)" stroke="#2D3748" stroke-width="1.5"/>
+  <rect width="512" height="512" rx="96" fill="url(#shield-grid)"/>
+
+  <!-- Radial Cyber Aura -->
+  <circle cx="256" cy="225" r="140" fill="#38BDF8" fill-opacity="0.090" filter="url(#soft-glow)"/>
+  <circle cx="256" cy="225" r="90" fill="#8B5CF6" fill-opacity="0.090" filter="url(#soft-glow)"/>
+
+  <!-- Concentric Rounded Card Frame with Moving Neon Sweep (Image 3 inspired) -->
+  <rect x="24" y="24" width="464" height="464" rx="76" fill="none" stroke="url(#shield-neon)" stroke-width="2.2" stroke-dasharray="140 35" stroke-dashoffset="0.0" filter="url(#shield-glow)"/>
+  <rect x="36" y="36" width="440" height="440" rx="66" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.55"/>
+
+  <!-- Top-Right Glowing Energy Sphere (Image 3 homage) -->
+  <circle cx="424" cy="88" r="6.50" fill="#F472B6" filter="url(#shield-glow)"/>
+  <circle cx="424" cy="88" r="3" fill="#FFF"/>
+
+  <!-- Center AdGuard Defense Shield (Centered at 256, 225) -->
+  <g transform="translate(256, 222)">
+    <!-- Outer Shield Body -->
+    <path d="M 0 -110 C 42 -110 98 -94 108 -78 C 108 20 40 86 0 112 C -40 86 -108 20 -108 -78 C -98 -94 -42 -110 0 -110 Z" 
+          fill="url(#shield-core-grad)" stroke="#38BDF8" stroke-width="3.5" filter="url(#shield-glow)"/>
+
+    <!-- Inner Shield Inset Bevel -->
+    <path d="M 0 -96 C 36 -96 84 -82 92 -69 C 92 14 34 72 0 94 C -34 72 -92 14 -92 -69 C -84 -82 -36 -96 0 -96 Z" 
+          fill="#0B1220" stroke="#67E8F9" stroke-width="1.5" stroke-opacity="0.6"/>
+
+    <!-- Sharp, Authoritative Neon Checkmark (No weird dots) -->
+    <path d="M -38 -6 L -10 24 L 46 -36" 
+          stroke="url(#check-neon)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" filter="url(#shield-glow)"/>
+  </g>
+
+  <!-- Bottom Active Status Pill -->
+  <g transform="translate(176, 420)">
+    <rect width="160" height="32" rx="16" fill="#0B1020" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.75"/>
+    <circle cx="24" cy="16" r="4.50" fill="#34D399" filter="url(#shield-glow)"/>
+    <text x="38" y="21" fill="#E0E7FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">SECURE POD</text>
+  </g>
+</svg>

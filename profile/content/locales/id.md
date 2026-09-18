@@ -78,9 +78,14 @@ Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pad
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
-        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
-      </a>
+      <p align="center">
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
+        </a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+          <img src="../../assets/projects/adguardhome-shield.gif" alt="Lencana perisai pertahanan AdGuard Home" width="22%" />
+        </a>
+      </p>
       <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
       <p><em>Stack AdGuard Home yang diperkeras untuk produksi dengan swap terkompresi ZRAM, TCP BBR, HTTP/2 & HTTP/3 (QUIC/DoQ), dan ketahanan mandiri multi-node.</em></p>
       <p>

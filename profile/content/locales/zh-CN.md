@@ -29,15 +29,18 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
-  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
 </div>
 
-## 关于
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">💡 关于</h2></summary>
 
 把早期想法做成易用的产品界面、连贯的工具和即使成长后也容易理解的工作流。
 
@@ -61,7 +64,66 @@
 
 <p align="center"><sub>有用。清晰。持续变得更好。</sub></p>
 
-## 技术栈
+</details>
+
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">🚀 核心项目与解决方案</h2></summary>
+
+公开作品保持易于浏览，私有工作则有意隐藏。组织地图中的私有仓库仅以遮蔽标签显示，路线图只根据公开 Issue 更新。
+
+### 精选系统与解决方案
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
+      </a>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>应用 ZRAM 压缩交换、TCP BBR、HTTP/2 及 HTTP/3 (QUIC/DoQ)、独立物理节点无中断隔离的高性能 AdGuard Home 生产级技术栈。</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+      </p>
+      <ul>
+        <li><strong>⚡ 性能优化</strong>: 1GB ZRAM (zstd) 内存压缩交换 (swappiness 180, page-cluster 0) + 7.5MB 大容量 UDP 套接字缓冲区</li>
+        <li><strong>🔒 现代协议</strong>: 端口 443 HTTP/2 管理界面 + 端口 853 DNS-over-QUIC (DoQ)/DoT (有效期至 2046 年的 20 年自签名 SAN 证书)</li>
+        <li><strong>🏛️ 无中断隔离</strong>: 物理节点间无依赖 Zero-SPOF 独立运行，客户端 1 秒极速 DNS 故障切换</li>
+        <li><strong>🌐 智能分流</strong>: 集成 ByeDPI SOCKS5 代理与轻量 Python PAC 守护进程实现规则分流</li>
+        <li><strong>🌍 多语言支持</strong>: 完整提供 10 种语言本地化文档 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/zh-CN.md">中文文档</a>、한국어、English 等)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+        <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
+      </a>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>为 GitHub 账号及组织自动生成工作区与仓库拓扑图，并兼顾隐私保护的开源项目。</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+      </p>
+      <ul>
+        <li><strong>🔄 定时自动化</strong>: 基于 GitHub Actions 每日自动执行，安全隔离无令牌泄露</li>
+        <li><strong>🛡️ 隐私保护</strong>: 自动遮蔽私有仓库名称与标识，仅对外展示公开技术架构</li>
+        <li><strong>🎨 动态可视化</strong>: 生成全账号动态 SVG 图表与动效 GIF 架构图</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+[浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline-block; margin:0;">⚡ 技术栈</h2></summary>
 
 这是一套按实际工作来组织的工具，而不是一张清单。
 
@@ -103,51 +165,12 @@
 
 </details>
 
-## 项目
+</details>
 
-公开作品保持易于浏览，私有工作则有意隐藏。组织地图中的私有仓库仅以遮蔽标签显示，路线图只根据公开 Issue 更新。
-
-### 精选系统与解决方案
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
-      <p><em>应用 ZRAM 压缩交换、TCP BBR、HTTP/2 及 HTTP/3 (QUIC/DoQ)、独立物理节点无中断隔离的高性能 AdGuard Home 生产级技术栈。</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
-        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
-      </p>
-      <ul>
-        <li><strong>⚡ 性能优化</strong>: 1GB ZRAM (zstd) 内存压缩交换 (swappiness 180, page-cluster 0) + 7.5MB 大容量 UDP 套接字缓冲区</li>
-        <li><strong>🔒 现代协议</strong>: 端口 443 HTTP/2 管理界面 + 端口 853 DNS-over-QUIC (DoQ)/DoT (有效期至 2046 年的 20 年自签名 SAN 证书)</li>
-        <li><strong>🏛️ 无中断隔离</strong>: 物理节点间无依赖 Zero-SPOF 独立运行，客户端 1 秒极速 DNS 故障切换</li>
-        <li><strong>🌐 智能分流</strong>: 集成 ByeDPI SOCKS5 代理与轻量 Python PAC 守护进程实现规则分流</li>
-        <li><strong>🌍 多语言支持</strong>: 完整提供 10 种语言本地化文档 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/zh-CN.md">中文文档</a>、한국어、English 等)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
-      <p><em>为 GitHub 账号及组织自动生成工作区与仓库拓扑图，并兼顾隐私保护的开源项目。</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
-        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
-      </p>
-      <ul>
-        <li><strong>🔄 定时自动化</strong>: 基于 GitHub Actions 每日自动执行，安全隔离无令牌泄露</li>
-        <li><strong>🛡️ 隐私保护</strong>: 自动遮蔽私有仓库名称与标识，仅对外展示公开技术架构</li>
-        <li><strong>🎨 动态可视化</strong>: 生成全账号动态 SVG 图表与动效 GIF 架构图</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-[浏览公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [浏览公开跟踪 Issue](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+---
 
 <details>
-<summary><strong>查看项目与路线图</strong></summary>
+<summary><h2 style="display:inline-block; margin:0;">🗺️ 项目与路线图探索</h2></summary>
 
 <br />
 
@@ -156,7 +179,7 @@
 <p>
   <a href="https://github.com/KS-GG-AI/github-org-map-public">
     <picture>
-      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的组织地图。" width="480" />
+      <img src="../../assets/projects/github-org-map.svg" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的组织地图。" width="520" />
     </picture>
   </a>
 </p>
@@ -165,19 +188,25 @@
 
 <p><strong>项目路线图</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+    <picture>
   <img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=a7d09f789e26" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
 </picture>
+  </a>
 
 <p><strong>开发路线图</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+    <picture>
   <img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=a7d09f789e26" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
 </picture>
+  </a>
 
 <sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
 
 </details>
+
+---
 
 ## 联系
 

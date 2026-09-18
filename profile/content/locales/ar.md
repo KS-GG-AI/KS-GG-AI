@@ -29,17 +29,20 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
-  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
 </div>
 
 <div dir="rtl">
 
-## نبذة
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">💡 نبذة عني</h2></summary>
 
 أحوّل الأفكار المبكرة إلى واجهات منتجات مفيدة وأدوات مترابطة وتدفقات عمل تظل سهلة الفهم مع نموها.
 
@@ -63,7 +66,66 @@
 
 <p align="center"><sub>مفيد. واضح. أفضل باستمرار.</sub></p>
 
-## التقنيات
+</details>
+
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">🚀 أبرز المشاريع والحلول</h2></summary>
+
+يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. في خريطة المؤسسة تظهر المستودعات الخاصة كتسميات مخفية فقط، وتتحدث خرائط الطريق من بيانات المسائل العلنية فقط.
+
+### الأنظمة والحلول المميزة
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
+      </a>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>بيئة تشغيل AdGuard Home عالية الأداء ومحصنة للإنتاج مع تبديل ZRAM المضغوط، وTCP BBR، وHTTP/2 وHTTP/3 (QUIC/DoQ)، وعزل مستقل متعدد العقد.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+      </p>
+      <ul>
+        <li><strong>⚡ ضبط الأداء</strong>: ذاكرة تبديل ZRAM (zstd) بسعة 1 جيجابايت (swappiness 180, page-cluster 0) + مخازن مؤقتة لـ UDP بسعة 7.5 ميجابايت</li>
+        <li><strong>🔒 بروتوكولات متطورة</strong>: واجهة مستخدم ويب عبر HTTP/2 على المنفذ 443 + بروتوكولات DNS-over-QUIC (DoQ) وDoT على المنفذ 853 مع شهادة SAN لمدة 20 عاماً</li>
+        <li><strong>🏛️ عزل بدون توقف</strong>: تشغيل مستقل Zero-SPOF بدون تبعيات مع تحويل فشل DNS فوري خلال ثانية واحدة</li>
+        <li><strong>🌐 توجيه ذكي</strong>: دمج بروكسي ByeDPI SOCKS5 وخادم Python PAC لتجاوز الحجب الانتقائي</li>
+        <li><strong>🌍 دعم متعدد اللغات</strong>: توثيق شامل بـ 10 لغات (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ar.md">الوثائق العربية</a>، 한국어، English، إلخ)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+        <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
+      </a>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>خريطة طبولوجية آلية لمساحات العمل والمستودعات لحسابات ومنظمات GitHub مع حماية خصوصية المستودعات الخاصة.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+      </p>
+      <ul>
+        <li><strong>🔄 أتمتة يومية</strong>: سير عمل GitHub Actions مجدول يومياً بدون أي تسريب للرموز السرية</li>
+        <li><strong>🛡️ حماية الخصوصية</strong>: إخفاء معرفات المستودعات الخاصة مع الحفاظ على وضوح البنية المعمارية العامة</li>
+        <li><strong>🎨 تمثيل مرئي تفاعلي</strong>: توليد مخططات SVG ديناميكية وصور GIF متحركة لكافة الحسابات</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+[تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline-block; margin:0;">⚡ المكدس التقني</h2></summary>
 
 مجموعة أدوات عملية، مجمعة وفق المهمة التي تساعد على إنجازها لا بوصفها قائمة تحقق.
 
@@ -105,51 +167,12 @@
 
 </details>
 
-## المشاريع
+</details>
 
-يبقى العمل العلني سهل الاستكشاف، بينما يُخفى العمل الخاص عمدًا. في خريطة المؤسسة تظهر المستودعات الخاصة كتسميات مخفية فقط، وتتحدث خرائط الطريق من بيانات المسائل العلنية فقط.
-
-### الأنظمة والحلول المميزة
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
-      <p><em>بيئة تشغيل AdGuard Home عالية الأداء ومحصنة للإنتاج مع تبديل ZRAM المضغوط، وTCP BBR، وHTTP/2 وHTTP/3 (QUIC/DoQ)، وعزل مستقل متعدد العقد.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
-        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
-      </p>
-      <ul>
-        <li><strong>⚡ ضبط الأداء</strong>: ذاكرة تبديل ZRAM (zstd) بسعة 1 جيجابايت (swappiness 180, page-cluster 0) + مخازن مؤقتة لـ UDP بسعة 7.5 ميجابايت</li>
-        <li><strong>🔒 بروتوكولات متطورة</strong>: واجهة مستخدم ويب عبر HTTP/2 على المنفذ 443 + بروتوكولات DNS-over-QUIC (DoQ) وDoT على المنفذ 853 مع شهادة SAN لمدة 20 عاماً</li>
-        <li><strong>🏛️ عزل بدون توقف</strong>: تشغيل مستقل Zero-SPOF بدون تبعيات مع تحويل فشل DNS فوري خلال ثانية واحدة</li>
-        <li><strong>🌐 توجيه ذكي</strong>: دمج بروكسي ByeDPI SOCKS5 وخادم Python PAC لتجاوز الحجب الانتقائي</li>
-        <li><strong>🌍 دعم متعدد اللغات</strong>: توثيق شامل بـ 10 لغات (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ar.md">الوثائق العربية</a>، 한국어، English، إلخ)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
-      <p><em>خريطة طبولوجية آلية لمساحات العمل والمستودعات لحسابات ومنظمات GitHub مع حماية خصوصية المستودعات الخاصة.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
-        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
-      </p>
-      <ul>
-        <li><strong>🔄 أتمتة يومية</strong>: سير عمل GitHub Actions مجدول يومياً بدون أي تسريب للرموز السرية</li>
-        <li><strong>🛡️ حماية الخصوصية</strong>: إخفاء معرفات المستودعات الخاصة مع الحفاظ على وضوح البنية المعمارية العامة</li>
-        <li><strong>🎨 تمثيل مرئي تفاعلي</strong>: توليد مخططات SVG ديناميكية وصور GIF متحركة لكافة الحسابات</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-[تصفح المستودعات العامة](https://github.com/KS-GG-AI?tab=repositories) · [تصفح المسائل العلنية المتتبعة](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+---
 
 <details>
-<summary><strong>استكشاف المشاريع وخرائط الطريق</strong></summary>
+<summary><h2 style="display:inline-block; margin:0;">🗺️ استكشاف المشاريع وخرائط الطريق</h2></summary>
 
 <br />
 
@@ -158,7 +181,7 @@
 <p>
   <a href="https://github.com/KS-GG-AI/github-org-map-public">
     <picture>
-      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="خريطة مؤسسة تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="480" />
+      <img src="../../assets/projects/github-org-map.svg" alt="خريطة مؤسسة تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="520" />
     </picture>
   </a>
 </p>
@@ -167,19 +190,25 @@
 
 <p><strong>خارطة طريق المشروع</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+    <picture>
   <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
 </picture>
+  </a>
 
 <p><strong>خارطة طريق التطوير</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+    <picture>
   <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
 </picture>
+  </a>
 
 <sub>يستخدم مسائل GitHub العامة فقط. أضف تسمية <code>roadmap:*</code> وتسمية <code>stage:*</code> إلى مسألة عامة لإظهارها.</sub>
 
 </details>
+
+---
 
 ## التواصل
 

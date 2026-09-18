@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 452" width="700" height="452" role="img" aria-label="GitHub organization map for KS-GG-AI on 2026-09-19">
+  <style><![CDATA[
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .om-title { fill: #1f2328; font-size: 20px; font-weight: 600; }
+    .om-date { fill: #57606a; font-size: 13px; }
+    .om-group-title { fill: #1f2328; font-size: 15px; font-weight: 600; }
+    .om-group-meta { fill: #57606a; font-size: 11px; }
+    .om-repo-name { fill: #1f2328; font-size: 13px; }
+    .om-repo-muted { fill: #8c959f; font-size: 13px; }
+    .om-dot-private { fill: #cf222e; stroke: none; }
+    .om-dot-public { fill: none; stroke: #1a7f37; stroke-width: 1.5; }
+    .om-empty { fill: #8c959f; font-style: italic; font-size: 12px; }
+    .om-summary-counts { fill: #1f2328; font-size: 13px; font-weight: 600; }
+    .om-summary-lang { fill: #57606a; font-size: 12px; }
+
+    @media (prefers-color-scheme: dark) {
+      .om-title { fill: #e6edf3; }
+      .om-date { fill: #8b949e; }
+      .om-group-title { fill: #e6edf3; }
+      .om-group-meta { fill: #8b949e; }
+      .om-repo-name { fill: #e6edf3; }
+      .om-repo-muted { fill: #6e7681; }
+      .om-dot-private { fill: #f85149; }
+      .om-dot-public { stroke: #3fb950; }
+      .om-empty { fill: #6e7681; }
+      .om-summary-counts { fill: #e6edf3; }
+      .om-summary-lang { fill: #8b949e; }
+    }
+]]></style>
+  <text x="32" y="52" class="om-title">GitHub Organization Map — KS-GG-AI</text>
+  <text x="32" y="72" class="om-date">2026-09-19</text>
+      <text x="32" y="110" class="om-summary-counts">2 public repos · 10 private repos</text>
+      <text x="32" y="128" class="om-summary-lang">Languages (public repos only): TypeScript 2</text>
+
+      <g>
+        <text x="32" y="158" class="om-group-title">KS-GG-AI</text>
+        <text x="32" y="174" class="om-group-meta">Account · 2 repos</text>
+        <circle cx="40" cy="190" r="4" class="om-dot-public" /><text x="54" y="194" class="om-repo-name">KS-GG-AI</text>
+        <circle cx="40" cy="214" r="4" class="om-dot-public" /><text x="54" y="218" class="om-repo-name">github-org-map-public</text>
+      </g>
+
+      <g>
+        <text x="368" y="158" class="om-group-title">AI-GG-AUTO-WORK</text>
+        <text x="368" y="174" class="om-group-meta">Organization · 10 repos</text>
+        <circle cx="376" cy="190" r="4" class="om-dot-private" /><text x="390" y="194" class="om-repo-name">······135604</text>
+        <circle cx="376" cy="214" r="4" class="om-dot-private" /><text x="390" y="218" class="om-repo-name">······153c16</text>
+        <circle cx="376" cy="238" r="4" class="om-dot-private" /><text x="390" y="242" class="om-repo-name">······22d951</text>
+        <circle cx="376" cy="262" r="4" class="om-dot-private" /><text x="390" y="266" class="om-repo-name">······29cb51</text>
+        <circle cx="376" cy="286" r="4" class="om-dot-private" /><text x="390" y="290" class="om-repo-name">······35a574</text>
+        <circle cx="376" cy="310" r="4" class="om-dot-private" /><text x="390" y="314" class="om-repo-name">······6e49ce</text>
+        <circle cx="376" cy="334" r="4" class="om-dot-private" /><text x="390" y="338" class="om-repo-name">······83305c</text>
+        <circle cx="376" cy="358" r="4" class="om-dot-private" /><text x="390" y="362" class="om-repo-name">······9603fa</text>
+        <circle cx="376" cy="382" r="4" class="om-dot-private" /><text x="390" y="386" class="om-repo-name">······b93c62</text>
+        <circle cx="376" cy="406" r="4" class="om-dot-private" /><text x="390" y="410" class="om-repo-name">······ca1b2f</text>
+      </g>
+</svg>

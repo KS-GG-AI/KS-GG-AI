@@ -29,15 +29,18 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
-  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
 </div>
 
-## Sobre mí
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">💡 Sobre mí</h2></summary>
 
 Convierto ideas tempranas en superficies de producto útiles, herramientas conectadas y flujos de trabajo que siguen siendo comprensibles al crecer.
 
@@ -61,7 +64,66 @@ Convierto ideas tempranas en superficies de producto útiles, herramientas conec
 
 <p align="center"><sub>Útil. Claro. Cada vez mejor.</sub></p>
 
-## Stack
+</details>
+
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">🚀 Proyectos y Soluciones</h2></summary>
+
+El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta intencionalmente. En el mapa de la organización, los repositorios privados solo aparecen como etiquetas enmascaradas, y las hojas de ruta se actualizan solo con issues públicos.
+
+### Sistemas y Soluciones Destacados
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
+      </a>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>Pila AdGuard Home reforzada para producción con ZRAM, TCP BBR, HTTP/2 y HTTP/3 (QUIC/DoQ) y resistencia autónoma multinodo.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+      </p>
+      <ul>
+        <li><strong>⚡ Rendimiento</strong>: 1GB ZRAM (zstd) swap comprimido (swappiness 180, page-cluster 0) + búferes UDP de 7.5MB</li>
+        <li><strong>🔒 Protocolos modernos</strong>: Web UI en HTTP/2 puerto 443 + DNS-over-QUIC (DoQ) y DoT puerto 853 con certificado SAN de 20 años</li>
+        <li><strong>🏛️ Resiliencia</strong>: Aislamiento multinodo Zero-SPOF con conmutación por error DNS ultrarrápida de 1 segundo</li>
+        <li><strong>🌐 Enrutamiento</strong>: Proxy ByeDPI SOCKS5 + demonio PAC en Python para evasión selectiva</li>
+        <li><strong>🌍 Multilingüe</strong>: Documentación completa en 10 idiomas (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/es.md">Español</a>, 한국어, English, etc.)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+        <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
+      </a>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>Mapa visual automatizado de espacios de trabajo y repositorios de cuentas y organizaciones GitHub con preservación de privacidad.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+      </p>
+      <ul>
+        <li><strong>🔄 Automatización</strong>: Ejecución programada diaria vía GitHub Actions sin filtración de secretos</li>
+        <li><strong>🛡️ Privacidad</strong>: Enmascara de forma segura los repositorios privados mostrando solo la arquitectura global</li>
+        <li><strong>🎨 Visualización dinámica</strong>: Generación de diagramas SVG dinámicos y GIF animados de topología</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+[Ver repositorios públicos](https://github.com/KS-GG-AI?tab=repositories) · [Ver issues públicos seguidos](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline-block; margin:0;">⚡ Stack Tecnológico</h2></summary>
 
 Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como una lista de control.
 
@@ -103,51 +165,12 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 
 </details>
 
-## Proyectos
+</details>
 
-El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta intencionalmente. En el mapa de la organización, los repositorios privados solo aparecen como etiquetas enmascaradas, y las hojas de ruta se actualizan solo con issues públicos.
-
-### Sistemas y Soluciones Destacados
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
-      <p><em>Pila AdGuard Home reforzada para producción con ZRAM, TCP BBR, HTTP/2 y HTTP/3 (QUIC/DoQ) y resistencia autónoma multinodo.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
-        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
-      </p>
-      <ul>
-        <li><strong>⚡ Rendimiento</strong>: 1GB ZRAM (zstd) swap comprimido (swappiness 180, page-cluster 0) + búferes UDP de 7.5MB</li>
-        <li><strong>🔒 Protocolos modernos</strong>: Web UI en HTTP/2 puerto 443 + DNS-over-QUIC (DoQ) y DoT puerto 853 con certificado SAN de 20 años</li>
-        <li><strong>🏛️ Resiliencia</strong>: Aislamiento multinodo Zero-SPOF con conmutación por error DNS ultrarrápida de 1 segundo</li>
-        <li><strong>🌐 Enrutamiento</strong>: Proxy ByeDPI SOCKS5 + demonio PAC en Python para evasión selectiva</li>
-        <li><strong>🌍 Multilingüe</strong>: Documentación completa en 10 idiomas (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/es.md">Español</a>, 한국어, English, etc.)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
-      <p><em>Mapa visual automatizado de espacios de trabajo y repositorios de cuentas y organizaciones GitHub con preservación de privacidad.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
-        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
-      </p>
-      <ul>
-        <li><strong>🔄 Automatización</strong>: Ejecución programada diaria vía GitHub Actions sin filtración de secretos</li>
-        <li><strong>🛡️ Privacidad</strong>: Enmascara de forma segura los repositorios privados mostrando solo la arquitectura global</li>
-        <li><strong>🎨 Visualización dinámica</strong>: Generación de diagramas SVG dinámicos y GIF animados de topología</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-[Ver repositorios públicos](https://github.com/KS-GG-AI?tab=repositories) · [Ver issues públicos seguidos](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+---
 
 <details>
-<summary><strong>Explorar proyectos y hojas de ruta</strong></summary>
+<summary><h2 style="display:inline-block; margin:0;">🗺️ Explorar Proyectos y Hojas de Ruta</h2></summary>
 
 <br />
 
@@ -156,7 +179,7 @@ El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta
 <p>
   <a href="https://github.com/KS-GG-AI/github-org-map-public">
     <picture>
-      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Mapa de la organización que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="480" />
+      <img src="../../assets/projects/github-org-map.svg" alt="Mapa de la organización que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="520" />
     </picture>
   </a>
 </p>
@@ -165,19 +188,25 @@ El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta
 
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+    <picture>
   <img src="../../assets/locales/es/maps/project-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
 </picture>
+  </a>
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+    <picture>
   <img src="../../assets/locales/es/maps/development-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
 </picture>
+  </a>
 
 <sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
 
 </details>
+
+---
 
 ## Contacto
 

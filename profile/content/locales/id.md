@@ -29,15 +29,18 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
-  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
 </div>
 
-## Tentang
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">💡 Tentang</h2></summary>
 
 Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, dan alur kerja yang tetap mudah dipahami saat berkembang.
 
@@ -61,7 +64,66 @@ Mengubah ide awal menjadi permukaan produk yang berguna, alat yang terhubung, da
 
 <p align="center"><sub>Berguna. Jelas. Terus menjadi lebih baik.</sub></p>
 
-## Stack
+</details>
+
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">🚀 Proyek & Solusi Unggulan</h2></summary>
+
+Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pada peta organisasi, repositori privat hanya tampil sebagai label yang disamarkan, dan roadmap diperbarui hanya dari issue publik.
+
+### Sistem & Solusi Unggulan
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
+      </a>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>Stack AdGuard Home yang diperkeras untuk produksi dengan swap terkompresi ZRAM, TCP BBR, HTTP/2 & HTTP/3 (QUIC/DoQ), dan ketahanan mandiri multi-node.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+      </p>
+      <ul>
+        <li><strong>⚡ Kinerja</strong>: 1GB ZRAM (zstd) swap terkompresi (swappiness 180, page-cluster 0) + buffer soket UDP 7.5MB</li>
+        <li><strong>🔒 Protokol Modern</strong>: UI Web HTTP/2 pada port 443 + DNS-over-QUIC (DoQ) & DoT pada port 853 dengan sertifikat SAN 20 tahun</li>
+        <li><strong>🏛️ Ketahanan Mandiri</strong>: Isolasi multi-node Zero-SPOF dengan failover DNS instan 1 detik</li>
+        <li><strong>🌐 Perutean Cerdas</strong>: Proksi ByeDPI SOCKS5 dan daemon Python PAC untuk bypass domain selektif</li>
+        <li><strong>🌍 Multibahasa</strong>: Dokumentasi lengkap dalam 10 bahasa (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/id.md">Bahasa Indonesia</a>, 한국어, English, dll.)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+        <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
+      </a>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>Peta visual otomatis untuk ruang kerja dan repositori akun & organisasi GitHub dengan perlindungan privasi.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+      </p>
+      <ul>
+        <li><strong>🔄 Otomatisasi Terjadwal</strong>: Alur kerja harian GitHub Actions tanpa risiko kebocoran token rahasia</li>
+        <li><strong>🛡️ Privasi Terjaga</strong>: Menyamarkan repositori privat secara aman sambil menampilkan arsitektur publik</li>
+        <li><strong>🎨 Visualisasi Dinamis</strong>: Pembuatan diagram vektor SVG dinamis dan animasi GIF topologi</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+[Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline-block; margin:0;">⚡ Stack Teknologi</h2></summary>
 
 Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk diselesaikan, bukan sebagai daftar periksa.
 
@@ -103,51 +165,12 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 
 </details>
 
-## Proyek
+</details>
 
-Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pada peta organisasi, repositori privat hanya tampil sebagai label yang disamarkan, dan roadmap diperbarui hanya dari issue publik.
-
-### Sistem & Solusi Unggulan
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
-      <p><em>Stack AdGuard Home yang diperkeras untuk produksi dengan swap terkompresi ZRAM, TCP BBR, HTTP/2 & HTTP/3 (QUIC/DoQ), dan ketahanan mandiri multi-node.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
-        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
-      </p>
-      <ul>
-        <li><strong>⚡ Kinerja</strong>: 1GB ZRAM (zstd) swap terkompresi (swappiness 180, page-cluster 0) + buffer soket UDP 7.5MB</li>
-        <li><strong>🔒 Protokol Modern</strong>: UI Web HTTP/2 pada port 443 + DNS-over-QUIC (DoQ) & DoT pada port 853 dengan sertifikat SAN 20 tahun</li>
-        <li><strong>🏛️ Ketahanan Mandiri</strong>: Isolasi multi-node Zero-SPOF dengan failover DNS instan 1 detik</li>
-        <li><strong>🌐 Perutean Cerdas</strong>: Proksi ByeDPI SOCKS5 dan daemon Python PAC untuk bypass domain selektif</li>
-        <li><strong>🌍 Multibahasa</strong>: Dokumentasi lengkap dalam 10 bahasa (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/id.md">Bahasa Indonesia</a>, 한국어, English, dll.)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
-      <p><em>Peta visual otomatis untuk ruang kerja dan repositori akun & organisasi GitHub dengan perlindungan privasi.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
-        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
-      </p>
-      <ul>
-        <li><strong>🔄 Otomatisasi Terjadwal</strong>: Alur kerja harian GitHub Actions tanpa risiko kebocoran token rahasia</li>
-        <li><strong>🛡️ Privasi Terjaga</strong>: Menyamarkan repositori privat secara aman sambil menampilkan arsitektur publik</li>
-        <li><strong>🎨 Visualisasi Dinamis</strong>: Pembuatan diagram vektor SVG dinamis dan animasi GIF topologi</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-[Lihat repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Lihat issue publik yang dilacak](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+---
 
 <details>
-<summary><strong>Jelajahi proyek dan peta jalan</strong></summary>
+<summary><h2 style="display:inline-block; margin:0;">🗺️ Eksplorasi Proyek & Roadmap</h2></summary>
 
 <br />
 
@@ -156,7 +179,7 @@ Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pad
 <p>
   <a href="https://github.com/KS-GG-AI/github-org-map-public">
     <picture>
-      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="Peta organisasi yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="480" />
+      <img src="../../assets/projects/github-org-map.svg" alt="Peta organisasi yang menampilkan ruang kerja KS-GG-AI, proyek publik, dan pekerjaan privat yang sengaja disamarkan." width="520" />
     </picture>
   </a>
 </p>
@@ -165,19 +188,25 @@ Karya publik tetap mudah dijelajahi; pekerjaan privat sengaja disembunyikan. Pad
 
 <p><strong>Peta jalan proyek</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+    <picture>
   <img src="../../assets/locales/id/maps/project-roadmap.svg?v=a7d09f789e26" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
 </picture>
+  </a>
 
 <p><strong>Peta jalan pengembangan</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+    <picture>
   <img src="../../assets/locales/id/maps/development-roadmap.svg?v=a7d09f789e26" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
 </picture>
+  </a>
 
 <sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
 
 </details>
+
+---
 
 ## Kontak
 

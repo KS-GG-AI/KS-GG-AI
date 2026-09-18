@@ -29,15 +29,18 @@
 </p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="https://img.shields.io/badge/Release-v0.4.0-A78BFA?style=flat-square&logo=github&labelColor=161126" alt="Latest Release" /></a>
-  <img src="https://img.shields.io/badge/Architecture-Distributed%20Homelab%20%26%20Edge-A7F3D0?style=flat-square&labelColor=161126" alt="Architecture" />
-  <img src="https://img.shields.io/badge/Protocols-HTTP%2F2%20%7C%20HTTP%2F3%20QUIC-F9A8D4?style=flat-square&labelColor=161126" alt="Protocols" />
-  <img src="https://img.shields.io/badge/Focus-Systems%20Hardening%20%26%20Automation-67E8F9?style=flat-square&labelColor=161126" alt="Focus" />
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
 </div>
 
-## 소개
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">💡 소개</h2></summary>
 
 초기 아이디어를 쓰기 쉬운 제품 화면, 자연스럽게 연결되는 도구, 성장해도 이해하기 쉬운 워크플로로 만듭니다.
 
@@ -61,7 +64,66 @@
 
 <p align="center"><sub>쓸모 있게. 명확하게. 계속 더 좋게.</sub></p>
 
-## 기술 스택
+</details>
+
+---
+
+<details open>
+<summary><h2 style="display:inline-block; margin:0;">🚀 주요 프로젝트 및 솔루션</h2></summary>
+
+공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 조직 지도에서 비공개 저장소는 마스킹한 라벨로만 보이고, 로드맵은 공개 이슈만 바탕으로 갱신됩니다.
+
+### 주요 시스템 및 솔루션
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="100%" />
+      </a>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <p><em>ZRAM 압축 스왑, TCP BBR, HTTP/2 및 HTTP/3(QUIC/DoQ), 단독 노드 무중단 격리를 적용한 고성능 AdGuard Home 프로덕션 스택.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+      </p>
+      <ul>
+        <li><strong>⚡ 성능 최적화</strong>: 1GB ZRAM(zstd) 압축 스왑(swappiness 180, page-cluster 0) + 7.5MB 대용량 UDP 소켓 버퍼</li>
+        <li><strong>🔒 차세대 프로토콜</strong>: 포트 443 HTTP/2 웹 UI + 포트 853 DNS-over-QUIC(DoQ)/DoT (2046년까지 유효한 20년 자체 SAN 인증서)</li>
+        <li><strong>🏛️ 무중단 격리</strong>: 물리 노드 간 종속 없는 Zero-SPOF 단독 운영 및 게스트 1초 즉각 DNS 장애 폴백</li>
+        <li><strong>🌐 스마트 라우팅</strong>: ByeDPI SOCKS5 프록시 및 경량 Python PAC 데몬 연동 선별 우회</li>
+        <li><strong>🌍 다국어 지원</strong>: 10개 언어 전체 번역 문서 제공 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ko.md">한국어 설명서</a>, English 등)</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+        <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
+      </a>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <p><em>GitHub 계정 및 조직의 작업 공간과 저장소 구조를 시각화하고 프라이버시를 안전하게 보호하는 자동 생성 맵.</em></p>
+      <p>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+      </p>
+      <ul>
+        <li><strong>🔄 무인 자동화</strong>: GitHub Actions 기반 매일 정기 스케줄 갱신 및 시크릿 유출 없는 격리 워크플로</li>
+        <li><strong>🛡️ 프라이버시 보호</strong>: 비공개 저장소 식별자를 안전하게 마스킹 처리하여 전체 아키텍처만 공개</li>
+        <li><strong>🎨 동적 시각화</strong>: 모든 조직 및 계정 단위 다이내믹 SVG 다이어그램 및 움직이는 애니메이션 GIF 생성</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+[공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories) · [공개 추적 이슈 보기](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+
+</details>
+
+---
+
+<details>
+<summary><h2 style="display:inline-block; margin:0;">⚡ 기술 스택</h2></summary>
 
 체크리스트보다는 실제 문제를 해결하는 흐름을 기준으로 정리한 작업 도구입니다.
 
@@ -103,51 +165,12 @@
 
 </details>
 
-## 프로젝트
+</details>
 
-공개 작업은 쉽게 살펴볼 수 있게 두고, 비공개 작업은 의도적으로 숨깁니다. 조직 지도에서 비공개 저장소는 마스킹한 라벨로만 보이고, 로드맵은 공개 이슈만 바탕으로 갱신됩니다.
-
-### 주요 시스템 및 솔루션
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
-      <p><em>ZRAM 압축 스왑, TCP BBR, HTTP/2 및 HTTP/3(QUIC/DoQ), 단독 노드 무중단 격리를 적용한 고성능 AdGuard Home 프로덕션 스택.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/HTTP%2F2%20%7C%20HTTP%2F3-QUIC-orange.svg" alt="HTTP/2 & HTTP/3" />
-        <img src="https://img.shields.io/badge/Linux-ZRAM%20%2B%20BBR-purple.svg" alt="Kernel Tuning" />
-      </p>
-      <ul>
-        <li><strong>⚡ 성능 최적화</strong>: 1GB ZRAM(zstd) 압축 스왑(swappiness 180, page-cluster 0) + 7.5MB 대용량 UDP 소켓 버퍼</li>
-        <li><strong>🔒 차세대 프로토콜</strong>: 포트 443 HTTP/2 웹 UI + 포트 853 DNS-over-QUIC(DoQ)/DoT (2046년까지 유효한 20년 자체 SAN 인증서)</li>
-        <li><strong>🏛️ 무중단 격리</strong>: 물리 노드 간 종속 없는 Zero-SPOF 단독 운영 및 게스트 1초 즉각 DNS 장애 폴백</li>
-        <li><strong>🌐 스마트 라우팅</strong>: ByeDPI SOCKS5 프록시 및 경량 Python PAC 데몬 연동 선별 우회</li>
-        <li><strong>🌍 다국어 지원</strong>: 10개 언어 전체 번역 문서 제공 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ko.md">한국어 설명서</a>, English 등)</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
-      <p><em>GitHub 계정 및 조직의 작업 공간과 저장소 구조를 시각화하고 프라이버시를 안전하게 보호하는 자동 생성 맵.</em></p>
-      <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License" /></a>
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-2088FF.svg" alt="GitHub Actions" />
-        <img src="https://img.shields.io/badge/Format-SVG%20%2B%20GIF-success.svg" alt="SVG and GIF" />
-      </p>
-      <ul>
-        <li><strong>🔄 무인 자동화</strong>: GitHub Actions 기반 매일 정기 스케줄 갱신 및 시크릿 유출 없는 격리 워크플로</li>
-        <li><strong>🛡️ 프라이버시 보호</strong>: 비공개 저장소 식별자를 안전하게 마스킹 처리하여 전체 아키텍처만 공개</li>
-        <li><strong>🎨 동적 시각화</strong>: 모든 조직 및 계정 단위 다이내믹 SVG 다이어그램 및 움직이는 애니메이션 GIF 생성</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-[공개 저장소 보기](https://github.com/KS-GG-AI?tab=repositories) · [공개 추적 이슈 보기](https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen)
+---
 
 <details>
-<summary><strong>프로젝트와 로드맵 열기</strong></summary>
+<summary><h2 style="display:inline-block; margin:0;">🗺️ 프로젝트 및 로드맵 탐색</h2></summary>
 
 <br />
 
@@ -156,7 +179,7 @@
 <p>
   <a href="https://github.com/KS-GG-AI/github-org-map-public">
     <picture>
-      <img src="https://raw.githubusercontent.com/KS-GG-AI/github-org-map-public/main/org-map.svg" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 조직 지도." width="480" />
+      <img src="../../assets/projects/github-org-map.svg" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 조직 지도." width="520" />
     </picture>
   </a>
 </p>
@@ -165,19 +188,25 @@
 
 <p><strong>프로젝트 로드맵</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+    <picture>
   <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=a7d09f789e26" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
 </picture>
+  </a>
 
 <p><strong>개발 로드맵</strong></p>
 
-<picture>
+<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+    <picture>
   <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=a7d09f789e26" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
 </picture>
+  </a>
 
 <sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>
 
 </details>
+
+---
 
 ## 연락
 

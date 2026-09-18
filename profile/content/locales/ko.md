@@ -30,8 +30,8 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
@@ -79,38 +79,38 @@
   <tr>
     <td width="50%" valign="top">
       <p align="center">
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
         </a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-shield.gif" alt="AdGuard Home 단독 어플라이언스 보안 방패 배지" width="22%" />
         </a>
       </p>
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguard-homelab">adguard-homelab</a></h4>
       <p><em>ZRAM 압축 스왑, TCP BBR, HTTP/2 및 HTTP/3(QUIC/DoQ), 단독 노드 무중단 격리를 적용한 고성능 AdGuard Home 프로덕션 스택.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
       </p>
       <ul>
         <li><strong>⚡ 성능 최적화</strong>: 1GB ZRAM(zstd) 압축 스왑(swappiness 180, page-cluster 0) + 7.5MB 대용량 UDP 소켓 버퍼</li>
         <li><strong>🔒 차세대 프로토콜</strong>: 포트 443 HTTP/2 웹 UI + 포트 853 DNS-over-QUIC(DoQ)/DoT (2046년까지 유효한 20년 자체 SAN 인증서)</li>
         <li><strong>🏛️ 무중단 격리</strong>: 물리 노드 간 종속 없는 Zero-SPOF 단독 운영 및 게스트 1초 즉각 DNS 장애 폴백</li>
         <li><strong>🌐 스마트 라우팅</strong>: ByeDPI SOCKS5 프록시 및 경량 Python PAC 데몬 연동 선별 우회</li>
-        <li><strong>🌍 다국어 지원</strong>: 10개 언어 전체 번역 문서 제공 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ko.md">한국어 설명서</a>, English 등)</li>
+        <li><strong>🌍 다국어 지원</strong>: 10개 언어 전체 번역 문서 제공 (<a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/locales/ko.md">한국어 설명서</a>, English 등)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+      <a href="https://github.com/KS-GG-AI/github-org-map">
         <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
       </a>
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map">github-org-map</a></h4>
       <p><em>GitHub 계정 및 조직의 작업 공간과 저장소 구조를 시각화하고 프라이버시를 안전하게 보호하는 자동 생성 맵.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
       </p>
       <ul>
         <li><strong>🔄 무인 자동화</strong>: GitHub Actions 기반 매일 정기 스케줄 갱신 및 시크릿 유출 없는 격리 워크플로</li>
@@ -182,7 +182,7 @@
 <p><strong>조직 지도</strong></p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+  <a href="https://github.com/KS-GG-AI/github-org-map">
     <picture>
       <img src="../../assets/projects/github-org-map.svg" alt="KS-GG-AI 작업 공간, 공개 프로젝트, 의도적으로 마스킹한 비공개 작업을 보여주는 조직 지도." width="520" />
     </picture>

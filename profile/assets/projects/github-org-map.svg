@@ -37,7 +37,7 @@
         <text x="32" y="158" class="om-group-title">KS-GG-AI</text>
         <text x="32" y="174" class="om-group-meta">Account · 2 repos</text>
         <circle cx="40" cy="190" r="4" class="om-dot-public" /><text x="54" y="194" class="om-repo-name">KS-GG-AI</text>
-        <circle cx="40" cy="214" r="4" class="om-dot-public" /><text x="54" y="218" class="om-repo-name">github-org-map-public</text>
+        <circle cx="40" cy="214" r="4" class="om-dot-public" /><text x="54" y="218" class="om-repo-name">github-org-map</text>
       </g>
 
       <g>

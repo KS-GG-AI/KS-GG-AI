@@ -30,8 +30,8 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
@@ -79,38 +79,38 @@
   <tr>
     <td width="50%" valign="top">
       <p align="center">
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
         </a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-shield.gif" alt="AdGuard Home 独立安全防护徽章" width="22%" />
         </a>
       </p>
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguard-homelab">adguard-homelab</a></h4>
       <p><em>应用 ZRAM 压缩交换、TCP BBR、HTTP/2 及 HTTP/3 (QUIC/DoQ)、独立物理节点无中断隔离的高性能 AdGuard Home 生产级技术栈。</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
       </p>
       <ul>
         <li><strong>⚡ 性能优化</strong>: 1GB ZRAM (zstd) 内存压缩交换 (swappiness 180, page-cluster 0) + 7.5MB 大容量 UDP 套接字缓冲区</li>
         <li><strong>🔒 现代协议</strong>: 端口 443 HTTP/2 管理界面 + 端口 853 DNS-over-QUIC (DoQ)/DoT (有效期至 2046 年的 20 年自签名 SAN 证书)</li>
         <li><strong>🏛️ 无中断隔离</strong>: 物理节点间无依赖 Zero-SPOF 独立运行，客户端 1 秒极速 DNS 故障切换</li>
         <li><strong>🌐 智能分流</strong>: 集成 ByeDPI SOCKS5 代理与轻量 Python PAC 守护进程实现规则分流</li>
-        <li><strong>🌍 多语言支持</strong>: 完整提供 10 种语言本地化文档 (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/zh-CN.md">中文文档</a>、한국어、English 等)</li>
+        <li><strong>🌍 多语言支持</strong>: 完整提供 10 种语言本地化文档 (<a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/locales/zh-CN.md">中文文档</a>、한국어、English 等)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+      <a href="https://github.com/KS-GG-AI/github-org-map">
         <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
       </a>
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map">github-org-map</a></h4>
       <p><em>为 GitHub 账号及组织自动生成工作区与仓库拓扑图，并兼顾隐私保护的开源项目。</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
       </p>
       <ul>
         <li><strong>🔄 定时自动化</strong>: 基于 GitHub Actions 每日自动执行，安全隔离无令牌泄露</li>
@@ -182,7 +182,7 @@
 <p><strong>组织地图</strong></p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+  <a href="https://github.com/KS-GG-AI/github-org-map">
     <picture>
       <img src="../../assets/projects/github-org-map.svg" alt="展示 KS-GG-AI 工作空间、公开项目和经过刻意遮蔽的私有工作的组织地图。" width="520" />
     </picture>

@@ -30,8 +30,8 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
@@ -79,38 +79,38 @@ El trabajo público se mantiene fácil de explorar; el trabajo privado se oculta
   <tr>
     <td width="50%" valign="top">
       <p align="center">
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
         </a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-shield.gif" alt="Insignia de escudo de defensa AdGuard Home" width="22%" />
         </a>
       </p>
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguard-homelab">adguard-homelab</a></h4>
       <p><em>Pila AdGuard Home reforzada para producción con ZRAM, TCP BBR, HTTP/2 y HTTP/3 (QUIC/DoQ) y resistencia autónoma multinodo.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
       </p>
       <ul>
         <li><strong>⚡ Rendimiento</strong>: 1GB ZRAM (zstd) swap comprimido (swappiness 180, page-cluster 0) + búferes UDP de 7.5MB</li>
         <li><strong>🔒 Protocolos modernos</strong>: Web UI en HTTP/2 puerto 443 + DNS-over-QUIC (DoQ) y DoT puerto 853 con certificado SAN de 20 años</li>
         <li><strong>🏛️ Resiliencia</strong>: Aislamiento multinodo Zero-SPOF con conmutación por error DNS ultrarrápida de 1 segundo</li>
         <li><strong>🌐 Enrutamiento</strong>: Proxy ByeDPI SOCKS5 + demonio PAC en Python para evasión selectiva</li>
-        <li><strong>🌍 Multilingüe</strong>: Documentación completa en 10 idiomas (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/es.md">Español</a>, 한국어, English, etc.)</li>
+        <li><strong>🌍 Multilingüe</strong>: Documentación completa en 10 idiomas (<a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/locales/es.md">Español</a>, 한국어, English, etc.)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+      <a href="https://github.com/KS-GG-AI/github-org-map">
         <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
       </a>
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map">github-org-map</a></h4>
       <p><em>Mapa visual automatizado de espacios de trabajo y repositorios de cuentas y organizaciones GitHub con preservación de privacidad.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
       </p>
       <ul>
         <li><strong>🔄 Automatización</strong>: Ejecución programada diaria vía GitHub Actions sin filtración de secretos</li>
@@ -182,7 +182,7 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 <p><strong>Mapa de la organización</strong></p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+  <a href="https://github.com/KS-GG-AI/github-org-map">
     <picture>
       <img src="../../assets/projects/github-org-map.svg" alt="Mapa de la organización que muestra el espacio de trabajo KS-GG-AI, proyectos públicos y trabajo privado enmascarado intencionalmente." width="520" />
     </picture>

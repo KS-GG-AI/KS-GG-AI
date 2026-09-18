@@ -30,8 +30,8 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
@@ -81,38 +81,38 @@
   <tr>
     <td width="50%" valign="top">
       <p align="center">
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
         </a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-shield.gif" alt="شارة درع حماية AdGuard Home" width="22%" />
         </a>
       </p>
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguard-homelab">adguard-homelab</a></h4>
       <p><em>بيئة تشغيل AdGuard Home عالية الأداء ومحصنة للإنتاج مع تبديل ZRAM المضغوط، وTCP BBR، وHTTP/2 وHTTP/3 (QUIC/DoQ)، وعزل مستقل متعدد العقد.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
       </p>
       <ul>
         <li><strong>⚡ ضبط الأداء</strong>: ذاكرة تبديل ZRAM (zstd) بسعة 1 جيجابايت (swappiness 180, page-cluster 0) + مخازن مؤقتة لـ UDP بسعة 7.5 ميجابايت</li>
         <li><strong>🔒 بروتوكولات متطورة</strong>: واجهة مستخدم ويب عبر HTTP/2 على المنفذ 443 + بروتوكولات DNS-over-QUIC (DoQ) وDoT على المنفذ 853 مع شهادة SAN لمدة 20 عاماً</li>
         <li><strong>🏛️ عزل بدون توقف</strong>: تشغيل مستقل Zero-SPOF بدون تبعيات مع تحويل فشل DNS فوري خلال ثانية واحدة</li>
         <li><strong>🌐 توجيه ذكي</strong>: دمج بروكسي ByeDPI SOCKS5 وخادم Python PAC لتجاوز الحجب الانتقائي</li>
-        <li><strong>🌍 دعم متعدد اللغات</strong>: توثيق شامل بـ 10 لغات (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/ar.md">الوثائق العربية</a>، 한국어، English، إلخ)</li>
+        <li><strong>🌍 دعم متعدد اللغات</strong>: توثيق شامل بـ 10 لغات (<a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/locales/ar.md">الوثائق العربية</a>، 한국어، English، إلخ)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+      <a href="https://github.com/KS-GG-AI/github-org-map">
         <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
       </a>
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map">github-org-map</a></h4>
       <p><em>خريطة طبولوجية آلية لمساحات العمل والمستودعات لحسابات ومنظمات GitHub مع حماية خصوصية المستودعات الخاصة.</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
       </p>
       <ul>
         <li><strong>🔄 أتمتة يومية</strong>: سير عمل GitHub Actions مجدول يومياً بدون أي تسريب للرموز السرية</li>
@@ -184,7 +184,7 @@
 <p><strong>خريطة المؤسسة</strong></p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+  <a href="https://github.com/KS-GG-AI/github-org-map">
     <picture>
       <img src="../../assets/projects/github-org-map.svg" alt="خريطة مؤسسة تعرض مساحة عمل KS-GG-AI والمشاريع العامة والعمل الخاص المخفي عمداً." width="520" />
     </picture>

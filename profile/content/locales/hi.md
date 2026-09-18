@@ -30,8 +30,8 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
-  <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
+  <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
 </p>
 
@@ -79,38 +79,38 @@
   <tr>
     <td width="50%" valign="top">
       <p align="center">
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-banner.svg" alt="AdGuard Home Homelab Stack Banner" width="76%" />
         </a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">
+        <a href="https://github.com/KS-GG-AI/adguard-homelab">
           <img src="../../assets/projects/adguardhome-shield.gif" alt="AdGuard Home रक्षा उपकरण बैज" width="22%" />
         </a>
       </p>
-      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack">adguardhome-homelab-stack</a></h4>
+      <h4>🛡️ <a href="https://github.com/KS-GG-AI/adguard-homelab">adguard-homelab</a></h4>
       <p><em>ZRAM कंप्रेस्ड स्वैप, TCP BBR, HTTP/2 और HTTP/3 (QUIC/DoQ), और मल्टी-नोड स्टैंडअलोन रेजिलिएंस के साथ प्रोडक्शन-ग्रेड AdGuard Home स्टैक।</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
-        <a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-quic.svg" alt="HTTP/2 & HTTP/3" /></a>
+        <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-kernel.svg" alt="Kernel Tuning" /></a>
       </p>
       <ul>
         <li><strong>⚡ प्रदर्शन ट्यूनिंग</strong>: 1GB ZRAM (zstd) स्वैप (swappiness 180, page-cluster 0) + 7.5MB UDP सॉकेट बफ़र</li>
         <li><strong>🔒 आधुनिक प्रोटोकॉल</strong>: पोर्ट 443 पर HTTP/2 वेब UI + 20-वर्षीय SAN प्रमाणपत्र के साथ पोर्ट 853 पर DNS-over-QUIC (DoQ) और DoT</li>
         <li><strong>🏛️ निर्बाध अलगाव</strong>: 1-सेकंड त्वरित DNS फ़ेलओवर के साथ Zero-SPOF स्टैंडअलोन नोड आर्किटेक्चर</li>
         <li><strong>🌐 स्मार्ट रूटिंग</strong>: चुनिंदा डोमेन रूटिंग के लिए ByeDPI SOCKS5 प्रॉक्सी और Python PAC डेमन</li>
-        <li><strong>🌍 बहुभाषी</strong>: 10 भाषाओं में पूर्ण दस्तावेज़ (<a href="https://github.com/KS-GG-AI/adguardhome-homelab-stack/blob/main/locales/hi.md">हिन्दी दस्तावेज़</a>, 한국어, English आदि)</li>
+        <li><strong>🌍 बहुभाषी</strong>: 10 भाषाओं में पूर्ण दस्तावेज़ (<a href="https://github.com/KS-GG-AI/adguard-homelab/blob/main/locales/hi.md">हिन्दी दस्तावेज़</a>, 한국어, English आदि)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/KS-GG-AI/github-org-map-public">
+      <a href="https://github.com/KS-GG-AI/github-org-map">
         <img src="../../assets/projects/github-org-map.svg" alt="GitHub Organization Map" width="100%" />
       </a>
-      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map-public">github-org-map-public</a></h4>
+      <h4>🗺️ <a href="https://github.com/KS-GG-AI/github-org-map">github-org-map</a></h4>
       <p><em>GitHub खातों और संगठनों के लिए स्वचालित, गोपनीयता-संरक्षित कार्यक्षेत्र और रिपॉज़िटरी विज़ुअलाइज़ेशन मैप।</em></p>
       <p>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
-        <a href="https://github.com/KS-GG-AI/github-org-map-public"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map/blob/main/LICENSE"><img src="../../assets/badges/badge-license.svg" alt="License" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-actions.svg" alt="GitHub Actions" /></a>
+        <a href="https://github.com/KS-GG-AI/github-org-map"><img src="../../assets/badges/badge-format.svg" alt="SVG and GIF" /></a>
       </p>
       <ul>
         <li><strong>🔄 स्वचालित पाइपलाइन</strong>: बिना किसी टोकन लीक के दैनिक अनुसूचित GitHub Actions वर्कफ़्लो</li>
@@ -182,7 +182,7 @@
 <p><strong>संगठन मैप</strong></p>
 
 <p>
-  <a href="https://github.com/KS-GG-AI/github-org-map-public">
+  <a href="https://github.com/KS-GG-AI/github-org-map">
     <picture>
       <img src="../../assets/projects/github-org-map.svg" alt="KS-GG-AI कार्यक्षेत्र, सार्वजनिक प्रोजेक्ट और जानबूझकर छिपाए गए निजी काम को दिखाने वाला संगठन मैप।" width="520" />
     </picture>

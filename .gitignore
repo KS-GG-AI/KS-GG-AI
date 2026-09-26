@@ -1,4 +1,23 @@
+# Dependencies and build output
 **/node_modules/
 .build/
 profile/automation/roadmaps/dist/
 profile/automation/visuals/dist/
+*.tsbuildinfo
+npm-debug.log*
+
+# Local tool state
+.bkit/
+
+# Credentials
+.env
+.env.*
+*.pem
+*.key
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

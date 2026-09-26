@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 
 <p><strong>Hoja de ruta del proyecto</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/es/maps/project-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
-</picture>
+      <img src="../../assets/locales/es/maps/project-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>Hoja de ruta de desarrollo</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/es/maps/development-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
-</picture>
+      <img src="../../assets/locales/es/maps/development-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo.</sub>
+<sub>Solo usa issues públicos de GitHub. Añade una etiqueta <code>roadmap:*</code> y una <code>stage:*</code> a un issue público para mostrarlo. <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">Proponer un elemento de la hoja de ruta</a></sub>
 
 </details>
 
 ---
 
-## Contacto
+## 📬 Contacto
 
 Para trabajo público, comentarios o una mirada más cercana a la implementación, estos son los puntos de partida más claros.
 
-[Perfil de GitHub](https://github.com/KS-GG-AI) · [Repositorios públicos](https://github.com/KS-GG-AI?tab=repositories) · [Abrir un issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Código del perfil](https://github.com/KS-GG-AI/KS-GG-AI)
+[Perfil de GitHub](https://github.com/KS-GG-AI) · [Repositorios públicos](https://github.com/KS-GG-AI?tab=repositories) · [Abrir un issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Código del perfil](https://github.com/KS-GG-AI/KS-GG-AI) · [Guía de arquitectura (en inglés)](../../docs/architecture.md)

@@ -1,0 +1,51 @@
+name: Roadmap item
+description: Propose work for the public KS-GG-AI project and development roadmaps.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Roadmap items appear on the profile once a maintainer applies one `roadmap:*` and one `stage:*` label.
+        The choices below are a suggestion for triage; submitting this form does not add labels on its own.
+        The title is public and appears on the roadmap image, shortened to about 20 characters, so lead with the key words.
+  - type: dropdown
+    id: lane
+    attributes:
+      label: Project lane
+      description: When should this happen?
+      options:
+        - "roadmap:now — current focus"
+        - "roadmap:next — queued after the current focus"
+        - "roadmap:later — worth doing, not yet scheduled"
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Development stage
+      description: Where is the work today?
+      options:
+        - "stage:plan — scoping and design"
+        - "stage:build — implementation"
+        - "stage:verify — testing and review"
+        - "stage:ship — release and follow-up"
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Which public KS-GG-AI repository does this touch? Leave blank if it spans several.
+      placeholder: adguard-homelab
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What changes, and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: How will we know this item is finished?
+      placeholder: "- The change is merged and released\n- The docs are updated in all 10 locales"

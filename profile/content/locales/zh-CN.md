@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@
 
 <p><strong>项目路线图</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=a7d09f789e26" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
-</picture>
+      <img src="../../assets/locales/zh-CN/maps/project-roadmap.svg?v=a7d09f789e26" alt="按当前、下一步和以后划分的公开项目路线图。" width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>开发路线图</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=a7d09f789e26" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
-</picture>
+      <img src="../../assets/locales/zh-CN/maps/development-roadmap.svg?v=a7d09f789e26" alt="按规划、构建、验证和发布划分的公开开发路线图。" width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。</sub>
+<sub>仅使用公开 GitHub Issue。为公开 Issue 添加一个 <code>roadmap:*</code> 标签和一个 <code>stage:*</code> 标签即可显示。 <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">提议路线图事项</a></sub>
 
 </details>
 
 ---
 
-## 联系
+## 📬 联系
 
 如需查看公开工作、提交反馈或了解实现细节，可从下面的入口开始。
 
-[GitHub 个人资料](https://github.com/KS-GG-AI) · [公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [创建 Issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [个人资料源码](https://github.com/KS-GG-AI/KS-GG-AI)
+[GitHub 个人资料](https://github.com/KS-GG-AI) · [公开仓库](https://github.com/KS-GG-AI?tab=repositories) · [创建 Issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [个人资料源码](https://github.com/KS-GG-AI/KS-GG-AI) · [架构指南（英文）](../../docs/architecture.md)

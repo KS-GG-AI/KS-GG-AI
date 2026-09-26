@@ -38,6 +38,11 @@ function escapeRegularExpression(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+// A picture may sit inside a link to a curated https:// destination (such as the
+// public issue query behind a roadmap), but never inside a link to a repository
+// path, which would open the raw asset page.
+const assetLinkOpening = '<a\\b[^>]*href="(?!https://)[^"]*"[^>]*>';
+
 function assertNonInteractivePicture(markdown: string, source: string, document: string): void {
   const escapedSource = escapeRegularExpression(source) + '(?:\\?[^"\\s]*)?';
   const picture = new RegExp(
@@ -45,7 +50,7 @@ function assertNonInteractivePicture(markdown: string, source: string, document:
     "s",
   );
   const linkedPicture = new RegExp(
-    '<a\\b[^>]*>\\s*<picture>\\s*(?:<source\\s+[^>]*\\/?>\\s*)*<img\\s+[^>]*src="' + escapedSource + '"',
+    assetLinkOpening + '\\s*<picture>\\s*(?:<source\\s+[^>]*\\/?>\\s*)*<img\\s+[^>]*src="' + escapedSource + '"',
     "s",
   );
   assert.match(markdown, picture, document + " must render " + source + " inside a picture element.");
@@ -60,7 +65,7 @@ function assertCompactPicture(markdown: string, source: string, compactSource: s
     "s",
   );
   const linkedPicture = new RegExp(
-    '<a\\b[^>]*>\\s*<picture>\\s*<source\\s+media="\\(max-width: 840px\\)"\\s+srcset="' + escapedCompactSource + '"\\s*\\/?>\\s*<img\\s+[^>]*src="' + escapedSource + '"',
+    assetLinkOpening + '\\s*<picture>\\s*<source\\s+media="\\(max-width: 840px\\)"\\s+srcset="' + escapedCompactSource + '"\\s*\\/?>\\s*<img\\s+[^>]*src="' + escapedSource + '"',
     "s",
   );
   assert.match(markdown, picture, document + " must use the compact visual below 840px.");

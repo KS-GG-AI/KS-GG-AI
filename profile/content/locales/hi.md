@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@
 
 <p><strong>प्रोजेक्ट रोडमैप</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/hi/maps/project-roadmap.svg?v=a7d09f789e26" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
-</picture>
+      <img src="../../assets/locales/hi/maps/project-roadmap.svg?v=a7d09f789e26" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>डेवलपमेंट रोडमैप</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/hi/maps/development-roadmap.svg?v=a7d09f789e26" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
-</picture>
+      <img src="../../assets/locales/hi/maps/development-roadmap.svg?v=a7d09f789e26" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>केवल सार्वजनिक GitHub Issue का उपयोग होता है। किसी सार्वजनिक Issue को दिखाने के लिए एक <code>roadmap:*</code> और एक <code>stage:*</code> लेबल जोड़ें।</sub>
+<sub>केवल सार्वजनिक GitHub Issue का उपयोग होता है। किसी सार्वजनिक Issue को दिखाने के लिए एक <code>roadmap:*</code> और एक <code>stage:*</code> लेबल जोड़ें। <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">रोडमैप आइटम सुझाएँ</a></sub>
 
 </details>
 
 ---
 
-## संपर्क
+## 📬 संपर्क
 
 सार्वजनिक काम, प्रतिक्रिया या कार्यान्वयन को करीब से देखने के लिए ये सबसे स्पष्ट शुरुआती स्थान हैं।
 
-[GitHub प्रोफ़ाइल](https://github.com/KS-GG-AI) · [सार्वजनिक रिपॉज़िटरी](https://github.com/KS-GG-AI?tab=repositories) · [Issue खोलें](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [प्रोफ़ाइल स्रोत](https://github.com/KS-GG-AI/KS-GG-AI)
+[GitHub प्रोफ़ाइल](https://github.com/KS-GG-AI) · [सार्वजनिक रिपॉज़िटरी](https://github.com/KS-GG-AI?tab=repositories) · [Issue खोलें](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [प्रोफ़ाइल स्रोत](https://github.com/KS-GG-AI/KS-GG-AI) · [आर्किटेक्चर गाइड (अंग्रेज़ी)](../../docs/architecture.md)

@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@
 
 <p><strong>프로젝트 로드맵</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=a7d09f789e26" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
-</picture>
+      <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=a7d09f789e26" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>개발 로드맵</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=a7d09f789e26" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
-</picture>
+      <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=a7d09f789e26" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다.</sub>
+<sub>공개 GitHub 이슈만 사용합니다. 이슈가 보이게 하려면 <code>roadmap:*</code> 라벨 하나와 <code>stage:*</code> 라벨 하나를 붙이면 됩니다. <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">로드맵 항목 제안하기</a></sub>
 
 </details>
 
 ---
 
-## 연락
+## 📬 연락
 
 공개 작업, 피드백, 구현 내용을 더 살펴보려면 아래 경로가 가장 빠릅니다.
 
-[GitHub 프로필](https://github.com/KS-GG-AI) · [공개 저장소](https://github.com/KS-GG-AI?tab=repositories) · [이슈 열기](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [프로필 소스](https://github.com/KS-GG-AI/KS-GG-AI)
+[GitHub 프로필](https://github.com/KS-GG-AI) · [공개 저장소](https://github.com/KS-GG-AI?tab=repositories) · [이슈 열기](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [프로필 소스](https://github.com/KS-GG-AI/KS-GG-AI) · [아키텍처 가이드 (영문)](../../docs/architecture.md)

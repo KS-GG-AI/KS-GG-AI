@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="./profile/assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="./profile/assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="./profile/assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="./profile/assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@ A practical working set, grouped by the job it helps with rather than treated as
 
 <p><strong>Project roadmap</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=a7d09f789e26" alt="Public project roadmap split into now, next, and later lanes." width="480" />
-</picture>
+      <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=a7d09f789e26" alt="Public project roadmap split into now, next, and later lanes." width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>Development roadmap</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=a7d09f789e26" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
-</picture>
+      <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=a7d09f789e26" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear.</sub>
+<sub>Uses public GitHub issues only. Add one <code>roadmap:*</code> label and one <code>stage:*</code> label to a public issue to make it appear. <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">Propose a roadmap item</a></sub>
 
 </details>
 
 ---
 
-## Contact
+## 📬 Contact
 
 For public work, feedback, or a closer look at the implementation, these are the clearest starting points.
 
-[GitHub profile](https://github.com/KS-GG-AI) · [Public repositories](https://github.com/KS-GG-AI?tab=repositories) · [Open an issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Profile source](https://github.com/KS-GG-AI/KS-GG-AI)
+[GitHub profile](https://github.com/KS-GG-AI) · [Public repositories](https://github.com/KS-GG-AI?tab=repositories) · [Open an issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Profile source](https://github.com/KS-GG-AI/KS-GG-AI) · [Architecture guide](./profile/docs/architecture.md)

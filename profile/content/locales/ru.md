@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@
 
 <p><strong>Дорожная карта проекта</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
-</picture>
+      <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>Дорожная карта разработки</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
-</picture>
+      <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>Используются только публичные GitHub Issues. Добавьте к публичному issue одну метку <code>roadmap:*</code> и одну <code>stage:*</code>, чтобы он появился здесь.</sub>
+<sub>Используются только публичные GitHub Issues. Добавьте к публичному issue одну метку <code>roadmap:*</code> и одну <code>stage:*</code>, чтобы он появился здесь. <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">Предложить пункт дорожной карты</a></sub>
 
 </details>
 
 ---
 
-## Контакты
+## 📬 Контакты
 
 Для публичной работы, обратной связи или более подробного знакомства с реализацией это самые понятные точки входа.
 
-[Профиль GitHub](https://github.com/KS-GG-AI) · [Публичные репозитории](https://github.com/KS-GG-AI?tab=repositories) · [Открыть issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Исходники профиля](https://github.com/KS-GG-AI/KS-GG-AI)
+[Профиль GitHub](https://github.com/KS-GG-AI) · [Публичные репозитории](https://github.com/KS-GG-AI?tab=repositories) · [Открыть issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Исходники профиля](https://github.com/KS-GG-AI/KS-GG-AI) · [Руководство по архитектуре (на английском)](../../docs/architecture.md)

@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdtemp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,6 +17,7 @@ import {
   updateRoadmaps,
   type HttpResponse,
 } from "./update-roadmaps.js";
+import { extractLocalReferences, supportingDocuments, verifyProfileLinks } from "./verify-links.js";
 
 function response(status: number, payload: unknown, headers: Record<string, string> = {}): HttpResponse {
   return {
@@ -184,19 +185,62 @@ try {
   await rm(tempRoot, { recursive: true, force: true });
 }
 
+assert.deepEqual(extractLocalReferences([
+  '<img src="./a.svg?v=1" /><source srcset="./b.svg 1x, ./c.svg 2x" />',
+  '<a href="https://example.test/">x</a><a href="mailto:x@example.test">y</a><a href="#top">z</a>',
+  "[doc](./d.md#part) ![image](../e.gif)",
+].join("\n")), ["./a.svg?v=1", "./b.svg", "./c.svg", "./d.md#part", "../e.gif"]);
+
+const linkRoot = await mkdtemp(path.join(os.tmpdir(), "ks-gg-ai-links-"));
+try {
+  await Promise.all([...readmeEntries.map(({ file }) => file), ...supportingDocuments].map(async (file) => {
+    const target = path.join(linkRoot, file);
+    await mkdir(path.dirname(target), { recursive: true });
+    const links = readmeEntries.filter((entry) => entry.file !== file).map((entry) => {
+      const relative = path.relative(path.dirname(target), path.join(linkRoot, entry.file)).split(path.sep).join("/");
+      return '<a href="' + (relative.startsWith(".") ? relative : "./" + relative) + '">x</a>';
+    });
+    await writeFile(target, links.join("\n") + "\n", "utf8");
+  }));
+  assert.deepEqual((await verifyProfileLinks(linkRoot)).problems, []);
+
+  await writeFile(path.join(linkRoot, "README.md"), [
+    '<img src="./profile/assets/locales/ko/identity/hero.svg" />',
+    "[outside](../../outside.md)",
+  ].join("\n"), "utf8");
+  const brokenReport = await verifyProfileLinks(linkRoot);
+  assert.ok(brokenReport.problems.some((problem) => /hero\.svg does not exist/.test(problem)));
+  assert.ok(brokenReport.problems.some((problem) => /uses the ko asset instead of en/.test(problem)));
+  assert.ok(brokenReport.problems.some((problem) => /outside\.md points outside the repository/.test(problem)));
+  assert.ok(brokenReport.problems.some((problem) => /language switcher is missing \.\/profile\/content\/locales\/ko\.md/.test(problem)));
+} finally {
+  await rm(linkRoot, { recursive: true, force: true });
+}
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../..");
+assert.deepEqual((await verifyProfileLinks(root)).problems, []);
 const localSnapshot = JSON.parse(await readFile(path.join(root, "profile", "data", "roadmap-state.json"), "utf8")) as unknown;
 assert.ok(isValidRoadmapSnapshot(localSnapshot));
 assert.equal(normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "maps", "project-roadmap.svg"), "utf8")), renderProjectRoadmap(localSnapshot));
 assert.equal(normalizeLineEndings(await readFile(path.join(root, "profile", "assets", "maps", "development-roadmap.svg"), "utf8")), renderDevelopmentRoadmap(localSnapshot));
 
+const countMatches = (text: string, expression: RegExp): number => (text.match(expression) ?? []).length;
+const disclosureDepthAt = (text: string, index: number): number => {
+  const before = text.slice(0, index);
+  return countMatches(before, /<details>/g) - countMatches(before, /<\/details>/g);
+};
+const englishDisclosureCount = countMatches(await readFile(path.join(root, "README.md"), "utf8"), /<details>/g);
+assert.ok(englishDisclosureCount > 0, "README.md must keep the roadmaps in a disclosure panel.");
+
 for (const entry of readmeEntries) {
   const text = await readFile(path.join(root, entry.file), "utf8");
   const escapeRegularExpression = (value: string): string => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const disclosureCount = (text.match(/<details>/g) ?? []).length;
-  assert.equal(disclosureCount, 2, entry.file + " must have two disclosure panels.");
-  assert.equal((text.match(/<\/details>/g) ?? []).length, disclosureCount, entry.file + " must close every disclosure panel.");
-  assert.equal((text.match(/<summary>/g) ?? []).length, disclosureCount, entry.file + " must label every disclosure panel.");
+  const disclosureCount = countMatches(text, /<details>/g);
+  assert.equal(disclosureCount, englishDisclosureCount, entry.file + " must have the same disclosure panels as README.md.");
+  assert.equal(countMatches(text, /<\/details>/g), disclosureCount, entry.file + " must close every disclosure panel.");
+  assert.equal(countMatches(text, /<summary>/g), disclosureCount, entry.file + " must label every disclosure panel.");
+  assert.ok(disclosureDepthAt(text, text.indexOf(entry.projectRoadmapReference)) > 0, entry.file + " must place the project roadmap inside a disclosure panel.");
+  assert.ok(disclosureDepthAt(text, text.indexOf(entry.developmentRoadmapReference)) > 0, entry.file + " must place the development roadmap inside a disclosure panel.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.projectRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one project roadmap.");
   assert.equal((text.match(new RegExp(escapeRegularExpression(entry.developmentRoadmapReference) + "\\?v=[A-Za-z0-9-]+", "g")) ?? []).length, 1, entry.file + " must reference one development roadmap.");
   assert.equal(
@@ -220,5 +264,19 @@ assert.match(roadmapWorkflow, /profile\/assets\/locales/);
 assert.match(roadmapWorkflow, /profile\/content\/locales/);
 assert.match(roadmapWorkflow, /actions\/checkout@[a-f0-9]{40}/);
 assert.match(roadmapWorkflow, /actions\/setup-node@[a-f0-9]{40}/);
+
+const ciWorkflow = await readFile(path.join(root, ".github", "workflows", "profile-ci.yml"), "utf8");
+assert.match(ciWorkflow, /^permissions:\s+contents: read$/m);
+assert.doesNotMatch(ciWorkflow, /contents: write|secrets\./, "Profile CI must stay read-only and secret-free.");
+assert.match(ciWorkflow, /persist-credentials: false/);
+assert.match(ciWorkflow, /roadmaps:test/);
+assert.match(ciWorkflow, /visuals:test/);
+assert.match(ciWorkflow, /links:verify/);
+
+const workflowDirectory = path.join(root, ".github", "workflows");
+for (const workflowFile of await readdir(workflowDirectory)) {
+  const workflow = await readFile(path.join(workflowDirectory, workflowFile), "utf8");
+  assert.doesNotMatch(workflow, /uses: [^\s@]+@(?![a-f0-9]{40}\b)/, workflowFile + " must pin every action to a full commit SHA.");
+}
 
 console.log("Roadmap generator checks passed.");

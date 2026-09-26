@@ -30,6 +30,7 @@
 
 <p>
   <a href="https://github.com/KS-GG-AI/KS-GG-AI/releases"><img src="../../assets/badges/badge-release.svg" alt="Latest Release" /></a>
+  <a href="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml"><img src="https://github.com/KS-GG-AI/KS-GG-AI/actions/workflows/profile-ci.yml/badge.svg?branch=main" alt="Profile CI" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-architecture.svg" alt="Architecture" /></a>
   <a href="https://github.com/KS-GG-AI/adguard-homelab"><img src="../../assets/badges/badge-protocols.svg" alt="Protocols" /></a>
   <a href="https://github.com/KS-GG-AI?tab=repositories"><img src="../../assets/badges/badge-focus.svg" alt="Focus" /></a>
@@ -193,28 +194,32 @@ Seperangkat alat praktis, dikelompokkan berdasarkan pekerjaan yang dibantu untuk
 
 <p><strong>Peta jalan proyek</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-  <img src="../../assets/locales/id/maps/project-roadmap.svg?v=a7d09f789e26" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
-</picture>
+      <img src="../../assets/locales/id/maps/project-roadmap.svg?v=a7d09f789e26" alt="Peta jalan proyek publik yang dibagi menjadi sekarang, berikutnya, dan nanti." width="480" />
+    </picture>
   </a>
+</p>
 
 <p><strong>Peta jalan pengembangan</strong></p>
 
-<a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
+<p>
+  <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-  <img src="../../assets/locales/id/maps/development-roadmap.svg?v=a7d09f789e26" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
-</picture>
+      <img src="../../assets/locales/id/maps/development-roadmap.svg?v=a7d09f789e26" alt="Peta jalan pengembangan publik yang dibagi menjadi rencana, bangun, verifikasi, dan rilis." width="480" />
+    </picture>
   </a>
+</p>
 
-<sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu <code>stage:*</code> pada issue publik agar tampil di sini.</sub>
+<sub>Hanya menggunakan issue GitHub publik. Tambahkan satu label <code>roadmap:*</code> dan satu <code>stage:*</code> pada issue publik agar tampil di sini. <a href="https://github.com/KS-GG-AI/KS-GG-AI/issues/new?template=roadmap-item.yml">Usulkan item peta jalan</a></sub>
 
 </details>
 
 ---
 
-## Kontak
+## 📬 Kontak
 
 Untuk karya publik, masukan, atau melihat implementasi lebih dekat, ini adalah titik awal yang paling jelas.
 
-[Profil GitHub](https://github.com/KS-GG-AI) · [Repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Buka issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Sumber profil](https://github.com/KS-GG-AI/KS-GG-AI)
+[Profil GitHub](https://github.com/KS-GG-AI) · [Repositori publik](https://github.com/KS-GG-AI?tab=repositories) · [Buka issue](https://github.com/KS-GG-AI/KS-GG-AI/issues/new) · [Sumber profil](https://github.com/KS-GG-AI/KS-GG-AI) · [Panduan arsitektur (bahasa Inggris)](../../docs/architecture.md)

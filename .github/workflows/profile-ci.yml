@@ -1,0 +1,47 @@
+name: Profile CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Builds and checks the profile without generating or committing anything, so
+  # it only ever needs read access.
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+
+      - name: Install roadmap tooling
+        run: npm ci --prefix profile/automation/roadmaps --ignore-scripts
+
+      - name: Install visual tooling
+        run: npm ci --prefix profile/automation/visuals --ignore-scripts
+
+      - name: Test roadmap generator
+        run: npm run --prefix profile/automation/roadmaps roadmaps:test
+
+      - name: Test localized visual assets
+        run: npm run --prefix profile/automation/visuals visuals:test
+
+      - name: Verify profile links
+        run: npm run --prefix profile/automation/roadmaps links:verify

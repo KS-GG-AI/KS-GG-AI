@@ -197,7 +197,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=a7d09f789e26" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
+      <img src="../../assets/locales/ko/maps/project-roadmap.svg?v=8e4ec646ca28" alt="지금, 다음, 이후 단계로 나눈 공개 프로젝트 로드맵." width="480" />
     </picture>
   </a>
 </p>
@@ -207,7 +207,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=a7d09f789e26" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
+      <img src="../../assets/locales/ko/maps/development-roadmap.svg?v=8e4ec646ca28" alt="계획, 구현, 검증, 배포 단계로 나눈 공개 개발 로드맵." width="480" />
     </picture>
   </a>
 </p>

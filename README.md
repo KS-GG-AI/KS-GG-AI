@@ -197,7 +197,7 @@ A practical working set, grouped by the job it helps with rather than treated as
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=a7d09f789e26" alt="Public project roadmap split into now, next, and later lanes." width="480" />
+      <img src="./profile/assets/locales/en/maps/project-roadmap.svg?v=8e4ec646ca28" alt="Public project roadmap split into now, next, and later lanes." width="480" />
     </picture>
   </a>
 </p>
@@ -207,7 +207,7 @@ A practical working set, grouped by the job it helps with rather than treated as
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=a7d09f789e26" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
+      <img src="./profile/assets/locales/en/maps/development-roadmap.svg?v=8e4ec646ca28" alt="Public development roadmap split into plan, build, verify, and ship stages." width="480" />
     </picture>
   </a>
 </p>

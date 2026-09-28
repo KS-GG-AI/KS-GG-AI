@@ -199,7 +199,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
+      <img src="../../assets/locales/ar/maps/project-roadmap.svg?v=8e4ec646ca28" alt="خارطة طريق مشروع علنية مقسمة إلى الآن، التالي، ولاحقًا." width="480" />
     </picture>
   </a>
 </p>
@@ -209,7 +209,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=a7d09f789e26" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
+      <img src="../../assets/locales/ar/maps/development-roadmap.svg?v=8e4ec646ca28" alt="خارطة طريق تطوير علنية مقسمة إلى التخطيط والبناء والتحقق والإصدار." width="480" />
     </picture>
   </a>
 </p>

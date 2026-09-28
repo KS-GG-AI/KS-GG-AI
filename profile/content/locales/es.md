@@ -197,7 +197,7 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="../../assets/locales/es/maps/project-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
+      <img src="../../assets/locales/es/maps/project-roadmap.svg?v=8e4ec646ca28" alt="Hoja de ruta pública del proyecto dividida en ahora, después y más adelante." width="480" />
     </picture>
   </a>
 </p>
@@ -207,7 +207,7 @@ Un conjunto práctico, agrupado por el trabajo que ayuda a resolver y no como un
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="../../assets/locales/es/maps/development-roadmap.svg?v=a7d09f789e26" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
+      <img src="../../assets/locales/es/maps/development-roadmap.svg?v=8e4ec646ca28" alt="Hoja de ruta pública de desarrollo dividida en planificar, construir, verificar y publicar." width="480" />
     </picture>
   </a>
 </p>

@@ -197,7 +197,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
+      <img src="../../assets/locales/ru/maps/project-roadmap.svg?v=8e4ec646ca28" alt="Публичная дорожная карта проекта с этапами сейчас, дальше и позже." width="480" />
     </picture>
   </a>
 </p>
@@ -207,7 +207,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=a7d09f789e26" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
+      <img src="../../assets/locales/ru/maps/development-roadmap.svg?v=8e4ec646ca28" alt="Публичная дорожная карта разработки с этапами планирования, разработки, проверки и выпуска." width="480" />
     </picture>
   </a>
 </p>

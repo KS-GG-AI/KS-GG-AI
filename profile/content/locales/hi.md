@@ -197,7 +197,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue+is%3Aopen">
     <picture>
-      <img src="../../assets/locales/hi/maps/project-roadmap.svg?v=a7d09f789e26" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
+      <img src="../../assets/locales/hi/maps/project-roadmap.svg?v=8e4ec646ca28" alt="अभी, अगला और बाद में विभाजित सार्वजनिक प्रोजेक्ट रोडमैप।" width="480" />
     </picture>
   </a>
 </p>
@@ -207,7 +207,7 @@
 <p>
   <a href="https://github.com/issues?q=user%3AKS-GG-AI+is%3Aissue">
     <picture>
-      <img src="../../assets/locales/hi/maps/development-roadmap.svg?v=a7d09f789e26" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
+      <img src="../../assets/locales/hi/maps/development-roadmap.svg?v=8e4ec646ca28" alt="योजना, निर्माण, सत्यापन और रिलीज़ में विभाजित सार्वजनिक डेवलपमेंट रोडमैप।" width="480" />
     </picture>
   </a>
 </p>
